@@ -1,0 +1,19 @@
+{
+  "name": "dominion-app",
+  "version": "1.0.0",
+  "description": "final project for Stream 1 of the Code Institute's full stack web developer course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinzigmond/Dominion-app.git"
+  },
+  "author": "Robin Zigmond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinzigmond/Dominion-app/issues"
+  },
+  "homepage": "https://github.com/robinzigmond/Dominion-app#readme"
+}
