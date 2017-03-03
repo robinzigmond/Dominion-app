@@ -7,6 +7,8 @@ My intention is to create a new resource for players of the popular [Dominion](h
 
 I intend to allow users to click through to a full page on each card, complete with the card image and a link to the appropriate article on the [Dominion Strategy Wiki](http://wiki.dominionstrategy.com/index.php/Main_Page).
 
+This app will serve as my submitted project for Stream 1 (Front End Development) of the [Code Institute's](https://www.codeinstitute.net/) Full Stack developer course.
+
 ## Features
 Intended features include:
 - The card search page mentioned above
