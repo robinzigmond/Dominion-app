@@ -4,13 +4,32 @@
     <title>Dominion card search</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/Dominion-app/"> <!-- needed for Angular HTML5 mode -->
+    <base href="/"> <!-- needed for Angular HTML5 mode -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 </head>
 <body>
-    <h1>My cool Dominion app, with card search!</h1>
-    <p>(Real content to follow later...)</p>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+    		<div class="navbar-header">
+    			<a class="navbar-brand" href="/">Dominion Card Search</a>
+    		</div>
+    		<ul class="nav navbar-nav navbar-right">
+    			<li><a href="/">Home</a></li>
+    			<li><a href="/search">Cards</a></li>
+    			<li><a href="/links">Links</a></li>
+    			<li><a href="/contact">Contact</a></li>
+    		</ul>
+    	</div>
+    </nav>
+    <div ng-view>
+    	
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
 </body>
 </html>
