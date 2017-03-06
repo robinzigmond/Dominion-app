@@ -43,7 +43,7 @@ var cardList =
 	 imagePath: "/../images/card_images/Estate.jpg"
 	},
 
-	{name: "Ducht",
+	{name: "Duchy",
 	 costInCoins: 5,
 	 costInPotions: 0,
 	 costInDebt: 0,
