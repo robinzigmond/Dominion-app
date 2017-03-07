@@ -1,127 +1,134 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12">
-			<div class="input-group">
-				<label for="name-search">Card Name:</label>
-				<input type="text" id="name-search"/>
-			</div>
-			<div class="input-group">
-				<label for="min-coin-cost">Minimum Cost:</label>
-				<label for="min-coin-cost">Coins</label>
-				<select id="min-coin-cost">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
-					<option>10</option>
-					<option>11</option>
-				</select>
-				<label for="min-potion-cost">Potions</label>
-				<select id="min-potion-cost">
-					<option>0</option>
-					<option>1</option>
-				</select>
-				<label for="min-debt-cost">Debt</label>
-				<select id="min-debt-cost">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-				</select>
-				<label for="max-coin-cost">Maximum Cost:</label>
-				<label for="max-coin-cost">Coins</label>
-				<select id="max-coin-cost">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
-					<option>10</option>
-					<option>11</option>
-				</select>
-				<label for="max-potion-cost">Potions</label>
-				<select id="max-potion-cost">
-					<option>0</option>
-					<option>1</option>
-				</select>
-				<label for="max-debt-cost">Debt</label>
-				<select id="max-debt-cost">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-				</select>
-				<label for="min-equals-max">Select to make equal to minimum cost:</label>
-				<input type="checkbox" id="min-equals-max"/>
-			</div>
-			<div class="input-group">
-				<label>Types:</label>
-				<input type="checkbox"/>Action
-				<input type="checkbox"/>Treasure
-				<input type="checkbox"/>Victory
-				<input type="checkbox"/>Curse
-				<input type="checkbox"/>Attack
-				<input type="checkbox"/>Duration
-				<input type="checkbox"/>Reaction
-				<input type="checkbox"/>Prize
-				<input type="checkbox"/>Shelter
-				<input type="checkbox"/>Ruins
-				<input type="checkbox"/>Looter
-				<input type="checkbox"/>Knight
-				<input type="checkbox"/>Reserve
-				<input type="checkbox"/>Traveller
-				<input type="checkbox"/>Gathering
-				<input type="checkbox"/>Castle
-				<input type="checkbox"/>Event
-				<input type="checkbox"/>Landmark
-			</div>
-			<div class="input-group">
-				<label>Set:</label>
-				<input type="checkbox"/>Basic cards
-				<input type="checkbox"/>Base (1st edition)
-				<input type="checkbox"/>Base (2nd edition)
-				<input type="checkbox"/>Intrigue (1st edition)
-				<input type="checkbox"/>Intrigue (2nd edition)
-				<input type="checkbox"/>Seaside
-				<input type="checkbox"/>Alchemy
-				<input type="checkbox"/>Prosperity
-				<input type="checkbox"/>Cornucopia
-				<input type="checkbox"/>Hinterlands
-				<input type="checkbox"/>Dark Ages
-				<input type="checkbox"/>Guilds
-				<input type="checkbox"/>Adventures
-				<input type="checkbox"/>Empires
-				<input type="checkbox"/>Promos
-			</div>
-			<div class="input-group">
-				<label for="text-above-search">Text (above line):</label>
-				<input type="text" id="text-above-search"/>
-				<label for="text-below-search">Text (below line):</label>
-				<input type="text" id="text-below-search"/>
-				<label for="anywhere">Select to search for text anywhere on card:</label>
-				<input type="checkbox" id="anywhere"/>
-			</div>
+		<!-- allow room for search results on right on tablets an desktops, but has to go below on smaller screens-->
+		<div class="col-xs-12 col-sm-6 col-md-4"> 
+			<form>
+				<div class="form-group">
+					<label for="name-search">Card Name:</label>
+					<input type="text" class="form-control input-sm" id="name-search"/>
+				</div>
+				<div class="form-group">
+					<label for="min-coin-cost">Minimum Cost:</label> <!-- want this "title" separate from the forms below, not sure yet of best way-->
+					<label for="min-coin-cost">Coins</label>
+					<select class="form-control input-sm" id="min-coin-cost"> <!-- ideally these 3 <select> elements should be displayed inline-->
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+					<label for="min-potion-cost">Potions</label>
+					<select class="form-control input-sm" id="min-potion-cost">
+						<option>0</option>
+						<option>1</option>
+					</select>
+					<label for="min-debt-cost">Debt</label>
+					<select class="form-control input-sm" id="min-debt-cost">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+					<label for="max-coin-cost">Maximum Cost:</label> <!-- want this "title" separate from the forms below, not sure yet of best way-->
+					<label for="max-coin-cost">Coins</label>
+					<select class="form-control input-sm" id="max-coin-cost"> <!-- ideally these 3 <select> elements should be displayed inline-->
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+					<label for="max-potion-cost">Potions</label>
+					<select class="form-control input-sm" id="max-potion-cost">
+						<option>0</option>
+						<option>1</option>
+					</select>
+					<label for="max-debt-cost">Debt</label>
+					<select class="form-control input-sm" id="max-debt-cost">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+					<div class="input-group">
+						<label for="min-equals-max">Select to make equal to minimum cost:</label>
+						<input type="checkbox" id="min-equals-max"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Types:</label> <!-- I would prefer this text above the checkboxes, rather than inline-->
+					<label class="checkbox-inline"><input type="checkbox"/>Action</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Treasure</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Victory</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Curse</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Attack</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Duration</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Reaction</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Prize</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Shelter</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Ruins</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Looter</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Knight</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Reserve</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Traveller</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Gathering</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Castle</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Event</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Landmark</label>
+				</div>
+				<div class="form-group">
+					<label>Set:</label> <!-- I would prefer this text above the checkboxes, rather than inline-->
+					<label class="checkbox-inline"><input type="checkbox"/>Basic cards</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Base (1st edition)</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Base (2nd edition)</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Intrigue (1st edition)</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Intrigue (2nd edition)</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Seaside</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Alchemy</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Prosperity</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Cornucopia</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Hinterlands</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Dark Ages</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Guilds</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Adventures</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Empires</label>
+					<label class="checkbox-inline"><input type="checkbox"/>Promos</label>
+				</div>
+				<div class="form-group">
+					<label for="text-above-search">Text (above line):</label>
+					<input type="text" class="form-control input-sm" id="text-above-search"/>
+					<label for="text-below-search">Text (below line):</label>
+					<input type="text" class="form-control input-sm" id="text-below-search"/>
+					<div class="input-group">
+						<label for="anywhere">Select to search for text anywhere on card:</label>
+						<input type="checkbox" id="anywhere"/>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
