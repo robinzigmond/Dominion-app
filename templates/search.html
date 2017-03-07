@@ -1,16 +1,16 @@
 <div class="container-fluid">
 	<div class="row">
-		<!-- allow room for search results on right on tablets an desktops, but has to go below on smaller screens-->
+		<!-- allow room for search results on right on tablets/desktops, but has to go below on smaller screens-->
 		<div class="col-xs-12 col-sm-6 col-md-4"> 
 			<form>
 				<div class="form-group">
-					<label for="name-search">Card Name:</label>
+					<label class="control-label" for="name-search">Card Name:</label>
 					<input type="text" class="form-control input-sm" id="name-search"/>
 				</div>
 				<div class="form-group">
-					<label for="min-coin-cost">Minimum Cost:</label> <!-- want this "title" separate from the forms below, not sure yet of best way-->
-					<label for="min-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="min-coin-cost"> <!-- ideally these 3 <select> elements should be displayed inline-->
+					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
+					<label class="control-label" for="min-coin-cost">Coins</label>
+					<select class="form-control input-sm" id="min-coin-cost"> 
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -24,12 +24,12 @@
 						<option>10</option>
 						<option>11</option>
 					</select>
-					<label for="min-potion-cost">Potions</label>
+					<label class="control-label" for="min-potion-cost">Potions</label>
 					<select class="form-control input-sm" id="min-potion-cost">
 						<option>0</option>
 						<option>1</option>
 					</select>
-					<label for="min-debt-cost">Debt</label>
+					<label class="control-label" for="min-debt-cost">Debt</label>
 					<select class="form-control input-sm" id="min-debt-cost">
 						<option>0</option>
 						<option>1</option>
@@ -41,9 +41,9 @@
 						<option>7</option>
 						<option>8</option>
 					</select>
-					<label for="max-coin-cost">Maximum Cost:</label> <!-- want this "title" separate from the forms below, not sure yet of best way-->
-					<label for="max-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="max-coin-cost"> <!-- ideally these 3 <select> elements should be displayed inline-->
+					<label class="control-label form-subtitle" for="max-coin-cost">Maximum Cost:</label> 
+					<label class="control-label" for="max-coin-cost">Coins</label>
+					<select class="form-control input-sm" id="max-coin-cost">
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -57,12 +57,12 @@
 						<option>10</option>
 						<option>11</option>
 					</select>
-					<label for="max-potion-cost">Potions</label>
+					<label class="control-label" for="max-potion-cost">Potions</label>
 					<select class="form-control input-sm" id="max-potion-cost">
 						<option>0</option>
 						<option>1</option>
 					</select>
-					<label for="max-debt-cost">Debt</label>
+					<label class="control-label" for="max-debt-cost">Debt</label>
 					<select class="form-control input-sm" id="max-debt-cost">
 						<option>0</option>
 						<option>1</option>
@@ -75,12 +75,12 @@
 						<option>8</option>
 					</select>
 					<div class="input-group">
-						<label for="min-equals-max">Select to make equal to minimum cost:</label>
+						<label class="control-label" for="min-equals-max">Select to make equal to minimum cost:</label>
 						<input type="checkbox" id="min-equals-max"/>
 					</div>
 				</div>
 				<div class="form-group">
-					<label>Types:</label> <!-- I would prefer this text above the checkboxes, rather than inline-->
+					<label class="control-label form-subtitle" >Types:</label> 
 					<label class="checkbox-inline"><input type="checkbox"/>Action</label>
 					<label class="checkbox-inline"><input type="checkbox"/>Treasure</label>
 					<label class="checkbox-inline"><input type="checkbox"/>Victory</label>
@@ -101,7 +101,7 @@
 					<label class="checkbox-inline"><input type="checkbox"/>Landmark</label>
 				</div>
 				<div class="form-group">
-					<label>Set:</label> <!-- I would prefer this text above the checkboxes, rather than inline-->
+					<label class="control-label form-subtitle" >Card sets:</label> 
 					<label class="checkbox-inline"><input type="checkbox"/>Basic cards</label>
 					<label class="checkbox-inline"><input type="checkbox"/>Base (1st edition)</label>
 					<label class="checkbox-inline"><input type="checkbox"/>Base (2nd edition)</label>
@@ -119,12 +119,12 @@
 					<label class="checkbox-inline"><input type="checkbox"/>Promos</label>
 				</div>
 				<div class="form-group">
-					<label for="text-above-search">Text (above line):</label>
+					<label class="control-label" for="text-above-search">Text (above line):</label>
 					<input type="text" class="form-control input-sm" id="text-above-search"/>
-					<label for="text-below-search">Text (below line):</label>
+					<label class="control-label" for="text-below-search">Text (below line):</label>
 					<input type="text" class="form-control input-sm" id="text-below-search"/>
 					<div class="input-group">
-						<label for="anywhere">Select to search for text anywhere on card:</label>
+						<label class="control-label" for="anywhere">Select to search for text anywhere on card:</label>
 						<input type="checkbox" id="anywhere"/>
 					</div>
 				</div>

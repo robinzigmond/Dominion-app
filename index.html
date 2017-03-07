@@ -11,10 +11,30 @@
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <style type="text/css">
+    	
+    	/* correct padding for vertical navigation on small screens */
     	body {
     		padding-top: 230px;
     	}
 
+    	/* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
+    	select.form-control {
+    		display: inline-block;
+    		width: 60px;
+    		height: 25px;
+    	}
+
+    	/* get dropdowns on a new line from their subtitles on search form */
+    	label.form-subtitle {
+    		display: block;
+    	}
+
+    	/* left-justify checkbox groups when they spill to more than one line */
+    	.form-group .checkbox-inline {
+    		margin-left: 0px;    		
+    	}
+
+    	/* correct padding for horizontal navbar on tablets and desktops */
     	@media (min-width: 768px) {
     		body {
     			padding-top: 70px;
