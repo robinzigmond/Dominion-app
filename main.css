@@ -23,7 +23,7 @@ label.form-subtitle {
 /* card search results need to be in grid format */
 .search-results {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* correct padding for horizontal navbar on tablets and desktops */
