@@ -20,6 +20,12 @@ label.form-subtitle {
 	margin-left: 0px;    		
 }
 
+/* card search results need to be in grid format */
+.search-results {
+    display: inline-block;
+    padding: 10px;
+}
+
 /* correct padding for horizontal navbar on tablets and desktops */
 @media (min-width: 768px) {
 	body {

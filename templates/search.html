@@ -130,5 +130,10 @@
 				</div>
 			</form>
 		</div>
+		<div class="col-xs-12 col-sm-6 col-md-8">
+			<div ng-repeat="card in searchResults" class="search-results">
+				<img src="{{card.imagePath}}" alt="{{card.name}}" />
+			</div>
+		</div>
 	</div>
 </div>

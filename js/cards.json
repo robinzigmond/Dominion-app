@@ -1,5 +1,3 @@
-// cost in Potions and Debt included to allow for easier handling of expansion cards (Alchemy, Empires) when they are added
-
 [
 	{"name": "Copper",
 	 "costInCoins": 0,
@@ -391,4 +389,4 @@
 	 "textAboveLine": "Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards into your hand and discard the other revealed cards.",
 	 "imagePath": "/../images/card_images/Adventurer.jpg"
 	}
-];
+]
