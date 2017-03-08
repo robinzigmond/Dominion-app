@@ -3,20 +3,14 @@ angular.module("RouteControllers", [])
 		
 	})
 
-	.controller("SearchController", function($scope, $http, cardSearchFilter) {
-		$scope.searchResults = [];
-
+	.controller("SearchController", function($scope, $http) {
 		$http.get("js/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
-				console.log($scope.cardList);
-			
+			});
 
-			for (card in $scope.cardList) {
-				if (cardSearchFilter(card) == true) {
-					$scope.searchResults.push($scope.cardList[card]);
-				}
-			}
+		$scope.nameSearch = function(card) {
+			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
+		}
 
-			console.log($scope.searchResults)});
 	});

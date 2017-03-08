@@ -5,7 +5,7 @@
 			<form>
 				<div class="form-group">
 					<label class="control-label" for="name-search">Card Name:</label>
-					<input type="text" class="form-control input-sm" id="name-search"/>
+					<input type="text" class="form-control input-sm" id="name-search" ng-model="nameSearchText"/>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
@@ -131,7 +131,7 @@
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
-			<div ng-repeat="card in searchResults" class="search-results">
+			<div ng-repeat="card in cardList | filter: nameSearch" class="search-results">
 				<img src="{{card.imagePath}}" alt="{{card.name}}" />
 			</div>
 		</div>
