@@ -9,8 +9,24 @@ angular.module("RouteControllers", [])
 				$scope.cardList = results.data;
 			});
 
+		$scope.nameSearchText = "";
+
+		$scope.minCoinCost = "0";
+		$scope.minPotionCost = "0";
+		$scope.minDebtCost = "0";
+		$scope.maxCoinCost = "11";
+		$scope.maxPotionCost = "1";
+		$scope.maxDebtCost = "8";
+		
+
 		$scope.nameSearch = function(card) {
 			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
-		}
+		};
+
+		$scope.costSearch = function(card) {
+			return (card.costInCoins>=$scope.minCoinCost && card.costInPotions>=$scope.minPotionCost && card.costInDebt>=$scope.minDebtCost
+				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
+		};
+
 
 	});

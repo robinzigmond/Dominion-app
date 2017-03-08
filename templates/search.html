@@ -10,7 +10,7 @@
 				<div class="form-group">
 					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
 					<label class="control-label" for="min-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="min-coin-cost"> 
+					<select class="form-control input-sm" id="min-coin-cost" ng-model="minCoinCost"> 
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -25,12 +25,12 @@
 						<option>11</option>
 					</select>
 					<label class="control-label" for="min-potion-cost">Potions</label>
-					<select class="form-control input-sm" id="min-potion-cost">
+					<select class="form-control input-sm" id="min-potion-cost" ng-model="minPotionCost">
 						<option>0</option>
 						<option>1</option>
 					</select>
 					<label class="control-label" for="min-debt-cost">Debt</label>
-					<select class="form-control input-sm" id="min-debt-cost">
+					<select class="form-control input-sm" id="min-debt-cost" ng-model="minDebtCost">
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -43,7 +43,7 @@
 					</select>
 					<label class="control-label form-subtitle" for="max-coin-cost">Maximum Cost:</label> 
 					<label class="control-label" for="max-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="max-coin-cost">
+					<select class="form-control input-sm" id="max-coin-cost" ng-model="maxCoinCost">
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -58,12 +58,12 @@
 						<option>11</option>
 					</select>
 					<label class="control-label" for="max-potion-cost">Potions</label>
-					<select class="form-control input-sm" id="max-potion-cost">
+					<select class="form-control input-sm" id="max-potion-cost" ng-model="maxPotionCost">
 						<option>0</option>
 						<option>1</option>
 					</select>
 					<label class="control-label" for="max-debt-cost">Debt</label>
-					<select class="form-control input-sm" id="max-debt-cost">
+					<select class="form-control input-sm" id="max-debt-cost" ng-model="maxDebtCost">
 						<option>0</option>
 						<option>1</option>
 						<option>2</option>
@@ -75,8 +75,8 @@
 						<option>8</option>
 					</select>
 					<div class="input-group">
-						<label class="control-label" for="min-equals-max">Select to make equal to minimum cost:</label>
-						<input type="checkbox" id="min-equals-max"/>
+						<label class="control-label" for="max-equals-min">Select to make equal to minimum cost:</label>
+						<input type="checkbox" id="max-equals-min" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -131,7 +131,7 @@
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
-			<div ng-repeat="card in cardList | filter: nameSearch" class="search-results">
+			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch" class="search-results">
 				<img src="{{card.imagePath}}" alt="{{card.name}}" />
 			</div>
 		</div>
