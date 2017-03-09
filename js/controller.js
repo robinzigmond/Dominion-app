@@ -28,5 +28,5 @@ angular.module("RouteControllers", [])
 				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
 		};
 
-
+		// can't get "max=min" cost checkbox to work. Should implement instead with a button and ng-click directive?
 	});
