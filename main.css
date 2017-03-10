@@ -20,6 +20,11 @@ label.form-subtitle {
 	margin-left: 0px;    		
 }
 
+/* give space for "select all" checkbox in "types" section */
+#select-all-types, #select-all-sets {
+    margin-left: 5px;
+}
+
 /* card search results need to be in grid format */
 .search-results {
     display: inline-block;

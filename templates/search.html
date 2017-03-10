@@ -75,63 +75,68 @@
 						<option>8</option>
 					</select>
 					<div class="input-group">
-						<label class="control-label" for="max-equals-min">Select to make equal to minimum cost:</label>
+						<label class="control-label" for="max-equals-min" ng-click="fixedCost">Select to make equal to minimum cost:</label>
 						<input type="checkbox" id="max-equals-min" />
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" >Types:</label> 
-					<label class="checkbox-inline"><input type="checkbox"/>Action</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Treasure</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Victory</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Curse</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Attack</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Duration</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Reaction</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Prize</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Shelter</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Ruins</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Looter</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Knight</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Reserve</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Traveller</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Gathering</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Castle</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Event</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Landmark</label>
+					<p>(Only cards which match <strong>all</strong> selected types will be found.)</p>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isActionType"/>Action</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isTreasureType"/>Treasure</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isVictoryType"/>Victory</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isCurseType"/>Curse</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isAttackType"/>Attack</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isDurationType"/>Duration</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isReactionType"/>Reaction</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isPrizeType"/>Prize</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isShelterType"/>Shelter</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isRuinsType"/>Ruins</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isLooterType"/>Looter</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isKnightType"/>Knight</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isReserveType"/>Reserve</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isTravellerType"/>Traveller</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isGatheringType"/>Gathering</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isCastleType"/>Castle</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isEventType"/>Event</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="isLandmarkType"/>Landmark</label>
+					<label class="control-label form-subtitle" for="select-all-types" ng-model="isAllTypes">Click to select all:<input type="checkbox" id="select-all-types"></label>
 				</div>
 				<div class="form-group">
-					<label class="control-label form-subtitle" >Card sets:</label> 
-					<label class="checkbox-inline"><input type="checkbox"/>Basic cards</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Base (1st edition)</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Base (2nd edition)</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Intrigue (1st edition)</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Intrigue (2nd edition)</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Seaside</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Alchemy</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Prosperity</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Cornucopia</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Hinterlands</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Dark Ages</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Guilds</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Adventures</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Empires</label>
-					<label class="checkbox-inline"><input type="checkbox"/>Promos</label>
+					<label class="control-label form-subtitle" >Card sets:</label>
+					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p> 
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inBasic"/>Basic cards</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inBaseFirstEd"/>Base (1st edition)</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inBaseSecondEd"/>Base (2nd edition)</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inIntrigueFirstEd"/>Intrigue (1st edition)</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inIntrigueSecondEd"/>Intrigue (2nd edition)</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inSeaside"/>Seaside</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inAlchemy"/>Alchemy</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inProsperity"/>Prosperity</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inCornucopia"/>Cornucopia</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inHinterlands"/>Hinterlands</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inDarkAges"/>Dark Ages</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inGuilds"/>Guilds</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inAdventures"/>Adventures</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inEmpires"/>Empires</label>
+					<label class="checkbox-inline"><input type="checkbox" ng-model="inPromos"/>Promos</label>
+					<label class="control-label form-subtitle" for="select-all-sets" ng-model="allSets">Click to select all:<input type="checkbox" id="select-all-sets"></label>
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="text-above-search">Text (above line):</label>
-					<input type="text" class="form-control input-sm" id="text-above-search"/>
+					<input type="text" class="form-control input-sm" id="text-above-search" ng-model="aboveLineSearchText"/>
 					<label class="control-label" for="text-below-search">Text (below line):</label>
-					<input type="text" class="form-control input-sm" id="text-below-search"/>
+					<input type="text" class="form-control input-sm" id="text-below-search" ng-model="belowLineSearchText"/>
 					<div class="input-group">
 						<label class="control-label" for="anywhere">Select to search for text anywhere on card:</label>
-						<input type="checkbox" id="anywhere"/>
+						<input type="checkbox" id="anywhere" ng-model="allTextSearch"/>
+						<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned.</p>
 					</div>
 				</div>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
-			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch" class="search-results">
+			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch" class="search-results">
 				<img src="{{card.imagePath}}" alt="{{card.name}}" />
 			</div>
 		</div>
