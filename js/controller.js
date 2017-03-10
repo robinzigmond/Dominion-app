@@ -20,6 +20,9 @@ angular.module("RouteControllers", [])
 		$scope.maxPotionCost = "0";
 		$scope.maxDebtCost = "0";
 
+		$scope.isAllTypes = false;
+		$scope.allSets = false;
+
 		if ($scope.isAllTypes) {  // this doesn't appear to work!
 			$scope.isActionType = true;
 			$scope.isTreasureType = true;
@@ -59,15 +62,7 @@ angular.module("RouteControllers", [])
 			$scope.inPromos = true;
 		}
 
-		// set card to be in "base" set if it is in either first or second edition.
-		if ($scope.inBaseFirstEd || $scope.inBaseSecondEd) {
-			$scope.inBase = true;
-		}
 		
-		//same for Intrigue
-		if ($scope.inIntrigueFirstEd || $scope.inIntrigueSecondEd) {
-			$scope.inIntrigue = true;
-		}
 
 		$scope.nameSearch = function(card) {
 			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
@@ -79,7 +74,7 @@ angular.module("RouteControllers", [])
 		};
 
 		// this code doesn't work - checkbox has no effect. Have moved on for now!
-		$scope.fixedCost = function() {
+		if ($scope.fixedCost) {
 			$scope.maxCoinCost = $scope.minCoinCost;
 			$scope.maxPotionCost = $scope.minPotionCost;
 			$scope.maxDebtCost = $scope.minDebtCost;
@@ -101,12 +96,23 @@ angular.module("RouteControllers", [])
 			return true;
 		}
 
-		/* $scope.setFilter = function(card) { // problems
-			//this search should match all cards in ANY of the selected sets
-			console.log($scope.inBaseFirstEd);
-			console.log($scope.inBase); // keeps returning "undefined", even when the line above returns true!
+		$scope.setFilter = function(card) { // problems
+			//this search should match all cards in ANY of the selected sets.
+			// set card to be in "base" set if it is in either first or second edition.
+			// not sure why this logic only works when moved inside the filter function!
+			$scope.inBase = false;
+			if ($scope.inBaseFirstEd || $scope.inBaseSecondEd) {
+				$scope.inBase = true;
+			}
+		
+			//same for Intrigue
+			$scope.inIntrigue = false;
+			if ($scope.inIntrigueFirstEd || $scope.inIntrigueSecondEd) {
+				$scope.inIntrigue = true;
+			}
+				
 			return $scope["in"+card.set];		
-		}  */
+		} 
 
 		/* the following 2 functions implement the following:
 		1) searches for specifically "above the line" or "below the line" text, if the checkbox is unticked
