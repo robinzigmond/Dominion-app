@@ -117,7 +117,6 @@ angular.module("RouteControllers", [])
 			/* if checkbox is ticked, search whole card text for content of first or second input box. 
 			Card gets returned if matches are found for both. */
 			if ($scope.allTextSearch) {
-
 				return (((card.textAboveLine.toUpperCase().indexOf($scope.aboveLineSearchText.toUpperCase()) != -1) || 
 					(card.textBelowLine.toUpperCase().indexOf($scope.aboveLineSearchText.toUpperCase()) != -1)) && 
 					((card.textAboveLine.toUpperCase().indexOf($scope.belowLineSearchText.toUpperCase()) != -1) ||
