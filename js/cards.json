@@ -5,7 +5,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure"],
 	 "set": "Basic",
-	 "textAboveLine": "<coin1>.",
+	 "textAboveLine": "1 coin",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Copper.jpg"
 	},
@@ -16,7 +16,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure"],
 	 "set": "Basic",
-	 "textAboveLine": "<coin2>.",
+	 "textAboveLine": "2 coins",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Silver.jpg"
 	},
@@ -27,7 +27,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure"],
 	 "set": "Basic",
-	 "textAboveLine": "<coin3>.",
+	 "textAboveLine": "3 coins",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Gold.jpg"
 	},
@@ -38,7 +38,7 @@
 	 "costInDebt": 0,
 	 "types": ["Victory"],
 	 "set": "Basic",
-	 "textAboveLine": "1<VP>.",
+	 "textAboveLine": "1VP",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Estate.jpg"
 	},
@@ -49,7 +49,7 @@
 	 "costInDebt": 0,
 	 "types": ["Victory"],
 	 "set": "Basic",
-	 "textAboveLine": "3<VP>.",
+	 "textAboveLine": "3VP",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Duchy.jpg"
 	},
@@ -60,7 +60,7 @@
 	 "costInDebt": 0,
 	 "types": ["Victory"],
 	 "set": "Basic",
-	 "textAboveLine": "6<VP>.",
+	 "textAboveLine": "6VP",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Province.jpg"
 	},
@@ -71,7 +71,7 @@
 	 "costInDebt": 0,
 	 "types": ["Curse"],
 	 "set": "Basic",
-	 "textAboveLine": "-1<VP>.",
+	 "textAboveLine": "-1VP",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Curse.jpg"
 	},
@@ -104,7 +104,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reaction"],
 	 "set": "Base",
-	 "textAboveLine": "+2 Cards.",
+	 "textAboveLine": "+2 Cards",
 	 "textBelowLine": "When another player plays an Attack card, you may first reveal this from your hand, to be unaffected by it.",
 	 "imagePath": "/../images/card_images/Moat.jpg"
 	},
@@ -115,7 +115,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseSecondEd",
-	 "textAboveLine": "+1 Cards +1 Acion. Look through your discard pile. You may put a card from it onto your deck.",
+	 "textAboveLine": "+1 Card +1 Action. Look through your discard pile. You may put a card from it onto your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Harbinger.jpg"
 	},
@@ -126,7 +126,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseSecondEd",
-	 "textAboveLine": "+1 Cards +1 Acion. The first time you play a Silver this turn, +<coin1>.",
+	 "textAboveLine": "+1 Card +1 Action. The first time you play a Silver this turn, +1 coin.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Merchant.jpg"
 	},
@@ -137,7 +137,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseSecondEd",
-	 "textAboveLine": "+<coin2>. Discard the top card of your deck. If it's an Action card, you may play it.",
+	 "textAboveLine": "+2 coins. Discard the top card of your deck. If it's an Action card, you may play it.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Vassal.jpg"
 	},
@@ -159,7 +159,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "Gain a card costing up to <coin4>.",
+	 "textAboveLine": "Gain a card costing up to 4 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Workshop.jpg"
 	},
@@ -181,7 +181,7 @@
 	 "costInDebt": 0,
 	 "types": ["Victory"],
 	 "set": "Base",
-	 "textAboveLine": "Worth 1<VP> per 10 cards you have (round down).",
+	 "textAboveLine": "Worth 1VP per 10 cards you have (round down).",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Gardens.jpg"
 	},
@@ -192,7 +192,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Attack"],
 	 "set": "Base",
-	 "textAboveLine": "+<coin2>. Each other player discards down to 3 cards in hand.",
+	 "textAboveLine": "+2 coins. Each other player discards down to 3 cards in hand.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Militia.jpg"
 	},
@@ -203,7 +203,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "You may trash a Copper from your hand for +<coin3>.",
+	 "textAboveLine": "You may trash a Copper from your hand for +3 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Moneylender.jpg"
 	},
@@ -214,7 +214,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseSecondEd",
-	 "textAboveLine": "+1 Card +1 Action +<coin1>. Discard a card per empty Supply pile.",
+	 "textAboveLine": "+1 Card +1 Action +1 coin. Discard a card per empty Supply pile.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Poacher.jpg"
 	},
@@ -225,7 +225,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to <coin2> more than it.",
+	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to 2 coins more than it.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Remodel.jpg"
 	},
@@ -236,7 +236,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "+3 Cards.",
+	 "textAboveLine": "+3 Cards",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Smithy.jpg"
 	},
@@ -280,7 +280,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "+2 Actions +1 Buy +<coin2>.",
+	 "textAboveLine": "+2 Actions +1 Buy +2 coins",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Festival.jpg"
 	},
@@ -291,7 +291,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "+2 Cards +1 Action.",
+	 "textAboveLine": "+2 Cards +1 Action",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Laboratory.jpg"
 	},
@@ -313,7 +313,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "+1 Card +1 Action +1 Buy +<coin1>.",
+	 "textAboveLine": "+1 Card +1 Action +1 Buy +1 coin",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Market.jpg"
 	},
@@ -324,7 +324,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to <coin3> more than in.",
+	 "textAboveLine": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to 3 coins more than it.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Mine.jpg"
 	},
@@ -357,7 +357,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseSecondEd",
-	 "textAboveLine": "Gain a card to your hand costing up to <coin5>. Put a card from your hand onto your deck.",
+	 "textAboveLine": "Gain a card to your hand costing up to 5 coins. Put a card from your hand onto your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Artisan.jpg"
 	},
@@ -368,7 +368,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseFirstEd",
-	 "textAboveLine": "+<coin2>. You may immediately put your deck into your discard pile.",
+	 "textAboveLine": "+2 coins. You may immediately put your deck into your discard pile.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Chancellor.jpg"
 	},
@@ -379,7 +379,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseFirstEd",
-	 "textAboveLine": "+1 Buy +<coin2>.",
+	 "textAboveLine": "+1 Buy +2 coins",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Woodcutter.jpg"
 	},
@@ -390,7 +390,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "BaseFirstEd",
-	 "textAboveLine": "Trash this card. Gain a card costing up to <coin5>.",
+	 "textAboveLine": "Trash this card. Gain a card costing up to 5 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Feast.jpg"
 	},
