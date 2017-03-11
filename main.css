@@ -25,6 +25,12 @@ label.form-subtitle {
     margin-left: 5px;
 }
 
+/* give search form buttons their own line and sufficient space above */
+.search-form-button {
+    display: block;
+    margin-top: 5px;
+}
+
 /* card search results need to be in grid format */
 .search-results {
     display: inline-block;

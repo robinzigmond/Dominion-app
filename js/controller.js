@@ -4,11 +4,14 @@ angular.module("RouteControllers", [])
 	})
 
 	.controller("SearchController", function($scope, $http) {
+		// get card database and give the scope access tp it
 		$http.get("js/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
 			});
 
+		// set initial search values
+		// text searches have to be empty string to always find every card (in case the user is searching by other criteria)
 		$scope.nameSearchText = "";
 		$scope.aboveLineSearchText = "";
 		$scope.belowLineSearchText = "";
@@ -20,86 +23,109 @@ angular.module("RouteControllers", [])
 		$scope.maxPotionCost = "0";
 		$scope.maxDebtCost = "0";
 
-		$scope.isAllTypes = false;
-		$scope.allSets = false;
-
-		if ($scope.isAllTypes) {  // this doesn't appear to work!
-			$scope.isActionType = true;
-			$scope.isTreasureType = true;
-			$scope.isVictoryType = true;
-			$scope.isCurseType = true;
-			$scope.isAttackType = true;
-			$scope.isDurationType = true;
-			$scope.isReactionType = true;
-			$scope.isPrizeType = true;
-			$scope.isShelterType = true;
-			$scope.isRuinsType = true;
-			$scope.isLooterType = true;
-			$scope.isKnightType = true;
-			$scope.isReserveType = true;
-			$scope.isTravellerType = true;
-			$scope.isGatheringType = true;
-			$scope.isCastleType = true;
-			$scope.isEventType = true;
-			$scope.isLandmarkType = true;
-		}
-
-		if ($scope.allSets) { // also doesn't work
-			$scope.inBasic = true;
-			$scope.inBaseFirstEd = true;
-			$scope.inBaseSecondEd = true;
-			$scope.inIntrigueFirstEd = true;
-			$scope.inIntrigueSecondEd = true;
-			$scope.inSeaside = true;
-			$scope.inAlchemy = true;
-			$scope.inProsperity = true;
-			$scope.inCornucopia = true;
-			$scope.inHinterlands = true;
-			$scope.inDarkAges = true;
-			$scope.inGuilds = true;
-			$scope.inAdventures = true;
-			$scope.inEmpires = true;
-			$scope.inPromos = true;
-		}
-
-		
-
-		$scope.nameSearch = function(card) {
-			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
-		};
-
-		$scope.costSearch = function(card) {
-			return (card.costInCoins>=$scope.minCoinCost && card.costInPotions>=$scope.minPotionCost && card.costInDebt>=$scope.minDebtCost
-				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
-		};
-
-		// this code doesn't work - checkbox has no effect. Have moved on for now!
-		if ($scope.fixedCost) {
+		// sets max cost equal to minimum, to allow to easily search for cards of a fixed cost
+		$scope.fixedCost = function() {
 			$scope.maxCoinCost = $scope.minCoinCost;
 			$scope.maxPotionCost = $scope.minPotionCost;
 			$scope.maxDebtCost = $scope.minDebtCost;
 		}
 
+		// define behaviour for the "select/deselect all sets" button
+		var selectOrDeselectTypes = true;
+		$scope.typeButtonText = "select";
+
+		$scope.toggleTypes = function() {
+			$scope.isActionType = selectOrDeselectTypes;
+			$scope.isTreasureType = selectOrDeselectTypes;
+			$scope.isVictoryType = selectOrDeselectTypes;
+			$scope.isCurseType = selectOrDeselectTypes;
+			$scope.isAttackType = selectOrDeselectTypes;
+			$scope.isDurationType = selectOrDeselectTypes;
+			$scope.isReactionType = selectOrDeselectTypes;
+			$scope.isPrizeType = selectOrDeselectTypes;
+			$scope.isShelterType = selectOrDeselectTypes;
+			$scope.isRuinsType = selectOrDeselectTypes;
+			$scope.isLooterType = selectOrDeselectTypes;
+			$scope.isKnightType = selectOrDeselectTypes;
+			$scope.isReserveType = selectOrDeselectTypes;
+			$scope.isTravellerType = selectOrDeselectTypes;
+			$scope.isGatheringType = selectOrDeselectTypes;
+			$scope.isCastleType = selectOrDeselectTypes;
+			$scope.isEventType = selectOrDeselectTypes;
+			$scope.isLandmarkType = selectOrDeselectTypes;
+			if (selectOrDeselectTypes) {
+				$scope.typeButtonText = "deselect";
+			}
+			else {
+				$scope.typeButtonText = "select";
+			}
+			selectOrDeselectTypes = !selectOrDeselectTypes;
+		}
+
+		// same for "select/deselect all sets" button
+		var selectOrDeselectSets = true;
+		$scope.setsButtonText = "select";
+		
+		$scope.toggleSets = function() {
+			$scope.inBasic = selectOrDeselectSets;
+			$scope.inBaseFirstEd = selectOrDeselectSets;
+			$scope.inBaseSecondEd = selectOrDeselectSets;
+			$scope.inIntrigueFirstEd = selectOrDeselectSets;
+			$scope.inIntrigueSecondEd = selectOrDeselectSets;
+			$scope.inSeaside = selectOrDeselectSets;
+			$scope.inAlchemy = selectOrDeselectSets;
+			$scope.inProsperity = selectOrDeselectSets;
+			$scope.inCornucopia = selectOrDeselectSets;
+			$scope.inHinterlands = selectOrDeselectSets;
+			$scope.inDarkAges = selectOrDeselectSets;
+			$scope.inGuilds = selectOrDeselectSets;
+			$scope.inAdventures = selectOrDeselectSets;
+			$scope.inEmpires = selectOrDeselectSets;
+			$scope.inPromos = selectOrDeselectSets;
+			if (selectOrDeselectSets) {
+				$scope.setsButtonText = "deselect";
+			}
+			else {
+				$scope.setsButtonText = "select";
+			}
+			selectOrDeselectSets = !selectOrDeselectSets;
+		}
+
+		// returns true when card name contains relevant search text:
+		$scope.nameSearch = function(card) {
+			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
+		};
+
+		// searches for cards with cost in the indicated range
+		// note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work in Dominion
+		// (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable)
+		$scope.costSearch = function(card) {
+			return (card.costInCoins>=$scope.minCoinCost && card.costInPotions>=$scope.minPotionCost && card.costInDebt>=$scope.minDebtCost
+				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
+		};
+
+		
+		/* this search only matches cards with ALL selected types (one might want to search for eg. all Action-Attack cards, 
+		but there is not much use in wanting to see all Action cards AND all Attack cards) */
 		$scope.typesSearch = function(card) {
-			// this search only matches cards with ALL selected types
 			// first make array of the exact types to be included in search
 			var typesList = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins",
 			"Looter", "Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
-			var onlyWantedTypes = [];
+			var desiredTypes = [];
 			for (type in typesList) {
-				if ($scope["is"+typesList[type]+"Type"]) onlyWantedTypes.push(typesList[type]);
+				if ($scope["is"+typesList[type]+"Type"]) desiredTypes.push(typesList[type]);
 			}
 			//remove all cards without all desired types
-			for (type in onlyWantedTypes) {
-				if (card.types.indexOf(onlyWantedTypes[type])==-1) return false;
+			for (type in desiredTypes) {
+				if (card.types.indexOf(desiredTypes[type])==-1) return false;
 			}
 			return true;
 		}
-
+		
+		/* this search should match all cards in ANY of the selected sets. This is to enable users to search just those cards from the sets
+		that they own, or are interested in */
 		$scope.setFilter = function(card) {
-			//this search should match all cards in ANY of the selected sets.
-			// set card to be in "base" set if it is in either first or second edition.
-			// not sure why this logic only works when moved inside the filter function!
+			// set card to be in Base set if it is in either first or second edition
 			$scope.inBase = false;
 			if ($scope.inBaseFirstEd || $scope.inBaseSecondEd) {
 				$scope.inBase = true;
