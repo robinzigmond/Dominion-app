@@ -6,7 +6,8 @@
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{thisCard.name}}</h1>
 			<ul class="list-group">
-				<li class="list-group-item">Cost: {{costString}}</li>
+				<li class="list-group-item">Cost: <cost-display></cost-display> </li>
+				<!-- directive isn't working. The inspector displays the correctly computed attributes on the <cost-display> element, but doesn't appear to use the actual directive! -->
 				<li class="list-group-item">Types: {{thisCard.types.join(", ")}}</li>
 				<!-- working now. For some reason using ng-repeat over "type in thisCard.types" with {{thisCard.types[type]}} didn't display anything-->
 				<li class="list-group-item">Set: {{thisCard.set}}</li>
