@@ -96,7 +96,7 @@ angular.module("RouteControllers", [])
 			return true;
 		}
 
-		$scope.setFilter = function(card) { // problems
+		$scope.setFilter = function(card) {
 			//this search should match all cards in ANY of the selected sets.
 			// set card to be in "base" set if it is in either first or second edition.
 			// not sure why this logic only works when moved inside the filter function!
@@ -155,11 +155,56 @@ angular.module("RouteControllers", [])
 		$http.get("js/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
+				// grab information about selected card and store in thisCard object
 				for (card in $scope.cardList) {
 					if ($scope.cardList[card].name == cardId) {
 						$scope.thisCard = $scope.cardList[card];
 					}
 				}
-				console.log($scope.thisCard);
+				// reformat "set" string to be more easily understood by humans:
+				if ($scope.thisCard.set == "BaseFirstEd") {
+					$scope.thisCard.set = "Base (1st Edition)";
+				}
+				if ($scope.thisCard.set == "BaseSecondEd") {
+					$scope.thisCard.set = "Base (2nd Edition)";
+				}
+				if ($scope.thisCard.set == "IntrigueFirstEd") {
+					$scope.thisCard.set = "Intrigue (1st Edition)";
+				}
+				if ($scope.thisCard.set == "IntrigueSecondEd") {
+					$scope.thisCard.set = "Intrigue (2nd Edition)";
+				}
+				
+				// format nice string for the total cost, leaving out any cost components which have zero value:
+				// (may be wasted effort because I would like to show the cost with appropriate icons in the finished version!)
+				$scope.costString = "";
+				if ($scope.thisCard.costInCoins>0) {
+					$scope.costString+=($scope.thisCard.costInCoins+" coin");
+				}
+				// pluralise the word "coin" if necessary:
+				if ($scope.thisCard.costInCoins>1) {
+					$scope.costString+="s";
+				}
+				// don't forget comma separator if anything will follow in the string!
+				if ($scope.thisCard.costInCoins>0 && ($scope.thisCard.costInPotions>0 || $scope.thisCard.costInDebt>0)) {
+					$scope.costString+=",";
+				}
+				if ($scope.thisCard.costInPotions>0) {
+					$scope.costString+=($scope.thisCard.costInPotions+"potion ,");
+					// no need for any logic to add "s" here, as 1 is maximum potion cost of any card
+				}
+				// comma separator again:
+				if ($scope.thisCard.costInPotions>0 && $scope.thisCard.costInDebt>0) {
+					$scope.costString+=",";
+				}
+				if ($scope.thisCard.costInDebt>0) {
+					$scope.costString+=($scope.thisCard.costInDebt+"debt");
+					/* debt is its own plural (it wouldn't make sense to say "2 debts" - "2 debt tokens" is strictly correct, but "2 debt"
+					makes perfect sense) */
+				}
+				// if string is still emtpy (no cost of any kind: copper or curse), explicitly make the cost string "0 coins"
+				if ($scope.costString == "") {
+					$scope.costString = "0 coins";
+				}
 			});
 	});

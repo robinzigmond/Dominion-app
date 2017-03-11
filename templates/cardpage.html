@@ -1,14 +1,14 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4" >
 			<img src="{{thisCard.imagePath}}" alt={{thisCard.name}}>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{thisCard.name}}</h1>
 			<ul class="list-group">
-				<li class="list-group-item">Cost: <coin{{thisCard.costInCoins}}> <potion{{thisCard.costInPotions}}> <debt{{thisCard.costInDebt}}></li>
-				<li class="list-group-item">Types:<span ng-repeat="type in thisCard.types"> <span>{{thisCard.types[type]}}</span></span></li>
-				<!-- types are not showing for some reason. thisCard.types is what it should be, I don't know why the index is not returning anything-->
+				<li class="list-group-item">Cost: {{costString}}</li>
+				<li class="list-group-item">Types: {{thisCard.types.join(", ")}}</li>
+				<!-- working now. For some reason using ng-repeat over "type in thisCard.types" with {{thisCard.types[type]}} didn't display anything-->
 				<li class="list-group-item">Set: {{thisCard.set}}</li>
 				<li class="list-group-item">Basic effect: {{thisCard.textAboveLine}}</li>
 				<li class="list-group-item">Other effects: {{thisCard.textBelowLine}}</li>
