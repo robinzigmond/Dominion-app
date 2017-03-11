@@ -159,7 +159,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Base",
-	 "textAboveLine": "Gain a card osting up to <coin4>.",
+	 "textAboveLine": "Gain a card costing up to <coin4>.",
 	 "textBelowLine": "",
 	 "imagePath": "/../images/card_images/Workshop.jpg"
 	},

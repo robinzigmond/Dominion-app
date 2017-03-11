@@ -18,5 +18,9 @@ angular.module("DominionApp").config(function($locationProvider, $routeProvider)
 	.when("/contact", {
 		templateUrl: "templates/contact.html",
 		controller: "ContactController"
+	})
+	.when("/cards/:id", {
+		templateUrl: "templates/cardpage.html",
+		controller: "CardController"
 	});
 });

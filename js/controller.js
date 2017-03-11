@@ -147,4 +147,19 @@ angular.module("RouteControllers", [])
 				return (card.textBelowLine.toUpperCase().indexOf($scope.belowLineSearchText.toUpperCase()) != -1);
 			}
 		};
+	})
+	
+	.controller("CardController", function($scope, $http, $routeParams){
+		var cardId = $routeParams.id;
+
+		$http.get("js/cards.json")
+			.then(function(results) {
+				$scope.cardList = results.data;
+				for (card in $scope.cardList) {
+					if ($scope.cardList[card].name == cardId) {
+						$scope.thisCard = $scope.cardList[card];
+					}
+				}
+				console.log($scope.thisCard);
+			});
 	});

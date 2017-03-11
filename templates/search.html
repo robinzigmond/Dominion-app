@@ -137,7 +137,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch" class="search-results">
-				<img src="{{card.imagePath}}" alt="{{card.name}}" />
+				<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" /></a>
 			</div>
 		</div>
 	</div>
