@@ -6,8 +6,8 @@
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{thisCard.name}}</h1>
 			<ul class="list-group">
-				<li class="list-group-item">Cost: <img src="/../images/{{thisCard.costInCoins}}coins.png" alt="{{thisCard.costInCoins}} coins" /> </li>
-				<!-- directive isn't working. The inspector displays the correctly computed attributes on the <cost-display> element, but doesn't appear to use the actual directive! -->
+				<li class="list-group-item">Cost: <span ng-repeat="item in costIconsImagePaths"><img src="{{costIconsImagePaths[item]}}" alt="{{costIconsAltText[item]}}" /></span> </li>
+				<!-- doesn't seem to work, even though the two arrays appear to be behaving as expected. Same problem as previously had with the types display (see below) -->
 				<li class="list-group-item">Types: {{thisCard.types.join(", ")}}</li>
 				<!-- working now. For some reason using ng-repeat over "type in thisCard.types" with {{thisCard.types[type]}} didn't display anything-->
 				<li class="list-group-item">Set: {{thisCard.set}}</li>

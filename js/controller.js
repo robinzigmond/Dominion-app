@@ -203,7 +203,8 @@ angular.module("RouteControllers", [])
 				
 				// format nice string for the total cost, leaving out any cost components which have zero value:
 				// (may be wasted effort because I would like to show the cost with appropriate icons in the finished version!)
-				$scope.costString = "";
+				// commented out in case I need to reuse later!
+				/* $scope.costString = "";
 				if ($scope.thisCard.costInCoins>0) {
 					$scope.costString+=($scope.thisCard.costInCoins+" coin");
 				}
@@ -216,7 +217,7 @@ angular.module("RouteControllers", [])
 					$scope.costString+=",";
 				}
 				if ($scope.thisCard.costInPotions>0) {
-					$scope.costString+=($scope.thisCard.costInPotions+"potion ,");
+					$scope.costString+=($scope.thisCard.costInPotions+"potion,");
 					// no need for any logic to add "s" here, as 1 is maximum potion cost of any card
 				}
 				// comma separator again:
@@ -227,10 +228,31 @@ angular.module("RouteControllers", [])
 					$scope.costString+=($scope.thisCard.costInDebt+"debt");
 					/* debt is its own plural (it wouldn't make sense to say "2 debts" - "2 debt tokens" is strictly correct, but "2 debt"
 					makes perfect sense) */
-				}
-				// if string is still emtpy (no cost of any kind: copper or curse), explicitly make the cost string "0 coins"
+				/* }
+				// if string is still emtpy (no cost of any kind: eg. copper or curse), explicitly make the cost string "0 coins"
 				if ($scope.costString == "") {
 					$scope.costString = "0 coins";
+				} */
+
+				// now try to define image attributes using a similar logic. Need up to 3 separate icons, each with alt text:
+				// best to store all these in 2 separate arrays:
+				$scope.costIconsImagePaths = [];
+				$scope.costIconsAltText = [];
+				// coin icon needed if either coin cost is >0 or total cost is zero (copper, curse etc.)
+				if ($scope.thisCard.costInCoins>0 || ($scope.thisCard.costinPotions==0 && $scope.thisCard.costinDebt==0)) {
+					$scope.costIconsImagePaths.push("/../images/"+$scope.thisCard.costInCoins+"coins.png");
+					$scope.costIconsAltText.push($scope.thisCard.costInCoins+" coins");
 				}
+				//potion and debt icons only needed if that component of the cost is >0. No more than 1 potion is ever in the cost.
+				if ($scope.thisCard.costInPotions>0) {
+					$scope.costIconsImagePaths.push("/../images/potion.png");
+					$scope.costIconsAltText.push("potion");
+				}
+				if ($scope.thisCard.costInDebt>0) {
+					$scope.costIconsImagePaths.push("/../images/"+$scope.thisCard.costInDebt+"debt.png");
+					$scope.costIconsAltText.push($scope.thisCard.costInDebt+"debt");
+				}
+				console.log($scope.costIconsImagePaths);
+				console.log($scope.costIconsAltText);
 			});
 	});
