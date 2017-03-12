@@ -32,12 +32,19 @@ label.form-subtitle {
     margin-top: 5px;
 }
 
+/* need to separate the various sections on search form - and trying for a nice background effect */
+.form-group {
+    padding: 5px;
+    border: 1px solid black;
+}
+
 /* card search results need to be in grid format */
 .search-results {
     display: inline-block;
     padding: 5px;
 }
 
+/* card image on card pages: centre horizontally, and push down from top of page */
 .single-card {
     display: block;
     margin-left: auto;

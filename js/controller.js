@@ -23,6 +23,11 @@ angular.module("RouteControllers", [])
 		$scope.maxPotionCost = "0";
 		$scope.maxDebtCost = "0";
 
+		// reset name search text when button is clicked
+		$scope.clearNameSearch = function () {
+			$scope.nameSearchText = "";
+		}
+
 		// sets max cost equal to minimum, to allow to easily search for cards of a fixed cost
 		$scope.fixedCost = function() {
 			$scope.maxCoinCost = $scope.minCoinCost;
@@ -30,39 +35,29 @@ angular.module("RouteControllers", [])
 			$scope.maxDebtCost = $scope.minDebtCost;
 		}
 
-		// define behaviour for the "select/deselect all types" button
-		var selectOrDeselectTypes = true;
-		$scope.typeButtonText = "select";
-
-		$scope.toggleTypes = function() {
-			$scope.isActionType = selectOrDeselectTypes;
-			$scope.isTreasureType = selectOrDeselectTypes;
-			$scope.isVictoryType = selectOrDeselectTypes;
-			$scope.isCurseType = selectOrDeselectTypes;
-			$scope.isAttackType = selectOrDeselectTypes;
-			$scope.isDurationType = selectOrDeselectTypes;
-			$scope.isReactionType = selectOrDeselectTypes;
-			$scope.isPrizeType = selectOrDeselectTypes;
-			$scope.isShelterType = selectOrDeselectTypes;
-			$scope.isRuinsType = selectOrDeselectTypes;
-			$scope.isLooterType = selectOrDeselectTypes;
-			$scope.isKnightType = selectOrDeselectTypes;
-			$scope.isReserveType = selectOrDeselectTypes;
-			$scope.isTravellerType = selectOrDeselectTypes;
-			$scope.isGatheringType = selectOrDeselectTypes;
-			$scope.isCastleType = selectOrDeselectTypes;
-			$scope.isEventType = selectOrDeselectTypes;
-			$scope.isLandmarkType = selectOrDeselectTypes;
-			if (selectOrDeselectTypes) {
-				$scope.typeButtonText = "deselect";
-			}
-			else {
-				$scope.typeButtonText = "select";
-			}
-			selectOrDeselectTypes = !selectOrDeselectTypes;
+		// define behaviour for the "clear all types" button
+		$scope.clearTypes = function() {
+			$scope.isActionType = false;
+			$scope.isTreasureType = false;
+			$scope.isVictoryType = false;
+			$scope.isCurseType = false;
+			$scope.isAttackType = false;
+			$scope.isDurationType = false;
+			$scope.isReactionType = false;
+			$scope.isPrizeType = false;
+			$scope.isShelterType = false;
+			$scope.isRuinsType = false;
+			$scope.isLooterType = false;
+			$scope.isKnightType = false;
+			$scope.isReserveType = false;
+			$scope.isTravellerType = false;
+			$scope.isGatheringType = false;
+			$scope.isCastleType = false;
+			$scope.isEventType = false;
+			$scope.isLandmarkType = false;
 		}
 
-		// same for "select/deselect all sets" button
+		// define behaviour for "select/deselect all sets" button
 		var selectOrDeselectSets = true;
 		$scope.setsButtonText = "select";
 		
@@ -89,6 +84,12 @@ angular.module("RouteControllers", [])
 				$scope.setsButtonText = "select";
 			}
 			selectOrDeselectSets = !selectOrDeselectSets;
+		}
+
+		// reset card search texts when button is clicked
+		$scope.clearTextSearch = function () {
+			$scope.aboveLineSearchText = "";
+			$scope.belowLineSearchText = "";
 		}
 
 		// returns true when card name contains relevant search text:
