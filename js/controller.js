@@ -4,7 +4,7 @@ angular.module("RouteControllers", [])
 	})
 
 	.controller("SearchController", function($scope, $http) {
-		// get card database and give the scope access tp it
+		// get card database and give the scope access to it
 		$http.get("js/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
@@ -30,7 +30,7 @@ angular.module("RouteControllers", [])
 			$scope.maxDebtCost = $scope.minDebtCost;
 		}
 
-		// define behaviour for the "select/deselect all sets" button
+		// define behaviour for the "select/deselect all types" button
 		var selectOrDeselectTypes = true;
 		$scope.typeButtonText = "select";
 
