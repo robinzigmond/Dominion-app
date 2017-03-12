@@ -1,6 +1,7 @@
-/* correct padding for vertical navigation on small screens */
+/* give space for navbar on top. Text at top gets hidden by vertical navbar on small screens, b
+ut it starts collapsed so I think this is OK */
 body {
-	padding-top: 230px;
+	padding-top: 70px;
 }
 
 /* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
@@ -37,9 +38,9 @@ label.form-subtitle {
     padding: 5px;
 }
 
-/* correct padding for horizontal navbar on tablets and desktops */
-@media (min-width: 768px) {
-	body {
-		padding-top: 70px;
-	}
+.single-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }
