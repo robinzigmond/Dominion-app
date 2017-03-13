@@ -4,6 +4,11 @@
 		<div class="col-xs-12 col-sm-6 col-md-4"> 
 			<form>
 				<div class="form-group">
+					<label class="control-label">Order search results by:</label>
+					<label class="radio-inline"><input type="radio" name="name" ng-model="orderProp" value="name"/>Name</label>
+					<label class="radio-inline"><input type="radio" name="cost" ng-model="orderProp" value="cost"/>Cost</label>
+				</div>
+				<div class="form-group">
 					<label class="control-label" for="name-search">Card Name:</label>
 					<input type="text" class="form-control input-sm" id="name-search" ng-model="nameSearchText"/>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
@@ -75,7 +80,7 @@
 						<option>7</option>
 						<option>8</option>
 					</select>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum cost equal to minimum cost</button>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum equal to minimum</button>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" >Types:</label> 
@@ -135,7 +140,7 @@
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
-			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch" class="search-results">
+			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: orderProp" class="search-results">
 				<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" /></a>
 			</div>
 		</div>

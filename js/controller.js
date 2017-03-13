@@ -8,9 +8,19 @@ angular.module("RouteControllers", [])
 		$http.get("js/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
+				// create a "cost" property for ordering purposes, which orders by coin cost, followed by potion cost, then Debt cost.
+				// this is by no means a "canonical" order, but seems as good as anything as an arbitrary choice
+				for (card in $scope.cardList) {
+					$scope.cardList[card].cost = 100*$scope.cardList[card].costInCoins + 10*$scope.cardList[card].costInPotions 
+					+ $scope.cardList[card].costInDebt;
+				}
 			});
 
 		// set initial search values
+
+		// order cards by name initially
+		$scope.orderProp = "name";
+
 		// text searches have to be empty string to always find every card (in case the user is searching by other criteria)
 		$scope.nameSearchText = "";
 		$scope.aboveLineSearchText = "";
