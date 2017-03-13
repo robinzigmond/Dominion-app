@@ -1,4 +1,4 @@
-angular.module("DominionApp", ["ngRoute", "RouteControllers"]);
+angular.module("DominionApp", ["ngRoute", "RouteControllers", "angular-storage"]);
 
 angular.module("DominionApp").config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true); //Enable href routing without hashes

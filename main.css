@@ -21,18 +21,13 @@ label.form-subtitle {
 	margin-left: 0px;    		
 }
 
-/* give space for "select all" checkbox in "types" section */
-#select-all-types, #select-all-sets {
-    margin-left: 5px;
-}
-
 /* give search form buttons their own line and sufficient space above */
 .search-form-button {
     display: block;
     margin-top: 5px;
 }
 
-/* need to separate the various sections on search form - and trying for a nice background effect */
+/* need to separate the various sections on search form */
 .form-group {
     padding: 5px;
     border: 1px solid black;

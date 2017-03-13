@@ -3,7 +3,7 @@ angular.module("RouteControllers", [])
 		
 	})
 
-	.controller("SearchController", function($scope, $http) {
+	.controller("SearchController", function($scope, $http, store) {
 		// get card database and give the scope access to it
 		$http.get("js/cards.json")
 			.then(function(results) {
@@ -16,22 +16,67 @@ angular.module("RouteControllers", [])
 				}
 			});
 
-		// set initial search values
+		// get search parameters from local storage, if any data is saved - otherwise set default search values
+
+		// THIS FUNCTIONALITY IS NOT WORKING AT THE MOMENT!
+		// It appears that, when returning to the search page, the store values are being overwritten by the newly-reset $scope properties, 
+		// before those $scope properties can be set equal to the store values. I have tried re-arranging the order of the code to avoid this,
+		// but so far with no success.
 
 		// order cards by name initially
-		$scope.orderProp = "name";
+		$scope.orderProp = store.orderProp || "name";
 
 		// text searches have to be empty string to always find every card (in case the user is searching by other criteria)
-		$scope.nameSearchText = "";
-		$scope.aboveLineSearchText = "";
-		$scope.belowLineSearchText = "";
+		$scope.nameSearchText = store.nameSearchText || "";
+		$scope.aboveLineSearchText = store.aboveLineSearchText || "";
+		$scope.belowLineSearchText = store. belowLineSearchText || "";
 
-		$scope.minCoinCost = "0";
-		$scope.minPotionCost = "0";
-		$scope.minDebtCost = "0";
-		$scope.maxCoinCost = "11";
-		$scope.maxPotionCost = "0";
-		$scope.maxDebtCost = "0";
+		$scope.minCoinCost = store.minCoinCost || "0";
+		$scope.minPotionCost = store.minPotionCost || "0";
+		$scope.minDebtCost = store.minDebtCost || "0";
+		$scope.maxCoinCost = store.maxCoinCost || "11";
+		$scope.maxPotionCost = store.maxPotionCost || "0";
+		$scope.maxDebtCost = store.maxDebtCost || "0";
+
+		$scope.isActionType = store.isActionType;
+		$scope.isTreasureType = store.isTreasureType;
+		$scope.isVictoryType = store.isVictoryType;
+		$scope.isCurseType = store.isCurseType;
+		$scope.isAttackType = store.isAttackType;
+		$scope.isDurationType = store.isDurationType;
+		$scope.isReactionType = store.isReactionType;
+		$scope.isPrizeType = store.isPrizeType;
+		$scope.isShelterType = store.isShelterType;
+		$scope.isRuinsType = store.isRuinsType;
+		$scope.isLooterType = store.isLooterType;
+		$scope.isKnightType = store.isKnightType;
+		$scope.isReserveType = store.isReserveType;
+		$scope.isTravellerType = store.isTravellerType;
+		$scope.isGatheringype = store.isGatheringType;
+		$scope.isCastleType = store.isCastleType;
+		$scope.isEventType = store.isEventType;
+		$scope.isLandmarkType = store.isLandmarkType;
+
+		$scope.inBasic = store.inBasic;
+		$scope.inBase = store.inBase;
+		$scope.inBaseFirstEd = store.inBaseFirstEd;
+		$scope.inBaseSecondEd = store.inBaseSecondEd;
+		$scope.inIntrigue = store.inIntrigue;
+		$scope.inIntrigueFirstEd = store.inIntrigueFirstEd;
+		$scope.inIntrigueSecondEd = store.inIntrigueSecondEd;
+		$scope.inSeaside = store.inSeaside;
+		$scope.inAlchemy = store.inAlchemy;
+		$scope.inProsperity = store.inProsperity;
+		$scope.inCornucopia = store.inCornucopia;
+		$scope.inHinterlands = store.inHinterlands;
+		$scope.inDarkAges = store.inDarkAges;
+		$scope.inGuilds = store.inGuilds;
+		$scope.inAdventures = store.inAdventures;
+		$scope.inEmpires = store.inEmpires;
+
+		// need to make sure store values are constantly kept up-to-date with the corresponding $scope properties.
+		// should be able to do this by putting the updates inside the search functions, as these should automatically rerun whenever the
+		// relevant data is changed:
 
 		// reset name search text when button is clicked
 		$scope.clearNameSearch = function () {
@@ -104,6 +149,7 @@ angular.module("RouteControllers", [])
 
 		// returns true when card name contains relevant search text:
 		$scope.nameSearch = function(card) {
+			store.set("nameSearchText", $scope.nameSearchText);
 			return (card.name.toUpperCase().indexOf($scope.nameSearchText.toUpperCase()) != -1);
 		};
 
@@ -111,6 +157,13 @@ angular.module("RouteControllers", [])
 		// note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work in Dominion
 		// (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable)
 		$scope.costSearch = function(card) {
+			store.set("minCoinCost", $scope.minCoinCost);
+			store.set("minPotionCost", $scope.minPotionCost);
+			store.set("minDebtCost", $scope.minDebtCost);
+			store.set("maxCoinCost", $scope.maxCoinCost);
+			store.set("maxPotionCost", $scope.maxPotionCost);
+			store.set("maxDebtCost", $scope.maxDebtCost);
+			
 			return (card.costInCoins>=$scope.minCoinCost && card.costInPotions>=$scope.minPotionCost && card.costInDebt>=$scope.minDebtCost
 				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
 		};
@@ -119,6 +172,24 @@ angular.module("RouteControllers", [])
 		/* this search only matches cards with ALL selected types (one might want to search for eg. all Action-Attack cards, 
 		but there is not much use in wanting to see all Action cards AND all Attack cards) */
 		$scope.typesSearch = function(card) {
+			store.set("isActionType", $scope.isActionType);
+			store.set("isTreasureType", $scope.isTreasureType);
+			store.set("isVictoryType", $scope.isVictoryType);
+			store.set("isCurseType", $scope.isCurseType);
+			store.set("isAttackType", $scope.isAttackType);
+			store.set("isDurationType", $scope.isDurationType);
+			store.set("isReactionType", $scope.isReactionType);
+			store.set("isPrizeType", $scope.isPrizeType);
+			store.set("isShelterType", $scope.isShelterType);
+			store.set("isRuinsType", $scope.isRuinsType);
+			store.set("isLooterType", $scope.isLooterType);
+			store.set("isKnightType", $scope.isKnightType);
+			store.set("isReserveType", $scope.isReserveType);
+			store.set("isTravellerType", $scope.isTravellerType);
+			store.set("isGatheringType", $scope.isGatheringType);
+			store.set("isCastleType", $scope.isCastleType);
+			store.set("isEventType", $scope.isEventType);
+			store.set("isLandmarkType", $scope.isLandmarkType);
 			// first make array of the exact types to be included in search
 			var typesList = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins",
 			"Looter", "Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
@@ -147,6 +218,23 @@ angular.module("RouteControllers", [])
 			if ($scope.inIntrigueFirstEd || $scope.inIntrigueSecondEd) {
 				$scope.inIntrigue = true;
 			}
+
+			store.set("inBasic", $scope.inBasic);
+			store.set("inBase", $scope.inBase);
+			store.set("inBaseFirstEd", $scope.inBaseFirstEd);
+			store.set("inBaseSecondEd", $scope.inBaseSecondEd);
+			store.set("inIntrigue", $scope.inIntrigue);
+			store.set("inIntrigueFirstEd", $scope.inIntrigueFirstEd);
+			store.set("inIntrigueSecondEd", $scope.inIntrigueSecondEd);
+			store.set("inSeaside", $scope.inSeaside);
+			store.set("inAlchemy", $scope.inAlchemy);
+			store.set("inProsperity", $scope.inProsperity);
+			store.set("inCornucopia", $scope.inCornucopia);
+			store.set("inHinterlands", $scope.inHinterlands);
+			store.set("inDarkAges", $scope.inDarkAges);
+			store.set("inGuilds", $scope.inGuilds);
+			store.set("inAdventures", $scope.inAdventures);
+			store.set("inEmpires", $scope.inEmpires);
 				
 			return $scope["in"+card.set];		
 		} 
@@ -157,8 +245,13 @@ angular.module("RouteControllers", [])
 		This allows users to search either one part of the card text, or the card as a whole */
 
 		$scope.textAboveSearch = function(card) {
+
+			store.set("aboveLineSearchText", $scope.aboveLineSearchText);
+			store.set("belowLineSearchText", $scope.belowLineSearchText);
+
 			/* if checkbox is ticked, search whole card text for content of first or second input box. 
 			Card gets returned if matches are found for both. */
+
 			if ($scope.allTextSearch) {
 				return (((card.textAboveLine.toUpperCase().indexOf($scope.aboveLineSearchText.toUpperCase()) != -1) || 
 					(card.textBelowLine.toUpperCase().indexOf($scope.aboveLineSearchText.toUpperCase()) != -1)) && 
@@ -172,6 +265,10 @@ angular.module("RouteControllers", [])
 		};
 
 		$scope.textBelowSearch = function(card) {
+
+			store.set("aboveLineSearchText", $scope.aboveLineSearchText);
+			store.set("belowLineSearchText", $scope.belowLineSearchText);
+
 			/* first part is identical to function above. This gives the ability to search for both of two separate text strings. */
 			if ($scope.allTextSearch) {
 				return (((card.textAboveLine.toUpperCase().indexOf($scope.aboveLineSearchText.toUpperCase()) != -1) || 
@@ -228,7 +325,7 @@ angular.module("RouteControllers", [])
 					$scope.costString+=",";
 				}
 				if ($scope.thisCard.costInPotions>0) {
-					$scope.costString+=($scope.thisCard.costInPotions+"potion,");
+					$scope.costString+=($scope.thisCard.costInPotions+" potion,");
 					// no need for any logic to add "s" here, as 1 is maximum potion cost of any card
 				}
 				// comma separator again:
@@ -236,7 +333,7 @@ angular.module("RouteControllers", [])
 					$scope.costString+=",";
 				}
 				if ($scope.thisCard.costInDebt>0) {
-					$scope.costString+=($scope.thisCard.costInDebt+"debt");
+					$scope.costString+=($scope.thisCard.costInDebt+" debt");
 					/* debt is its own plural (it wouldn't make sense to say "2 debts" - "2 debt tokens" is strictly correct, but "2 debt"
 					makes perfect sense) */
 				/* }
