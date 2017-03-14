@@ -35,8 +35,8 @@ angular.module("RouteControllers", [])
 		$scope.minPotionCost = store.minPotionCost || "0";
 		$scope.minDebtCost = store.minDebtCost || "0";
 		$scope.maxCoinCost = store.maxCoinCost || "11";
-		$scope.maxPotionCost = store.maxPotionCost || "0";
-		$scope.maxDebtCost = store.maxDebtCost || "0";
+		$scope.maxPotionCost = store.maxPotionCost || "1";
+		$scope.maxDebtCost = store.maxDebtCost || "8";
 
 		$scope.isActionType = store.isActionType;
 		$scope.isTreasureType = store.isTreasureType;
@@ -163,7 +163,7 @@ angular.module("RouteControllers", [])
 			store.set("maxCoinCost", $scope.maxCoinCost);
 			store.set("maxPotionCost", $scope.maxPotionCost);
 			store.set("maxDebtCost", $scope.maxDebtCost);
-			
+
 			return (card.costInCoins>=$scope.minCoinCost && card.costInPotions>=$scope.minPotionCost && card.costInDebt>=$scope.minDebtCost
 				&& card.costInCoins<=$scope.maxCoinCost && card.costInPotions<=$scope.maxPotionCost && card.costInDebt<=$scope.maxDebtCost);
 		};
