@@ -3,7 +3,7 @@
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{::thisCard.name}}</h1>
 			<ul class="list-group">
-				<li class="list-group-item">Cost: <span ng-repeat="item in costIconsImagePaths"><img src="{{::costIconsImagePaths[item]}}" alt="{{::costIconsAltText[item]}}" /></span> </li>
+				<li class="list-group-item">Cost: <img ng-repeat="item in costIcons" src="{{::item.path}}" alt="{{::item.text}}" /> </li>
 				<!-- doesn't seem to work, even though the two arrays appear to be behaving as expected. Same problem as previously had with the types display (see below) -->
 				<li class="list-group-item">Type(s): {{::thisCard.types.join(", ")}}</li>
 				<!-- working now. For some reason using ng-repeat over "type in thisCard.types" with {{thisCard.types[type]}} didn't display anything-->
@@ -11,7 +11,7 @@
 				<li class="list-group-item">Basic effect: {{::thisCard.textAboveLine}}</li>
 				<li class="list-group-item">Other effects: {{::thisCard.textBelowLine}}</li>
 			</ul>
-			<p>{{thisCard.discussion}}</p>
+			<p>{{::thisCard.discussion}}</p>
 			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">

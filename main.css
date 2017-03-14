@@ -39,6 +39,12 @@ label.form-subtitle {
     padding: 5px;
 }
 
+/* get both columns on search page to scroll separately */
+.separate-scroll {
+    overflow: scroll;
+    height: 90vh;
+}
+
 /* card image on card pages: centre horizontally, and push down from top of page */
 .single-card {
     display: block;

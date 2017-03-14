@@ -7,7 +7,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "1 coin",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Copper.jpg",
+	 "imagePath": "images/card_images/Copper.jpg",
 	 "discussion": "The weakest of the basic Treasure cards - and among the weakest cards in the game. Trashing coppers is essential to most engine strategies - but coppers are valuable in some unusual situations, such as when you are going for some alt-VP cards.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Copper" 
 	},
@@ -20,7 +20,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "2 coins",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Silver.jpg",
+	 "imagePath": "images/card_images/Silver.jpg",
 	 "discussion": "Usually a solid choice to buy with 3 or 4 coins, gaining a Silver in the early game will always increase your buying power. But Silvers are not amazing, and getting too many will hurt your deck if you are trying to set up an explosive action-based engine.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Silver" 
 	},
@@ -33,7 +33,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "3 coins",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Gold.jpg",
+	 "imagePath": "images/card_images/Gold.jpg",
 	 "discussion": "As the highest-value Treasure card which is always in the game, Gold is a cornerstone of most money-based strategies. Even engine strategies usually need a few Golds if there is no good source of money from Actions. But Gold, like all Treasure cards, does not help you draw your deck, so in an engine strategy you will often prefer strong Action cards.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Gold"
 	},
@@ -46,7 +46,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "1VP",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Estate.jpg",
+	 "imagePath": "images/card_images/Estate.jpg",
 	 "discussion": "Most notable for being the card which you have 3 of in your starting deck and which provides absolutely no value at all, Estates are a prime target for trashing in the early game. But they are worth 1VP each, so spending 2 coins on one of these late in the game is something worth considering with a poor hand.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Estate"
 	},
@@ -59,7 +59,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "3VP",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Duchy.jpg",
+	 "imagePath": "images/card_images/Duchy.jpg",
 	 "discussion": "A common buy in the endgame when you need VPs but can't afford a Province (and sometimes even when you can, due to the rules determining the end the game). But weak in the early game, due to costing 5 and doing nothing until the game is over. Judging when to switch to buying Duchies instead of engine components can be a very tricky decision.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Duchy"
 	},
@@ -72,7 +72,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "6VP",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Province.jpg",
+	 "imagePath": "images/card_images/Province.jpg",
 	 "discussion": "The highest value Victory card in the majority of games. Most games essentially come down to which player can gain the most Provinces in the least time.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Province"
 	},
@@ -85,7 +85,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "-1VP",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Curse.jpg",
+	 "imagePath": "images/card_images/Curse.jpg",
 	 "discussion": "Without question the worst card in the game, Curses clog up your deck just like Victory cards - but instead of adding to your final score, they subtract from it! Curses usually only come into play from those cards which make your opponents gain them (a very powerful attack) - but they are available in every game, and in certain rare circumstances it can be beneficial to choose to gain one yourself.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Curse"
 	},
@@ -98,7 +98,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+1 Action. Discard any number of cards, then draw that many.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Cellar.jpg",
+	 "imagePath": "images/card_images/Cellar.jpg",
 	 "discussion": "Like most 2-cost Action cards, Cellars are generally useful cards which you are often happy to add to your deck. They allow you to discard bad cards from your hand in the hope of drawing better ones. However each Cellar played does cost you a card in hand, so you generally don't want to play too many. And in a high-quality deck with few bad cards, Cellars do more harm than good.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Cellar"
 	},
@@ -111,7 +111,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Trash up to 4 cards from your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Chapel.jpg",
+	 "imagePath": "images/card_images/Chapel.jpg",
 	 "discussion": "Often considered the best card in the game, and with good reason. No other card allows you to trash so many of your starting cards so quickly, making Chapel an enabler of some ridiculous engine or combo decks. But it only helps to set up these decks: it is never itself a main component of your final deck. So if the other Kingdom cards are not friendly for an engine strategy, Chapel can usually be safely ignored.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Chapel"
 	},
@@ -124,7 +124,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+2 Cards",
 	 "textBelowLine": "When another player plays an Attack card, you may first reveal this from your hand, to be unaffected by it.",
-	 "imagePath": "/../images/card_images/Moat.jpg",
+	 "imagePath": "images/card_images/Moat.jpg",
 	 "discussion": "Despite its very attractive ability to allow you to be unaffected by any Attack card player by your opponents, Moat tends to not be very effective at blocking Attacks. You don't want to buy too many because having lots of terminal draw cards in your deck leads to poor turns - but if you only have a few then the odds of having a Moat in your 5-card hand when an Attack is played are low. And many attacks have better, if more subtle, counters in any case. Moat is best in thin engine decks where you can get good value out of its card draw - and then the blocking of some Attacks is a very nice bonus.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Moat"
 	},
@@ -137,7 +137,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "+1 Card +1 Action. Look through your discard pile. You may put a card from it onto your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Harbinger.jpg",
+	 "imagePath": "images/card_images/Harbinger.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016, Harbinger is a cantrip which allows you to put a card from your discard pile on top of your deck - thereby setting up your next turn, or making sure you draw the right thing this turn if you have some card draw in hand. It is obviously not a card you like to draw when you have just reshuffled!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Harbinger"
 	},
@@ -150,7 +150,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "+1 Card +1 Action. The first time you play a Silver this turn, +1 coin.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Merchant.jpg",
+	 "imagePath": "images/card_images/Merchant.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016, Merchant is a simple cantrip which essentially makes the first Silver you play that turn worth 3 coins instead of 2. This is an unexciting ability, but if you are likely to draw Silvers then Merchant is definitely worth considering.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Merchant"
 	},
@@ -163,7 +163,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "+2 coins. Discard the top card of your deck. If it's an Action card, you may play it.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Vassal.jpg",
+	 "imagePath": "images/card_images/Vassal.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016, Vassal is a card which clearly rewards having many Action cards in your deck - attempting to correct a common criticism of the original base set, that it favoured money strategies over action-based engines. Vassal is reminiscent of Conspirator, being cheaper and easier to set up, but less consistent in getting its bonus.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Vassal"
 	},
@@ -176,7 +176,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+1 Card +2 Actions",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Village.jpg",
+	 "imagePath": "images/card_images/Village.jpg",
 	 "discussion": "A favourite card of many beginners - 'village idiot' being a common tongue-in-cheek term for poor players who buy too many Villages (or action cards in general) and fail to make proper use of them. Village clearly does no good unless you use both of its +2 actions - but these additional actions are absolutely key to almost any engine strategy which aims to play lots of action cards each turn. There are many other +2 Actions cards in later sets, and most have 'village' in the name - so 'village' is also used as a general term for almost any card granting +2 Actions.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Village"
 	},
@@ -189,7 +189,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Gain a card costing up to 4 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Workshop.jpg",
+	 "imagePath": "images/card_images/Workshop.jpg",
 	 "discussion": "The simplest of several cards which allow you to gain other (usually cheap) cards directly, without using up a buy. Workshop forms a notable combo with Gardens within the base set - and is also useful as a way of getting lots of cheap engine components quickly. But if the game is likely to be over in a hurry, or if there are no cheap cards worth having many of, Workshop is best ignored.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Workshop"
 	},
@@ -202,7 +202,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Gain a Silver onto your deck. Each other player reveals a Victory card from their hand and puts it onto their deck (or reveals a hand with no Victory cards).",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Bureaucrat.jpg",
+	 "imagePath": "images/card_images/Bureaucrat.jpg",
 	 "discussion": "Generally a weak card, Bureaucrat is best viewed as a way to get a lot of Silvers in the long run. The effect on the opponents is highly situational - it can be crippling, but more often has little or no effect. Bureaucrat shines most in alt-VP games, and is otherwise rarely worth buying.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bureaucrat"
 	},
@@ -215,7 +215,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Worth 1VP per 10 cards you have (round down).",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Gardens.jpg",
+	 "imagePath": "images/card_images/Gardens.jpg",
 	 "discussion": "The first alt-VP card released. Like all alt-VP cards, Gardens can considerably warp the game by its presence, as a cheap source of potentially many VPs. You can embark on a rush strategy (best with a gainer such as Workshop or, better, Ironworks) to empty Gardens and 2 other piles and end the game quickly with a lead - or work on extending the length of the game while you buy lots of Gardens and inflate your deck size, ideally adding 2-3 cards to your deck each turn. But these strategies are rarely dominating, and can lose to other powerful decks. Gardens is always worth considering in the endgame, being 1 coin cheaper than Duchy and often worth the same amount of VP.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Gardens"
 	},
@@ -228,7 +228,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+2 coins. Each other player discards down to 3 cards in hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Militia.jpg",
+	 "imagePath": "images/card_images/Militia.jpg",
 	 "discussion": "Although by no means game-warpingly strong, Militia is one of the key cards of the Base set. Its presence is one of the biggest indicators for engine strategies: money strategies are hit hard by having to reduce to a 3-card hand, while engines can usually get started just as well from the best 3 of 5 as from all 5. And an engine deck can potentially allow a single Militia to be played every turn.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Militia"
 	},
@@ -241,7 +241,7 @@
 	 "set": "Base",
 	 "textAboveLine": "You may trash a Copper from your hand for +3 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Moneylender.jpg",
+	 "imagePath": "images/card_images/Moneylender.jpg",
 	 "discussion": "As a way to trash your coppers without sacrificing spending power, Moneylender is a fine card to open with, especially if aiming for an engine strategy. But it is no substitute for fast trashers like Chapel, and (like Chapel) is almost never worth buying after the first 2 turns.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Moneylender"
 	},
@@ -254,7 +254,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "+1 Card +1 Action +1 coin. Discard a card per empty Supply pile.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Poacher.jpg",
+	 "imagePath": "images/card_images/Poacher.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016, Poacher is a simple, solid and unspectacular card which happens to get worse later in the game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Poacher"
 	},
@@ -267,7 +267,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to 2 coins more than it.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Remodel.jpg",
+	 "imagePath": "images/card_images/Remodel.jpg",
 	 "discussion": "A way to transform your weak cards into decent ones, and your good cards into better ones. This stepwise improvement can be slow, but it has a variety of subtle uses - you never see Remodel dominating a game, but it has a lot of utility.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Remodel"
 	},
@@ -280,7 +280,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+3 Cards",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Smithy.jpg",
+	 "imagePath": "images/card_images/Smithy.jpg",
 	 "discussion": "The most basic of all terminal draw cards. Like all such cards, it has two main uses: as a decent enabler for money strategies if you buy no other actions, or as a main component of an engine deck when combined with plenty of villages.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Smithy"
 	},
@@ -293,7 +293,7 @@
 	 "set": "Base",
 	 "textAboveLine": "You may play an Action card from your hand twice.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Throne_Room.jpg",
+	 "imagePath": "images/card_images/Throne_Room.jpg",
 	 "discussion": "The weaker younger brother of King's Court, Throne Room still packs plenty of punch in an action-heavy deck. Playing Throne Room on another Throne Room, with other actions in hand, can lead to explosive turns. But the card is obviously heavily reliant on being drawn in the same hand as other good action cards, making it useless in many games and a somewhat risky purchase even in its best situations.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Throne_Room"
 	},
@@ -306,7 +306,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Bandit.jpg",
+	 "imagePath": "images/card_images/Bandit.jpg",
 	 "discussion": "Bandit is one of the cards added for the second edition of the base set in 2016, and is a direct replacement for the removed card Thief. While Thief often gave no benefit to the player using it, while helping the opponents by trashing their copper, Bandit never does the latter and always gains the player a Gold. It is now both a good enabler of, and a counter to, money strategies, and has joined the elite rank of Action cards costing 5 coins or more.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bandit"
 	},
@@ -319,7 +319,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+4 Cards +1 Buy. Each other player draws a card.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Council_Room.jpg",
+	 "imagePath": "images/card_images/Council_Room.jpg",
 	 "discussion": "One of the most powerful terminal draw cards in the game, Council Room balances its huge benefit to the player using it with a very nice one to the other players. Usually it is not a good buy early in the game, but has potential to lead to explosive turns later on. And if it is used in an engine with a discard attack like Militia, the benefit to the opponents is to a large extent negated.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Council_Room"
 	},
@@ -332,7 +332,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+2 Actions +1 Buy +2 coins",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Festival.jpg",
+	 "imagePath": "images/card_images/Festival.jpg",
 	 "discussion": "A great general-purpose engine card - all it lacks is card draw. This makes it great in combination with cards which prefer low handsizes, such as Library - but otherwise a good source of draw is needed to build reliable engines with Festival.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Festival"
 	},
@@ -345,7 +345,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+2 Cards +1 Action",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Laboratory.jpg",
+	 "imagePath": "images/card_images/Laboratory.jpg",
 	 "discussion": "Laboratory is one of the cornerstones of the game, offering non-terminal handsize increase. It isn't a strategy in itself, and it has competition from later variants like Alchemist, Hunting Party and Stables - but it is rare to ignore Labs when they are available.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Laboratory"
 	},
@@ -358,7 +358,7 @@
 	 "set": "Base",
 	 "textAboveLine": "Draw until you have 7 cards in hand, skipping any Action cards you choose to; set those aside, discarding them afterwards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Library.jpg",
+	 "imagePath": "images/card_images/Library.jpg",
 	 "discussion": "One of the more unusual cards in the base set, Library is a terminal draw card that has a marked preference for being played from a small hand. This makes it a great counter to discard attacks, and a powerful combo with the many cards which decrease your own handsize for some benefit.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Library"
 	},
@@ -371,7 +371,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+1 Card +1 Action +1 Buy +1 coin",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Market.jpg",
+	 "imagePath": "images/card_images/Market.jpg",
 	 "discussion": "Usually one of the weaker 5-coin actions in the game, because although +1 buy is incredibly useful, the other effects are relatively weak, and you usually can't make use of more than 2 total buys, so chaining Markets together is of limited benefit. Despite this, it is often worth picking up 1 or 2 Markets in the midgame - and it is devastating in combination with Highway.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Market"
 	},
@@ -384,7 +384,7 @@
 	 "set": "Base",
 	 "textAboveLine": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to 3 coins more than it.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Mine.jpg",
+	 "imagePath": "images/card_images/Mine.jpg",
 	 "discussion": "Mine is among the most niche of the 5-coin actions in the game, because its ability to slowly upgrade your treasure cards is mediocre in comparison to deck-drawing engines. It still has value if you can combine it with an engine to play several each turn, together with extra buys. Most commonly, it is good in a game with Potions, and can be extremely good with Kingdom treasure cards such as Fool's Gold and Ill-Gotten Gains.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mine"
 	},
@@ -397,7 +397,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "+1 Card +1 Action. Look at the top 2 cards of your deck. Trash and/or discard any number of them. Put the rest back on top in any order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Sentry.jpg",
+	 "imagePath": "images/card_images/Sentry.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016, Sentry combines trashing and sifting to improve the quality of both your next draws, and your deck in the long term",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Sentry"
 	},
@@ -410,7 +410,7 @@
 	 "set": "Base",
 	 "textAboveLine": "+2 Cards. Each other player gains a Curse.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Witch.jpg",
+	 "imagePath": "images/card_images/Witch.jpg",
 	 "discussion": "As a card which unconditionally gives a Curse to each opponent when played, Witch can almost never be safely ignored. Cursing attacks are the most powerful ways in the game to hurt your opponents, and Witch remains among the strongest.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Witch"
 	},
@@ -423,7 +423,7 @@
 	 "set": "BaseSecondEd",
 	 "textAboveLine": "Gain a card to your hand costing up to 5 coins. Put a card from your hand onto your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Artisan.jpg",
+	 "imagePath": "images/card_images/Artisan.jpg",
 	 "discussion": "One of the cards added for the second edition of the base set in 2016. It is very powerful, as befits a card costing 6 coins. It not only directly gains any card costing up to 5 coins (and 5-coin actions are almost all really strong), it allows you the option of using it immediately, while also re-arranging the top of your deck to best effect.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Artisan"
 	},
@@ -436,7 +436,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "+2 coins. You may immediately put your deck into your discard pile.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Chancellor.jpg",
+	 "imagePath": "images/card_images/Chancellor.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. Chancellor had long been regarded as one of the weakest cards in the game - its ability is cute (allowing you the chance of immediately drawing the cards you gained, and used, that turn), but was rarely worth using up a terminal action for. It is not useless though, and forms a notable combo with Stash.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Chancellor"
 	},
@@ -449,7 +449,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "+1 Buy +2 coins",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Woodcutter.jpg",
+	 "imagePath": "images/card_images/Woodcutter.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. Woodcutter is simply extremely weak - the only reason to want it in your deck is for its +1 Buy, and that is only a reason to get it if there are no other cards available which give extra buys.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Woodcutter"
 	},
@@ -462,7 +462,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "Trash this card. Gain a card costing up to 5 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Feast.jpg",
+	 "imagePath": "images/card_images/Feast.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. It allows quick access to cards costing 5 - but buying Silver instead tends to do the same thing. The fact that Feast removes itself from the deck when played (unlike Silver) is an advantage in some cases, so Feast is by no means too weak - but its presence rarely adds much to the game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Feast"
 	},
@@ -475,7 +475,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "+1 Card +1 Action. Each player (including you) reveals the top card of his deck and either discards it or puts it back, your choice.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Spy.jpg",
+	 "imagePath": "images/card_images/Spy.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. As a cantrip with the potential to help you draw better cards while hindering your opponents, it is by no means bad, although not very exciting. It was removed for slowing the game down too much while not adding anything unique.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Spy"
 	},
@@ -488,7 +488,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "Each other player reveals the top 2 cards of his deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Thief.jpg",
+	 "imagePath": "images/card_images/Thief.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. This was an obvious decision given that Thief, although sounding scary to new players, is incredibly weak - when you play it, you frequently get no benefit while also trashing your opponents' copper for them, which is usually a benefit to them! There are situations where Thief can be good, but they are very rare.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Thief"
 	},
@@ -501,7 +501,7 @@
 	 "set": "BaseFirstEd",
 	 "textAboveLine": "Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards into your hand and discard the other revealed cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Adventurer.jpg",
+	 "imagePath": "images/card_images/Adventurer.jpg",
 	 "discussion": "One of the cards removed from the base set for the second edition in 2016. Adventurer had quite simply proved over the years to be a card which was almost never worth buying. If you still have coppers in your deck, Adventurer is likely to only give you +2 coins, a ridiculously weak effect for a card costing 6. And if you have trashed your coppers, there are usually much better options for drawing your high-value treasures. In addition, it costs the same as Gold, and you would like several Golds first before getting Adventurer. Except by then the game is nearly over and your 6 is better spent on a Duchy.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Adventurer"
 	},
@@ -514,7 +514,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+3 Cards. Put a card from your hand onto your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Courtyard.jpg",
+	 "imagePath": "images/card_images/Courtyard.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Courtyard"
 	},
@@ -527,7 +527,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "+1 Action. Choose one: Trash an Action card from the Supply; or gain an Action card from the trash.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Lurker.jpg",
+	 "imagePath": "images/card_images/Lurker.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lurker"
 	},
@@ -540,7 +540,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Choose two: +1 Card; +1 Action; +1 Buy; +1 coin. The choices must be different.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Pawn.jpg",
+	 "imagePath": "images/card_images/Pawn.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pawn"
 	},
@@ -553,7 +553,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+2 Cards. Each player with any cards in hand passes one to the next such player to their left, at once. Then you may trash a card from your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Masquerade.jpg",
+	 "imagePath": "images/card_images/Masquerade.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Masquerade"
 	},
@@ -566,7 +566,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+2 Actions. Reveal your hand. If you have no Action cards in hand, +2 Cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Shanty_Town.jpg",
+	 "imagePath": "images/card_images/Shanty_Town.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Shanty_Town"
 	},
@@ -579,7 +579,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Choose one: +2 Cards; or +2 coins; or trash 2 cards from your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Steward.jpg",
+	 "imagePath": "images/card_images/Steward.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Steward"
 	},
@@ -592,7 +592,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+2 Coins. Each other player trashes the top card of their deck and gains a card with the same cost that you choose.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Swindler.jpg",
+	 "imagePath": "images/card_images/Swindler.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Swindler"
 	},
@@ -605,7 +605,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+1 Card +1 Action. Name a card, then reveal the top card of your deck. If you named it, put it into your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Wishing_Well.jpg",
+	 "imagePath": "images/card_images/Wishing_Well.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wishing_Well"
 	},
@@ -618,7 +618,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+1 Buy. You may discard an Estate for +4 coins. If you don't, gain an Estate.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Baron.jpg",
+	 "imagePath": "images/card_images/Baron.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Baron"
 	},
@@ -631,7 +631,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+1 Buy +1 coin. This turn, cards (everywhere) cost 1 coin less, but not less than 0 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Bridge.jpg",
+	 "imagePath": "images/card_images/Bridge.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bridge"
 	},
@@ -644,7 +644,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+2 coins. If you've played 3 or more Actions this turn (counting this), +1 Card and +1 Action.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Conspirator.jpg",
+	 "imagePath": "images/card_images/Conspirator.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Conspirator"
 	},
@@ -657,7 +657,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "+2 Cards. If you have 5 or fewer cards in hand (after drawing), +2 Actions.",
 	 "textBelowLine": "When another player plays an Attack card, you may first reveal this from a hand of 5 or more cards, to draw 2 cards then discard 3.",
-	 "imagePath": "/../images/card_images/Diplomat.jpg",
+	 "imagePath": "images/card_images/Diplomat.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Diplomat"
 	},
@@ -670,7 +670,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Gain a card costing up to 4 coins. If the gained card is an... Action card, +1 Action. Treasure card, +1 coin. Victory card, +1 Card.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Ironworks.jpg",
+	 "imagePath": "images/card_images/Ironworks.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ironworks"
 	},
@@ -683,7 +683,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "+1 Card +1 Action. You may discard 2 cards, for +2 coins.",
 	 "textBelowLine": "1VP",
-	 "imagePath": "/../images/card_images/Mill.jpg",
+	 "imagePath": "images/card_images/Mill.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mill"
 	},
@@ -696,7 +696,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+1 Card +2 Actions. You may trash this for +2 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Mining_Village.jpg",
+	 "imagePath": "images/card_images/Mining_Village.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mining_Village"
 	},
@@ -709,7 +709,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "+2 Cards +1 Action. Take a card from your hand and put it anywhere in your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Secret_Passage.jpg",
+	 "imagePath": "images/card_images/Secret_Passage.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Secret_Passage"
 	},
@@ -722,7 +722,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "Reveal a card from your hand. For each type it has (Action, Attack, etc.), choose one: +1 Action; or +1 Buy; or +3 coins; or gain a Gold. The choices must be different.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Courtier.jpg",
+	 "imagePath": "images/card_images/Courtier.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Courtier"
 	},
@@ -735,7 +735,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Worth 1VP per Duchy you have.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Duke.jpg",
+	 "imagePath": "images/card_images/Duke.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Duke"
 	},
@@ -748,7 +748,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Choose one: +2 coins; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards their hand and draws 4 cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Minion.jpg",
+	 "imagePath": "images/card_images/Minion.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Minion"
 	},
@@ -761,7 +761,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "+3 Cards. Reveal the top 4 cards of your deck. Put the Victory cards and Curses into your hand. Put the rest back in any order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Patrol.jpg",
+	 "imagePath": "images/card_images/Patrol.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Patrol"
 	},
@@ -774,7 +774,7 @@
 	 "set": "IntrigueSecondEd",
 	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to 2 coins more than it. If the gained card is an Action or Treasure, put it onto your dck; if it's a Victory card, each other player gains a Curse.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Replace.jpg",
+	 "imagePath": "images/card_images/Replace.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Replace"
 	},
@@ -787,7 +787,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+3 Cards. Each other player either discards 2 cards or gains a Curse to their hand, their choice. (They may pick an option they can't do.)",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Torturer.jpg",
+	 "imagePath": "images/card_images/Torturer.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Torturer"
 	},
@@ -800,7 +800,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Trash 2 cards from your hand. If you did, gain a Silver to your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Trading_Post.jpg",
+	 "imagePath": "images/card_images/Trading_Post.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Trading_Post"
 	},
@@ -813,7 +813,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+1 Card +1 Action. Trash a card from your hand. Gain a card costing exactly 1 coin more than it.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Upgrade.jpg",
+	 "imagePath": "images/card_images/Upgrade.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Upgrade"
 	},
@@ -826,7 +826,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "+2 coins",
 	 "textBelowLine": "2VP",
-	 "imagePath": "/../images/card_images/Harem.jpg",
+	 "imagePath": "images/card_images/Harem.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Harem"
 	},
@@ -839,7 +839,7 @@
 	 "set": "Intrigue",
 	 "textAboveLine": "Choose one: +3 Cards; or +2 Actions.",
 	 "textBelowLine": "2VP",
-	 "imagePath": "/../images/card_images/Nobles.jpg",
+	 "imagePath": "images/card_images/Nobles.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Nobles"
 	},
@@ -852,7 +852,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "Discard any number of cards. +1 coin per card discarded.",
 	 "textBelowLine": "When another player plays an Attack card, you may reveal this from your hand. If you do, +2 Cards, then put 2 cards from your hand on top of your deck.",
-	 "imagePath": "/../images/card_images/Secret_Chamber.jpg",
+	 "imagePath": "images/card_images/Secret_Chamber.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Secret_Chamber"
 	},
@@ -865,7 +865,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "+1 Card +1 Action",
 	 "textBelowLine": "1VP",
-	 "imagePath": "/../images/card_images/Great_Hall.jpg",
+	 "imagePath": "images/card_images/Great_Hall.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Great_Hall"
 	},
@@ -878,7 +878,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "Copper produces an extra 1 coin this turn.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Coppersmith.jpg",
+	 "imagePath": "images/card_images/Coppersmith.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Coppersmith"
 	},
@@ -891,7 +891,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "+1 Action. Reveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Scout.jpg",
+	 "imagePath": "images/card_images/Scout.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Scout"
 	},
@@ -904,7 +904,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "Each other player reveals cards from the top of his deck until revealing one costing 3 coins or more. He trashes that card and may gain a card costing at most 2 coins less than it. He discards the other revealed cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Saboteur.jpg",
+	 "imagePath": "images/card_images/Saboteur.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Saboteur"
 	},
@@ -917,7 +917,7 @@
 	 "set": "IntrigueFirstEd",
 	 "textAboveLine": "The player to your left reveals then discards the top 2 cards of his deck. For each differently named card revealed, if it is an... Action Card, +2 Actions. Treasure Card, +2 coins. Victory Card, +2 Cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Tribute.jpg",
+	 "imagePath": "images/card_images/Tribute.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Tribute"
 	},
@@ -930,7 +930,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 Coins. Trash this card. Put an Embargo token on top of a Supply pile.",
 	 "textBelowLine": "When a player buys a card, he gains a Curse card per Embargo token on that pile.",
-	 "imagePath": "/../images/card_images/Embargo.jpg",
+	 "imagePath": "images/card_images/Embargo.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Embargo"
 	},
@@ -943,7 +943,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Card +1 Action. Set aside a card from your hand face down. At the start of your next turn, put it into your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Haven.jpg",
+	 "imagePath": "images/card_images/Haven.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Haven"
 	},
@@ -956,7 +956,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Action. Now and at the start of your next turn: +1 coin.",
 	 "textBelowLine": "While this is in play, when another player plays an Attack card, it doesn't affect you.",
-	 "imagePath": "/../images/card_images/Lighthouse.jpg",
+	 "imagePath": "images/card_images/Lighthouse.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lighthouse"
 	},
@@ -969,7 +969,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 Actions. Choose one: Set aside the top card of your deck face down on your Native Village mat; or put all the cards from your mat into your hand. You may look at the cards on your mat at any time; return them to your deck at the end of the game.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Native_Village.jpg",
+	 "imagePath": "images/card_images/Native_Village.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Native_Village"
 	},
@@ -982,7 +982,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Card +1 Action. Look at the bottom card of your deck. You may put it on top.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Pearl_Diver.jpg",
+	 "imagePath": "images/card_images/Pearl_Diver.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pearl_Diver"
 	},
@@ -995,7 +995,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Reveal a card from your hand. Return up to 2 copies of it from your hand to the Supply. Then each other player gains a copy of it.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Ambassador.jpg",
+	 "imagePath": "images/card_images/Ambassador.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ambassador"
 	},
@@ -1008,7 +1008,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 Actions +1 coin. At the start of your next turn: +1 Action +1 coin.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Fishing_Village.jpg",
+	 "imagePath": "images/card_images/Fishing_Village.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fishing_Village"
 	},
@@ -1021,7 +1021,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Action. Look at the top 3 cards of your deck. Trash one of them. Discard one of them. Put the other one on top of your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Lookout.jpg",
+	 "imagePath": "images/card_images/Lookout.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lookout"
 	},
@@ -1034,7 +1034,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Gain a copy of a card costing up to 6 coins that the player to your right gained on his last turn.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Smugglers.jpg",
+	 "imagePath": "images/card_images/Smugglers.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Smugglers"
 	},
@@ -1047,7 +1047,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+3 Cards +1 Action. Discard 3 cards.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Warehouse.jpg",
+	 "imagePath": "images/card_images/Warehouse.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Warehouse"
 	},
@@ -1060,7 +1060,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Card +1 Action. At the start of your next turn, +1 Card.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Caravan.jpg",
+	 "imagePath": "images/card_images/Caravan.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Caravan"
 	},
@@ -1073,7 +1073,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 coins. Each other player discards a Copper card (or reveals a hand with no Copper).",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Cutpurse.jpg",
+	 "imagePath": "images/card_images/Cutpurse.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Cutpurse"
 	},
@@ -1086,7 +1086,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Set aside this and another card from your hand. Return them to your deck at the end of the game.",
 	 "textBelowLine": "2VP",
-	 "imagePath": "/../images/card_images/Island.jpg",
+	 "imagePath": "images/card_images/Island.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Island"
 	},
@@ -1099,7 +1099,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 coins. Look at the top 5 cards of your deck. Either discard all of them, or put them back on top of your deck in any order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Navigator.jpg",
+	 "imagePath": "images/card_images/Navigator.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Navigator"
 	},
@@ -1112,7 +1112,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Choose one: Each other player reveals the top 2 cards of his deck, trashes a revealed Treasure that you choose, discards the rest, and if anyone trashed a Treasure you take a Coin token; or, +1 coin per Coin token you've taken with Pirate Ships this game.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Pirate_Ship.jpg",
+	 "imagePath": "images/card_images/Pirate_Ship.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pirate_Ship"
 	},
@@ -1125,7 +1125,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Buy. Trash a card from your hand. + coins equal to its cost.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Salvager.jpg",
+	 "imagePath": "images/card_images/Salvager.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Salvager"
 	},
@@ -1138,7 +1138,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Each other player discards the top card of his deck, then gains a Curse card, putting it on top of his deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Sea_Hag.jpg",
+	 "imagePath": "images/card_images/Sea_Hag.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Sea_Hag"
 	},
@@ -1151,7 +1151,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Trash this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of your deck.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Treasure_Map.jpg",
+	 "imagePath": "images/card_images/Treasure_Map.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Treasure_Map"
 	},
@@ -1164,7 +1164,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Card +2 Actions +1 coin",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Bazaar.jpg",
+	 "imagePath": "images/card_images/Bazaar.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bazaar"
 	},
@@ -1177,7 +1177,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "You may reveal a Province card from your hand. If you do, gain a Gold card, putting it into your hand. Otherwise, gain a Silver card, putting it into your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Explorer.jpg",
+	 "imagePath": "images/card_images/Explorer.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Explorer"
 	},
@@ -1190,7 +1190,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+2 Cards. Each other player with 4 or more cards in hand puts cards from his hand on top of his deck until he has 3 cards in his hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Ghost_Ship.jpg",
+	 "imagePath": "images/card_images/Ghost_Ship.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ghost_Ship"
 	},
@@ -1203,7 +1203,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Now and at the start of your next turn: +2 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Merchant_Ship.jpg",
+	 "imagePath": "images/card_images/Merchant_Ship.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Merchant_Ship"
 	},
@@ -1216,7 +1216,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "You only draw 3 cards (instead of 5) in this turn's Clean-up phase. Take an extra turn after this one. This can't cause you to take more than two consecutive turns.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Outpost.jpg",
+	 "imagePath": "images/card_images/Outpost.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Outpost"
 	},
@@ -1229,7 +1229,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Discard your hand. If you discarded any cards this way, then at the start of your next turn, +5 Cards, +1 Buy, and +1 Action.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Tactician.jpg",
+	 "imagePath": "images/card_images/Tactician.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Tactician"
 	},
@@ -1242,7 +1242,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "+1 Card +1 Action +1 coin",
 	 "textBelowLine": "When you discard this from play, if you didn't buy a Victory card this turn, you may put this on top of your deck.",
-	 "imagePath": "/../images/card_images/Treasury.jpg",
+	 "imagePath": "images/card_images/Treasury.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Treasury"
 	},
@@ -1255,7 +1255,7 @@
 	 "set": "Seaside",
 	 "textAboveLine": "Now and at the start of your next turn: +2 Cards +1 Buy.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Wharf.jpg",
+	 "imagePath": "images/card_images/Wharf.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wharf"
 	},
@@ -1268,7 +1268,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "Trash a card from your hand. If it is an... Action card, gain a Duchy. Treasure card, gain a Transmute. Victory card, gain a Gold.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Transmute.jpg",
+	 "imagePath": "images/card_images/Transmute.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Transmute"
 	},
@@ -1281,7 +1281,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "Worth 1VP for every 3 Action cards in your deck (rounded down).",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Vineyard.jpg",
+	 "imagePath": "images/card_images/Vineyard.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Vineyard"
 	},
@@ -1294,7 +1294,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+1 Buy +1 coin.",
 	 "textBelowLine": "When you discard this from play, you may put one of your Treasures from play on top of your deck.",
-	 "imagePath": "/../images/card_images/Herbalist.jpg",
+	 "imagePath": "images/card_images/Herbalist.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Herbalist"
 	},
@@ -1307,7 +1307,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+1 Card +1 Action. Reveal the top 4 cards of your deck. Put the revealed Coppers and Potions into your hand. Put the other cards back on top of your deck in any order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Apothecary.jpg",
+	 "imagePath": "images/card_images/Apothecary.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Apothecary"
 	},
@@ -1320,7 +1320,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+1 Action. Each player (including you) reveals the top card of his deck and either discards it or puts it back, your choice. Then reveal cards from the top of your deck until you reveal one that is not an Action. Put all of your revealed cards into your hand.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Scrying_Pool.jpg",
+	 "imagePath": "images/card_images/Scrying_Pool.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Scrying_Pool"
 	},
@@ -1333,7 +1333,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+2 Actions. You may gain an Action card costing up to 5 coins.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/University.jpg",
+	 "imagePath": "images/card_images/University.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/University"
 	},
@@ -1346,7 +1346,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+2 Cards +1 Action",
 	 "textBelowLine": "When you discard this from play, you may put this on top of your deck if you have a Potion in play.",
-	 "imagePath": "/../images/card_images/Alchemist.jpg",
+	 "imagePath": "images/card_images/Alchemist.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Alchemist"
 	},
@@ -1359,7 +1359,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+1 Card +1 Action. Each other player gains a Curse.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Familiar.jpg",
+	 "imagePath": "images/card_images/Familiar.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Familiar"
 	},
@@ -1372,7 +1372,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "When you play this, count your deck and discard pile. Worth 1 coin per 5 cards total between them (rounded down).",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Philosopher's_Stone.jpg",
+	 "imagePath": "images/card_images/Philosopher's_Stone.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Philosopher's_Stone"
 	},
@@ -1385,7 +1385,7 @@
 	 "set": "Basic",
 	 "textAboveLine": "Potion",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Potion.jpg",
+	 "imagePath": "images/card_images/Potion.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Potion"
 	},
@@ -1398,7 +1398,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "Reveal cards from your deck until your reveal 2 Action cards other than Golem cards. Discard the other cards, then play the Action cards in either order.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Golem.jpg",
+	 "imagePath": "images/card_images/Golem.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Golem"
 	},
@@ -1411,7 +1411,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "+1 Action. Trash a card from your hand. +1 Card per coin it costs. +2 Cards if it has potion in its cost.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Apprentice.jpg",
+	 "imagePath": "images/card_images/Apprentice.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Apprentice"
 	},
@@ -1424,7 +1424,7 @@
 	 "set": "Alchemy",
 	 "textAboveLine": "The player to your left takes an extra turn after this one, in which you can see all cards he can and make all decisions for him. Any cards he would gain on that turn, you gain instead; any cards of his that are trashed are set aside and returned to his discard pile at end of turn.",
 	 "textBelowLine": "",
-	 "imagePath": "/../images/card_images/Possession.jpg",
+	 "imagePath": "images/card_images/Possession.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Possession"
 	}
