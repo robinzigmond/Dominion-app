@@ -16,9 +16,10 @@ label.form-subtitle {
 	display: block;
 }
 
-/* left-justify checkbox groups when they spill to more than one line */
+/* left-justify checkbox groups when they spill to more than one line, and also keep each label apart from the following checkbox */
 .form-group .checkbox-inline {
-	margin-left: 0px;    		
+	margin-left: 0px;    
+    margin-right: 12px;		
 }
 
 /* give search form buttons their own line and sufficient space above */

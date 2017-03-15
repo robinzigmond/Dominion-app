@@ -772,7 +772,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Attack"],
 	 "set": "IntrigueSecondEd",
-	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to 2 coins more than it. If the gained card is an Action or Treasure, put it onto your dck; if it's a Victory card, each other player gains a Curse.",
+	 "textAboveLine": "Trash a card from your hand. Gain a card costing up to 2 coins more than it. If the gained card is an Action or Treasure, put it onto your deck; if it's a Victory card, each other player gains a Curse.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Replace.jpg",
 	 "discussion": "",

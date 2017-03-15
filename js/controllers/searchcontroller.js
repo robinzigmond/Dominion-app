@@ -1,8 +1,4 @@
-angular.module("RouteControllers", [])
-	.controller("HomeController", function($scope) {
-		
-	})
-
+angular.module("RouteControllerSearch", [])
 	.controller("SearchController", function($scope, $http, CardSearchValues) {
 		// get card database and give the scope access to it
 		$http.get("js/cards.json")
@@ -19,6 +15,30 @@ angular.module("RouteControllers", [])
 		// get values from service
 		$scope.searchParams = CardSearchValues;
 
+		// define arrays of various pieces of information. This makes other parts of the code shorter, and allows for easier updating if
+		// new expansions are ever realsed with new types etc.
+		$scope.possibleCoinCosts = [0,1,2,3,4,5,6,7,8,9,10,11];
+		$scope.possiblePotionCosts = [0,1];
+		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
+		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins", "Looter",
+		"Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
+		// for sets, include "dirty name" for easier Javascript computations, and "nice name" for more user-friendly display text
+		$scope.allSets = [{dirtyName: "Basic", niceName: "Basic cards"},
+						  {dirtyName: "BaseFirstEd", niceName: "Base (1st edition)"},
+						  {dirtyName: "BaseSecondEd", niceName: "Base (2nd edition)"},
+						  {dirtyName: "IntrigueFirstEd", niceName: "Intrigue (1st edition)"},
+						  {dirtyName: "IntrigueSecondEd", niceName: "Intrigue (2nd edition)"},
+						  {dirtyName: "Seaside", niceName: "Seaside"},
+						  {dirtyName: "Alchemy", niceName: "Alchemy"},
+						  {dirtyName: "Prosperity", niceName: "Prosperity"},
+						  {dirtyName: "Cornucopia", niceName: "Cornucopia"},
+						  {dirtyName: "Hinterlands", niceName: "Hinterlands"},
+						  {dirtyName: "DarkAges", niceName: "Dark Ages"},
+						  {dirtyName: "Guilds", niceName: "Guilds"},
+						  {dirtyName: "Adventures", niceName: "Adventures"},
+						  {dirtyName: "Empires", niceName: "Empires"},
+						  {dirtyName: "Promos", niceName: "Promos"}];
+
 		// reset name search text when button is clicked
 		$scope.clearNameSearch = function () {
 			$scope.searchParams.nameSearchText = "";
@@ -33,24 +53,9 @@ angular.module("RouteControllers", [])
 
 		// define behaviour for the "clear all types" button
 		$scope.clearTypes = function() {
-			$scope.searchParams.isActionType = false;
-			$scope.searchParams.isTreasureType = false;
-			$scope.searchParams.isVictoryType = false;
-			$scope.searchParams.isCurseType = false;
-			$scope.searchParams.isAttackType = false;
-			$scope.searchParams.isDurationType = false;
-			$scope.searchParams.isReactionType = false;
-			$scope.searchParams.isPrizeType = false;
-			$scope.searchParams.isShelterType = false;
-			$scope.searchParams.isRuinsType = false;
-			$scope.searchParams.isLooterType = false;
-			$scope.searchParams.isKnightType = false;
-			$scope.searchParams.isReserveType = false;
-			$scope.searchParams.isTravellerType = false;
-			$scope.searchParams.isGatheringType = false;
-			$scope.searchParams.isCastleType = false;
-			$scope.searchParams.isEventType = false;
-			$scope.searchParams.isLandmarkType = false;
+			for (type in $scope.allTypes) {
+				$scope.searchParams["is"+allTypes[type]+"Type"] = false;
+			}
 		}
 
 		// define behaviour for "select/deselect all sets" button
@@ -58,27 +63,10 @@ angular.module("RouteControllers", [])
 		$scope.setsButtonText = "select";
 		
 		$scope.toggleSets = function() {
-			$scope.searchParams.inBasic = selectOrDeselectSets;
-			$scope.searchParams.inBaseFirstEd = selectOrDeselectSets;
-			$scope.searchParams.inBaseSecondEd = selectOrDeselectSets;
-			$scope.searchParams.inIntrigueFirstEd = selectOrDeselectSets;
-			$scope.searchParams.inIntrigueSecondEd = selectOrDeselectSets;
-			$scope.searchParams.inSeaside = selectOrDeselectSets;
-			$scope.searchParams.inAlchemy = selectOrDeselectSets;
-			$scope.searchParams.inProsperity = selectOrDeselectSets;
-			$scope.searchParams.inCornucopia = selectOrDeselectSets;
-			$scope.searchParams.inHinterlands = selectOrDeselectSets;
-			$scope.searchParams.inDarkAges = selectOrDeselectSets;
-			$scope.searchParams.inGuilds = selectOrDeselectSets;
-			$scope.searchParams.inAdventures = selectOrDeselectSets;
-			$scope.searchParams.inEmpires = selectOrDeselectSets;
-			$scope.searchParams.inPromos = selectOrDeselectSets;
-			if (selectOrDeselectSets) {
-				$scope.setsButtonText = "deselect";
+			for (set in $scope.allSets) {
+				$scope.searchParams["in"+$scope.allSets[set].dirtyName] = selectOrDeselectSets;
 			}
-			else {
-				$scope.setsButtonText = "select";
-			}
+			$scope.setsButtonText = (selectOrDeselectSets ? "deselect" : "select");
 			selectOrDeselectSets = !selectOrDeselectSets;
 		}
 
@@ -97,8 +85,9 @@ angular.module("RouteControllers", [])
 		// note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work in Dominion
 		// (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable)
 		$scope.costSearch = function(card) {
-			return (card.costInCoins>=$scope.searchParams.minCoinCost && card.costInPotions>=$scope.searchParams.minPotionCost && card.costInDebt>=$scope.searchParams.minDebtCost
-				&& card.costInCoins<=$scope.searchParams.maxCoinCost && card.costInPotions<=$scope.searchParams.maxPotionCost && card.costInDebt<=$scope.searchParams.maxDebtCost);
+			return (card.costInCoins>=$scope.searchParams.minCoinCost && card.costInPotions>=$scope.searchParams.minPotionCost 
+				&& card.costInDebt>=$scope.searchParams.minDebtCost	&& card.costInCoins<=$scope.searchParams.maxCoinCost 
+				&& card.costInPotions<=$scope.searchParams.maxPotionCost && card.costInDebt<=$scope.searchParams.maxDebtCost);
 		};
 
 		
@@ -106,11 +95,9 @@ angular.module("RouteControllers", [])
 		but there is not much use in wanting to see all Action cards AND all Attack cards) */
 		$scope.typesSearch = function(card) {
 			// first make array of the exact types to be included in search
-			var typesList = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins",
-			"Looter", "Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
 			var desiredTypes = [];
-			for (type in typesList) {
-				if ($scope.searchParams["is"+typesList[type]+"Type"]) desiredTypes.push(typesList[type]);
+			for (type in $scope.allTypes) {
+				if ($scope.searchParams["is"+$scope.allTypes[type]+"Type"]) desiredTypes.push($scope.allTypes[type]);
 			}
 			//remove all cards without all desired types
 			for (type in desiredTypes) {
@@ -123,16 +110,10 @@ angular.module("RouteControllers", [])
 		that they own, or are interested in */
 		$scope.setFilter = function(card) {
 			// set card to be in Base set if it is in either first or second edition
-			$scope.searchParams.inBase = false;
-			if ($scope.searchParams.inBaseFirstEd || $scope.searchParams.inBaseSecondEd) {
-				$scope.searchParams.inBase = true;
-			}
+			$scope.searchParams.inBase = ($scope.searchParams.inBaseFirstEd || $scope.searchParams.inBaseSecondEd);
 		
 			//same for Intrigue
-			$scope.searchParams.inIntrigue = false;
-			if ($scope.searchParams.inIntrigueFirstEd || $scope.searchParams.inIntrigueSecondEd) {
-				$scope.searchParams.inIntrigue = true;
-			}
+			$scope.searchParams.inIntrigue = ($scope.searchParams.inIntrigueFirstEd || $scope.searchParams.inIntrigueSecondEd);
 
 			return $scope.searchParams["in"+card.set];		
 		} 
@@ -173,50 +154,4 @@ angular.module("RouteControllers", [])
 				return (card.textBelowLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1);
 			}
 		};
-	})
-	
-	.controller("CardController", function($scope, $http, $routeParams){
-		var cardId = $routeParams.id;
-
-		$http.get("js/cards.json")
-			.then(function(results) {
-				$scope.cardList = results.data;
-				// grab information about selected card and store in thisCard object
-				for (card in $scope.cardList) {
-					if ($scope.cardList[card].name == cardId) {
-						$scope.thisCard = $scope.cardList[card];
-					}
-				}
-				// reformat "set" string to be more easily understood by humans:
-				if ($scope.thisCard.set == "BaseFirstEd") {
-					$scope.thisCard.set = "Base (1st Edition)";
-				}
-				if ($scope.thisCard.set == "BaseSecondEd") {
-					$scope.thisCard.set = "Base (2nd Edition)";
-				}
-				if ($scope.thisCard.set == "IntrigueFirstEd") {
-					$scope.thisCard.set = "Intrigue (1st Edition)";
-				}
-				if ($scope.thisCard.set == "IntrigueSecondEd") {
-					$scope.thisCard.set = "Intrigue (2nd Edition)";
-				}
-				
-				
-				// to display the card's cost with the appropriate icons - definte an array of objects, one for each icon needed.
-				// eah object has 2 properties: "path" giving the image location, and "text" giving a description in words
-				// (in case the image doesn't load):
-				$scope.costIcons = [];
-
-				// coin icon needed if either coin cost is >0 or total cost is zero (copper, curse etc.)
-				if ($scope.thisCard.costInCoins>0 || ($scope.thisCard.costInPotions==0 && $scope.thisCard.costInDebt==0)) {
-					$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", text: $scope.thisCard.costInCoins+" coins"});
-				}
-				//potion and debt icons only needed if that component of the cost is >0. No more than 1 potion is ever in the cost.
-				if ($scope.thisCard.costInPotions>0) {
-					$scope.costIcons.push({path: "images/potion.png", text: "potion"});
-				}
-				if ($scope.thisCard.costInDebt>0) {
-					$scope.costIcons.push({path: "images/"+$scope.thisCard.costInDebt+"debt.png", text: $scope.thisCard.costInDebt+"debt"});
-				}
-			});
 	});
