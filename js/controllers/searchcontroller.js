@@ -51,6 +51,15 @@ angular.module("RouteControllerSearch", [])
 			$scope.searchParams.maxDebtCost = $scope.searchParams.minDebtCost;
 		}
 
+		$scope.resetCosts = function() {
+			$scope.searchParams.minCoinCost = "0";
+			$scope.searchParams.minPotionCost = "0";
+			$scope.searchParams.minDebtCost = "0";
+			$scope.searchParams.maxCoinCost = "11";
+			$scope.searchParams.maxPotionCost = "1";
+			$scope.searchParams.maxDebtCost = "8";
+		}
+
 		// define behaviour for the "clear all types" button
 		$scope.clearTypes = function() {
 			for (type in $scope.allTypes) {

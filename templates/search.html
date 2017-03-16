@@ -9,9 +9,11 @@
 					<label class="radio-inline"><input type="radio" name="cost" ng-model="searchParams.orderProp" value="cost"/>Cost</label>
 				</div>
 				<div class="form-group">
-					<label class="control-label" for="name-search">Card Name:</label>
-					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
+					<label class="control-label form-subtitle" >Card sets:</label>
+					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
+					<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
+					<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{setsButtonText}} all</button>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
@@ -41,6 +43,7 @@
 						<option ng-repeat="cost in possibleDebtCosts">{{cost}}</option>
 					</select>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum equal to minimum</button>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="resetCosts()">Reset</button>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" >Types:</label> 
@@ -49,10 +52,9 @@
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
 				</div>
 				<div class="form-group">
-					<label class="control-label form-subtitle" >Card sets:</label>
-					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p> 
-					<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{setsButtonText}} all</button>
+					<label class="control-label" for="name-search">Card Name:</label>
+					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="text-above-search">Text (above line):</label>

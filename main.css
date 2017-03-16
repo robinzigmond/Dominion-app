@@ -40,10 +40,11 @@ label.form-subtitle {
     padding: 5px;
 }
 
-/* get both columns on search page to scroll separately */
+/* get both columns on search page to scroll separately. 
+On small screens with only one column, have each take up half the screen (vertically) */
 .separate-scroll {
     overflow: scroll;
-    height: 90vh;
+    height: 50vh;
 }
 
 /* card image on card pages: centre horizontally, and push down from top of page */
@@ -52,4 +53,11 @@ label.form-subtitle {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+}
+
+/* for screens large enough to use 2 columns, allow them almost the full height of the screen */
+@media (min-width: 768px) {
+    .separate-scroll {
+        height: 90vh;
+    }
 }
