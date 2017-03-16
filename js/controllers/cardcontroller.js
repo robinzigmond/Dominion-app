@@ -2,13 +2,14 @@ angular.module("RouteControllerCard", [])
 	.controller("CardController", function($scope, $http, $routeParams){
 		var cardId = $routeParams.id;
 
-		$http.get("js/cards.json")
+		$http.get("js/data/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
 				// grab information about selected card and store in thisCard object
 				for (card in $scope.cardList) {
 					if ($scope.cardList[card].name == cardId) {
 						$scope.thisCard = $scope.cardList[card];
+						break;
 					}
 				}
 				// reformat "set" string to be more easily understood by humans:
@@ -33,7 +34,15 @@ angular.module("RouteControllerCard", [])
 
 				// coin icon needed if either coin cost is >0 or total cost is zero (copper, curse etc.)
 				if ($scope.thisCard.costInCoins>0 || ($scope.thisCard.costInPotions==0 && $scope.thisCard.costInDebt==0)) {
-					$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", text: $scope.thisCard.costInCoins+" coins"});
+					// if statement to catch a "starred" coin cost symbol (eg. Peddler, Prizes):
+					if ($scope.thisCard.starredCost) {
+						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"starcoins.png", 
+							text: $scope.thisCard.costInCoins+" coins (starred)"});
+					}
+					else {
+						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", 
+							text: $scope.thisCard.costInCoins+" coins"});
+					}
 				}
 				//potion and debt icons only needed if that component of the cost is >0. No more than 1 potion is ever in the cost.
 				if ($scope.thisCard.costInPotions>0) {
@@ -42,5 +51,19 @@ angular.module("RouteControllerCard", [])
 				if ($scope.thisCard.costInDebt>0) {
 					$scope.costIcons.push({path: "images/"+$scope.thisCard.costInDebt+"debt.png", text: $scope.thisCard.costInDebt+"debt"});
 				}
+
+				$http.get("js/data/icons.json")
+					.then (function(results) {
+						$scope.iconGlossary = results.data;
+						for (icon in $scope.iconGlossary) {
+							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.split(
+							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.split(
+							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+							$scope.thisCard.discussion = $scope.thisCard.discussion.split(
+							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+						}
+					});
+					
 			});
 	});

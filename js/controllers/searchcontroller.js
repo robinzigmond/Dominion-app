@@ -1,7 +1,7 @@
 angular.module("RouteControllerSearch", [])
 	.controller("SearchController", function($scope, $http, CardSearchValues) {
 		// get card database and give the scope access to it
-		$http.get("js/cards.json")
+		$http.get("js/data/cards.json")
 			.then(function(results) {
 				$scope.cardList = results.data;
 				// create a "cost" property for ordering purposes, which orders by coin cost, followed by potion cost, then Debt cost.

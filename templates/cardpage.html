@@ -6,10 +6,10 @@
 				<li class="list-group-item">Cost: <img ng-repeat="item in costIcons" src="{{::item.path}}" alt="{{::item.text}}" /> </li>
 				<li class="list-group-item">Type(s): {{::thisCard.types.join(", ")}}</li>
 				<li class="list-group-item">Set: {{::thisCard.set}}</li>
-				<li class="list-group-item">Basic effect: {{::thisCard.textAboveLine}}</li>
-				<li class="list-group-item">Other effects: {{::thisCard.textBelowLine}}</li>
+				<li class="list-group-item">Basic effect: <span ng-bind-html="thisCard.textAboveLine"></span></li>
+				<li class="list-group-item">Other effects: <span ng-bind-html="thisCard.textBelowLine"></span></li>
 			</ul>
-			<p>{{::thisCard.discussion}}</p>
+			<p ng-bind-html="thisCard.discussion"></p>
 			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">

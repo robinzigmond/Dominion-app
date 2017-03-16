@@ -1,0 +1,64 @@
+[
+	{"text": "debt",
+	"html": "<img src='images/debt.png' alt='debt' />"	},
+
+	{"text": "0 coins",
+	 "html": "<img src='images/0coins.png' alt='0 coins' />"	},
+
+	{"text": "1 coin",
+	"html": "<img src='images/1coin.png' alt='1 coin' />"	},
+
+	{"text": "1 debt",
+	"html": "<img src='images/1debt.png' alt='1 debt' />"	},
+
+	{"text": "2 coins",
+	"html": "<img src='images/2coins.png' alt='2 coins' />"	},
+
+	{"text": "3 coins",
+	"html": "<img src='images/3coins.png' alt='3 coins' />"	},
+
+	{"text": "3 debt",
+	"html": "<img src='images/3debt.png' alt='3 debt' />"	},
+
+	{"text": "4 coins",
+	"html": "<img src='images/4coins.png' alt='4 coins' />"	},
+
+	{"text": "4 debt",
+	"html": "<img src='images/4debt.png' alt='4 debt' />"	},
+
+	{"text": "5 coins",
+	"html": "<img src='images/5coins.png' alt='5 coins' />"	},
+
+	{"text": "5 debt",
+	"html": "<img src='images/5debt.png' alt='5 debt' />"	},
+
+	{"text": "6 coins",
+	"html": "<img src='images/6coins.png' alt='6 coins' />"	},
+
+	{"text": "7 coins",
+	"html": "<img src='images/7coins.png' alt='7 coins' />"	},
+
+	{"text": "8 coins",
+	"html": "<img src='images/5coins.png' alt='8 coins' />"	},
+
+	{"text": "8 debt",
+	"html": "<img src='images/8debt.png' alt='8 debt' />"	},
+
+	{"text": "9 coins",
+	"html": "<img src='images/9coins.png' alt='9 coins' />"	},
+
+	{"text": "40 debt",
+	"html": "<img src='images/40debt.png' alt='40 debt' />"	},
+
+	{"text": "potion",
+	"html": "<img src='images/potion.png' alt='potion' />"	},
+
+	{"text": "VP",
+	"html": "<img src='images/VP.png' alt='VP' />"	},
+
+	{"text": "11 coins",
+	"html": "<img src='images/11coins.png' alt='11 coins' />"	},
+
+	{"text": "Coin",
+	"html": "<img src='images/coin.png' alt='coin' />"	}
+]

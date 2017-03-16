@@ -38,6 +38,7 @@ label.form-subtitle {
 .search-results {
     display: inline-block;
     padding: 5px;
+    font-size: 0px;
 }
 
 /* get both columns on search page to scroll separately. 
