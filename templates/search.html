@@ -47,7 +47,7 @@
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" >Types:</label> 
-					<p>(Only cards which match <strong>all</strong> selected types will be found.)</p>
+					<p>(Only cards which match <strong>all</strong> selected types will be found. Leave blank for the most general search, and make selections to narrow it.)</p>
 					<label class="checkbox-inline" ng-repeat="type in allTypes"><input type="checkbox" ng-model="searchParams['is'+type+'Type']"/>{{type}}</label>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
 				</div>

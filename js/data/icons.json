@@ -1,5 +1,5 @@
 [
-	{"text": "debt",
+	{"text": "'Debt",
 	"html": "<img src='images/debt.png' alt='debt' />"	},
 
 	{"text": "0 coins",
@@ -53,12 +53,12 @@
 	{"text": "potion",
 	"html": "<img src='images/potion.png' alt='potion' />"	},
 
-	{"text": "VP",
+	{"text": "vp",
 	"html": "<img src='images/VP.png' alt='VP' />"	},
 
 	{"text": "11 coins",
 	"html": "<img src='images/11coins.png' alt='11 coins' />"	},
 
-	{"text": "Coin",
+	{"text": "'Coin",
 	"html": "<img src='images/coin.png' alt='coin' />"	}
 ]
