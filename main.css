@@ -41,12 +41,6 @@ label.form-subtitle {
     font-size: 0px;
 }
 
-/* get both columns on search page to scroll separately. 
-On small screens with only one column, have each take up half the screen (vertically) */
-.separate-scroll {
-    overflow: scroll;
-    height: 50vh;
-}
 
 /* card image on card pages: centre horizontally, and push down from top of page */
 .single-card {
@@ -63,8 +57,13 @@ On small screens with only one column, have each take up half the screen (vertic
 
 @media (min-width: 768px) {
     /* for screens large enough to use 2 columns, allow them almost the full height of the screen */
-    .separate-scroll {
+    .separate-scroll-form {
+        overflow: auto;
         height: 90vh;
+    }
+    .separate-scroll-results {
+        overflow: auto;
+        height: 85vh;
     }
     /* increase image size back to normal on larger screens */
     .search-image {

@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<!-- allow room for search results on right on tablets/desktops, but has to go below on smaller screens-->
-		<div class="col-xs-12 col-sm-6 col-md-4 separate-scroll"> 
+		<div class="col-xs-12 col-sm-6 col-md-4 separate-scroll-form"> 
 			<form>
 				<div class="form-group">
 					<label class="control-label">Order search results by:</label>
@@ -72,7 +72,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> cards matching search parameters:</p>
-			<div class="separate-scroll">
+			<div class="separate-scroll-results">
 				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
 					<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" class="search-image" /></a>
 				</div>
