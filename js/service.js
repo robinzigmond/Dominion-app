@@ -13,7 +13,7 @@ angular.module("SearchValues", [])
 			nameSearchText: "",
 			aboveLineSearchText: "",
 			belowLineSearchText: "",
-			allTextSearch: false,
+			allTextSearch: true,
 
 			minCoinCost: "0",
 			minPotionCost: "0",

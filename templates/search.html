@@ -9,6 +9,11 @@
 					<label class="radio-inline"><input type="radio" name="cost" ng-model="searchParams.orderProp" value="cost"/>Cost</label>
 				</div>
 				<div class="form-group">
+					<label class="control-label" for="name-search">Card Name:</label>
+					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
+				</div>
+				<div class="form-group">
 					<label class="control-label form-subtitle" >Card sets:</label>
 					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
 					<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
@@ -52,11 +57,6 @@
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
 				</div>
 				<div class="form-group">
-					<label class="control-label" for="name-search">Card Name:</label>
-					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
-				</div>
-				<div class="form-group">
 					<label class="control-label" for="text-above-search">Text (above line):</label>
 					<input type="text" class="form-control input-sm" id="text-above-search" ng-model="searchParams.aboveLineSearchText"/>
 					<label class="control-label" for="text-below-search">Text (below line):</label>
@@ -64,13 +64,14 @@
 					<div class="input-group">
 						<label class="control-label" for="anywhere">Select to search for text anywhere on card:</label>
 						<input type="checkbox" id="anywhere" ng-model="searchParams.allTextSearch"/>
-						<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned.</p>
+						<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned. Deselect to search specific text areas.)</p>
 						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTextSearch()">Clear</button>
 					</div>
 				</div>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8 separate-scroll">
+			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> cards matching search parameters:</p>
 			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
 				<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" class="search-image" /></a>
 			</div>
