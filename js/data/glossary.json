@@ -1,0 +1,5 @@
+[
+	{"term": "Action",
+	 "definition": "Each player begins their turn with 1 action available by default. It costs 1 action to play an Action card during the Action phase - playing this action reduces the action count by 1, but may increase it at the same time. A card giving +1 Action effectively costs zero actions to play, provided the player has an action to play it in the first place. A card granting +2 Actions (or more) increases the action count when played."
+	}
+]

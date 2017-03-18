@@ -95,6 +95,22 @@ angular.module("RouteControllerCard", [])
 				card first always) - but it is still a problem when an "outer" card references itself (there should be no link at all, 
 				but	the result is a link to the "inner" card. I'm not yet sure of the best solution to this issue). */
 
+				$http.get("js/data/glossary.json")
+					.then (function(results) {
+						$scope.tooltipGlossary = results.data;
+						for (entry in $scope.tooltipGlossary) {
+							var tooltipHTML = "<span data-container='body' data-toggle='popover' data-content='"
+							 + $scope.tooltipGlossary[entry].definition + "'>" + $scope.tooltipGlossary[entry].term + "</span>";
+							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
+							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
+							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+							$scope.thisCard.discussion = $scope.thisCard.discussion
+							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+						}
+						console.log($scope.thisCard.textAboveLine);
+					});
+
 			});
 				
 	});

@@ -698,7 +698,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Mining_Village.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mining_Village"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mining_Village",
+	 "containedCards": ["Village"]
 	},
 
 	{"name": "Secret Passage",
@@ -971,7 +972,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Native_Village.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Native_Village"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Native_Village",
+	 "containedCards": ["Village"]
 	},
 
 	{"name": "Pearl Diver",
@@ -1010,7 +1012,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Fishing_Village.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fishing_Village"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fishing_Village",
+	 "containedCards": ["Village"]
 	},
 
 	{"name": "Lookout",
@@ -1530,7 +1533,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Worker's_Village.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Worker's_Village"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Worker's_Village",
+	 "containedCards": ["Village"]
 	},
 
 	{"name": "City",
@@ -1674,7 +1678,8 @@
 	 "textBelowLine": "You can't buy this if you have any Coppers in play.",
 	 "imagePath": "images/card_images/Grand_Market.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Grand_Market"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Grand_Market",
+	 "containedCards": ["Market"]
 	},
 
 	{"name": "Hoard",
@@ -1793,7 +1798,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bag_of_Gold.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bag_of_Gold"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bag_of_Gold",
+	 "containedCards": ["Gold"]
 	},
 
 	{"name": "Diadem",
@@ -1901,7 +1907,8 @@
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Farming_Village.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Farming_Village"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Farming_Village",
+	 "containedCards": ["Village"]
 	},
 
 	{"name": "Horse Traders",
@@ -1953,7 +1960,8 @@
 	 "textBelowLine": "Setup: Add an extra Kingdom card pile costing 2 coins or 3 coins to the Supply. Cards from that pile are Bane cards.",
 	 "imagePath": "images/card_images/Young_Witch.jpg",
 	 "discussion": "",
-	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Young_Witch"
+	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Young_Witch",
+	 "containedCards": ["Witch"]
 	},
 
 	{"name": "Harvest",

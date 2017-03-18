@@ -63,7 +63,7 @@ angular.module("RouteControllerSearch", [])
 		// define behaviour for the "clear all types" button
 		$scope.clearTypes = function() {
 			for (type in $scope.allTypes) {
-				$scope.searchParams["is"+allTypes[type]+"Type"] = false;
+				$scope.searchParams["is"+$scope.allTypes[type]+"Type"] = false;
 			}
 		}
 

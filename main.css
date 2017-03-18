@@ -56,7 +56,7 @@ label.form-subtitle {
 }
 
 @media (min-width: 768px) {
-    /* for screens large enough to use 2 columns, allow them almost the full height of the screen */
+    /* for screens large enough to use 2 columns, allow them to scroll separately */
     .separate-scroll-form {
         overflow: auto;
         height: 90vh;
