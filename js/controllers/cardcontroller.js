@@ -31,7 +31,7 @@ angular.module("RouteControllerCard", [])
 				else $scope.typeOrTypes = "Type";
 				
 				
-				// to display the card's cost with the appropriate icons - definte an array of objects, one for each icon needed.
+				// to display the card's cost with the appropriate icons - define an array of objects, one for each icon needed.
 				// eah object has 2 properties: "path" giving the image location, and "text" giving a description in words
 				// (in case the image doesn't load):
 				$scope.costIcons = [];
@@ -82,7 +82,7 @@ angular.module("RouteControllerCard", [])
 
 					// ugly string construction to get correct HTML for link:
 					var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
-					
+
 					// only replace first reference to a card with link within the same section, to avoid visual clutter
 					// (so use .replace instead of .split then .join)
 					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace(name, linkHTML);
