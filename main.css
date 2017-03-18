@@ -56,9 +56,18 @@ On small screens with only one column, have each take up half the screen (vertic
     margin-top: 10%;
 }
 
-/* for screens large enough to use 2 columns, allow them almost the full height of the screen */
+/* make images smaller on small screend */
+.search-image {
+    width: 150px;
+}
+
 @media (min-width: 768px) {
+    /* for screens large enough to use 2 columns, allow them almost the full height of the screen */
     .separate-scroll {
         height: 90vh;
+    }
+    /* increase image size back to normal on larger screens */
+    .search-image {
+        width: 200px;
     }
 }

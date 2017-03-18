@@ -72,7 +72,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8 separate-scroll">
 			<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
-				<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" /></a>
+				<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" class="search-image" /></a>
 			</div>
 		</div>
 	</div>

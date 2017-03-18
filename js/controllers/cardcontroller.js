@@ -32,7 +32,7 @@ angular.module("RouteControllerCard", [])
 				
 				
 				// to display the card's cost with the appropriate icons - define an array of objects, one for each icon needed.
-				// eah object has 2 properties: "path" giving the image location, and "text" giving a description in words
+				// each object has 2 properties: "path" giving the image location, and "text" giving a description in words
 				// (in case the image doesn't load):
 				$scope.costIcons = [];
 
@@ -93,7 +93,7 @@ angular.module("RouteControllerCard", [])
 				(Village inside Mining Village etc, Gold inside Fool's Gold), sometimes the wrong one of the "inner" and "outer" card
 				gets the link element. This can largely be solved by careful ordering of cards in the json array (putting the "outer"
 				card first always) - but it is still a problem when an "outer" card references itself (there should be no link at all, 
-				but	the result is a link to the "inner" card. I'm not yet sure of the best solution to this issue. */
+				but	the result is a link to the "inner" card. I'm not yet sure of the best solution to this issue). */
 
 			});
 				

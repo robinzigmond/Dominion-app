@@ -129,7 +129,7 @@ angular.module("RouteControllerSearch", [])
 
 		/* the following 2 functions implement the following:
 		1) searches for specifically "above the line" or "below the line" text, if the checkbox is unticked
-		2) 2 separate searches for text anywhere on the card, if the cbeckbox is ticked. 
+		2) 2 separate searches for text anywhere on the card, if the checkbox is ticked. 
 		This allows users to search either one part of the card text, or the card as a whole */
 
 		$scope.textAboveSearch = function(card) {
