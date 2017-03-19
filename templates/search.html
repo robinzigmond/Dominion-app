@@ -18,7 +18,7 @@
 					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
 					<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
 					<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{setsButtonText}} all</button>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{searchParams.setsButtonText}} all</button>
 				</div>
 				<div class="form-group">
 					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
@@ -68,6 +68,7 @@
 						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTextSearch()">Clear</button>
 					</div>
 				</div>
+				<button type="button" class="btn btn-danger btn-lg search-form-button" ng-click="clearAll()">Reset All Search Data</button>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">

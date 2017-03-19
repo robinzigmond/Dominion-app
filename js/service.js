@@ -56,7 +56,11 @@ angular.module("SearchValues", [])
 			inDarkAges: false,
 			inGuilds: false,
 			inAdventures: false,
-			inEmpires: false
+			inEmpires: false,
+
+			// determine correct behaviour for "select/deselect all" button in "sets" field:
+			selectOrDeselectSets: true,
+			setsButtonText: "select"
 		
 		};
 		

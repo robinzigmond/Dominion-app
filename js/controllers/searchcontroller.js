@@ -68,15 +68,12 @@ angular.module("RouteControllerSearch", [])
 		}
 
 		// define behaviour for "select/deselect all sets" button
-		var selectOrDeselectSets = true;
-		$scope.setsButtonText = "select";
-		
 		$scope.toggleSets = function() {
 			for (set in $scope.allSets) {
-				$scope.searchParams["in"+$scope.allSets[set].dirtyName] = selectOrDeselectSets;
+				$scope.searchParams["in"+$scope.allSets[set].dirtyName] = $scope.searchParams.selectOrDeselectSets;
 			}
-			$scope.setsButtonText = (selectOrDeselectSets ? "deselect" : "select");
-			selectOrDeselectSets = !selectOrDeselectSets;
+			$scope.searchParams.setsButtonText = ($scope.searchParams.selectOrDeselectSets ? "deselect" : "select");
+			$scope.searchParams.selectOrDeselectSets = !$scope.searchParams.selectOrDeselectSets;
 		}
 
 		// reset card search texts when button is clicked
@@ -163,4 +160,16 @@ angular.module("RouteControllerSearch", [])
 				return (card.textBelowLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1);
 			}
 		};
+
+		// "reset all search data" button:
+		$scope.clearAll = function() {
+			$scope.clearNameSearch();
+			$scope.toggleSets();
+			if (!$scope.searchParams.selectOrDeselectSets) $scope.toggleSets();
+			$scope.resetCosts();
+			$scope.clearTypes();
+			$scope.clearNameSearch();
+			$scope.clearTextSearch();
+		}
+
 	});
