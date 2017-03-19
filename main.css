@@ -31,7 +31,7 @@ label.form-subtitle {
 /* need to separate the various sections on search form */
 .form-group {
     padding: 5px;
-    border: 1px solid black;
+    border: 5px ridge blue;
 }
 
 /* card search results need to be in grid format */

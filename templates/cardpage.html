@@ -2,13 +2,13 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{::thisCard.name}}</h1>
-			<ul class="list-group">
-				<li class="list-group-item">Cost: <img ng-repeat="item in costIcons" src="{{::item.path}}" alt="{{::item.text}}" /> </li>
-				<li class="list-group-item">{{typeOrTypes}}: {{::thisCard.types.join(", ")}}</li>
-				<li class="list-group-item">Set: {{::thisCard.set}}</li>
-				<li class="list-group-item">Basic effect: <span ng-bind-html="thisCard.textAboveLine"></span></li>
-				<li class="list-group-item">Other effects: <span ng-bind-html="thisCard.textBelowLine"></span></li>
-			</ul>
+			<table class="table table-condensed table-bordered table-hover table-responsive">
+				<tr><th>Cost</th><td><img ng-repeat="item in costIcons" src="{{::item.path}}" alt="{{::item.text}}" /> </td></tr>
+				<tr><th>{{typeOrTypes}}</th><td>{{::thisCard.types.join(", ")}}</td>
+				<tr><th>Set</th><td>{{::thisCard.set}}</td>
+				<tr><th>Basic effect</th><td ng-bind-html="thisCard.textAboveLine"></td>
+				<tr><th>Other effects</th><td ng-bind-html="thisCard.textBelowLine"></td>
+			</table>
 			<p ng-bind-html="thisCard.discussion"></p>
 			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
 		</div>
