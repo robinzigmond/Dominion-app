@@ -25,6 +25,9 @@ angular.module("RouteControllerCard", [])
 				if ($scope.thisCard.set == "IntrigueSecondEd") {
 					$scope.thisCard.set = "Intrigue (2nd Edition)";
 				}
+				if ($scope.thisCard.set == "DarkAges") {
+					$scope.thisCard.set = "Dark Ages";
+				}
 
 				// pluralise "Type(s)" correctly depending on number of types card has:
 				if ($scope.thisCard.types.length>1) $scope.typeOrTypes = "Types";
