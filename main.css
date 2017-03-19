@@ -1,7 +1,9 @@
 /* give space for navbar on top. Text at top gets hidden by vertical navbar on small screens, b
 ut it starts collapsed so I think this is OK */
 body {
-	padding-top: 70px;
+	padding-top: 55px;
+    background-color: #f9ecf9;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
@@ -32,6 +34,8 @@ label.form-subtitle {
 .form-group {
     padding: 5px;
     border: 5px ridge blue;
+    border-radius: 15px;
+    background-color: #e6f2ff;
 }
 
 /* card search results need to be in grid format */

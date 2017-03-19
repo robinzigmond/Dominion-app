@@ -2539,7 +2539,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "DarkAges",
-	 "textAboveLine": "+1 Card +1 Acion. Reveal the top card of your deck. If it's a Curse, Ruins, Shelter, or Victory card, put it into your hand.",
+	 "textAboveLine": "+1 Card +1 Action. Reveal the top card of your deck. If it's a Curse, Ruins, Shelter, or Victory card, put it into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Vagrant.jpg",
 	 "discussion": "",

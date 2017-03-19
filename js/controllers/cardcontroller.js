@@ -74,13 +74,14 @@ angular.module("RouteControllerCard", [])
 					});
 
 				// make each card name into a link
+								
 				for (card in $scope.cardList) {
-					// don't want links for references to the same card (looks too busy and adds nothing):
-					if ($scope.cardList[card].name == $scope.thisCard.name) continue;
-
 					var name = $scope.cardList[card].name;
+					// don't want links for references to the same card (looks too busy and adds nothing):
+					if (name == $scope.thisCard.name) continue;
+										
 					// there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
-					// these need a alternative string to escape them inside the HTML
+					// these need an alternative string to escape them inside the HTML
 					var linkName = name.replace("'", "&#39");
 
 					// ugly string construction to get correct HTML for link:
@@ -92,12 +93,13 @@ angular.module("RouteControllerCard", [])
 					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace(name, linkHTML);
 					$scope.thisCard.discussion = $scope.thisCard.discussion.replace(name, linkHTML);
 				}
-				/* note that there is a small issue remaining with the above code: where one card's name is a substring of another's
-				(Village inside Mining Village etc, Gold inside Fool's Gold), sometimes the wrong one of the "inner" and "outer" card
-				gets the link element. This can largely be solved by careful ordering of cards in the json array (putting the "outer"
-				card first always) - but it is still a problem when an "outer" card references itself (there should be no link at all, 
-				but	the result is a link to the "inner" card. I'm not yet sure of the best solution to this issue). */
-
+				// the above code doesn't work quite correctly - sometimes it gives a link to a card whose name is contained in another's name
+				// (eg. Gold when Fool's Gold is mentioned - see the Mine strategy discussion), when it is the "outer" card that should be
+				// linked instead. I have tried to fix this issue, but it seems more subtle than I thought, and will take a fair bit of code.
+				// I intend to come back to it when I have inputted all cards, then run a function to figure out all cards and the names
+				// contained within them. Then I will use this data to "fix" all issues of this type.
+				
+				// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
 				$http.get("js/data/glossary.json")
 					.then (function(results) {
 						$scope.tooltipGlossary = results.data;
