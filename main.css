@@ -2,8 +2,33 @@
 ut it starts collapsed so I think this is OK */
 body {
 	padding-top: 55px;
-    background-color: #f9ecf9;
+    background-color: #f5e6ff;
     font-family: 'Varela Round', sans-serif;
+}
+
+nav {
+    font-family: 'Tangerine', cursive;
+    font-size: 28px;
+}
+
+nav .navbar-brand {
+    font-size: 36px;
+}
+
+h1 {
+    font-family: 'Arimo', sans-serif;
+}
+
+a {
+    color: #e68a00;
+}
+
+a:hover, a:active {
+    color: #cc0;
+}
+
+a:visited {
+    color: #663d00;
 }
 
 /* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
@@ -57,6 +82,15 @@ label.form-subtitle {
 /* make images smaller on small screend */
 .search-image {
     width: 150px;
+}
+
+.card-table {
+    background-color: #ffc;
+    border: 3px solid #123456;
+}
+
+tr.alternate {
+    background-color: #ffe6cc;
 }
 
 @media (min-width: 768px) {

@@ -46,6 +46,11 @@ angular.module("RouteControllerCard", [])
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"starcoins.png", 
 							text: $scope.thisCard.costInCoins+" coins (starred)"});
 					}
+					// same with plus symbol on overpay cards:
+					else if ($scope.thisCard.overpay) {
+						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"+coins.png",
+							text: $scope.thisCard.costInCoins+" (plus) coins"});
+					}
 					else {
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", 
 							text: $scope.thisCard.costInCoins+" coins"});

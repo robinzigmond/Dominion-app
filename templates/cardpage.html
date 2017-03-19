@@ -1,12 +1,12 @@
-<div class="container-fluid card-info">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{::thisCard.name}}</h1>
-			<table class="table table-condensed table-bordered table-striped table-responsive">
+			<table class="table table-condensed table-bordered table-responsive card-table">
 				<tr><th>Cost</th><td><img ng-repeat="item in costIcons" src="{{::item.path}}" alt="{{::item.text}}" /> </td></tr>
-				<tr><th>{{typeOrTypes}}</th><td>{{::thisCard.types.join(", ")}}</td>
+				<tr class="alternate"><th>{{typeOrTypes}}</th><td>{{::thisCard.types.join(", ")}}</td>
 				<tr><th>Set</th><td>{{::thisCard.set}}</td>
-				<tr><th>Basic effect</th><td ng-bind-html="thisCard.textAboveLine"></td>
+				<tr class="alternate"><th>Basic effect</th><td ng-bind-html="thisCard.textAboveLine"></td>
 				<tr><th>Other effects</th><td ng-bind-html="thisCard.textBelowLine"></td>
 			</table>
 			<p ng-bind-html="thisCard.discussion"></p>
