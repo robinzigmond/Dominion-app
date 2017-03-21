@@ -1,27 +1,23 @@
 /* using flexbox to create a "sticky footer" (one which is at the bottom of either the window or the content, whichever is lower)
-- as described at https://css-tricks.com/couple-takes-sticky-footer/ */
+I found help on this at various sources, most notably https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+and http://stackoverflow.com/questions/36899807/flexbox-sticky-footer-not-working-in-safari-or-chrome-osx */
+ 
 html {
     height: 100%;
 }
 
-/* give space for navbar on top. Text at top gets hidden by vertical navbar on small screens, b
-ut it starts collapsed so I think this is OK */
 body {
 	padding-top: 55px;
     background-color: #f5e6ff;
     font-family: 'Varela Round', sans-serif;
-    position: relative;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .content {
-    flex: 1;
-}
-
-.ng-view {
-    font-weight: 100;
+    flex: 1 0 auto; /* needed to fix "stick footer" on Safari/iPad (on other devices "flex: 1;" was enough) */
 }
 
 nav {
@@ -37,6 +33,7 @@ footer {
     text-align: center;
     background-color: #eee;
     padding: 10px;
+    flex-shrink: 0; /* needed for Safari */
 }
 
 h1 h2 h3 {
@@ -50,7 +47,7 @@ h1 h2 h3 {
 }
 
 a {
-    color: #e68a00;
+    color: #ff9900;
 }
 
 a:hover, a:active {
@@ -58,7 +55,7 @@ a:hover, a:active {
 }
 
 a:visited {
-    color: #663d00;
+    color: #b36b00;
 }
 
 /* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
