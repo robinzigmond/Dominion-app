@@ -6,7 +6,7 @@
 	 "html": "<img src='images/0coins.png' alt='0 coins' />"	},
 
 	{"text": "1 coin",
-	"html": "<img src='images/1coin.png' alt='1 coin' />"	},
+	"html": "<img src='images/1coins.png' alt='1 coin' />"	},
 
 	{"text": "1 debt",
 	"html": "<img src='images/1debt.png' alt='1 debt' />"	},

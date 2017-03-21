@@ -2378,7 +2378,7 @@
 	 "starredCost": true,
 	 "types": ["Treasure"],
 	 "set": "DarkAges",
-	 "textAboveLine": "3 coins. When you play this, return it to the Spoilts pile. (This is not in the Supply.)",
+	 "textAboveLine": "3 coins. When you play this, return it to the Spoils pile. (This is not in the Supply.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Spoils.jpg",
 	 "discussion": "",
