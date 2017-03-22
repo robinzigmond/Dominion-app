@@ -74,7 +74,7 @@
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> card{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length ==1 ?"" :"s"}} matching search parameters:</p>
 			<div class="separate-scroll-results">
-				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
+				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results {{(card.type=["Event"]||card.type=["Landmark"] ? landscape : portrait)}}">
 					<a href="/cards/{{card.name}}"><img src="{{card.imagePath}}" alt="{{card.name}}" class="search-image" /></a>
 				</div>
 			</div>

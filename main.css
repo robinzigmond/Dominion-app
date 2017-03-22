@@ -17,7 +17,7 @@ body {
 }
 
 .content {
-    flex: 1 0 auto; /* needed to fix "stick footer" on Safari/iPad (on other devices "flex: 1;" was enough) */
+    flex: 1 0 auto; /* needed to fix "sticky footer" on Safari/iPad (on other devices "flex: 1;" was enough) */
 }
 
 nav {
@@ -104,8 +104,12 @@ label.form-subtitle {
 }
 
 /* make images smaller on small screend */
-.search-image {
+.search-image.portrait {
     width: 150px;
+}
+
+.search-image.landscape {
+    width: 249px;
 }
 
 .card-table {
@@ -133,8 +137,12 @@ label.form-subtitle {
         height: 85vh;
     }
     /* increase image size back to normal on larger screens */
-    .search-image {
+    .search-image.portrait {
         width: 200px;
+    }
+
+    .search-image.landscape {
+        width: 332px;
     }
 
     .single-card {
