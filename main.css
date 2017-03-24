@@ -51,18 +51,16 @@ h1.home {
     margin-right: auto;
 }
 
-img.left {
-    display: block;
-    margin: 30px 30px 30px auto;
-}
 
-img.right {
-    display: block;
-    margin: 30px auto 30px 30px;
+.home-text, .home-image {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-text {
-    margin: auto;
+    flex-direction: column;
 }
 
 a {
