@@ -151,7 +151,7 @@
 	 "textAboveLine": "+1 Card +1 Action. The first time you play a Silver this turn, +1 coin.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Merchant.jpg",
-	 "discussion": "One of the cards added for the second edition of the base set in 2016, Merchant is a simple cantrip which essentially makes the first Silver you play that turn worth 3 coins instead of 2. This is an unexciting ability, but if you are likely to draw Silvers then Merchant is definitely worth considering.",
+	 "discussion": "One of the cards added for the second edition of the base set in 2016, Merchant is a simple cantrip which essentially makes the first Silver you play that turn worth 3 coins instead of 2 coins. This is an unexciting ability, but if you are likely to draw Silvers then Merchant is definitely worth considering.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Merchant"
 	},
 
@@ -242,7 +242,7 @@
 	 "textAboveLine": "You may trash a Copper from your hand for +3 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Moneylender.jpg",
-	 "discussion": "As a way to trash your coppers without sacrificing spending power, Moneylender is a fine card to open with, especially if aiming for an engine strategy. But it is no substitute for fast trashers like Chapel, and (like Chapel) is almost never worth buying after the first 2 turns.",
+	 "discussion": "As a way to trash your Coppers without sacrificing spending power, Moneylender is a fine card to open with, especially if aiming for an engine strategy. But it is no substitute for fast trashers like Chapel, and (like Chapel) is almost never worth buying after the first 2 turns.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Moneylender"
 	},
 
@@ -307,7 +307,7 @@
 	 "textAboveLine": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bandit.jpg",
-	 "discussion": "Bandit is one of the cards added for the second edition of the base set in 2016, and is a direct replacement for the removed card Thief. While Thief often gave no benefit to the player using it, while helping the opponents by trashing their copper, Bandit never does the latter and always gains the player a Gold. It is now both a good enabler of, and a counter to, money strategies, and has joined the elite rank of Action cards costing 5 coins or more.",
+	 "discussion": "Bandit is one of the cards added for the second edition of the base set in 2016, and is a direct replacement for the removed card Thief. While Thief often gave no benefit to the player using it, while helping the opponents by trashing their Coppers, Bandit never does the latter and always gains the player a Gold. It is now both a good enabler of, and a counter to, money strategies, and has joined the elite rank of Action cards costing 5 coins or more.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bandit"
 	},
 
@@ -489,7 +489,7 @@
 	 "textAboveLine": "Each other player reveals the top 2 cards of his deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Thief.jpg",
-	 "discussion": "One of the cards removed from the base set for the second edition in 2016. This was an obvious decision given that Thief, although sounding scary to new players, is incredibly weak - when you play it, you frequently get no benefit while also trashing your opponents' copper for them, which is usually a benefit to them! There are situations where Thief can be good, but they are very rare.",
+	 "discussion": "One of the cards removed from the base set for the second edition in 2016. This was an obvious decision given that Thief, although sounding scary to new players, is incredibly weak - when you play it, you frequently get no benefit while also trashing your opponents' Copper for them, which is usually a benefit to them! There are situations where Thief can be good, but they are very rare.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Thief"
 	},
 
@@ -1853,7 +1853,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Prize"],
 	 "set": "Cornucopia",
-	 "textAboveLine": "Choose two: +2 Cards; +1 Actions; +2 coins; gain 4 Silvers and put your deck into your discard pile. (The choices must be different.) (This is not in the Supply.)",
+	 "textAboveLine": "Choose two: +2 Cards; +1 Action; +2 coins; gain 4 Silvers and put your deck into your discard pile. (The choices must be different.) (This is not in the Supply.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Trusty_Steed.jpg",
 	 "discussion": "",
@@ -2763,7 +2763,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "DarkAges",
-	 "textAboveLine": "+2 cards. You may put your deck into your discard pile. Look through your discard pile and put one card from it on top of your deck.",
+	 "textAboveLine": "+2 coins. You may put your deck into your discard pile. Look through your discard pile and put one card from it on top of your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Scavenger.jpg",
 	 "discussion": "",
@@ -2776,7 +2776,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "DarkAges",
-	 "textAboveLine": "+1 Card +2 Actions. Reeal the top 3 cards of your deck. Put the Actions back on top in any order and discard the rest.",
+	 "textAboveLine": "+1 Card +2 Actions. Reveal the top 3 cards of your deck. Put the Actions back on top in any order and discard the rest.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Wandering_Minstrel.jpg",
 	 "discussion": "",
@@ -3480,7 +3480,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Duration"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 Action. Now and at the start of your next turn: +1 Card, then discard 2 cards.",
+	 "textAboveLine": "+1 Action. Now and at the start of your next turn: +2 Cards, then discard 2 cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Dungeon.jpg",
 	 "discussion": "",

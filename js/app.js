@@ -1,10 +1,11 @@
-angular.module("DominionApp", ["ngRoute", "ngSanitize", "RouteControllerSearch", "RouteControllerCard", "SearchValues"]);
+angular.module("DominionApp", ["ngRoute", "ngSanitize", "RouteControllerHome", "RouteControllerSearch", "RouteControllerCard", "SearchValues"]);
 
 angular.module("DominionApp").config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true); //Enable href routing without hashes
 
 	$routeProvider.when("/", {
-		templateUrl: "templates/home.html"
+		templateUrl: "templates/home.html",
+		controller: "HomeController"
 	})
 	.when("/search", {
 		templateUrl: "templates/search.html",

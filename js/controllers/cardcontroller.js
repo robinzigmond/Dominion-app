@@ -109,7 +109,7 @@ angular.module("RouteControllerCard", [])
 					.then (function(results) {
 						$scope.tooltipGlossary = results.data;
 						for (entry in $scope.tooltipGlossary) {
-							var tooltipHTML = "<span data-container='body' data-toggle='popover' data-content='"
+							var tooltipHTML = "<span data-toggle='popover' data-content='"
 							 + $scope.tooltipGlossary[entry].definition + "'>" + $scope.tooltipGlossary[entry].term + "</span>";
 							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
 							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
