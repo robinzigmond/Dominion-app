@@ -36,7 +36,7 @@ footer {
     flex-shrink: 0; /* needed for Safari */
 }
 
-h1.home, h2.home, h3.home {
+h1.home, h2.home, h3.home, h4.home {
     font-family: 'Arimo', sans-serif;
     text-align: center;
 }
