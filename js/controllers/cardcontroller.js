@@ -1,8 +1,8 @@
 angular.module("RouteControllerCard", [])
-	.controller("CardController", function($scope, $http, $routeParams){
+	.controller("CardController", function($scope, $routeParams, GetData){
 		var cardId = $routeParams.id;
 
-		$http.get("js/data/cards.json")
+		GetData.cards()
 			.then(function(results) {
 				$scope.cardList = results.data;
 				// grab information about selected card and store in thisCard object
@@ -71,7 +71,7 @@ angular.module("RouteControllerCard", [])
 				if ($scope.thisCard.types.indexOf("Landmark")>-1) $scope.costIcons.push({text: "none"});
 
 				// replace relevant text on cards and in card explanations with the corresponding icons
-				$http.get("js/data/icons.json")
+				GetData.icons()
 					.then (function(results) {
 						$scope.iconGlossary = results.data;
 						for (icon in $scope.iconGlossary) {
@@ -111,7 +111,7 @@ angular.module("RouteControllerCard", [])
 				// contained within them. Then I will use this data to "fix" all issues of this type.
 				
 				// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
-				$http.get("js/data/glossary.json")
+				GetData.glossary()
 					.then (function(results) {
 						$scope.tooltipGlossary = results.data;
 						for (entry in $scope.tooltipGlossary) {
