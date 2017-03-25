@@ -14,6 +14,9 @@
 	{"text": "2 coins",
 	"html": "<img src='images/2coins.png' alt='2 coins' />"	},
 
+	{"text": "2 debt",
+	"html": "<img src='images/2debt.png' alt='2 debt' />"	},
+
 	{"text": "3 coins",
 	"html": "<img src='images/3coins.png' alt='3 coins' />"	},
 
@@ -35,6 +38,9 @@
 	{"text": "6 coins",
 	"html": "<img src='images/6coins.png' alt='6 coins' />"	},
 
+	{"text": "6 debt",
+	"html": "<img src='images/6debt.png' alt='6 debt' />"},
+
 	{"text": "7 coins",
 	"html": "<img src='images/7coins.png' alt='7 coins' />"	},
 
@@ -47,6 +53,9 @@
 	{"text": "9 coins",
 	"html": "<img src='images/9coins.png' alt='9 coins' />"	},
 
+	{"text": "10 coins",
+	"html": "<img src='images/10coins.png' alt='10 coins' />"	},
+
 	{"text": "40 debt",
 	"html": "<img src='images/40debt.png' alt='40 debt' />"	},
 
@@ -58,6 +67,9 @@
 
 	{"text": "11 coins",
 	"html": "<img src='images/11coins.png' alt='11 coins' />"	},
+
+	{"text": "14 coins",
+	"html": "<img src='images/14coins.png' alt='14 coins' />"	},
 
 	{"text": "'Coin",
 	"html": "<img src='images/coin.png' alt='coin' />"	}

@@ -28,6 +28,9 @@ angular.module("RouteControllerCard", [])
 				if ($scope.thisCard.set == "DarkAges") {
 					$scope.thisCard.set = "Dark Ages";
 				}
+				if ($scope.thisCard.set == "Promos") {
+					$scope.thisCard.set = "Promo";
+				}
 
 				// pluralise "Type(s)" correctly depending on number of types card has:
 				if ($scope.thisCard.types.length>1) $scope.typeOrTypes = "Types";
@@ -63,6 +66,9 @@ angular.module("RouteControllerCard", [])
 				if ($scope.thisCard.costInDebt>0) {
 					$scope.costIcons.push({path: "images/"+$scope.thisCard.costInDebt+"debt.png", text: $scope.thisCard.costInDebt+"debt"});
 				}
+
+				//landmarks have no cost at all. Will just write "none" in that case:
+				if ($scope.thisCard.types.indexOf("Landmark")>-1) $scope.costIcons.push({text: "none"});
 
 				// replace relevant text on cards and in card explanations with the corresponding icons
 				$http.get("js/data/icons.json")

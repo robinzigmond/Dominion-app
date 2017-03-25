@@ -97,6 +97,7 @@ label.form-subtitle {
 .search-form-button {
     display: block;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* need to separate the various sections on search form */

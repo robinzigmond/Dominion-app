@@ -18,7 +18,7 @@ angular.module("SearchValues", [])
 			minCoinCost: "0",
 			minPotionCost: "0",
 			minDebtCost: "0",
-			maxCoinCost: "11",
+			maxCoinCost: "14",
 			maxPotionCost: "1",
 			maxDebtCost: "8",
 

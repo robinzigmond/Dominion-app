@@ -17,7 +17,7 @@ angular.module("RouteControllerSearch", [])
 
 		// define arrays of various pieces of information. This makes other parts of the code shorter, and allows for easier updating if
 		// new expansions are ever realsed with new types etc.
-		$scope.possibleCoinCosts = [0,1,2,3,4,5,6,7,8,9,10,11];
+		$scope.possibleCoinCosts = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 		$scope.possiblePotionCosts = [0,1];
 		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
 		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins", "Looter",
@@ -55,7 +55,7 @@ angular.module("RouteControllerSearch", [])
 			$scope.searchParams.minCoinCost = "0";
 			$scope.searchParams.minPotionCost = "0";
 			$scope.searchParams.minDebtCost = "0";
-			$scope.searchParams.maxCoinCost = "11";
+			$scope.searchParams.maxCoinCost = "14";
 			$scope.searchParams.maxPotionCost = "1";
 			$scope.searchParams.maxDebtCost = "8";
 		}
@@ -91,9 +91,21 @@ angular.module("RouteControllerSearch", [])
 		// note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work in Dominion
 		// (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable)
 		$scope.costSearch = function(card) {
-			return (card.costInCoins>=$scope.searchParams.minCoinCost && card.costInPotions>=$scope.searchParams.minPotionCost 
+			// Landmarks fit awkwardly here, as they have no cost. Best solution is to return them if, and only if, the cost search
+			// parameters are at their default settings:
+			if (card.types.indexOf("Landmark")>-1) {
+				if (($scope.searchParams.minCoinCost==0)&&($scope.searchParams.minPotionCost==0)
+					&&($scope.searchParams.minDebtCost==0)&&($scope.searchParams.maxCoinCost==14)
+					&&($scope.searchParams.maxPotionCost==1)&&($scope.searchParams.maxDebtCost==8)) {
+					return true;
+				}
+				else return false;
+			}
+			else {
+				return (card.costInCoins>=$scope.searchParams.minCoinCost && card.costInPotions>=$scope.searchParams.minPotionCost 
 				&& card.costInDebt>=$scope.searchParams.minDebtCost	&& card.costInCoins<=$scope.searchParams.maxCoinCost 
 				&& card.costInPotions<=$scope.searchParams.maxPotionCost && card.costInDebt<=$scope.searchParams.maxDebtCost);
+			}
 		};
 
 		
