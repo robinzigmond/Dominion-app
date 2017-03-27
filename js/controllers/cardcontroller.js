@@ -4,11 +4,11 @@ angular.module("RouteControllerCard", [])
 
 		GetData.cards()
 			.then(function(results) {
-				$scope.cardList = results.data;
+				var cardList = results.data;
 				// grab information about selected card and store in thisCard object
-				for (card in $scope.cardList) {
-					if ($scope.cardList[card].name == cardId) {
-						$scope.thisCard = $scope.cardList[card];
+				for (card in cardList) {
+					if (cardList[card].name == cardId) {
+						$scope.thisCard = cardList[card];
 						break;
 					}
 				}
@@ -86,8 +86,8 @@ angular.module("RouteControllerCard", [])
 
 				// make each card name into a link
 								
-				for (card in $scope.cardList) {
-					var name = $scope.cardList[card].name;
+				for (card in cardList) {
+					var name = cardList[card].name;
 					// don't want links for references to the same card (looks too busy and adds nothing):
 					if (name == $scope.thisCard.name) continue;
 										

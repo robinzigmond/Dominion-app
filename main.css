@@ -36,7 +36,7 @@ footer {
     flex-shrink: 0; /* needed for Safari */
 }
 
-h1.home, h2.home, h3.home, h4.home {
+h1.centre, h2.centre, h3.centre, h4.centre {
     font-family: 'Arimo', sans-serif;
     text-align: center;
 }
@@ -101,7 +101,7 @@ label.form-subtitle {
 }
 
 /* need to separate the various sections on search form */
-.form-group, .home-text {
+.form-group.search, .home-text {
     padding: 5px;
     border: 5px ridge blue;
     border-radius: 15px;
