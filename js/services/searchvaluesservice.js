@@ -44,7 +44,7 @@ angular.module("SearchValues", [])
 			inBasic: false,
 			inBase: false,
 			inBaseFirstEd: false,
-			inBaseSecondEd: false,
+			inBaseSecondEd: true, // show base set (2nd edition) cards when user goes to search page for first time
 			inIntrigue: false,
 			inIntrigueFirstEd: false,
 			inIntrigueSecondEd: false,

@@ -68,7 +68,9 @@ angular.module("RouteControllerCard", [])
 				}
 
 				//landmarks have no cost at all. Will just write "none" in that case:
-				if ($scope.thisCard.types.indexOf("Landmark")>-1) $scope.costIcons.push({text: "none"});
+				if ($scope.thisCard.types.indexOf("Landmark")>-1) {
+					$scope.costIcons.push({text: "none"});
+				}
 
 				// replace relevant text on cards and in card explanations with the corresponding icons
 				GetData.icons()
@@ -88,9 +90,7 @@ angular.module("RouteControllerCard", [])
 								
 				for (card in cardList) {
 					var name = cardList[card].name;
-					// don't want links for references to the same card (looks too busy and adds nothing):
-					if (name == $scope.thisCard.name) continue;
-										
+															
 					// there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
 					// these need an alternative string to escape them inside the HTML
 					var linkName = name.replace("'", "&#39");
@@ -100,15 +100,13 @@ angular.module("RouteControllerCard", [])
 
 					// only replace first reference to a card with link within the same section, to avoid visual clutter
 					// (so use .replace instead of .split then .join)
-					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace(name, linkHTML);
-					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace(name, linkHTML);
-					$scope.thisCard.discussion = $scope.thisCard.discussion.replace(name, linkHTML);
+					// also using square-brackets around the name, to ensure the link only appears when I want it to!
+					// (problems previously with eg. Villa inside Village inside Native Village...)
+					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
+					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
+					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
 				}
-				// the above code doesn't work quite correctly - sometimes it gives a link to a card whose name is contained in another's name
-				// (eg. Gold when Fool's Gold is mentioned - see the Mine strategy discussion), when it is the "outer" card that should be
-				// linked instead. I have tried to fix this issue, but it seems more subtle than I thought, and will take a fair bit of code.
-				// I intend to come back to it when I have inputted all cards, then run a function to figure out all cards and the names
-				// contained within them. Then I will use this data to "fix" all issues of this type.
+				
 				
 				// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
 				GetData.glossary()
