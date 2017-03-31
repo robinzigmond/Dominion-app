@@ -1,19 +1,19 @@
 <h3 class="centre">Contact the site author</h3>
 <div id="contact">
 <p>If you have any suggestions as to how to improve the quality of this site - whether additional features, bug reports, or whatever else, please fill out the form below:</p>
-<form novalidate id="contact-form">
+<form novalidate name="contactForm" id="contact-form">
 	<div class="form-group">
 		<label class="control-label" for="name">Name:</label>
-		<input class="form-control" type="text" name="name" />
+		<input class="form-control" type="text" name="name" ng-model="name" />
 	</div>
 	<div class="form-group">
 		<label class="control-label" for="e-mail">E-mail address:</label>
-		<input class="form-control" type="email" name="e-mail" />
+		<input class="form-control" type="email" name="e-mail" ng-model="email" />
 	</div>
 	<div class="form-group">
 		<label class="control-label" for="comments">Enter your comments/suggestions here:</label>
-		<textarea class="form-control" name="comments" form="contact-form" rows="8" cols="100" required></textarea>
+		<textarea class="form-control" name="comments" form="contact-form" ng-model="feedback" required></textarea>
 	</div>
-	<input type="submit" value="Submit" />
+	<input type="submit" value="Submit" ng-click="submitForm()" />
 </form>
 </div>

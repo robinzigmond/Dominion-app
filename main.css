@@ -100,8 +100,8 @@ label.form-subtitle {
     margin-bottom: 5px;
 }
 
-/* need to separate the various sections on search form */
-.form-group.search, .home-text {
+/* common styles for various form and display elements */
+.form-group.search, .home-text, #contact-form {
     padding: 5px;
     border: 5px ridge blue;
     border-radius: 15px;
@@ -141,7 +141,11 @@ label.form-subtitle {
 }
 
 #contact {
-    margin: 0 5%;
+    margin: 0 30px;
+}
+
+#contact-form {
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
