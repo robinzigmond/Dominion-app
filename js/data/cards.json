@@ -2733,7 +2733,7 @@
 	 "types": ["Action"],
 	 "set": "DarkAges",
 	 "textAboveLine": "+1 Card, +1 Action. Gain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats).",
-	 "textBelowLine": "",
+	 "textBelowLine": "When you trash this, +1 Card.",
 	 "imagePath": "images/card_images/Rats.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Rats"
@@ -3785,7 +3785,7 @@
 	 "costInDebt": 0,
 	 "types": ["Event"],
 	 "set": "Adventures",
-	 "textAboveLine": "You may discard an Attack, two [Curse]s, or size cards. If you do, gain a [Gold].",
+	 "textAboveLine": "You may discard an Attack, two [Curse]s, or six cards. If you do, gain a [Gold].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Quest.jpg",
 	 "discussion": "",

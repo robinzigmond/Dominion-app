@@ -140,6 +140,10 @@ label.form-subtitle {
     background-color: #ffe6cc;
 }
 
+#contact {
+    margin: 0 5%;
+}
+
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px;

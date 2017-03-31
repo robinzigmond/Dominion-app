@@ -1,5 +1,5 @@
 angular.module("RouteControllerCard", [])
-	.controller("CardController", function($scope, $routeParams, GetData){
+	.controller("CardController", function($scope, $routeParams, $sce, GetData){
 		var cardId = $routeParams.id;
 
 		GetData.cards()
@@ -84,47 +84,50 @@ angular.module("RouteControllerCard", [])
 							$scope.thisCard.discussion = $scope.thisCard.discussion.split(
 							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
 						}
-					});
+					
 
-				// make each card name into a link
+					// make each card name into a link
 								
-				for (card in cardList) {
-					var name = cardList[card].name;
+					for (card in cardList) {
+						var name = cardList[card].name;
 															
-					// there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
-					// these need an alternative string to escape them inside the HTML
-					var linkName = name.replace("'", "&#39");
+						// there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
+						// these need an alternative string to escape them inside the HTML
+						var linkName = name.replace("'", "&#39");
 
-					// ugly string construction to get correct HTML for link:
-					var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
+						// ugly string construction to get correct HTML for link:
+						var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
 
-					// only replace first reference to a card with link within the same section, to avoid visual clutter
-					// (so use .replace instead of .split then .join)
-					// also using square-brackets around the name, to ensure the link only appears when I want it to!
-					// (problems previously with eg. Villa inside Village inside Native Village...)
-					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
-					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
-					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
-				}
+						// only replace first reference to a card with link within the same section, to avoid visual clutter
+						// (so use .replace instead of .split then .join)
+						// also using square-brackets around the name, to ensure the link only appears when I want it to!
+						// (problems previously with eg. Villa inside Village inside Native Village...)
+						$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
+						$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
+						$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
+					}
 				
 				
-				// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
-				GetData.glossary()
-					.then (function(results) {
-						$scope.tooltipGlossary = results.data;
-						for (entry in $scope.tooltipGlossary) {
-							var tooltipHTML = "<span data-toggle='popover' data-content='"
-							 + $scope.tooltipGlossary[entry].definition + "'>" + $scope.tooltipGlossary[entry].term + "</span>";
-							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
-							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
-							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
-							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
-							$scope.thisCard.discussion = $scope.thisCard.discussion
-							.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
-						}
-						console.log($scope.thisCard.textAboveLine);
+					// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
+					// this $http call is nested inside the previous one, so that it definitely runs AFTER the links have been inserted
+					GetData.glossary()
+						.then (function(results) {
+							$scope.tooltipGlossary = results.data;
+							for (entry in $scope.tooltipGlossary) {
+								var tooltipHTML = "<button uib-popover='" + $scope.tooltipGlossary[entry].definition 
+								+ "' popover-title='" + $scope.tooltipGlossary[entry].term + "'>"
+								+ $scope.tooltipGlossary[entry].term + "</button>";
+								$scope.thisCard.textAboveLine = $sce.trustAsHtml($scope.thisCard.textAboveLine
+								.replace($scope.tooltipGlossary[entry].term, tooltipHTML));
+								$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
+								.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+								$scope.thisCard.discussion = $scope.thisCard.discussion
+								.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+							}
+							console.log($scope.thisCard.textAboveLine);
+						});
+
 					});
-
 			});
 				
 	});
