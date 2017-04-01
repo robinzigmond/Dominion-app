@@ -140,6 +140,25 @@ label.form-subtitle {
     background-color: #ffe6cc;
 }
 
+/* get popover triggers to display with some emphases */
+.glossary-item {
+    background-color: #e6f2ff;
+    border: 1px dotted black;
+} 
+
+#glossary-help {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.glossary-item:hover {
+    cursor: pointer;
+}
+
+#glossary-help .glossary-item:hover {
+    cursor: default;
+}
+
 #contact {
     margin: 0 30px;
 }

@@ -75,14 +75,14 @@ angular.module("RouteControllerCard", [])
 				// replace relevant text on cards and in card explanations with the corresponding icons
 				GetData.icons()
 					.then (function(results) {
-						$scope.iconGlossary = results.data;
-						for (icon in $scope.iconGlossary) {
+						var iconGlossary = results.data;
+						for (icon in iconGlossary) {
 							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.split(
-							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+							iconGlossary[icon].text).join(iconGlossary[icon].html);
 							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.split(
-							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+							iconGlossary[icon].text).join(iconGlossary[icon].html);
 							$scope.thisCard.discussion = $scope.thisCard.discussion.split(
-							$scope.iconGlossary[icon].text).join($scope.iconGlossary[icon].html);
+							iconGlossary[icon].text).join(iconGlossary[icon].html);
 						}
 					
 
@@ -108,25 +108,25 @@ angular.module("RouteControllerCard", [])
 					}
 				
 				
-					// attempt to implement "tooltips" (actually popovers, due to wanting mobile-friendly), but not working at the moment:
+					// display popovers for "glossary" information
 					// this $http call is nested inside the previous one, so that it definitely runs AFTER the links have been inserted
+					// (otherwise errors are caused due to $sce.trustAsHtml not returning a string)
 					GetData.glossary()
 						.then (function(results) {
-							$scope.tooltipGlossary = results.data;
-							for (entry in $scope.tooltipGlossary) {
-								var tooltipHTML = "<button uib-popover='" + $scope.tooltipGlossary[entry].definition 
-								+ "' popover-title='" + $scope.tooltipGlossary[entry].term + "'>"
-								+ $scope.tooltipGlossary[entry].term + "</button>";
+							var glossary = results.data;
+							for (entry in glossary) {
+								var popoverHTML = "<span class='glossary-item' uib-popover='" + glossary[entry].definition 
+								+ "' popover-title='" + glossary[entry].term + 
+								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								+ glossary[entry].term + "</span>";
 								$scope.thisCard.textAboveLine = $sce.trustAsHtml($scope.thisCard.textAboveLine
-								.replace($scope.tooltipGlossary[entry].term, tooltipHTML));
+								.replace(glossary[entry].term, popoverHTML));
 								$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
-								.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+								.replace(glossary[entry].term, popoverHTML);
 								$scope.thisCard.discussion = $scope.thisCard.discussion
-								.replace($scope.tooltipGlossary[entry].term, tooltipHTML);
+								.replace(glossary[entry].term, popoverHTML);
 							}
-							console.log($scope.thisCard.textAboveLine);
 						});
-
 					});
 			});
 				
