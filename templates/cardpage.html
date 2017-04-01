@@ -2,11 +2,11 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<h1>{{::thisCard.name}}</h1>
-			<p id="glossary-help"><span class="glossary-item">Click these</span> for definitions of terms.</p>
+			<p id="glossary-help"><span class="glossary-item">Click these</span> for further information.</p>
 			<table class="table table-condensed table-bordered table-responsive card-table">
 				<tr><th>Cost</th><td><img ng-repeat="item in costIcons" ng-src="{{::item.path}}" alt="{{::item.text}}" /> </td></tr>
 				<tr class="alternate"><th>{{typeOrTypes}}</th><td>{{::thisCard.types.join(", ")}}</td>
-				<tr><th>Set</th><td>{{::thisCard.set}}</td>
+				<tr><th>Set</th><td><span bind-html-compile="thisCard.set"></span></td>
 				<tr class="alternate"><th>Basic effect</th><td bind-html-compile="thisCard.textAboveLine"></td>
 				<tr><th>Other effects</th><td bind-html-compile="thisCard.textBelowLine"></td>
 			</table>

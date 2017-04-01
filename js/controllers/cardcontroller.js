@@ -106,6 +106,19 @@ angular.module("RouteControllerCard", [])
 						$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
 						$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
 					}
+
+				// display popovers giving information about the set:
+				GetData.sets()
+					.then (function(results) {
+						var setInfo = results.data;
+						var specificSetInfo = setInfo[$scope.thisCard.set];
+						specificSetInfo = specificSetInfo.replace("'", "&#39");
+						var popoverHTML = "<span class='glossary-item' uib-popover='" + specificSetInfo 
+								+ "' popover-title='" + $scope.thisCard.set + 
+								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								+ $scope.thisCard.set + "</span>";
+						$scope.thisCard.set = popoverHTML;
+					});
 				
 				
 					// display popovers for "glossary" information

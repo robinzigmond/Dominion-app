@@ -143,7 +143,7 @@ label.form-subtitle {
 /* get popover triggers to display with some emphases */
 .glossary-item {
     background-color: #e6f2ff;
-    border: 1px dotted black;
+    border: 1px dashed black;
 } 
 
 #glossary-help {
