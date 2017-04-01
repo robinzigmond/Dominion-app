@@ -176,8 +176,14 @@ angular.module("RouteControllerSearch", [])
 		// "reset all search data" button:
 		$scope.clearAll = function() {
 			$scope.clearNameSearch();
-			$scope.toggleSets();
-			if (!$scope.searchParams.selectOrDeselectSets) $scope.toggleSets();
+			for (set in $scope.allSets) {
+				if ($scope.allSets[set].dirtyName == "BaseSecondEd") {
+					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = true;
+				}
+				else {
+					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = false;					
+				}
+			}
 			$scope.resetCosts();
 			$scope.clearTypes();
 			$scope.clearNameSearch();

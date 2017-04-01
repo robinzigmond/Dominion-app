@@ -8,7 +8,6 @@ html {
 
 body {
 	padding-top: 55px;
-    background-color: #f5e6ff;
     font-family: 'Varela Round', sans-serif;
     height: 100%;
     display: flex;
@@ -20,9 +19,10 @@ body {
     flex: 1 0 auto; /* needed to fix "sticky footer" on Safari/iPad (on other devices "flex: 1;" was enough) */
 }
 
-nav {
+nav.navbar {
     font-family: 'Tangerine', cursive;
     font-size: 28px;
+    background-color: #ddd;
 }
 
 nav .navbar-brand {
@@ -31,7 +31,7 @@ nav .navbar-brand {
 
 footer {
     text-align: center;
-    background-color: #eee;
+    background-color: #ddd;
     padding: 10px;
     flex-shrink: 0; /* needed for Safari */
 }

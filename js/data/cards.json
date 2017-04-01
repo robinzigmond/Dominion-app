@@ -1474,7 +1474,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Prosperity",
-	 "textAboveLine": "+1 coin, +vp. Trash a card from your hand, +vp per two coins it costs (round down). Each other player may trash a card from their hand.",
+	 "textAboveLine": "+1 coin, +1vp. Trash a card from your hand, +vp per two coins it costs (round down). Each other player may trash a card from their hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bishop.jpg",
 	 "discussion": "",
