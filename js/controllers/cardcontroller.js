@@ -120,7 +120,27 @@ angular.module("RouteControllerCard", [])
 						$scope.thisCard.set = popoverHTML;
 					});
 				
-				
+				// display popovers for card types:
+				GetData.types()
+					.then(function(results) {
+						var typeInfo = results.data;
+						// make array whose entries are the popover html for each type that the card has:
+						var typesHtml = [];
+						for (type in $scope.thisCard.types) {
+							var currentType = $scope.thisCard.types[type];
+							var specificTypeInfo = typeInfo[currentType];
+							specificTypeInfo = specificTypeInfo.split("'").join("&#39");
+							var popoverHTML = "<span class='glossary-item' uib-popover='" + specificTypeInfo 
+								+ "' popover-title='" + currentType + 
+								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								+ currentType + "</span>";
+							typesHtml.push(popoverHTML);
+						}
+						// finally put array elements together as an html string:
+						$scope.thisCard.typePopovers = typesHtml.join(",  "); //multiple spaces to give better visual impression
+					});
+
+
 					// display popovers for "glossary" information
 					// this $http call is nested inside the previous one, so that it definitely runs AFTER the links have been inserted
 					// (otherwise errors are caused due to $sce.trustAsHtml not returning a string)

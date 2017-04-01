@@ -1,0 +1,37 @@
+{
+	"Action": "Action cards can be played in the Action phase of one's turn. By default, only one can be played in each action phase - although many Action cards give the player additional actions to use. Most Kingdom cards are Actions, and they can have any of a huge variety of different effects.",
+
+	"Treasure": "Treasure cards can be played in the Buy phase of one's turn. Any number of Treasure cards can be played - they are played one after the other, in order. (Usually the order does not matter, but with some Treasure cards it does.) The main purpose of Treasures is to generate coins to spend on buying cards from the Supply - but many Kingdom Treasure cards have additional or other effects.",
+
+	"Victory": "Victory cards are worth Victory Points if they are in your deck at the end of the game - and of course the number of VPs each player has is what determines the winner. But Victory cards cannot be played during your turn (unless they also have another type), meaning that each Victory card gained makes it harder to maintain an effective deck.",
+
+	"Curse": "Only one card - Curse itself - has the curse type. See below for more information.",
+
+	"Attack": "In general, Attack cards are those which have a negative impact on the other players when they are played. But different attacks vary in their effectiveness according to circumstances - a particular attack might be devastating to one strategy, while actively helping a different one.",
+
+	"Reaction": "A Reaction card is one which can be revealed from a player's hand in response to a particular event, in order to trigger a beneficial effect for the player who has it. A common beginner's misconception is that Reaction cards are those which offer protection from Attacks - but while several do (or at least mitigate the harmful effects), others have nothing to do with Attacks at all.",
+
+	"Duration": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and Empires.",
+
+	"Prize": "The Prizes are 5 particular cards in Cornucopia which are not in the Supply, and can only be gained through playing the Tournament card with a Province in hand. As their name suggests, they are very powerful - games with Tournament often involve a rush to get the first Prize.",
+
+	"Shelter": "The Shelters are not in the Supply, and can never be gained during the game - they are 3 cards in each player's starting deck, replacing Estates, which are used in some games involving Dark Ages cards. (The probability of using Shelters is equal to the proportion of Dark Ages cards in the Kingdom.) Although weak cards, they offer several benefits over Estates - but some Kingdom cards are weakened by using Shelters instead of Estates.",
+
+	"Ruins": "Ruins are penalty cards, from the Dark Ages expansion - not quite as bad as Curses but generally very undesirable - which are distributed by Looters. They are in the Supply, but only used when there is a Looter in the game. There are 5 different Ruins, which are shuffled together randomly into a Ruins deck of the appropriate number - 10 for each player after the first. The deck is kept face-down, apart from the top card, so that no player knows precisely which Ruins are in the game or what is coming next.",
+
+	"Looter": "The three Looter cards, in the Dark Ages expansion, are simply those which interact with Ruins. Two are Attacks which distribute them to other players, while the third comes with Ruins when gained. Ruins are in the Supply if and only if a Looter is present.",
+
+	"Knight": "The 10 Knight cards, from Dark Ages, form a single Kingdom pile, which is shuffled and kept face-down apart from the top card. The primary use of Knights is as an Attack which trashes other players' cards, a feature which is shared by all of them. But each of the 10 offers a different additional bonus - at times, the decision on whether or not to go for Knights depends on the desirability of the Knight on top of the pile.",
+
+	"Reserve": "Found only in Adventures, most Reserve cards have very weak effects when played, and then go to the player's Tavern mat. Most can then later be \"called\" at a time of the player's choosing, for their main effect. In many ways similar to Duration cards, they allow the player to precisely control the timing of certain effects - but they have the downside of being usually quite slow.",
+
+	"Traveller": "8 cards in Adventures have the Traveller type, two of them being Kingdom cards. Those two are each the base of an ascending chain of 5 cards, where each one can be traded in for the next when discarded from play. The cards at the top of each sequence (which are not travellers) are incredibly powerful, but it can be quite an investment to get to them.",
+
+	"Gathering": "A type found on only 3 cards, all from Empires. All gather VP tokens on their supply pile, which can then be taken by one of the players under certain circumstances.",
+
+	"Castle": "The Castles, found in Empires, form a single Kingdom pile with 8 different cards. All are Victory cards, with a variety of other types and effects, and most interact in some way with the other Castles. (In games with 3+ players 4 are duplicated to make the standard 12-card Victory pile.) They are always ordered from cheapest to most expensive.",
+
+	"Event": "Introduced in Adventures, and continued in Empires, Events offer players the possibility of using their Buy Phase for getting powerful one-time effects, instead of obtaining new cards for their deck. Events do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 in each game.",
+
+	"Landmark": "Introduced in Empires, Landmarks are global conditions, applying to all players, which either offer an additional way to get VP tokens during the game, or give the players additional VPs at the end of the game for certain achievements. Landmarks do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 per game. By affecting the victory conditions, the presence of Landmarks can have a huge effect on the best way to play a given Kingdom."
+}

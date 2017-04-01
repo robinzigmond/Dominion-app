@@ -20,7 +20,7 @@ angular.module("RouteControllerSearch", [])
 		$scope.possibleCoinCosts = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 		$scope.possiblePotionCosts = [0,1];
 		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
-		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Duration", "Reaction", "Prize", "Shelter", "Ruins", "Looter",
+		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Reaction", "Duration", "Prize", "Shelter", "Ruins", "Looter",
 		"Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
 		// for sets, include "dirty name" for easier Javascript computations, and "nice name" for more user-friendly display text
 		$scope.allSets = [{dirtyName: "Basic", niceName: "Basic cards"},
