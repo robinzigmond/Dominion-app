@@ -167,6 +167,12 @@ label.form-subtitle {
     margin-top: 20px;
 }
 
+.invalid-form {
+    color: red;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px;

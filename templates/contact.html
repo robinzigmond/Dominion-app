@@ -4,15 +4,26 @@
 <form novalidate name="contactForm" id="contact-form">
 	<div class="form-group">
 		<label class="control-label" for="name">Name:</label>
-		<input class="form-control" type="text" name="name" ng-model="name" />
+		<input class="form-control" type="text" name="name" ng-model="name" required />
+		<p ng-show="contactForm.name.$pristine">Please enter your name.</p>
+		<div class="invalid-form" ng-show="nameMissing">
+			A name is required!
+		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label" for="e-mail">E-mail address:</label>
-		<input class="form-control" type="email" name="e-mail" ng-model="email" />
+		<label class="control-label" for="email">E-mail address:</label>
+		<input class="form-control" type="email" name="email" ng-model="email" required />
+		<p ng-show="contactForm.email.$pristine">Please enter your e-mail address.</p>
+		<div class="invalid-form" ng-show="invalidEmail">
+			Please enter a valid e-mail address!
+		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label" for="comments">Enter your comments/suggestions here:</label>
-		<textarea class="form-control" name="comments" form="contact-form" ng-model="feedback" required></textarea>
+		<label class="control-label" for="feedback">Enter your comments/suggestions here:</label>
+		<textarea class="form-control" name="feedback" form="contact-form" ng-model="feedback" required></textarea>
+		<div class="invalid-form" ng-show="noFeedback">
+			Please give some feedback about the site!
+		</div>
 	</div>
 	<input type="submit" value="Submit" ng-click="submitForm()" />
 </form>
