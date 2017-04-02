@@ -7,8 +7,6 @@ angular.module("RouteControllerContact", [])
 		$scope.invalidEmail = false;
 		$scope.noFeedback = false;
 		$scope.submitForm = function() {
-			console.log($scope.contactForm.name);
-			console.log($scope.contactForm.email);
 			$scope.nameMissing = !($scope.contactForm.name.$valid);
 			$scope.invalidEmail = !($scope.contactForm.email.$valid);
 			$scope.noFeedback = !($scope.contactForm.feedback.$valid);	

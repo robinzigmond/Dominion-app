@@ -173,6 +173,11 @@ label.form-subtitle {
     padding: 5px 0;
 }
 
+#contact-form input.ng-invalid, #contact-form textarea.ng-invalid {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+}
+
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px;
