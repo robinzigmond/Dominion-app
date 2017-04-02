@@ -16,7 +16,7 @@ body {
 }
 
 .content {
-    flex: 1 0 auto; /* needed to fix "sticky footer" on Safari/iPad (on other devices "flex: 1;" was enough) */
+    flex: 1 0 auto; /* needed to fix "sticky footer" on Safari (in other browsers "flex: 1;" was enough) */
 }
 
 nav.navbar {
@@ -38,6 +38,10 @@ footer {
 
 h1.centre, h2.centre, h3.centre, h4.centre {
     font-family: 'Arimo', sans-serif;
+    text-align: center;
+}
+
+p.centre {
     text-align: center;
 }
 
@@ -101,11 +105,20 @@ label.form-subtitle {
 }
 
 /* common styles for various form and display elements */
-.form-group.search, .home-text, #contact-form {
+.form-group.search, .home-text, #contact-form, .link-group {
     padding: 5px;
     border: 5px ridge blue;
     border-radius: 15px;
     background-color: #e6f2ff;
+}
+
+/* give grid elements equal heights on links page */
+.equal-height-columns {
+    display: flex;
+}
+
+.link-group {
+    margin: 20px 5px;
 }
 
 /* card search results need to be in grid format */
@@ -131,22 +144,23 @@ label.form-subtitle {
 }
 
 .card-table {
-    background-color: #ffc;
-    border: 3px solid #123456;
+    background-color: #e6f2ff;
+    border: 3px solid #00254d;
     margin-top: 30px;
 }
 
 .card-table tr.alternate {
-    background-color: #ffe6cc;
+    background-color: #b3d7ff;
 }
 
 /* get popover triggers to display with some emphases */
 .glossary-item {
-    background-color: #e6f2ff;
+    background-color: #ffcc80;
     border: 1px dashed black;
 } 
 
 #glossary-help {
+    background-color: #e6f2ff;
     border: 1px dashed black;
     padding: 5px;
 }
