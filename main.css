@@ -105,21 +105,35 @@ label.form-subtitle {
 }
 
 /* common styles for various form and display elements */
-.form-group.search, .home-text, #contact-form, .link-group {
+.form-group.search, .home-text, #contact-form {
     padding: 5px;
     border: 5px ridge blue;
     border-radius: 15px;
     background-color: #e6f2ff;
 }
 
-/* give grid elements equal heights on links page */
-.equal-height-columns {
-    display: flex;
+/* slightly different styling for the columns on the links page, because it doesn't seem possible to
+put space between the borders, so a narrower border looks best*/
+.link-group {
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    background-color: #e6f2ff;
 }
 
-.link-group {
-    margin: 20px 5px;
-}
+/* give grid elements equal heights on links page. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
+.equal-height-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+} 
+
+/* the following is needed to fix the layout on Safari. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
+.equal-height-columns:before, .equal-height-columns:after {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
 
 /* card search results need to be in grid format */
 .search-results {
@@ -134,7 +148,7 @@ label.form-subtitle {
     margin: 20px auto;
 }
 
-/* make images smaller on small screend */
+/* make images smaller on small screens */
 .search-image.portrait {
     width: 150px;
 }
@@ -153,7 +167,7 @@ label.form-subtitle {
     background-color: #b3d7ff;
 }
 
-/* get popover triggers to display with some emphases */
+/* get popover triggers to display with some emphasis */
 .glossary-item {
     background-color: #ffcc80;
     border: 1px dashed black;
