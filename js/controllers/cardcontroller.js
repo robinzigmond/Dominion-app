@@ -115,7 +115,7 @@ angular.module("RouteControllerCard", [])
 						specificSetInfo = specificSetInfo.replace("'", "&#39");
 						var popoverHTML = "<span class='glossary-item' uib-popover='" + specificSetInfo 
 								+ "' popover-title='" + $scope.thisCard.set + 
-								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
 								+ $scope.thisCard.set + "</span>";
 						$scope.thisCard.set = popoverHTML;
 					});
@@ -132,7 +132,7 @@ angular.module("RouteControllerCard", [])
 							specificTypeInfo = specificTypeInfo.split("'").join("&#39");
 							var popoverHTML = "<span class='glossary-item' uib-popover='" + specificTypeInfo 
 								+ "' popover-title='" + currentType + 
-								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
 								+ currentType + "</span>";
 							typesHtml.push(popoverHTML);
 						}
@@ -150,14 +150,14 @@ angular.module("RouteControllerCard", [])
 							for (entry in glossary) {
 								var popoverHTML = "<span class='glossary-item' uib-popover='" + glossary[entry].definition 
 								+ "' popover-title='" + glossary[entry].term + 
-								"'popover-placement='auto bottom' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								"' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
 								+ glossary[entry].term + "</span>";
 								$scope.thisCard.textAboveLine = $sce.trustAsHtml($scope.thisCard.textAboveLine
 								.replace(glossary[entry].term, popoverHTML));
-								$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
-								.replace(glossary[entry].term, popoverHTML);
-								$scope.thisCard.discussion = $scope.thisCard.discussion
-								.replace(glossary[entry].term, popoverHTML);
+								$scope.thisCard.textBelowLine = $sce.trustAsHtml($scope.thisCard.textBelowLine
+								.replace(glossary[entry].term, popoverHTML));
+								$scope.thisCard.discussion = $sce.trustAsHtml($scope.thisCard.discussion
+								.replace(glossary[entry].term, popoverHTML));
 							}
 						});
 					});
