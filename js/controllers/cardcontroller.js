@@ -12,6 +12,15 @@ angular.module("RouteControllerCard", [])
 						break;
 					}
 				}
+
+				// find correct orientation for card image (for giving the correct width in mobile devices):
+				if ($scope.thisCard.types.indexOf("Event")>-1 || $scope.thisCard.types.indexOf("Landmark")>-1) {
+					$scope.thisCard.orientation = "landscape";
+				}
+				else {
+					$scope.thisCard.orientation = "portrait";
+				}
+
 				// reformat "set" string to be more easily understood by humans:
 				if ($scope.thisCard.set == "BaseFirstEd") {
 					$scope.thisCard.set = "Base (1st Edition)";

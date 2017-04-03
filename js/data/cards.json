@@ -2444,7 +2444,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "DarkAges",
-	 "textAboveLine": "+4 cards. Reveal your hand. -1 coin per Treasure card in your hand, to a minimum of 0 coins.",
+	 "textAboveLine": "+4 coins. Reveal your hand. -1 coin per Treasure card in your hand, to a minimum of 0 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Poor_House.jpg",
 	 "discussion": "",

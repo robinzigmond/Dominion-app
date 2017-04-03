@@ -67,6 +67,10 @@ h1.home {
     flex-direction: column;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
 a {
     color: #ff9900;
 }
@@ -149,11 +153,11 @@ put space between the borders, so a narrower border looks best*/
 }
 
 /* make images smaller on small screens */
-.search-image.portrait {
+.card-image.portrait {
     width: 150px;
 }
 
-.search-image.landscape {
+.card-image.landscape {
     width: 249px;
 }
 
@@ -221,15 +225,23 @@ put space between the borders, so a narrower border looks best*/
         height: 85vh;
     }
     /* increase image size back to normal on larger screens */
-    .search-image.portrait {
+    .card-image.portrait {
         width: 200px;
     }
 
-    .search-image.landscape {
+    .card-image.landscape {
         width: 332px;
     }
 
     .single-card {
         margin-top: 20%;
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+
+    .mobile-display {
+        display: none;
     }
 }

@@ -11,5 +11,16 @@ angular.module("RouteControllerHome", [])
 			$scope.randomCard3 = $scope.cardList[randomIndex3];
 			var randomIndex4 = Math.floor(numberOfCards*Math.random());
 			$scope.randomCard4 = $scope.cardList[randomIndex4];
+			var randomIndex5 = Math.floor(numberOfCards*Math.random());
+			$scope.randomCard5 = $scope.cardList[randomIndex4];
+
+			for (i=1; i<6; i++) {
+				if ($scope["randomCard"+i].types.indexOf("Event")>-1 || $scope["randomCard"+i].types.indexOf("Landmark")>-1) {
+					$scope["randomCard"+i].orientation = "landscape";
+				}
+				else {
+					$scope["randomCard"+i].orientation = "portrait";
+				}
+			}
 		});
 	});

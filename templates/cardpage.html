@@ -14,7 +14,7 @@
 			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img class="single-card" ng-src="{{::thisCard.imagePath}}" alt={{::thisCard.name}}>
+			<img class="single-card card-image {{thisCard.orientation}}" ng-src="{{::thisCard.imagePath}}" alt={{::thisCard.name}}>
 		</div>
 	</div>
 </div>
