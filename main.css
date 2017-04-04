@@ -224,6 +224,7 @@ put space between the borders, so a narrower border looks best*/
         overflow: auto;
         height: 85vh;
     }
+    
     /* increase image size back to normal on larger screens */
     .card-image.portrait {
         width: 200px;

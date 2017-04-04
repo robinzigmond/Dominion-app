@@ -124,7 +124,7 @@ angular.module("RouteControllerCard", [])
 						specificSetInfo = specificSetInfo.replace("'", "&#39");
 						var popoverHTML = "<span class='glossary-item' uib-popover='" + specificSetInfo 
 								+ "' popover-title='" + $scope.thisCard.set + 
-								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
 								+ $scope.thisCard.set + "</span>";
 						$scope.thisCard.set = popoverHTML;
 					});
@@ -141,7 +141,7 @@ angular.module("RouteControllerCard", [])
 							specificTypeInfo = specificTypeInfo.split("'").join("&#39");
 							var popoverHTML = "<span class='glossary-item' uib-popover='" + specificTypeInfo 
 								+ "' popover-title='" + currentType + 
-								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
+								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
 								+ currentType + "</span>";
 							typesHtml.push(popoverHTML);
 						}
@@ -150,26 +150,28 @@ angular.module("RouteControllerCard", [])
 					});
 
 
-					// display popovers for "glossary" information
-					// this $http call is nested inside the previous one, so that it definitely runs AFTER the links have been inserted
-					// (otherwise errors are caused due to $sce.trustAsHtml not returning a string)
-					GetData.glossary()
-						.then (function(results) {
-							var glossary = results.data;
-							for (entry in glossary) {
-								var popoverHTML = "<span class='glossary-item' uib-popover='" + glossary[entry].definition 
-								+ "' popover-title='" + glossary[entry].term + 
-								"' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true'>"
-								+ glossary[entry].term + "</span>";
-								$scope.thisCard.textAboveLine = $sce.trustAsHtml($scope.thisCard.textAboveLine
-								.replace(glossary[entry].term, popoverHTML));
-								$scope.thisCard.textBelowLine = $sce.trustAsHtml($scope.thisCard.textBelowLine
-								.replace(glossary[entry].term, popoverHTML));
-								$scope.thisCard.discussion = $sce.trustAsHtml($scope.thisCard.discussion
-								.replace(glossary[entry].term, popoverHTML));
-							}
-						});
+				GetData.glossary()
+					.then (function(results) {
+						var glossary = results.data;
+						for (entry in glossary) {
+							glossary[entry].definition = glossary[entry].definition.split("'").join("&#39");
+							var popoverHTML = "<span class='glossary-item' uib-popover='" + glossary[entry].definition 
+							+ "' popover-title='" + glossary[entry].term + 
+							"' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
+							+ glossary[entry].term + "</span>";
+							// use {} notation to mark glossary items in discussion text, where there is risk of collision of
+							// several terms. BUT don't do this in actual card text - otherwise will interfere negatively with
+							// the search function. (A user might want to search "+2 actions", and not miss all such cards because
+							// the datafile actually lists the text as "+2 {actions}s").
+							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
+							.replace(glossary[entry].term, popoverHTML);
+							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
+							.replace(glossary[entry].term, popoverHTML);
+							$scope.thisCard.discussion = $scope.thisCard.discussion
+							.replace("{"+glossary[entry].term+"}", popoverHTML);
+						}
 					});
+				});
 			});
 				
 	});

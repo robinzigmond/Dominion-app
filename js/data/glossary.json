@@ -1,5 +1,111 @@
 [
 	{"term": "Action",
-	 "definition": "Each player begins their turn with 1 action available by default. It costs 1 action to play an Action card during the Action phase - playing this action reduces the action count by 1, but may increase it at the same time. A card giving +1 Action effectively costs zero actions to play, provided the player has an action to play it in the first place. A card granting +2 Actions (or more) increases the action count when played."
-	}
+	 "definition": "Action cards can be played in the Action phase of one's turn. By default, only one can be played in each action phase - although many Action cards give the player additional actions to use. Most Kingdom cards are Actions, and they can have any of a huge variety of different effects."},
+
+	{"term": "Treasure",
+	 "definition": "Treasure cards can be played in the Buy phase of one's turn. Any number of Treasure cards can be played - they are played one after the other, in order. (Usually the order does not matter, but with some Treasure cards it does.) The main purpose of Treasures is to generate coins to spend on buying cards from the Supply - but many Kingdom Treasure cards have additional or other effects."},
+
+	{"term": "Victory",
+	 "definition": "Victory cards are worth Victory Points if they are in your deck at the end of the game - and of course the number of VPs each player has is what determines the winner. But Victory cards cannot be played during your turn (unless they also have another type), meaning that each Victory card gained makes it harder to maintain an effective deck."},
+
+	{"term": "Attack",
+	 "definition": "In general, Attack cards are those which have a negative impact on the other players when they are played. But different attacks vary in their effectiveness according to circumstances - a particular attack might be devastating to one strategy, while actively helping a different one."},
+
+	{"term": "Reaction",
+	 "definition": "A Reaction card is one which can be revealed from a player's hand in response to a particular event, in order to trigger a beneficial effect for the player who has it. A common beginner's misconception is that Reaction cards are those which offer protection from Attacks - but while several do (or at least mitigate the harmful effects), others have nothing to do with Attacks at all."},
+
+	{"term": "Duration",
+	 "definition": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and Empires."},
+
+	{"term": "Prize",
+	 "definition": "The Prizes are 5 particular cards in Cornucopia which are not in the Supply, and can only be gained through playing the Tournament card with a Province in hand. As their name suggests, they are very powerful - games with Tournament often involve a rush to get the first Prize."},
+
+	{"term": "Shelter",
+	 "definition": "The Shelters are not in the Supply, and can never be gained during the game - they are 3 cards in each player's starting deck, replacing Estates, which are used in some games involving Dark Ages cards. (The probability of using Shelters is equal to the proportion of Dark Ages cards in the Kingdom.) Although weak cards, they offer several benefits over Estates - but some Kingdom cards are weakened by using Shelters instead of Estates."},
+
+	{"term": "Ruins",
+	 "definition": "Ruins are penalty cards, from the Dark Ages expansion - not quite as bad as Curses but generally very undesirable - which are distributed by Looters. They are in the Supply, but only used when there is a Looter in the game. There are 5 different Ruins, which are shuffled together randomly into a Ruins deck of the appropriate number - 10 for each player after the first. The deck is kept face-down, apart from the top card, so that no player knows precisely which Ruins are in the game or what is coming next."},
+
+	{"term": "Looter",
+	 "definition": "The three Looter cards, in the Dark Ages expansion, are simply those which interact with Ruins. Two are Attacks which distribute them to other players, while the third comes with Ruins when gained. Ruins are in the Supply if and only if a Looter is present."},
+
+	{"term": "Knight",
+	 "definition": "The 10 Knight cards, from Dark Ages, form a single Kingdom pile, which is shuffled and kept face-down apart from the top card. The primary use of Knights is as an Attack which trashes other players' cards, a feature which is shared by all of them. But each of the 10 offers a different additional bonus - at times, the decision on whether or not to go for Knights depends on the desirability of the Knight on top of the pile."},
+
+	{"term": "Reserve",
+	 "definition": "Found only in Adventures, most Reserve cards have very weak effects when played, and then go to the player's Tavern mat. Most can then later be \"called\" at a time of the player's choosing, for their main effect. In many ways similar to Duration cards, they allow the player to precisely control the timing of certain effects - but they have the downside of being usually quite slow."},
+
+	{"term": "Traveller",
+	 "definition": "8 cards in Adventures have the Traveller type, two of them being Kingdom cards. Those two are each the base of an ascending chain of 5 cards, where each one can be traded in for the next when discarded from play. The cards at the top of each sequence (which are not travellers) are incredibly powerful, but it can be quite an investment to get to them."},
+
+	{"term": "Gathering",
+	 "definition": "A type found on only 3 cards, all from Empires. All gather VP tokens on their supply pile, which can then be taken by one of the players under certain circumstances."},
+
+	{"term": "Castle",
+	 "definition": "The Castles, found in Empires, form a single Kingdom pile with 8 different cards. All are Victory cards, with a variety of other types and effects, and most interact in some way with the other Castles. (In games with 3+ players 4 are duplicated to make the standard 12-card Victory pile.) They are always ordered from cheapest to most expensive."},
+
+	{"term": "Event",
+	 "definition": "Introduced in Adventures, and continued in Empires, Events offer players the possibility of using their Buy Phase for getting powerful one-time effects, instead of obtaining new cards for their deck. Events do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 in each game."},
+
+	{"term": "Landmark",
+	 "definition": "Introduced in Empires, Landmarks are global conditions, applying to all players, which either offer an additional way to get VP tokens during the game, or give the players additional VPs at the end of the game for certain achievements. Landmarks do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 per game. By affecting the victory conditions, the presence of Landmarks can have a huge effect on the best way to play a given Kingdom."},
+
+	{"term": "Base",
+	 "definition": "The original Dominion release from 2008, reprinted in 2016 with 6 cards removed and 7 added. As befits the initial set, all cards have relatively simple effects - but they introduce many of the most important card effects which recur, in more complex form, in later sets."},
+
+	{"term": "Intrigue",
+	 "definition": "The first expansion, released in 2009, and reprinted in 2016 with 6 cards removed and 7 added. Introduces cards with explicit choices, and emphasises Victory cards, with both hybrid Victory cards and other cards which give more value to the basic Victory cards."},
+
+	{"term": "Seaside",
+	 "definition": "The second expansion, released in 2009. It introduces the Duration cards (and was the only set to include them before Adventures in 2015), which have effects lasting for more than 1 turn. Cards affecting the player's following turn are the key theme of the set, which is apparent even on the non-Duration cards."},
+
+	{"term": "Alchemy",
+	 "definition": "The third expansion, released in 2010. It was the first \"small\" expansion, and introduces the Potion mechanic, a second resource required for buying some cards. Action cards are the other major theme of the set, with many of the Alchemy cards encouraging, enabling or rewarding having many action cards in the deck."},
+
+	{"term": "Prosperity",
+	 "definition": "The fourth expansion, released in 2010. Its central theme is \"wealth\", seen in some unusually expensive cards (including Platinum and Colony) and a large number of both Treasure cards and Actions which interact with Treasures."},
+
+	{"term": "Cornucopia",
+	 "definition": "The fifth expansion, and second \"small\" expansion, released in 2011. It is based on the concept of variety, with many cards either rewarding having a variety of different cards in one's hand or deck, or enabling one to obtain a greater variety. Later packaged together with Guilds in one larger set."},
+
+	{"term": "Hinterlands",
+	 "definition": "The sixth expansion, released in 2011. Its central theme is cards which do something when you buy or gain them - or which have effects when other cards are bought or gained."},
+
+	{"term": "Dark Ages",
+	 "definition": "The seventh expansion, released in 2012. The largest Dominion expansion at the time of release, it has a great variety, but particularly empasises interactions with trashing (cards that do things when trashed, or that allow cards to be gained from the trash pile), as well as having a subtheme of \"upgrading\"."},
+
+	{"term": "Guilds",
+	 "definition": "The eighth expansion, released in 2013. A \"small\" expansion, later packaged together with Cornucopia. It has 2 main themes - Coin tokens, which can be saved up to be spent as money on a future turn, and overpay, whereby you can pay more for some cards for an improved effect when you buy them."},
+
+	{"term": "Adventures",
+	 "definition": "The ninth expansion, released in 2015. It has a large number of new concepts, including Events, Travellers, Reserve cards, the return of Duration cards, and tokens which can be placed on supply piles (and elsewhere) for a variety of effects."},
+
+	{"term": "Empires",
+	 "definition": "The tenth (and so far last) expansion, released in 2016. It introduces Landmarks, the debt mechanic, and split piles - while continuing in the line of Adventures by having Events and Duration cards. In some ways a revamped version of Prosperity, it emphaises alternative ways to get VPs, including via tokens."},
+
+	{"term": "Promo",
+	 "definition": "Promotional cards have been released occasionally, for a variety of different reasons or occasions. They are usually available to buy via the store at boardgamegeek.com. Promos have no common theme - many are \"exotic\" or unusual, while others are relatively straightforward although not felt to be worth including in one of the regular sets."},
+
+	{"term": "engine",
+	 "definition": "An engine deck is one that makes use of action cards in order to draw through the entire deck each turn. This is only worth doing if your \"payload\" - that is, the thing you are getting to do every turn - is significant. Just drawing Silvers and Golds isn't worth building an engine for - but getting the cash and buys to obtain 2 Provinces, or strong attacks on the other player(s), are common justifications for doing so. At high levels of play, well-constructed engines tend to win out over most other types of deck, in the majority of Kingdoms."},
+
+	{"term": "money",
+	 "definition": "A shorthand for Treasure. More specifically, a \"money\" strategy aims to buy its Victory cards by the simple means of having Silvers and Golds in hand, usually supported by a small number of Actions. New players sometimes think money strategies are the best, in part because the original base set featured more money-favouring than engine-favouring cards - but money strategies tend to be weak in high-level play, except in special circumstances."},
+
+	{"term": "alt-VP",
+	 "definition": "Any Victory cards other than the basic ones (Estate, Duchy, Province, and Colony) are referred to as alt-VP. The presence of alt-VP cards can enable new strategies (promarily rushes and slogs), and also influences the game for the simple reason that they make more total VP available than usual."},
+
+	{"term": "village",
+	 "definition": "A common term for any card which provides +2 (or more) Actions. So called because the Village card in the base set has this function, and many other such cards have \"village\" in their name."},
+
+	{"term": "terminal draw",
+	 "definition": "Any terminal action which draws 2 or more cards, thus increasing your handsize. They require careful handling because of the possibility of drawing other Action cards without the ability to play them. Typically used either in a money strategy which few or no other action cards, or as part of an engine with plenty of villages."},
+
+	{"term": "terminal",
+	 "definition": "A Terminal action is one which does not give any additional actions when played. Only one can be played per turn, in the absence of villages (or other similar action-multiplying effects). This makes controlling the number of terminals you buy an important consideration in deck-building."},
+
+	 {"term": "non-terminal",
+	  "definition": "any Action card which provides at least +1 Action - and usually those providing exactly +1 Action. These cards give back the action used to play them, so you can chain them indefinitely - provided of course you have some way to keep drawing them into your hand."}
+
+
 ]
