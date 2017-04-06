@@ -1,5 +1,5 @@
 [
-	{"text": "'Debt",
+	{"text": "<Debt",
 	"html": "<img src='images/debt.png' alt='debt' />"	},
 
 	{"text": "0 coins",
@@ -71,6 +71,6 @@
 	{"text": "14 coins",
 	"html": "<img src='images/14coins.png' alt='14 coins' />"	},
 
-	{"text": "'Coin",
+	{"text": "<Coin",
 	"html": "<img src='images/coin.png' alt='coin' />"	}
 ]

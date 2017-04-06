@@ -1,4 +1,10 @@
 [
+	{"term": "Supply",
+	 "definition": "The cards available for players to buy or gain by normal means during the game - basically all cards on the table which can be in decks (but not Events or Landmarks), except those explicitly marked as not being in the supply."},
+
+	{"term": "Kingdom",
+	 "definition": "The particular set of 10 cards, other than the basic ones, which are available in the Supply in any one game."},
+
 	{"term": "Action",
 	 "definition": "Action cards can be played in the Action phase of one's turn. By default, only one can be played in each action phase - although many Action cards give the player additional actions to use. Most Kingdom cards are Actions, and they can have any of a huge variety of different effects."},
 
@@ -24,7 +30,7 @@
 	 "definition": "The Shelters are not in the Supply, and can never be gained during the game - they are 3 cards in each player's starting deck, replacing Estates, which are used in some games involving Dark Ages cards. (The probability of using Shelters is equal to the proportion of Dark Ages cards in the Kingdom.) Although weak cards, they offer several benefits over Estates - but some Kingdom cards are weakened by using Shelters instead of Estates."},
 
 	{"term": "Ruins",
-	 "definition": "Ruins are penalty cards, from the Dark Ages expansion - not quite as bad as Curses but generally very undesirable - which are distributed by Looters. They are in the Supply, but only used when there is a Looter in the game. There are 5 different Ruins, which are shuffled together randomly into a Ruins deck of the appropriate number - 10 for each player after the first. The deck is kept face-down, apart from the top card, so that no player knows precisely which Ruins are in the game or what is coming next."},
+	 "definition": "Ruins are penalty cards, from the Dark Ages expansion - not quite as bad as Curses but generally very undesirable - which are distributed by Looters. They are in the Supply, but only used when there is a Looter in the game. There are 5 different Ruins, which are shuffled together randomly into a Ruins pile of the appropriate size - 10 for each player after the first. The deck is kept face-down, apart from the top card, so that no player knows precisely which Ruins are in the game or what is coming next."},
 
 	{"term": "Looter",
 	 "definition": "The three Looter cards, in the Dark Ages expansion, are simply those which interact with Ruins. Two are Attacks which distribute them to other players, while the third comes with Ruins when gained. Ruins are in the Supply if and only if a Looter is present."},
@@ -104,8 +110,27 @@
 	{"term": "terminal",
 	 "definition": "A Terminal action is one which does not give any additional actions when played. Only one can be played per turn, in the absence of villages (or other similar action-multiplying effects). This makes controlling the number of terminals you buy an important consideration in deck-building."},
 
-	 {"term": "non-terminal",
-	  "definition": "any Action card which provides at least +1 Action - and usually those providing exactly +1 Action. These cards give back the action used to play them, so you can chain them indefinitely - provided of course you have some way to keep drawing them into your hand."}
+	{"term": "non-terminal",
+	 "definition": "any Action card which provides at least +1 Action - and usually those providing exactly +1 Action. These cards give back the action used to play them, so you can chain them indefinitely - provided of course you have some way to keep drawing them into your hand."},
+
+	{"term": "non-terminal draw",
+	 "definition": "a card which gives at least +1 action and +2 cards, thereby increasing your handsize and allowing other actions to be played afterwards. These cards, of which Laboratory is the most basic, are very powerful and a strong addition to more or less every deck."},
+
+	{"term": "cantrip",
+	 "definition": "This has become the commonly accepted term for cards offering +1 Card and +1 Action, together with some other (often small) benefit. (The term comes from other games, and its ultimate origin appears to be unknown.) These cards usually can be added to any deck without making it worse, since when you draw them, you can play them to get to the next card while preserving your actions. But note that a card which gives +1 Card and +1 Action, with no other benefit, does you no good either compared to not having it. In practice, all cantrips in Dominion have some kind of other benefit, but it is usually a weak one relative to the card's cost. Cheap cantrips are nonetheless useful when running an engine deck, particularly if you need a high density of Action cards."},
+
+	{"term": "Reveal",
+	 "definition": "To reveal a card is simply to let the other players see what it is. Unless otherwise specified, revealed cards always return to where they were revealed from - in fact, strictly speaking, they never change location at all."},
+
+	{"term": "reveal",
+	"definition": "To reveal a card is simply to let the other players see what it is. Unless otherwise specified, revealed cards always return to where they were revealed from - in fact, strictly speaking, they never change location at all."},
+
+	{"term": "Trash",
+	 "definition": "When a card is trashed, it is removed from its present location and placed in the Trash pile. This usually means that it is out of the game for good - although a few cards allow gaining from the Trash. Trashing your own weak cards - of which you start with 10 - is very desirable, especially if you want to construct an engine, while some Attacks trash valuable cards from the opponents' decks."},
+
+	{"term": "trash",
+	 "definition": "When a card is trashed, it is removed from its present location and placed in the Trash pile. This usually means that it is out of the game for good - although a few cards allow gaining from the Trash. Trashing your own weak cards - of which you start with 10 - is very desirable, especially if you want to construct an engine, while some Attacks trash valuable cards from the opponents' decks."}
+
 
 
 ]

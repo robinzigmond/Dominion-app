@@ -109,7 +109,7 @@ angular.module("RouteControllerCard", [])
 
 						// only replace first reference to a card with link within the same section, to avoid visual clutter
 						// (so use .replace instead of .split then .join)
-						// also using square-brackets around the name, to ensure the link only appears when I want it to!
+						// also using square brackets around the name, to ensure the link only appears when I want it to!
 						// (problems previously with eg. Villa inside Village inside Native Village...)
 						$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
 						$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
@@ -159,14 +159,11 @@ angular.module("RouteControllerCard", [])
 							+ "' popover-title='" + glossary[entry].term + 
 							"' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
 							+ glossary[entry].term + "</span>";
-							// use {} notation to mark glossary items in discussion text, where there is risk of collision of
-							// several terms. BUT don't do this in actual card text - otherwise will interfere negatively with
-							// the search function. (A user might want to search "+2 actions", and not miss all such cards because
-							// the datafile actually lists the text as "+2 {actions}s").
+							// used {} notation to mark glossary items in discussion text:
 							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
-							.replace(glossary[entry].term, popoverHTML);
+							.replace("{"+glossary[entry].term+"}", popoverHTML);
 							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
-							.replace(glossary[entry].term, popoverHTML);
+							.replace("{"+glossary[entry].term+"}", popoverHTML);
 							$scope.thisCard.discussion = $scope.thisCard.discussion
 							.replace("{"+glossary[entry].term+"}", popoverHTML);
 						}

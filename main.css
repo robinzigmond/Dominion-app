@@ -71,16 +71,22 @@ h1.home {
     display: none;
 }
 
-a {
-    color: #ff9900;
+/* custom link colours - also applied to popover triggers */
+a, .glossary-item {
+    color: #e68a00;
 }
 
-a:hover, a:active {
+a:hover, a:active, .glossary-item:hover {
     color: #cc0;
 }
 
 a:visited {
     color: #b36b00;
+}
+
+.glossary-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
@@ -164,31 +170,11 @@ put space between the borders, so a narrower border looks best*/
 .card-table {
     background-color: #e6f2ff;
     border: 3px solid #00254d;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 .card-table tr.alternate {
     background-color: #b3d7ff;
-}
-
-/* get popover triggers to display with some emphasis */
-.glossary-item {
-    background-color: #ffcc80;
-    border: 1px dashed black;
-} 
-
-#glossary-help {
-    background-color: #e6f2ff;
-    border: 1px dashed black;
-    padding: 5px;
-}
-
-.glossary-item:hover {
-    cursor: pointer;
-}
-
-#glossary-help .glossary-item:hover {
-    cursor: default;
 }
 
 #contact {
