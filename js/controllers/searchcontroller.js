@@ -203,6 +203,8 @@ angular.module("RouteControllerSearch", [])
 					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = false;					
 				}
 			}
+			$scope.searchParams.selectOrDeselectSets = true;
+			$scope.searchParams.setsButtonText = "select";
 			$scope.resetCosts();
 			$scope.clearTypes();
 			$scope.clearNameSearch();

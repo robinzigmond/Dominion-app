@@ -13,6 +13,11 @@ angular.module("RouteControllerCard", [])
 					}
 				}
 
+				// add placeholder text for cards with no strategy discussion yet:
+				if ($scope.thisCard.discussion=="") {
+					$scope.thisCard.discussion = "No further information about {{thisCard.name}} has yet been provided.";
+				}
+
 				// find correct orientation for card image (for giving the correct width in mobile devices):
 				if ($scope.thisCard.types.indexOf("Event")>-1 || $scope.thisCard.types.indexOf("Landmark")>-1) {
 					$scope.thisCard.orientation = "landscape";
