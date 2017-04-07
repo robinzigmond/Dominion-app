@@ -21,10 +21,10 @@ All code used in this project is my own, with the following exceptions:
     - **AngularJS** has been used as the framework for this application. The 2-way databinding provided by Angular is what allows the search page to function, and respond to the user's every click and keystroke, without requiring any "submit" button to be clicked. It also allows a single html template to be used for all 386 pages referring to individual cards.
 
     A number of other non-core Angular packages have been used:
-      - [Angular Route](https://github.com/angular/bower-angular-route) has been used to handle page routing.
-      - [Angular Sanitize](https://github.com/angular/bower-angular-sanitize) is necessary for allowing html markup to be accessed and rendered correctly from Angular's databinding, as happens on the card pages.
-      - [Angular Bootstrap](http://angular-ui.github.io/bootstrap/) is a library of Angular directives which replicate the effects of Bootstrap's JS widgets in a way which is fully compatible with Angular. It has been used here for the popovers which are found on the card pages, and for the collapsible mobile navigation menu.
-      - [Angular Animate](http://angular-ui.github.io/bootstrap/) makes the Angular bootstrap components appear and disappear more smoothly.
+      1 [Angular Route](https://github.com/angular/bower-angular-route) has been used to handle page routing.
+      2 [Angular Sanitize](https://github.com/angular/bower-angular-sanitize) is necessary for allowing html markup to be accessed and rendered correctly from Angular's databinding, as happens on the card pages.
+      3 [Angular Bootstrap](http://angular-ui.github.io/bootstrap/) is a library of Angular directives which replicate the effects of Bootstrap's JS widgets in a way which is fully compatible with Angular. It has been used here for the popovers which are found on the card pages, and for the collapsible mobile navigation menu.
+      4 [Angular Animate](http://angular-ui.github.io/bootstrap/) makes the Angular bootstrap components appear and disappear more smoothly.
 - [Bootstrap](http://getbootstrap.com/)
     - **Bootstrap** CSS has been used throughout, mainly for its responsive grid system, and also for easier styling of the forms and tables used on the site.
 - [npm](https://www.npmjs.com/)
@@ -38,7 +38,7 @@ As a brand new coder, I have often relied on Google searches and Stack Overflow 
 - The custom directive found in my directive.js file has been liften directly from the answer by Stack Overflow contributor Joël on [this thread](http://stackoverflow.com/questions/17417607/angular-ng-bind-html-and-directive-within-it/). Until I discovered that thread, I had no idea why my popovers were not functioning - it turns out that ng-bind-html will not apply directives (such as those used by angular-bootstrap), and a custom directive such as this one is needed to replace it in such cases.
 - I have used Flexbox to create the "sticky footer" (that is, force the footer to go to the bottom of the viewport, rather than always being just below the content and therefore unnaturally high on pages with less than a full page of content), following rather directly the code given [here](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) and in particular [here](http://stackoverflow.com/questions/36899807/flexbox-sticky-footer-not-working-in-safari-or-chrome-osx). The latter link gives the necessary modifications for the footer to display correctly on Safari.
 
-Note that solutions to the "sticky footer" problem which rely on the footer having a fixed width do not work here, the footer being considerably higher on narrow screens, so Flexbox was required to keep the design responsive.
+Note that solutions to the "sticky footer" problem which rely on the footer having a fixed height do not work here, the footer being considerably higher on narrow screens, so Flexbox was required to keep the design responsive.
 
 - Another issue which required the use of Flexbox was keeping columns at a constant height in the bootstrap grid system, even if the amount of content differs. My CSS which fixes this is adapted from the code by Bryan Willis [here](http://codepen.io/bootstrapped/details/RrabNe/) - and can be seen in effect most obviously on the links page, and also on the homepage.
 
