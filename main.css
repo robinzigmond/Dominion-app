@@ -56,7 +56,7 @@ h1.home {
 }
 
 
-.home-text, .home-image {
+.home-text, .home-image a {
     margin: 10px auto;
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ a:visited {
     cursor: pointer;
 }
 
-/* get dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
+/* get search dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
 select.form-control {
 	display: inline-block;
 	width: 60px;
@@ -131,7 +131,7 @@ put space between the borders, so a narrower border looks best*/
     background-color: #e6f2ff;
 }
 
-/* give grid elements equal heights on links page. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
+/* give grid elements equal heights on links and home pages. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
 .equal-height-columns {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +155,7 @@ put space between the borders, so a narrower border looks best*/
 /* card image on card pages: centre horizontally, and push down from top of page */
 .single-card {
     display: block;
-    margin: 20px auto;
+    margin: auto;
 }
 
 /* make images smaller on small screens */

@@ -105,7 +105,7 @@
 	 "definition": "A common term for any card which provides +2 (or more) Actions. So called because the Village card in the base set has this function, and many other such cards have \"village\" in their name."},
 
 	{"term": "terminal draw",
-	 "definition": "Any terminal action which draws 2 or more cards, thus increasing your handsize. They require careful handling because of the possibility of drawing other Action cards without the ability to play them. Typically used either in a money strategy which few or no other action cards, or as part of an engine with plenty of villages."},
+	 "definition": "Any terminal action which draws 2 or more cards, thus increasing your handsize. They require careful handling because of the possibility of drawing other Action cards without the ability to play them. Typically used either in a money strategy with few or no other action cards, or as part of an engine with plenty of villages."},
 
 	{"term": "terminal",
 	 "definition": "A Terminal action is one which does not give any additional actions when played. Only one can be played per turn, in the absence of villages (or other similar action-multiplying effects). This makes controlling the number of terminals you buy an important consideration in deck-building."},
