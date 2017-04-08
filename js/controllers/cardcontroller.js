@@ -159,18 +159,41 @@ angular.module("RouteControllerCard", [])
 					.then (function(results) {
 						var glossary = results.data;
 						for (entry in glossary) {
+							// as usual escape any apostrophes in the text to be inserted into html
 							glossary[entry].definition = glossary[entry].definition.split("'").join("&#39");
-							var popoverHTML = "<span class='glossary-item' uib-popover='" + glossary[entry].definition 
-							+ "' popover-title='" + glossary[entry].term + 
-							"' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
-							+ glossary[entry].term + "</span>";
-							// used {} notation to mark glossary items in discussion text:
-							$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine
-							.replace("{"+glossary[entry].term+"}", popoverHTML);
-							$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine
-							.replace("{"+glossary[entry].term+"}", popoverHTML);
-							$scope.thisCard.discussion = $scope.thisCard.discussion
-							.replace("{"+glossary[entry].term+"}", popoverHTML);
+							// for better visual display, want to highlight the entire word, rather than just the bracketed term
+							// (eg. highlight "trashing" to trigger the glossary definition of "trash")
+							// define a function to do this for each of the 3 relevant texts:
+							insertGlossaryPopovers = function(text, term, definition) {
+								// first need to split the relevant texts into individual words:
+								var words = text.split(" ");
+								// then check if any contain the relevant glossary item, contained in the {} markup
+								for (word in words) {
+									if (words[word].indexOf("{"+term+"}")>-1) {
+										var highlightedWord = words[word];
+										break; // by design each glossary item appears at most once in each text
+									}
+								}
+								// strip out the curly braces in order to display the "pure" text to the user:
+								if (highlightedWord!=undefined) {
+									var pureHighlightedWord = highlightedWord.split("{").join("").split("}").join("");
+								}
+								// now can use this entire word as the item to be replaced:
+								// definite html string for the popover
+								var popoverHTML = "<span class='glossary-item' uib-popover='" + definition + "' popover-title='" 
+								+ term 
+								+ "' popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
+								+ pureHighlightedWord + "</span>";
+								// finally replace text with relevant html
+								return text.replace(highlightedWord, popoverHTML);
+							}
+							
+							$scope.thisCard.textAboveLine =
+							insertGlossaryPopovers($scope.thisCard.textAboveLine, glossary[entry].term, glossary[entry].definition);
+							$scope.thisCard.textBelowLine =
+							insertGlossaryPopovers($scope.thisCard.textBelowLine, glossary[entry].term, glossary[entry].definition);
+							$scope.thisCard.discussion =
+							insertGlossaryPopovers($scope.thisCard.discussion, glossary[entry].term, glossary[entry].definition);
 						}
 					});
 				});

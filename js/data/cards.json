@@ -645,7 +645,7 @@
 	 "textAboveLine": "+2 coins. If you've played 3 or more {Action}s this turn (counting this), +1 Card and +1 Action.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Conspirator.jpg",
-	 "discussion": "",
+	 "discussion": "A relatively straightforward card to understand, the difficulty with Conspirator is how to ensure that it is always \"activated\", so that it becomes a ridiculously cheap [Grand Market] (although without the +{Buy}). If you're running an {engine} anyway, which plays lots of {Action}s, any Conspirator you draw is likely to give you the bonus card and action, which is great - but if you have too many you'll find yourself unable to start your engine because of too many Conspirators in hand! It is possible to build a \"Conspirator deck\" with lots of them, but it requires the right mix of other actions ({village}s are best) to ensure Conspirator activation - as well as usually heavy {trash}ing to set up, and extra buys to make use of the high-money turns which you will end up with.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Conspirator"
 	},
 
@@ -658,7 +658,7 @@
 	 "textAboveLine": "+2 Cards. If you have 5 or fewer cards in hand (after drawing), +2 {Action}s.",
 	 "textBelowLine": "When another player plays an {Attack} card, you may first {reveal} this from a hand of 5 or more cards, to draw 2 cards then discard 3.",
 	 "imagePath": "images/card_images/Diplomat.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards added to the second edition of Intrigue in 2016, Diplomat is a tricky card to use well. The {Reaction} ability can be a useful compensation for some {Attack}s, allowing you to cycle through your deck quicker to find your key cards, even though it does cost you a card in hand. Its on play ability is very poor if played from a full 5-card hand, but if you play it from a 4-card hand or smaller, you get +2 Cards and +2 {Action}s, which is great. This can happen in a few different ways: if you have just been hit by a discard attack, if you have some way to reduce your own handsize in the Action phase with actions left over, or most pleasingly, if you made use of its Reaction ability since your last turn...",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Diplomat"
 	},
 
@@ -671,7 +671,7 @@
 	 "textAboveLine": "{Gain} a card costing up to 4 coins. If the gained card is an... {Action} card, +1 Action. {Treasure} card, +1 coin. {Victory} card, +1 Card.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Ironworks.jpg",
-	 "discussion": "",
+	 "discussion": "Ironworks is of course an improved variant of [Workshop], and can be used for all the same purposes as that card - like picking up cheap {engine} components or rushing the end of the game. Ironworks is much better suited to the engine-building purpose because it is {non-terminal} when used to pick up {Action} cards. This also makes it great in a [Gardens] rush, even more than Workshop, because if you have multiple Ironworks in the same hand (which will certainly happen if you play it right) you can gain several more Ironworks or other cheap actions before making your {buy}, allowing your deck-size to increase incredibly quickly.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ironworks"
 	},
 
@@ -684,7 +684,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. You may discard 2 cards, for +2 coins.",
 	 "textBelowLine": "1vp",
 	 "imagePath": "images/card_images/Mill.jpg",
-	 "discussion": "",
+	 "discussion": "One of the new cards in the second edition of Intrigue from 2016, Mill is a straight replacement for the removed [Great Hall], costing 1 coin more but with an additional ability which can increase {buy}ing power. This makes it viable in more decks, being often worth picking up with 4 coins in the endgame, or earlier if desiring a cheap {cantrip} - and it of course has useful interactions with those cards, many of them in Intrigue, which interact with each different type a card has ([Ironworks] is a good example).",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mill"
 	},
 
@@ -697,7 +697,7 @@
 	 "textAboveLine": "+1 Card, +2 {Action}s. You may {trash} this for +2 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Mining_Village.jpg",
-	 "discussion": "",
+	 "discussion": "A more expensive [Village], and therefore inefficient if you refuse to ever {trash} it to use its additional benefit. Mining Village can actually be a good opening {buy} (unlike Village), because you can trash it as soon as you play it to be almost certain to get 6 coins - this can let you get an early economic lead if you buy [Gold] or another strong early-game card costing 6 coins. Alternatively, it can be used as a regular Village which can be cashed in at the end of the game for additional money - for this to be fully effective, +Buy is generally needed.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mining_Village"
 	},
 
