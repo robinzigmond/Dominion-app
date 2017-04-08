@@ -99,7 +99,7 @@
 	 "definition": "A shorthand for Treasure. More specifically, a \"money\" strategy aims to buy its Victory cards by the simple means of having Silvers and Golds in hand, usually supported by a small number of Actions. New players sometimes think money strategies are the best, in part because the original base set featured more money-favouring than engine-favouring cards - but money strategies tend to be weak in high-level play, except in special circumstances."},
 
 	{"term": "alt-VP",
-	 "definition": "Any Victory cards other than the basic ones (Estate, Duchy, Province, and Colony) are referred to as alt-VP. The presence of alt-VP cards can enable new strategies (promarily rushes and slogs), and also influences the game for the simple reason that they make more total VP available than usual."},
+	 "definition": "Any Victory cards other than the basic ones (Estate, Duchy, Province, and Colony) are referred to as alt-VP. The presence of alt-VP cards can enable new strategies (primarily rushes and slogs), and also influences the game for the simple reason that they make more total VP available than usual."},
 
 	{"term": "village",
 	 "definition": "A common term for any card which provides +2 (or more) Actions. So called because the Village card in the base set has this function, and many other such cards have \"village\" in their name."},
@@ -135,7 +135,7 @@
 	 "definition": "Trash for benefit cards are those which trash a single card and give you some bonus which scales with the card's cost."},
 
 	{"term": "megaturn",
-	 "definition": "A megaturn strategy is an extreme strategy, usually relying on a particular 2 or 3-card combo, which buys no Victory cards at all until it is able fo pull of a final game-ending \"megaturn\" - most spectacularly, the entire Province or Colony pile, but it is sometimes possible to win by emptying 3 piles then buying a single Duchy or Estate. Such combos typically involve a cost-reducer like Bridge or Highway, and are vulnerable to the opponent(s) ending the game before the combo is up and running."},	 
+	 "definition": "A megaturn strategy is one, usually relying on a particular 2 or 3-card combo, which buys no Victory cards at all until it is able fo pull of a final game-ending \"megaturn\" - most spectacularly, the entire Province or Colony pile, but it is sometimes possible to win by emptying 3 piles then buying a single Duchy or Estate. Such combos typically involve a cost-reducer like Bridge or Highway, and are vulnerable to the opponent(s) ending the game before the combo is up and running."},	 
 
 	{"term": "terminal Silver",
 	 "definition": "Any terminal Action which gives 2 coins as part of its bonus, as a Silver does. It is a useful term because there are a large number ot these cards, which vary widely in their cost and in their additional benefits. Terminal Silvers costing 3 or 4 always have to be weighed against buying Silver itself."},

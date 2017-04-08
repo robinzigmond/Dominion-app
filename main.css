@@ -115,11 +115,15 @@ label.form-subtitle {
 }
 
 /* common styles for various form and display elements */
-.form-group.search, .home-text, #contact-form {
+.form-group.search, .home-text, #contact-form, #card-info {
     padding: 5px;
     border: 5px ridge blue;
     border-radius: 15px;
     background-color: #e6f2ff;
+}
+
+#card-info {
+    margin-bottom: 20px;
 }
 
 /* slightly different styling for the columns on the links page, because it doesn't seem possible to
@@ -155,7 +159,7 @@ put space between the borders, so a narrower border looks best*/
 /* card image on card pages: centre horizontally, and push down from top of page */
 .single-card {
     display: block;
-    margin: auto;
+    margin: 20px auto;
 }
 
 /* make images smaller on small screens */
@@ -221,7 +225,7 @@ put space between the borders, so a narrower border looks best*/
     }
 
     .single-card {
-        margin-top: 20%;
+        margin-top: 90px;
     }
 
     .mobile-hidden {

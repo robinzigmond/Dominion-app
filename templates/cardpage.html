@@ -9,7 +9,7 @@
 				<tr class="alternate"><th>Basic effect</th><td bind-html-compile="thisCard.textAboveLine"></td>
 				<tr><th>Other effects</th><td bind-html-compile="thisCard.textBelowLine"></td>
 			</table>
-			<div class="home-text">
+			<div id="card-info">
 				<p bind-html-compile="thisCard.discussion"></p>
 			</div>
 			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>

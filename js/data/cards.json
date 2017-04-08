@@ -515,7 +515,7 @@
 	 "textAboveLine": "+3 Cards. Put a card from your hand onto your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Courtyard.jpg",
-	 "discussion": "",
+	 "discussion": "A cheap and seemingly modest {terminal draw} card, Courtyard is indeed not particularly good as the main draw component in an {engine} - although if you're not aiming to draw your whole deck every turn, the deck-rearrangement feature can be invaluable for putting combos together. Where Courtyard truly shines is in a {money} game - because a 6-card hand is usually plenty to buy a [Gold] early on and [Province]s soon after getting a Gold or two, and the ability to put a {Treasure} on top and use it next turn if you draw too much helps to ensure that you draw exactly 6 coins, and later 8 coins, each turn. Buying nothing but 2 Courtyards plus money is competitive with all but the fastest engines, and Courtyard is even better when you want to line up combos, such as [Baron] with an [Estate], or [Tournament] with a Province.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Courtyard"
 	},
 
@@ -528,7 +528,7 @@
 	 "textAboveLine": "+1 {Action}. Choose one: {Trash} an Action card from the {Supply}; or {gain} an Action card from the trash.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Lurker.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Lurker is an intriguing card which combines the \"choices\" theme of Intrigue with a couple of interesting mechanics - {trash}ing cards from the {Supply} (otherwise found on only a couple of cards in {Empires}), and gaining cards from the trash, which is only otherwise done by [Graverobber] and [Rogue] from {Dark Ages}. Lurker has the potential to gain any {Action} in the Supply, no matter how expensive, simply by playing it twice. However, this is probably too slow to be effective very often, particularly as you risk other players with Lurkers grabbing the trashed Action before you can get it. Lurker has a a number of interesting uses, such as trashing Supply cards in order to accelerate the end of the game, and regaining good Action cards which were previously fed to a {trash for benefit} card ([Apprentice] may be the best combo here). And it can do some very nice tricks if any Actions in the Supply have on-trash benefits. But in the absence of combos such as these, Lurker is probably too slow to see play in most games.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lurker"
 	},
 
@@ -541,7 +541,7 @@
 	 "textAboveLine": "Choose two: +1 Card; +1 {Action}; +1 {Buy}; +1 coin. The choices must be different.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Pawn.jpg",
-	 "discussion": "",
+	 "discussion": "One of the archetypal Intrigue cards, exemplifying its theme of offering players a choice of effects. Pawn has great flexibility, and will rarely hurt your deck since you always have the option of using it as a simple {cantrip}. It is probably most useful for its optional +{Buy}. It will rarely be a key card, but it fits well into a wide variety of different decks.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pawn"
 	},
 
@@ -554,7 +554,7 @@
 	 "textAboveLine": "+2 Cards. Each player with any cards in hand passes one to the next such player to their left, at once. Then you may {trash} a card from your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Masquerade.jpg",
-	 "discussion": "",
+	 "discussion": "Masquerade is one of the strongest cards in the game for its cost, for reasons that have nothing to do with the fun and novel \"passing\" mechanic. (No other card in the game uses this term.) Simply drawing 2 cards and then {trash}ing one is a deceptively powerful ability - no other card allows you to trash while maintaining your normal hand-size to {buy} something useful with. This combination is clearly great for {engine}s, but Masquerade is also one of the best assistants to a {money} strategy, in part because it shrugs off Cursing attacks.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Masquerade"
 	},
 
@@ -567,7 +567,7 @@
 	 "textAboveLine": "+2 {Action}s. {Reveal} your hand. If you have no Action cards in hand, +2 Cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Shanty_Town.jpg",
-	 "discussion": "",
+	 "discussion": "Considered to be one a {village} due to unconditionally giving +2 {Action}s, Shanty Town is one of the more unusual ones in the game. It costs the same as the \"vanilla\" [Village], and instead of always drawing 1 card, draws either 0 or 2 depending on circumstances. It is typically worse than Village if played in a standard deck-drawing engine with a {terminal draw} card like [Smithy], since it is likely to be drawn in the same hand as the terminal draw card - but is better than it with terminal draw cards such as [Library] which draw up to a fixed number of cards. It also functions as {non-terminal draw} in a deck full of {non-terminal}s.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Shanty_Town"
 	},
 
@@ -580,7 +580,7 @@
 	 "textAboveLine": "Choose one: +2 Cards; or +2 coins; or {trash} 2 cards from your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Steward.jpg",
-	 "discussion": "",
+	 "discussion": "One of the signature cards for Intrigue's theme of offering the player explicit choices, Steward is a very useful general-purpose card which is great for fast {trash}ing early on, and unlike most early-game trashers remains useful throughout the game, to provide either <Coin or {terminal draw} as needed.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Steward"
 	},
 
@@ -593,7 +593,7 @@
 	 "textAboveLine": "+2 coins. Each other player {trash}es the top card of their deck and {gain}s a card with the same cost that you choose.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Swindler.jpg",
-	 "discussion": "",
+	 "discussion": "A notoriously swingy and luck-dependent card, Swindler is one of the cards which has given Intrigue a partially undeserved reputation for nasty {Attack}s. A common opening {buy}, it will usually turn one of the opponent's [Copper]s into [Curse] - but is ineffective if it hits an [Estate] (because you can't give them a weaker card costing 2 coins in the early game). On the other hand, if it hits an opening 5 coins purchase and turns it into a [Duchy], that should be enough to decide the game. Swindler retains some of its value into the late game, where it can {trash} the opponents' {Victory} cards. If it hits a [Province] though, that usually has no effect other than to accelerate the end of the game by removing a Province from the {Supply}. (Swindler has very strange interactions with Province if [Peddler] is in the game!)",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Swindler"
 	},
 
@@ -606,7 +606,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. Name a card, then {reveal} the top card of your deck. If you named it, put it into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Wishing_Well.jpg",
-	 "discussion": "",
+	 "discussion": "Wishing Well is either a straight {cantrip}, with no additional effect other than giving you knowledge of the next card in your deck, or it is a {non-terminal draw} card if you correctly named that next card. Note that it is not enough to simply know the top card of your deck when playing Wishing Well, because that gets drawn automatically - you need to know the second card down to draw it with certainty. It combos well with those few cards which can give you such deck knowledge (such as [Apothecary], [Scout], [Cartographer] and [Wandering Minstrel]), but it is no means useless without them. With good knowledge of the remaining contents of your deck, it is often possible to have a reasonable guess, and by naming a card which would make a big improvement to your turn if you draw it, even if the odds are low, you can occasionally get a big payoff. And as a cantrip it is often better than a [Silver] for an {engine} deck, even if you never get to draw the extra card with it.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wishing_Well"
 	},
 
@@ -619,7 +619,7 @@
 	 "textAboveLine": "+1 {Buy}. You may discard an [Estate] for +4 coins. If you don't, {gain} an Estate.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Baron.jpg",
-	 "discussion": "",
+	 "discussion": "Potentially one of the best openers in Dominion, at least if you need 6 coins or 7 coins on turn 3 or turn 4 (Baron actually lowers the odds of drawing 5 coins though, because of the risk of drawing it with no [Estate] in hand). Unlike a lot of strong openings, Baron retains its value later in the game, if you can build a draw {engine} while still keeping one or more of your starting Estates, because it then becomes a near-guaranteed way of getting 4 coins from just one card!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Baron"
 	},
 
@@ -632,7 +632,7 @@
 	 "textAboveLine": "+1 {Buy}, +1 coin. This turn, cards (everywhere) cost 1 coin less, but not less than 0 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bridge.jpg",
-	 "discussion": "",
+	 "discussion": "Bridge is a card which does very little on its own, but is ridiculously good if you can find a way to play multiple Bridges (or one Bridge multiple times, as with [Throne Room] and its variants) in the same turn. One Bridge is essentially a [Woodcutter] which gives you additional discount for each {buy} you are able to use. But if you can play Bridge 8 times on a turn, suddenly even a [Province] costs 0 coins - and you have enough buys to buy the entire stack in a 2-player game! This is why Bridge is the archetypal card for setting up a {megaturn}. [Native Village] is the easiest way to set this up, otherwise you need a huge engine which probably cannot be built in time against a good opponent. Bridge can however often be a good buy early in the game for picking up engine components cheaply, particularly if there are other (preferably {non-terminal} sources of +Buy.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bridge"
 	},
 
