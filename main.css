@@ -154,6 +154,12 @@ put space between the borders, so a narrower border looks best*/
     flex-wrap: wrap;
 } 
 
+.separate-scroll-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 /* card search results need to be in grid format */
 .search-results {
