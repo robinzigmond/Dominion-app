@@ -195,6 +195,11 @@ angular.module("RouteControllerCard", [])
 										   trigger, which does not look right at all. In order to fix this, the following
 										   lines strip out any closing "dodgy" characters from the end of the string: */ 
 										var dodgyCharacters = [".", ",", ")"];
+										/* remove the string "non-" from the start, if it is not part of the term itself (so eg. 
+								   		"non-Victory" only highlights the word "Victory): */
+										if (highlightedWord.slice(0,5)=="non-{") {
+											highlightedWord = highlightedWord.replace("non-{", "{");
+										}
 										var length = highlightedWord.length;
 										var lastCharacter = highlightedWord.charAt(length-1);
 										while (dodgyCharacters.indexOf(lastCharacter)>-1) {
@@ -205,6 +210,7 @@ angular.module("RouteControllerCard", [])
 										break; // by design each glossary item appears at most once in each text
 									}
 								}
+								
 								/* strip out the curly braces, as well as any asterisks used in place of space,
 								  in order to display the "pure" text to the user: */
 								if (highlightedWord!=undefined) {

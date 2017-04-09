@@ -127,6 +127,11 @@ label.form-subtitle {
     margin-bottom: 20px;
 }
 
+a.wiki-link {
+    display: block;
+    margin-left: 10px;
+}
+
 /* slightly different styling for the columns on the links page, because it doesn't seem possible to
 put space between the borders, so a narrower border looks best*/
 .link-group {
@@ -236,4 +241,11 @@ put space between the borders, so a narrower border looks best*/
     .mobile-display {
         display: none;
     }
+
+    .home-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

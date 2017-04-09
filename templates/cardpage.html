@@ -12,7 +12,7 @@
 			<div id="card-info">
 				<p bind-html-compile="thisCard.discussion"></p>
 			</div>
-			<a href="{{::thisCard.linkURL}}" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
+			<a href="{{::thisCard.linkURL}}" class="wiki-link" target="_blank">Read more about {{::thisCard.name}} on the DominionStrategy wiki.</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-4">
 			<img class="single-card card-image {{thisCard.orientation}}" ng-src="{{::thisCard.imagePath}}" alt={{::thisCard.name}}>
