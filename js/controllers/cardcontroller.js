@@ -196,9 +196,13 @@ angular.module("RouteControllerCard", [])
 										   lines strip out any closing "dodgy" characters from the end of the string: */ 
 										var dodgyCharacters = [".", ",", ")"];
 										/* remove the string "non-" from the start, if it is not part of the term itself (so eg. 
-								   		"non-Victory" only highlights the word "Victory): */
+								   		"non-Victory" only highlights the word "Victory). Also remove a quote mark before 
+								   		the term: */
 										if (highlightedWord.slice(0,5)=="non-{") {
 											highlightedWord = highlightedWord.replace("non-{", "{");
+										}
+										if (highlightedWord.charAt(0)=="\"") {
+											highlightedWord = highlightedWord.slice(1);
 										}
 										var length = highlightedWord.length;
 										var lastCharacter = highlightedWord.charAt(length-1);

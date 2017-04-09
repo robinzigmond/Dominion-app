@@ -788,7 +788,7 @@
 	 "textAboveLine": "+3 Cards. Each other player either discards 2 cards or {gain}s a [Curse] to their hand, their choice. (They may pick an option they can't do.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Torturer.jpg",
-	 "discussion": "",
+	 "discussion": "Considered with good reason to be among the meanest Attacks in the game - despite (or sometimes perhaps even because of) offering its victims a choice of which punishment to take. The reason for this is purely what happens when multiple Torturers are played in a turn - a single Torturer attacks like [Militia] but with the option to avoid the discard at the cost of taking a [Curse]. However, unlike Militia, the formulation is \"discard 2 cards\" rather than \"discard down to 3\" - so if Torturer is played twice and you are determined not to take a Curse, you end up with a 1-card hand, with which it is almost always impossible to achieve anything ([Menagerie] is probably the biggest exception here, and even that is no guarantee of being able to have a good turn). So if you can build an {engine} to play multiple Torturers in a turn, the opponent will be forced to take curses (since the curses go to hand they mitigate the effect of any subsequent discard), at least until the pile runs out. What makes Torturer so potent is tha it is itself a powerful {terminal*draw} card, and therefore only needs to be combined with a {village} - any village - to threaten to bury the opponent in curses (else he discards his whole hand repeatedly). For this reason, games involving Torturer and at least one village are often a knife-edge race - the first player to play 2 or 3 Torturers in a single turn will likely dominate.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Torturer"
 	},
 
@@ -801,7 +801,7 @@
 	 "textAboveLine": "{Trash} 2 cards from your hand. If you did, {gain} a [Silver] to your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Trading_Post.jpg",
-	 "discussion": "",
+	 "discussion": "A simple {trash}er that improves your economy while trashing - Trading Post is pretty great to open with if you are lucky enough to draw 5 [Copper]s on one of the first 2 turns. It is however less useful than other trashers in setting up an {engine}, precisely because a large number of [Silver]s will prevent an engine from firing reliably. This makes the card something of a hybrid, useful for both engines and {money} strategies but not pointing towards one or the other.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Trading_Post"
 	},
 
@@ -814,7 +814,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. {Trash} a card from your hand. {Gain} a card costing exactly 1 coin more than it.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Upgrade.jpg",
-	 "discussion": "",
+	 "discussion": "A variant of [Remodel] which nonetheless plays quite differently, due to being a {cantrip}, and the fact that it only \"improves\" a card by 1 coin instead of 2 coins. The latter is actually a great advantage for early-game {trash}ing purposes, because it allows [Copper]s to be trashed without replacement (unless [Poor House] is on the board). For these reasons, Upgrade is a great opening buy if you draw 5 coins - and it remains useful throughout the game by allowing you to trade cards for better ones, while being {non-terminal} and cycling your deck.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Upgrade"
 	},
 
@@ -827,7 +827,7 @@
 	 "textAboveLine": "2 coins",
 	 "textBelowLine": "2vp",
 	 "imagePath": "images/card_images/Harem.jpg",
-	 "discussion": "",
+	 "discussion": "One of the simplest examples of Intrigue's theme of \"{Victory} cards which do something else\", Harem is unexciting but actually a very good card. Although it competes in price with [Gold], it is actually better than Gold for a {money} strategy, unless the game has only just started. The main reason to avoid Harem in favour of Gold is if you are frequently having to discard down, when you will want the best money per card you can get. Of course, if you are playing an {engine} there is little place for Harem, but then you probably didn't want many Golds either.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Harem"
 	},
 
@@ -840,7 +840,7 @@
 	 "textAboveLine": "Choose one: +3 Cards; or +2 {Action}s.",
 	 "textBelowLine": "2vp",
 	 "imagePath": "images/card_images/Nobles.jpg",
-	 "discussion": "",
+	 "discussion": "The single card which best illustrates both of Intrigue's sub-themes - it is a {Victory} card which does other things, and those \"other things\" give the player a choice. Nobles is actually a tricky card to use well - although offering a choice of being a {terminal} draw card or a {village} sounds great for an {engine}, the fact that Nobles is so expensive means that you can't really use Nobles to construct your engine in the first place. And the village effect is very weak, as it does not draw a card ([Necropolis], although useful to have in an engine, is a starting deck card for a reason). Nobles is undoubtedly better than [Gold] in most engines if you hit 6 coins in the early or mid-game, but always remember that you are {buy}ing it mainly for the VPs, not because its on-play effect will significantly improve your deck.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Nobles"
 	},
 
@@ -853,7 +853,7 @@
 	 "textAboveLine": "Discard any number of cards. +1 coin per card discarded.",
 	 "textBelowLine": "When another player plays an {Attack} card, you may {reveal} this from your hand. If you do, +2 Cards, then put 2 cards from your hand on top of your deck.",
 	 "imagePath": "images/card_images/Secret_Chamber.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards removed from the second edition of Intrigue in 2009, Secret Chamber combines a weak on-play effect (it guarantees 4 coins if you play it from a full 5-card hand, but unless your deck is terrible you can almost always do better than that) with an intriguing {Reaction} ability in response to {Attack}s. The latter is pretty good against attacks which inspect the top of your deck, like [Pirate Ship] or [Jester], since you get to choose which card(s) they see - but against most other Attacks its benefit is marginal at best.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Secret_Chamber"
 	},
 
@@ -866,7 +866,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}",
 	 "textBelowLine": "1vp",
 	 "imagePath": "images/card_images/Great_Hall.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards removed from the second edition of Intrigue in 2009 - the removal was essentially for being not interesting enough. (It was replaced by [Mill], which is the same card with an additional bonus, and costing 1 coin more.) Nonetheless, there is truth in the designer's earlier remark about it that \"it's interesting how interesting it is for a card that does nothing\". It has good interactions with cards that care about Victory cards (like [Crossroads] or the much-maligned [Scout]), and cards such as [Ironworks] that prefer cards with multiple types - and there are many reasons to choose to {gain} a {cantrip} in the mid to late-game, even one that does nothing but is worth 1vp when scoring.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Great_Hall"
 	},
 
@@ -879,7 +879,7 @@
 	 "textAboveLine": "[Copper] produces an extra 1 coin this turn.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Coppersmith.jpg",
-	 "discussion": "",
+	 "discussion": "An interesting card which just wasn't worth playing often enough, Coppersmith was removed from the second edition of Intrigue published in 2016. The problem is that, although you start with 7 [Copper]s in your deck, after the first few turns it is rare to draw more than 1 or 2 per turn, even if you don't {trash} any of your Coppers. The most common use of Coppersmith is to hope to grab a 6 coins card on turn 3 or turn 4 - if that makes it worth having a virtually dead card in your deck for the rest of the game. Having said this, if you can manage to consistently draw your deck without trashing Coppers, Coppersmith gives you +7 coins, which is amazing provided you have some +{Buy} to make use of that money. But in practice it is almost impossible to draw your Coppersmith and all your Coppers with any reliability, because the Coppers get in the way of your {engine} components.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Coppersmith"
 	},
 
@@ -892,7 +892,7 @@
 	 "textAboveLine": "+1 {Action}. {Reveal} the top 4 cards of your deck. Put the revealed {Victory} cards into your hand. Put the other cards on top of your deck in any order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Scout.jpg",
-	 "discussion": "",
+	 "discussion": "Before being removed from the second edition of Intrigue in 2016, Scout was the subject of constant jokes on the Dominion Strategy site, due to its perception as being the single worst card in the game. Unfortunately, that perception is not too far wrong. In a typical deck all Scout does is remove some useless cards from your next hand - that is nice, but rarely worth spending a card on, to say nothing of the other cards you could have bought with 4 coins. (It is worth remarking that typical decks will rarely have more than one {Victory} card in the top 4 in any case.) It becomes better with hybrid Victory cards, so forms half-decent combos with other Intrigue cards such as [Great Hall], [Harem] and [Nobles] - but even these are hardly game-changing and usually lose to a more conventional strategy.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Scout"
 	},
 
@@ -905,7 +905,7 @@
 	 "textAboveLine": "Each other player {reveal}s cards from the top of his deck until revealing one costing 3 coins or more. He {trash}es that card and may {gain} a card costing at most 2 coins less than it. He discards the other revealed cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Saboteur.jpg",
-	 "discussion": "",
+	 "discussion": "Perhaps the most feared {Attack} card in the game, Saboteur was removed from the second edition of Intrigue in 2016 - because despite the fact that it can seek out and destroy the opponent's [Province]s and strong {Action} cards with some reliability, Saboteur is actually one of the weakest 5 coins Action cards in the game. The fact that it does nothing at all for the player playing it means that opponents are better off playing around it, and hoping that their key cards are not {trash}ed too often to recover from. Saboteur can make for slow and unpleasant games - unless all players ignore it, as is not uncommon - but is still part of the rich variety of Dominion, and is enjoyed by a certain kind of player.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Saboteur"
 	},
 
@@ -918,7 +918,7 @@
 	 "textAboveLine": "The player to your left {reveal}s then discards the top 2 cards of his deck. For each differently named card revealed, if it is an... {Action} Card, +2 Actions. {Treasure} Card, +2 coins. {Victory} Card, +2 Cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Tribute.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards removed from the second edition of Intrigue in 2009 - for no particular reason, but just because it was less compelling than some of the other cards. Tribute is actually a pretty rare choice to spend 5 coins on - not only are many other 5 coins cards much stronger, but even though Tribute can give a variety of strong effects, it is completely unreliable as to what effects you can get. It is easy to get hosed by playing one hoping for additional {Action}s, only to find you flip over just {Victory} and/or {Treasure} cards. Needless to say, it works a lot better if your left-hand opponent is pursuing cards with multiple types - but even then there is no reliability that you will get the strong effect that you want from Tribute.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Tribute"
 	},
 

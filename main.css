@@ -119,8 +119,12 @@ label.form-subtitle {
 .form-group.search, .home-text, #contact-form, #card-info {
     padding: 5px;
     border: 5px ridge blue;
-    border-radius: 15px;
     background-color: #e6f2ff;
+}
+
+/* card info box looks better with square corners, due to being just below the square table */
+.form-group.search, .home-text, #contact-form {
+     border-radius: 15px;
 }
 
 #card-info {
@@ -219,6 +223,10 @@ put space between the borders, so a narrower border looks best*/
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px;
+    }
+
+    nav.navbar {
+        font-size: 28px;
     }
 
     nav .navbar-brand {
