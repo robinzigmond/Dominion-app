@@ -34,6 +34,7 @@ footer {
     background-color: #ddd;
     padding: 10px;
     flex-shrink: 0; /* needed for Safari */
+    margin-top: 20px;
 }
 
 h1.centre, h2.centre, h3.centre, h4.centre {

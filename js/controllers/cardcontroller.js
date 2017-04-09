@@ -1,5 +1,12 @@
+/* This controller requires a lot of code, even though there is little or no user interaction on the card pages.
+   This is because this single template codes for 386 different cards (and potentially more if new cards are ever released and I
+   add them to the database), and each card needs to have its information formatted correctly with the proper icons, links and
+   popovers. In addition, various additional string manipulations have been done to "prettify" the output on screen - doing naive
+   replacements of text strings by html resulted in "ugly"-looking output. These instances are explained when we reach the code to
+   fix them */
+
 angular.module("RouteControllerCard", [])
-	.controller("CardController", function($scope, $routeParams, $sce, GetData){
+	.controller("CardController", function($scope, $routeParams, GetData){
 		var cardId = $routeParams.id;
 
 		GetData.cards()
@@ -51,9 +58,9 @@ angular.module("RouteControllerCard", [])
 				else $scope.typeOrTypes = "Type";
 				
 				
-				// to display the card's cost with the appropriate icons - define an array of objects, one for each icon needed.
-				// each object has 2 properties: "path" giving the image location, and "text" giving a description in words
-				// (in case the image doesn't load):
+				/* to display the card's cost with the appropriate icons - define an array of objects, one for each icon needed.
+				   each object has 2 properties: "path" giving the image location, and "text" giving a description in words
+				   (in case the image doesn't load): */
 				$scope.costIcons = [];
 
 				// coin icon needed if either coin cost is >0 or total cost is zero (copper, curse etc.)
@@ -100,33 +107,42 @@ angular.module("RouteControllerCard", [])
 						}
 					
 
-					// make each card name into a link
-								
-					for (card in cardList) {
-						var name = cardList[card].name;
+				// make each card name into a link
+				for (card in cardList) {
+					var name = cardList[card].name;
 															
-						// there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
-						// these need an alternative string to escape them inside the HTML
-						var linkName = name.replace("'", "&#39");
+					/* there is an issue with apostrophes in card names (eg. King's Court) which breaks the links
+					   these need an alternative string to escape them inside the HTML */
+					var linkName = name.replace("'", "&#39");
 
-						// ugly string construction to get correct HTML for link:
-						var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
+					var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
+					/* also defined a "pluralised" version - this is to avoid "ugly" links with pluralised card names which leave
+					   the final "s" out of the link */
+					var pluralisedLinkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
 
-						// only replace first reference to a card with link within the same section, to avoid visual clutter
-						// (so use .replace instead of .split then .join)
-						// also using square brackets around the name, to ensure the link only appears when I want it to!
-						// (problems previously with eg. Villa inside Village inside Native Village...)
-						$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
-						$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
-						$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
-					}
+					/* only replace first reference to a card with link within the same section, to avoid visual clutter
+					   (so use .replace instead of .split then .join)
+					   I use square brackets around the name, to ensure the link only appears when I want it to!
+					   (before making this change I had big problemw with eg. Villa inside Village inside Native Village...) 
+					   Note that the "pluralised" version comes first in each case, otherwise the "ugly" version of the link
+					   is created first. */
+					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
+					
+					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
+
+					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
+
+				}
 
 				// display popovers giving information about the set:
 				GetData.sets()
 					.then (function(results) {
 						var setInfo = results.data;
 						var specificSetInfo = setInfo[$scope.thisCard.set];
-						specificSetInfo = specificSetInfo.replace("'", "&#39");
+						specificSetInfo = specificSetInfo.replace("'", "&#39"); // escape apostrophes again
 						var popoverHTML = "<span class='glossary-item' uib-popover='" + specificSetInfo 
 								+ "' popover-title='" + $scope.thisCard.set + 
 								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
@@ -143,7 +159,7 @@ angular.module("RouteControllerCard", [])
 						for (type in $scope.thisCard.types) {
 							var currentType = $scope.thisCard.types[type];
 							var specificTypeInfo = typeInfo[currentType];
-							specificTypeInfo = specificTypeInfo.split("'").join("&#39");
+							specificTypeInfo = specificTypeInfo.split("'").join("&#39"); // escape apostrophes again
 							var popoverHTML = "<span class='glossary-item' uib-popover='" + specificTypeInfo 
 								+ "' popover-title='" + currentType + 
 								"'popover-placement='auto bottom-left' popover-trigger='\"outsideClick\"' popover-animation='true' popover-append-to-body='true'>"
@@ -155,15 +171,18 @@ angular.module("RouteControllerCard", [])
 					});
 
 
+				/* finally, display popovers taken from the "glossary" of common terms, on both parts of the card text and in my
+				   own "discussion" about the card */
 				GetData.glossary()
 					.then (function(results) {
 						var glossary = results.data;
 						for (entry in glossary) {
 							// as usual escape any apostrophes in the text to be inserted into html
 							glossary[entry].definition = glossary[entry].definition.split("'").join("&#39");
-							// for better visual display, want to highlight the entire word, rather than just the bracketed term
-							// (eg. highlight "trashing" to trigger the glossary definition of "trash")
-							// define a function to do this for each of the 3 relevant texts:
+							/* for better visual display, the popover trigger should be the entire word, rather than just 
+							   the bracketed term (eg. highlight "trashing" to trigger the glossary definition of "trash").
+							   The following code makes that happen, rather than blindly substituting parts of words
+							   We define a function to do this for each of the 3 relevant texts: */
 							insertGlossaryPopovers = function(text, term, definition) {
 								// first need to split the relevant texts into individual words:
 								var words = text.split(" ");
@@ -171,13 +190,29 @@ angular.module("RouteControllerCard", [])
 								for (word in words) {
 									if (words[word].indexOf("{"+term+"}")>-1) {
 										var highlightedWord = words[word];
+										/* there is one slight problem with picking out "words" as the characters between spaces
+										   - any trailing full stops, commas or closing brackets get included in the popover
+										   trigger, which does not look right at all. In order to fix this, the following
+										   lines strip out any closing "dodgy" characters from the end of the string: */ 
+										var dodgyCharacters = [".", ",", ")"];
+										var length = highlightedWord.length;
+										var lastCharacter = highlightedWord.charAt(length-1);
+										while (dodgyCharacters.indexOf(lastCharacter)>-1) {
+											highlightedWord = highlightedWord.slice(0,length-1);
+											length = highlightedWord.length;
+											lastCharacter = highlightedWord.charAt(length-1);
+										}
 										break; // by design each glossary item appears at most once in each text
 									}
 								}
-								// strip out the curly braces in order to display the "pure" text to the user:
+								/* strip out the curly braces, as well as any asterisks used in place of space,
+								  in order to display the "pure" text to the user: */
 								if (highlightedWord!=undefined) {
-									var pureHighlightedWord = highlightedWord.split("{").join("").split("}").join("");
+									var pureHighlightedWord = highlightedWord.split("{").join("").split("}").join("")
+									.split("*").join(" ");
 								}
+								// remove asterisks from term used as popover title:
+								term = term.split("*").join(" ");
 								// now can use this entire word as the item to be replaced:
 								// definite html string for the popover
 								var popoverHTML = "<span class='glossary-item' uib-popover='" + definition + "' popover-title='" 
@@ -198,5 +233,4 @@ angular.module("RouteControllerCard", [])
 					});
 				});
 			});
-				
 	});

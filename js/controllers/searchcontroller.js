@@ -10,15 +10,16 @@ angular.module("RouteControllerSearch", [])
 					$scope.cardList[card].cost = 100*$scope.cardList[card].costInCoins + 10*$scope.cardList[card].costInPotions 
 					+ $scope.cardList[card].costInDebt;
 				
-				// strip out square brackets and curly braces from card texts. (These have been inserted by me in order to signal
-				// replacement by links or popovers on the card page - but we don't want these characters to obstruct search strings)
-				// Similarly for the < character (used to mark certain icons)
+					/* strip out square brackets and curly braces from card texts. (These have been inserted by me in order to signal
+				    replacement by links or popovers on the card page - but we don't want these characters to obstruct search strings)
+				    Similarly for the < character (used to mark certain icons, and the * character used to replace spaces in
+				    popover triggers.) */
 					$scope.cardList[card].textAboveLine = $scope.cardList[card].textAboveLine.split("[").join("")
 															.split("]").join("").split("{").join("").split("}").join("")
-															.split("<").join("");
+															.split("<").join("").split("*").join(" ");
 					$scope.cardList[card].textBelowLine = $scope.cardList[card].textBelowLine.split("[").join("")
 															.split("]").join("").split("{").join("").split("}").join("")
-															.split("<").join("");
+															.split("<").join("").split("*").join(" ");
 
 				// find the correct orientation for the card (used to give it the right CSS class for image sizing):
 					if ($scope.cardList[card].types.indexOf("Event")>-1||$scope.cardList[card].types.indexOf("Landmark")>-1) {

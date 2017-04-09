@@ -125,7 +125,7 @@
 	 "textAboveLine": "+2 Cards",
 	 "textBelowLine": "When another player plays an {Attack} card, you may first {reveal} this from your hand, to be unaffected by it.",
 	 "imagePath": "images/card_images/Moat.jpg",
-	 "discussion": "Despite its very attractive ability to allow you to be unaffected by any {Attack} card played by your opponents, Moat tends to not be very effective at blocking Attacks. You don't want to {buy} too many because having lots of {terminal draw} cards in your deck leads to poor turns - but if you only have a few then the odds of having a Moat in your 5-card hand when an Attack is played are low. And many Attacks have better, if more subtle, counters in any case. Moat is best in thin {engine} decks where you can get good value out of its card draw - and then the blocking of some Attacks is a very nice bonus.",
+	 "discussion": "Despite its very attractive ability to allow you to be unaffected by any {Attack} card played by your opponents, Moat tends to not be very effective at blocking Attacks. You don't want to {buy} too many because having lots of {terminal*draw} cards in your deck leads to poor turns - but if you only have a few then the odds of having a Moat in your 5-card hand when an Attack is played are low. And many Attacks have better, if more subtle, counters in any case. Moat is best in thin {engine} decks where you can get good value out of its card draw - and then the blocking of some Attacks is a very nice bonus.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Moat"
 	},
 
@@ -281,7 +281,7 @@
 	 "textAboveLine": "+3 Cards",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Smithy.jpg",
-	 "discussion": "The most basic of all {terminal draw} cards. Like all such cards, it has two main uses: as a decent enabler for {money} strategies if you {buy} no other {Action}s, or as a main component of an {engine} deck when combined with plenty of {village}s.",
+	 "discussion": "The most basic of all {terminal*draw} cards. Like all such cards, it has two main uses: as a decent enabler for {money} strategies if you {buy} no other {Action}s, or as a main component of an {engine} deck when combined with plenty of {village}s.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Smithy"
 	},
 
@@ -320,7 +320,7 @@
 	 "textAboveLine": "+4 Cards, +1 {Buy}. Each other player draws a card.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Council_Room.jpg",
-	 "discussion": "One of the most powerful {terminal draw} cards in the game, Council Room balances its huge benefit to the player using it with a very nice one to the other players. Usually it is not a good {buy} early in the game, but has potential to lead to explosive turns later on. And if it is used in an {engine} with a discard attack like [Militia], the benefit to the opponents is to a large extent negated.",
+	 "discussion": "One of the most powerful {terminal*draw} cards in the game, Council Room balances its huge benefit to the player using it with a very nice one to the other players. Usually it is not a good {buy} early in the game, but has potential to lead to explosive turns later on. And if it is used in an {engine} with a discard attack like [Militia], the benefit to the opponents is to a large extent negated.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Council_Room"
 	},
 
@@ -346,7 +346,7 @@
 	 "textAboveLine": "+2 Cards, +1 {Action}",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Laboratory.jpg",
-	 "discussion": "Laboratory is one of the cornerstones of the game, offering {non-terminal} handsize increase ({non-terminal draw}). It isn't a strategy in itself, and it has competition from later variants like [Alchemist], [Hunting Party] and [Stables] - but it is rare to ignore Labs when they are available.",
+	 "discussion": "Laboratory is one of the cornerstones of the game, offering {non-terminal} handsize increase ({non-terminal*draw}). It isn't a strategy in itself, and it has competition from later variants like [Alchemist], [Hunting Party] and [Stables] - but it is rare to ignore Labs when they are available.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Laboratory"
 	},
 
@@ -359,7 +359,7 @@
 	 "textAboveLine": "Draw until you have 7 cards in hand, skipping any {Action} cards you choose to; set those aside, discarding them afterwards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Library.jpg",
-	 "discussion": "One of the more unusual cards in the {Base} set, Library is a {terminal draw} card that has a marked preference for being played from a small hand. This makes it a great counter to discard attacks, and a powerful combo with the many cards which decrease your own handsize for some benefit.",
+	 "discussion": "One of the more unusual cards in the {Base} set, Library is a {terminal*draw} card that has a marked preference for being played from a small hand. This makes it a great counter to discard attacks, and a powerful combo with the many cards which decrease your own handsize for some benefit.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Library"
 	},
 
@@ -515,7 +515,7 @@
 	 "textAboveLine": "+3 Cards. Put a card from your hand onto your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Courtyard.jpg",
-	 "discussion": "A cheap and seemingly modest {terminal draw} card, Courtyard is indeed not particularly good as the main draw component in an {engine} - although if you're not aiming to draw your whole deck every turn, the deck-rearrangement feature can be invaluable for putting combos together. Where Courtyard truly shines is in a {money} game - because a 6-card hand is usually plenty to buy a [Gold] early on and [Province]s soon after getting a Gold or two, and the ability to put a {Treasure} on top and use it next turn if you draw too much helps to ensure that you draw exactly 6 coins, and later 8 coins, each turn. Buying nothing but 2 Courtyards plus money is competitive with all but the fastest engines, and Courtyard is even better when you want to line up combos, such as [Baron] with an [Estate], or [Tournament] with a Province.",
+	 "discussion": "A cheap and seemingly modest {terminal*draw} card, Courtyard is indeed not particularly good as the main draw component in an {engine} - although if you're not aiming to draw your whole deck every turn, the deck-rearrangement feature can be invaluable for putting combos together. Where Courtyard truly shines is in a {money} game - because a 6-card hand is usually plenty to buy a [Gold] early on and [Province]s soon after getting a Gold or two, and the ability to put a {Treasure} on top and use it next turn if you draw too much helps to ensure that you draw exactly 6 coins, and later 8 coins, each turn. Buying nothing but 2 Courtyards plus money is competitive with all but the fastest engines, and Courtyard is even better when you want to line up combos, such as [Baron] with an [Estate], or [Tournament] with a Province.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Courtyard"
 	},
 
@@ -528,7 +528,7 @@
 	 "textAboveLine": "+1 {Action}. Choose one: {Trash} an Action card from the {Supply}; or {gain} an Action card from the trash.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Lurker.jpg",
-	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Lurker is an intriguing card which combines the \"choices\" theme of Intrigue with a couple of interesting mechanics - {trash}ing cards from the {Supply} (otherwise found on only a couple of cards in {Empires}), and gaining cards from the trash, which is only otherwise done by [Graverobber] and [Rogue] from {Dark Ages}. Lurker has the potential to gain any {Action} in the Supply, no matter how expensive, simply by playing it twice. However, this is probably too slow to be effective very often, particularly as you risk other players with Lurkers grabbing the trashed Action before you can get it. Lurker has a a number of interesting uses, such as trashing Supply cards in order to accelerate the end of the game, and regaining good Action cards which were previously fed to a {trash for benefit} card ([Apprentice] may be the best combo here). And it can do some very nice tricks if any Actions in the Supply have on-trash benefits. But in the absence of combos such as these, Lurker is probably too slow to see play in most games.",
+	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Lurker is an intriguing card which combines the \"choices\" theme of Intrigue with a couple of interesting mechanics - {trash}ing cards from the {Supply} (otherwise found on only a couple of cards in {Empires}), and gaining cards from the trash, which is only otherwise done by [Graverobber] and [Rogue] from {Dark*Ages}. Lurker has the potential to gain any {Action} in the Supply, no matter how expensive, simply by playing it twice. However, this is probably too slow to be effective very often, particularly as you risk other players with Lurkers grabbing the trashed Action before you can get it. Lurker has a a number of interesting uses, such as trashing Supply cards in order to accelerate the end of the game, and regaining good Action cards which were previously fed to a {trash*for*benefit} card ([Apprentice] may be the best combo here). And it can do some very nice tricks if any Actions in the Supply have on-trash benefits. But in the absence of combos such as these, Lurker is probably too slow to see play in most games.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lurker"
 	},
 
@@ -567,7 +567,7 @@
 	 "textAboveLine": "+2 {Action}s. {Reveal} your hand. If you have no Action cards in hand, +2 Cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Shanty_Town.jpg",
-	 "discussion": "Considered to be one a {village} due to unconditionally giving +2 {Action}s, Shanty Town is one of the more unusual ones in the game. It costs the same as the \"vanilla\" [Village], and instead of always drawing 1 card, draws either 0 or 2 depending on circumstances. It is typically worse than Village if played in a standard deck-drawing engine with a {terminal draw} card like [Smithy], since it is likely to be drawn in the same hand as the terminal draw card - but is better than it with terminal draw cards such as [Library] which draw up to a fixed number of cards. It also functions as {non-terminal draw} in a deck full of {non-terminal}s.",
+	 "discussion": "Considered to be one a {village} due to unconditionally giving +2 {Action}s, Shanty Town is one of the more unusual ones in the game. It costs the same as the \"vanilla\" [Village], and instead of always drawing 1 card, draws either 0 or 2 depending on circumstances. It is typically worse than Village if played in a standard deck-drawing engine with a {terminal*draw} card like [Smithy], since it is likely to be drawn in the same hand as the terminal draw card - but is better than it with terminal draw cards such as [Library] which draw up to a fixed number of cards. It also functions as {non-terminal*draw} in a deck full of {non-terminal}s.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Shanty_Town"
 	},
 
@@ -580,7 +580,7 @@
 	 "textAboveLine": "Choose one: +2 Cards; or +2 coins; or {trash} 2 cards from your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Steward.jpg",
-	 "discussion": "One of the signature cards for Intrigue's theme of offering the player explicit choices, Steward is a very useful general-purpose card which is great for fast {trash}ing early on, and unlike most early-game trashers remains useful throughout the game, to provide either <Coin or {terminal draw} as needed.",
+	 "discussion": "One of the signature cards for Intrigue's theme of offering the player explicit choices, Steward is a very useful general-purpose card which is great for fast {trash}ing early on, and unlike most early-game trashers remains useful throughout the game, to provide either <Coin or {terminal*draw} as needed.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Steward"
 	},
 
@@ -606,7 +606,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. Name a card, then {reveal} the top card of your deck. If you named it, put it into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Wishing_Well.jpg",
-	 "discussion": "Wishing Well is either a straight {cantrip}, with no additional effect other than giving you knowledge of the next card in your deck, or it is a {non-terminal draw} card if you correctly named that next card. Note that it is not enough to simply know the top card of your deck when playing Wishing Well, because that gets drawn automatically - you need to know the second card down to draw it with certainty. It combos well with those few cards which can give you such deck knowledge (such as [Apothecary], [Scout], [Cartographer] and [Wandering Minstrel]), but it is no means useless without them. With good knowledge of the remaining contents of your deck, it is often possible to have a reasonable guess, and by naming a card which would make a big improvement to your turn if you draw it, even if the odds are low, you can occasionally get a big payoff. And as a cantrip it is often better than a [Silver] for an {engine} deck, even if you never get to draw the extra card with it.",
+	 "discussion": "Wishing Well is either a straight {cantrip}, with no additional effect other than giving you knowledge of the next card in your deck, or it is a {non-terminal*draw} card if you correctly named that next card. Note that it is not enough to simply know the top card of your deck when playing Wishing Well, because that gets drawn automatically - you need to know the second card down to draw it with certainty. It combos well with those few cards which can give you such deck knowledge (such as [Apothecary], [Scout], [Cartographer] and [Wandering Minstrel]), but it is no means useless without them. With good knowledge of the remaining contents of your deck, it is often possible to have a reasonable guess, and by naming a card which would make a big improvement to your turn if you draw it, even if the odds are low, you can occasionally get a big payoff. And as a cantrip it is often better than a [Silver] for an {engine} deck, even if you never get to draw the extra card with it.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wishing_Well"
 	},
 
@@ -710,7 +710,7 @@
 	 "textAboveLine": "+2 Cards, +1 {Action}. Take a card from your hand and put it anywhere in your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Secret_Passage.jpg",
-	 "discussion": "",
+	 "discussion": "One of the new cards added to the second edition of Intrigue in 2016, Secret Passage is a simple card which nevertheless features a completely new mechanic, of putting a card from your hand in any position you choose in your deck. That sounds at first a little bit like what [Stash] does at each reshuffle, but the two are really very different. Stash's ability is mainly useful for putting 4 of them on top of your deck at each reshuffle in order to guarantee a [Province] {buy}. Secret Passage clearly can't do anything comparable, but being an on-play effect, with knowledge of what remains in your hand, allows it to be placed optimally for cards like [Wishing Well] or [Sentry] to find. It can also allow you to topdeck cards for next turn, put weak cards on the bottom of your deck so that they hopefully miss a reshuffle - and additionally the +2 Cards is very helpful for cycling. In short, Secret Passage, while rarely if ever a game-changer, is a very versatile card with a number of different uses.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Secret_Passage"
 	},
 
@@ -723,7 +723,7 @@
 	 "textAboveLine": "{Reveal} a card from your hand. For each type it has ({Action}, {Attack}, etc.), choose one: +1 Action; or +1 {Buy}; or +3 coins; or {gain} a [Gold]. The choices must be different.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Courtier.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Courtier feels tailor-made for the set, as it both involves an explicit choice, and encourages the player to obtain the dual-type cards in which Intrigue specialises. It will be noted that two of the options (+3 coins and gaining a [Gold]) are generally much more useful than the other two - this is deliberate in order to stop the card being ridiculously good when you reveal a card with 3 types, of which there are plenty in later expansions. Meanwhile the two \"good\" effects are good enough that you don't mind drawing Courtier with only single-type cards in hand.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Courtier"
 	},
 
@@ -736,7 +736,7 @@
 	 "textAboveLine": "Worth 1vp per [Duchy] you have.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Duke.jpg",
-	 "discussion": "",
+	 "discussion": "Duke is one of the most interesting of the {alt-VP} cards. You can look at each Duke as adding 3vp to the value of each [Duchy] you have - so once you have 3 Dukes, Duchy becomes worth as much as a [Province] to you, while remaining 3 coins cheaper! It is easily possible to get more VPs out of Duchies and Dukes than from all of the Provinces, and you never need to generate more than 5 coins in a turn. The only difficulty in a Duchy/Duke strategy is being able to buy enough of them before a Province player ends the game. This means that in going for Dukes you are to some extent committing to a {slog} strategy - although you may not need to slow the oppponent(s) down too much since getting all 8 Provinces is much harder than just getting 5 or 6. There are plenty of ways for powerful {engine}s to get all the Provinces (or end on 3 piles with a lead) before a Duke player has enough vp - but weaker engines, and most {money} strategies aiming for Provinces, can be beaten by an intelligent plan to get Duchies and Dukes.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Duke"
 	},
 
@@ -749,7 +749,7 @@
 	 "textAboveLine": "Choose one: +2 coins; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards their hand and draws 4 cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Minion.jpg",
-	 "discussion": "",
+	 "discussion": "One of the strongest cards in Intrigue, Minion is most notable for its remarkable synergy with itself. If you are lucky enough to draw a hand with 3 Minions in it, you can play 2 of then for +2 coins each, then (after first playing any other {non-terminal}s in your hand) use the last one to get a completely fresh 4-card hand - oh, and attack the opponents in the process by giving them a new, smaller hand to work with. In order to get a high enough density of Minions for this to happen other than by good fortune, heavy {trash}ing is usually necessary. Other {Action} cards, especially if they give +{Buy} and/or are non-terminal, allow one to do more than simply get 8 coins each turn (which won't be enough compensation for the time you spend trashing down), and can allow a Minion deck to be hugely powerful. If these supporting features are not present in the {Kingdom} then Minions can be ignorred, but if not then there is frequently a race to see which player can get the most Minions.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Minion"
 	},
 
@@ -762,7 +762,7 @@
 	 "textAboveLine": "+3 Cards. {Reveal} the top 4 cards of your deck. Put the {Victory} cards and [Curse]s into your hand. Put the rest back in any order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Patrol.jpg",
-	 "discussion": "",
+	 "discussion": "One of the new cards introduced in the second edition of Intrigue in 2016, Patrol is quite obviously a replacement for [Scout] (a card removed for being almost never worth {buy}ing). Compared to Scout, Patrol has the downsides of being {terminal} and of costing 1 coin more - but always giving +3 Cards before drawing the {Victory} cards and [Curse]s from the top of the deck makes it a reasonable card at the elite 5 coins cost, because it is strictly better than the 4 coins-costing [Smithy].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Patrol"
 	},
 
@@ -955,7 +955,7 @@
 	 "types": ["Action", "Duration"],
 	 "set": "Seaside",
 	 "textAboveLine": "+1 {Action}. Now and at the start of your next turn: +1 coin.",
-	 "textBelowLine": "While this is {in play}, when another player plays an {Attack} card, it doesn't affect you.",
+	 "textBelowLine": "While this is {in*play}, when another player plays an {Attack} card, it doesn't affect you.",
 	 "imagePath": "images/card_images/Lighthouse.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lighthouse"
@@ -1345,7 +1345,7 @@
 	 "types": ["Action"],
 	 "set": "Alchemy",
 	 "textAboveLine": "+2 Cards, +1 {Action}",
-	 "textBelowLine": "When you discard this from play, you may put this on top of your deck if you have a [Potion] {in play}.",
+	 "textBelowLine": "When you discard this from play, you may put this on top of your deck if you have a [Potion] {in*play}.",
 	 "imagePath": "images/card_images/Alchemist.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Alchemist"
@@ -1501,7 +1501,7 @@
 	 "types": ["Treasure"],
 	 "set": "Prosperity",
 	 "textAboveLine": "1 coin",
-	 "textBelowLine": "While this is {in play}, {Action} cards cost 2 coins less, but not less than 0 coins.",
+	 "textBelowLine": "While this is {in*play}, {Action} cards cost 2 coins less, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Quarry.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Quarry"
@@ -1514,7 +1514,7 @@
 	 "types": ["Treasure"],
 	 "set": "Prosperity",
 	 "textAboveLine": "1 coin",
-	 "textBelowLine": "While this is {in play}, when you {buy} a non-{Victory} card costing 4 coins or less, {gain} a copy of it.",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a non-{Victory} card costing 4 coins or less, {gain} a copy of it.",
 	 "imagePath": "images/card_images/Talisman.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Talisman"
@@ -1579,7 +1579,7 @@
 	 "types": ["Action"],
 	 "set": "Prosperity",
 	 "textAboveLine": "You may {reveal} a {Treasure} card from your hand. {Gain} a copy of it.",
-	 "textBelowLine": "When you {buy} this, {trash} all {Treasure}s you have {in play}.",
+	 "textBelowLine": "When you {buy} this, {trash} all {Treasure}s you have {in*play}.",
 	 "imagePath": "images/card_images/Mint.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mint"
@@ -1618,7 +1618,7 @@
 	 "types": ["Treasure"],
 	 "set": "Prosperity",
 	 "textAboveLine": "2 coins",
-	 "textBelowLine": "While this is {in play}, when you {gain} a card, you may put that card onto your deck.",
+	 "textBelowLine": "While this is {in*play}, when you {gain} a card, you may put that card onto your deck.",
 	 "imagePath": "images/card_images/Royal_Seal.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Royal_Seal"
@@ -1657,7 +1657,7 @@
 	 "types": ["Action", "Attack"],
 	 "set": "Prosperity",
 	 "textAboveLine": "+1 {Buy}, +2 coins. Each other player discards down to 3 cards in hand.",
-	 "textBelowLine": "While this is {in play}, when you {buy} a card, +vp.",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a card, +vp.",
 	 "imagePath": "images/card_images/Goons.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Goons"
@@ -1671,7 +1671,7 @@
 	 "types": ["Action"],
 	 "set": "Prosperity",
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 {Buy}, +2 coins",
-	 "textBelowLine": "You can't {buy} this if you have any [Copper]s {in play}.",
+	 "textBelowLine": "You can't {buy} this if you have any [Copper]s {in*play}.",
 	 "imagePath": "images/card_images/Grand_Market.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Grand_Market"
@@ -1684,7 +1684,7 @@
 	 "types": ["Treasure"],
 	 "set": "Prosperity",
 	 "textAboveLine": "2 coins",
-	 "textBelowLine": "While this is {in play}, when you {buy} a {Victory} card, {gain} a [Gold].",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a {Victory} card, {gain} a [Gold].",
 	 "imagePath": "images/card_images/Hoard.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Hoard"
@@ -1696,7 +1696,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure"],
 	 "set": "Prosperity",
-	 "textAboveLine": "When you play this, it's worth 1 coin per {Treasure} you have {in play} (counting this).",
+	 "textAboveLine": "When you play this, it's worth 1 coin per {Treasure} you have {in*play} (counting this).",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bank.jpg",
 	 "discussion": "",
@@ -1750,7 +1750,7 @@
 	 "types": ["Action"],
 	 "set": "Prosperity",
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 coin",
-	 "textBelowLine": "During your {Buy} phase, this costs 2 coins less per {Action} card you have {in play}, but not less than 0 coins.",
+	 "textBelowLine": "During your {Buy} phase, this costs 2 coins less per {Action} card you have {in*play}, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Peddler.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Peddler"
@@ -1832,7 +1832,7 @@
 	 "types": ["Action", "Prize"],
 	 "set": "Cornucopia",
 	 "textAboveLine": "+1 {Buy}",
-	 "textBelowLine": "While this is {in play}, cards cost 2 coins less, but not less than 0 coins. (This is not in the {Supply}.)",
+	 "textBelowLine": "While this is {in*play}, cards cost 2 coins less, but not less than 0 coins. (This is not in the {Supply}.)",
 	 "imagePath": "images/card_images/Princess.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Princess"
@@ -1975,7 +1975,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure"],
 	 "set": "Cornucopia",
-	 "textAboveLine": "0 coins. When you play this, {gain} a card costing up to 1 coin per differently named card you have {in play}, counting this. If it's a {Victory} card, {trash} this.",
+	 "textAboveLine": "0 coins. When you play this, {gain} a card costing up to 1 coin per differently named card you have {in*play}, counting this. If it's a {Victory} card, {trash} this.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Horn_of_Plenty.jpg",
 	 "discussion": "",
@@ -2249,7 +2249,7 @@
 	 "types": ["Action"],
 	 "set": "Hinterlands",
 	 "textAboveLine": "+2 coins",
-	 "textBelowLine": "While this is {in play}, when you {buy} a card, {gain} a cheaper non-{Victory} card.",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a card, {gain} a cheaper non-{Victory} card.",
 	 "imagePath": "images/card_images/Haggler.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Haggler"
@@ -2262,7 +2262,7 @@
 	 "types": ["Action"],
 	 "set": "Hinterlands",
 	 "textAboveLine": "+1 Card, +1 {Action}",
-	 "textBelowLine": "While this is {in play}, cards cost 1 coin less, but not less than 0 coins.",
+	 "textBelowLine": "While this is {in*play}, cards cost 1 coin less, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Highway.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Highway"
@@ -2301,7 +2301,7 @@
 	 "types": ["Action"],
 	 "set": "Hinterlands",
 	 "textAboveLine": "+3 coins. Put a card from your hand onto your deck.",
-	 "textBelowLine": "When you {gain} this, put all {Treasure}s you have {in play} onto your deck in any order.",
+	 "textBelowLine": "When you {gain} this, put all {Treasure}s you have {in*play} onto your deck in any order.",
 	 "imagePath": "images/card_images/Mandarin.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mandarin"
@@ -2615,7 +2615,7 @@
 	 "types": ["Action", "Attack"],
 	 "set": "DarkAges",
 	 "textAboveLine": "+1 Card, +1 {Action}. Each other player discards down to 4 cards in hand.",
-	 "textBelowLine": "When you play another {Attack} card with this {in play}, you may {trash} this. If you do, {gain} a [Mercenary] from the Mercenary pile.",
+	 "textBelowLine": "When you play another {Attack} card with this {in*play}, you may {trash} this. If you do, {gain} a [Mercenary] from the Mercenary pile.",
 	 "imagePath": "images/card_images/Urchin.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Urchin"
@@ -3084,7 +3084,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Guilds",
-	 "textAboveLine": "+1 {Action}, +1 {Buy}. Take a {Coin token}.",
+	 "textAboveLine": "+1 {Action}, +1 {Buy}. Take a {Coin*token}.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Candlestick_Maker.jpg",
 	 "discussion": "",
@@ -3152,7 +3152,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Guilds",
-	 "textAboveLine": "+1 Card, +2 {Action}s. You may discard a {Treasure} card. If you do, take a {Coin token}.",
+	 "textAboveLine": "+1 Card, +2 {Action}s. You may discard a {Treasure} card. If you do, take a {Coin*token}.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Plaza.jpg",
 	 "discussion": "",
@@ -3192,8 +3192,8 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Guilds",
-	 "textAboveLine": "+1 Card, +1 {Action}. Take a {Coin token}.",
-	 "textBelowLine": "Setup: Each player takes a {Coin token}.",
+	 "textAboveLine": "+1 Card, +1 {Action}. Take a {Coin*token}.",
+	 "textBelowLine": "Setup: Each player takes a {Coin*token}.",
 	 "imagePath": "images/card_images/Baker.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Baker"
@@ -3205,7 +3205,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Guilds",
-	 "textAboveLine": "Take 2 {Coin token}s. You may {trash} a card from your hand and then pay any number of Coin tokens. If you did trash a card, {gain} a card with a cost of up to the cost of the trashed card plus the number of Coin tokens you paid.",
+	 "textAboveLine": "Take 2 {Coin*token}s. You may {trash} a card from your hand and then pay any number of Coin tokens. If you did trash a card, {gain} a card with a cost of up to the cost of the trashed card plus the number of Coin tokens you paid.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Butcher.jpg",
 	 "discussion": "",
@@ -3232,7 +3232,7 @@
 	 "types": ["Action"],
 	 "set": "Guilds",
 	 "textAboveLine": "+1 {Buy}, +1 coin",
-	 "textBelowLine": "While this is {in play}, when you {buy} a card, take a {Coin token}.",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a card, take a {Coin*token}.",
 	 "imagePath": "images/card_images/Merchant_Guild.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Merchant_Guild"
@@ -3257,7 +3257,7 @@
 	 "costInDebt": 0,
 	 "types": ["Treasure", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "1 coin. When you play this, put it on your {Tavern mat}.",
+	 "textAboveLine": "1 coin. When you play this, put it on your {Tavern*mat}.",
 	 "textBelowLine": "Directly after resolving an {Action}, you may {call} this, for +2 Actions.",
 	 "imagePath": "images/card_images/Coin_of_the_Realm.jpg",
 	 "discussion": "",
@@ -3298,7 +3298,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Attack", "Traveller"],
 	 "set": "Adventures",
-	 "textAboveLine": "+2 Cards. For each {Traveller} you have {in play} (including this), each other player discards the top card of his deck and {trash}es it if it costs 3 coins or 4 coins.",
+	 "textAboveLine": "+2 Cards. For each {Traveller} you have {in*play} (including this), each other player discards the top card of his deck and {trash}es it if it costs 3 coins or 4 coins.",
 	 "textBelowLine": "When you discard this from play, you may exchange it for a [Hero]. (This is not in the {Supply}.)",
 	 "imagePath": "images/card_images/Warrior.jpg",
 	 "discussion": "",
@@ -3326,7 +3326,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Duration"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 {Action}. For the rest of the game, when another player plays an {Attack}, it doesn't affect you, and when you play an Action, +1 Action. (This stays {in play}. This is not in the {Supply}.)",
+	 "textAboveLine": "+1 {Action}. For the rest of the game, when another player plays an {Attack}, it doesn't affect you, and when you play an Action, +1 Action. (This stays {in*play}. This is not in the {Supply}.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Champion.jpg",
 	 "discussion": "",
@@ -3353,7 +3353,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Attack", "Traveller"],
 	 "set": "Adventures",
-	 "textAboveLine": "+2 coins. +1 coin per other {Attack} you have {in play}. Each other player with 4 or more cards in hand discards a card.",
+	 "textAboveLine": "+2 coins. +1 coin per other {Attack} you have {in*play}. Each other player with 4 or more cards in hand discards a card.",
 	 "textBelowLine": "When you discard this from play, you may exchange it for a [Fugitive]. (This is not in the {Supply}.)",
 	 "imagePath": "images/card_images/Soldier.jpg",
 	 "discussion": "",
@@ -3395,7 +3395,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "Put this on your {Tavern mat}.",
+	 "textAboveLine": "Put this on your {Tavern*mat}.",
 	 "textBelowLine": "At the start of your turn, you may {call} this, to move your +1 Card, +1 {Action}, +1 {Buy}, or +1 coin {token} to an Action {Supply} pile you have no tokens on (when you play a card from that pile, you first get that bonus). (This is not in the Supply.)",
 	 "imagePath": "images/card_images/Teacher.jpg",
 	 "discussion": "",
@@ -3408,7 +3408,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 Card, +1 {Action}. Put this on your {Tavern mat}.",
+	 "textAboveLine": "+1 Card, +1 {Action}. Put this on your {Tavern*mat}.",
 	 "textBelowLine": "At the start of your turn, you may {call} this, to {trash} a card from your hand.",
 	 "imagePath": "images/card_images/Ratcatcher.jpg",
 	 "discussion": "",
@@ -3486,7 +3486,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 Card, +1 {Action}. Put this on your {Tavern mat}.",
+	 "textAboveLine": "+1 Card, +1 {Action}. Put this on your {Tavern*mat}.",
 	 "textBelowLine": "At the start of your turn, you may {call} this, to discard your hand and draw 5 cards.",
 	 "imagePath": "images/card_images/Guide.jpg",
 	 "discussion": "",
@@ -3499,7 +3499,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "Put this on your {Tavern mat}.",
+	 "textAboveLine": "Put this on your {Tavern*mat}.",
 	 "textBelowLine": "When you {gain} a card costing up to 6 coins, you may {call} this, to gain a copy of that card.",
 	 "imagePath": "images/card_images/Duplicate.jpg",
 	 "discussion": "",
@@ -3538,7 +3538,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Adventures",
-	 "textAboveLine": "Choose one: Put a [Copper] from your hand onto your {Tavern mat}; or +1 coin per Copper on your Tavern mat.",
+	 "textAboveLine": "Choose one: Put a [Copper] from your hand onto your {Tavern*mat}; or +1 coin per Copper on your Tavern mat.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Miser.jpg",
 	 "discussion": "",
@@ -3577,7 +3577,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 {Action}. Put this on your {Tavern mat}.",
+	 "textAboveLine": "+1 {Action}. Put this on your {Tavern*mat}.",
 	 "textBelowLine": "At the start of your turn, you may {call} this, to {trash} a card from your hand, {gain} a card costing up to 1 coin more than it, and put that card into your hand.",
 	 "imagePath": "images/card_images/Transmogrify.jpg",
 	 "discussion": "",
@@ -3604,7 +3604,7 @@
 	 "types": ["Action", "Attack", "Duration"],
 	 "set": "Adventures",
 	 "textAboveLine": "Each other player takes his -1 coin {token}. Now and at the start of your next turn: +1 {Buy}.",
-	 "textBelowLine": "While this is {in play}, cards cost 1 coin less on your turns, but not less than 0 coins.",
+	 "textBelowLine": "While this is {in*play}, cards cost 1 coin less on your turns, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Bridge_Troll.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bridge_Troll"
@@ -3616,8 +3616,8 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve", "Victory"],
 	 "set": "Adventures",
-	 "textAboveLine": "Put this on your {Tavern mat}.",
-	 "textBelowLine": "Worth 4vp if on your {Tavern mat} at the end of the game (otherwise worth 0vp).",
+	 "textAboveLine": "Put this on your {Tavern*mat}.",
+	 "textBelowLine": "Worth 4vp if on your {Tavern*mat} at the end of the game (otherwise worth 0vp).",
 	 "imagePath": "images/card_images/Distant_Lands.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Distant_Lands"
@@ -3681,8 +3681,8 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 {Action}. Put this on your {Tavern mat}.",
-	 "textBelowLine": "Directly after resolving an {Action}, if it's still {in play}, you may {call} this, to replay that Action.",
+	 "textAboveLine": "+1 {Action}. Put this on your {Tavern*mat}.",
+	 "textBelowLine": "Directly after resolving an {Action}, if it's still {in*play}, you may {call} this, to replay that Action.",
 	 "imagePath": "images/card_images/Royal_Carriage.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Royal_Carriage"
@@ -3733,8 +3733,8 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Reserve"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 {Buy}, +4 coins. Put this on your {Tavern mat}.",
-	 "textBelowLine": "At the end of your {Buy} phase, if you have at least 2 coins unspent, you may discard this from your {Tavern mat}.",
+	 "textAboveLine": "+1 {Buy}, +4 coins. Put this on your {Tavern*mat}.",
+	 "textBelowLine": "At the end of your {Buy} phase, if you have at least 2 coins unspent, you may discard this from your {Tavern*mat}.",
 	 "imagePath": "images/card_images/Wine_Merchant.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wine_Merchant"
@@ -3746,7 +3746,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Duration"],
 	 "set": "Adventures",
-	 "textAboveLine": "At the start of each of your turns for the rest of the game: +1 Card. (This stays {in play}.)",
+	 "textAboveLine": "At the start of each of your turns for the rest of the game: +1 Card. (This stays {in*play}.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Hireling.jpg",
 	 "discussion": "",
@@ -3759,7 +3759,7 @@
 	 "costInDebt": 0,
 	 "types": ["Event"],
 	 "set": "Adventures",
-	 "textAboveLine": "Once per turn: If you have no {Treasure}s {in play}, {gain} a card costing up to 4 coins.",
+	 "textAboveLine": "Once per turn: If you have no {Treasure}s {in*play}, {gain} a card costing up to 4 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Alms.jpg",
 	 "discussion": "",
@@ -3837,7 +3837,7 @@
 	 "costInDebt": 0,
 	 "types": ["Event"],
 	 "set": "Adventures",
-	 "textAboveLine": "{Trash} up to 2 cards you have {in play}.",
+	 "textAboveLine": "{Trash} up to 2 cards you have {in*play}.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bonfire.jpg",
 	 "discussion": "",
@@ -3902,7 +3902,7 @@
 	 "costInDebt": 0,
 	 "types": ["Event"],
 	 "set": "Adventures",
-	 "textAboveLine": "Once per turn: Turn your Journey {token} over (it starts face up); then if it's face up, choose up to 3 differently named cards you have {in play} and {gain} a copy of each.",
+	 "textAboveLine": "Once per turn: Turn your Journey {token} over (it starts face up); then if it's face up, choose up to 3 differently named cards you have {in*play} and {gain} a copy of each.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Pilgrimage.jpg",
 	 "discussion": "",
@@ -3928,7 +3928,7 @@
 	 "costInDebt": 0,
 	 "types": ["Event"],
 	 "set": "Adventures",
-	 "textAboveLine": "{Gain} a [Silver] per Silver you have {in play}. Each other player puts his -1 Card {token} on his deck.",
+	 "textAboveLine": "{Gain} a [Silver] per Silver you have {in*play}. Each other player puts his -1 Card {token} on his deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Raid.jpg",
 	 "discussion": "",
@@ -4111,7 +4111,7 @@
 	 "types": ["Action"],
 	 "set": "Empires",
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 coin",
-	 "textBelowLine": "When you {gain} this, if you have at least 5 {Action} cards {in play}, +2vp.",
+	 "textBelowLine": "When you {gain} this, if you have at least 5 {Action} cards {in*play}, +2vp.",
 	 "imagePath": "images/card_images/Emporium.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Emporium"
@@ -4228,7 +4228,7 @@
 	 "types": ["Victory", "Castle"],
 	 "set": "Empires",
 	 "textAboveLine": "5vp",
-	 "textBelowLine": "When you {gain} this, {reveal} your hand. +1vp per {Victory} card in your hand and/or {in play}.",
+	 "textBelowLine": "When you {gain} this, {reveal} your hand. +1vp per {Victory} card in your hand and/or {in*play}.",
 	 "imagePath": "images/card_images/Grand_Castle.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Grand_Castle"
@@ -4332,7 +4332,7 @@
 	 "types": ["Treasure"],
 	 "set": "Empires",
 	 "textAboveLine": "+1 {Buy}. When you play this, double your <Coin if you haven't yet this turn.",
-	 "textBelowLine": "When you {gain} this, gain a Gold per [Gladiator] you have {in play}.",
+	 "textBelowLine": "When you {gain} this, gain a Gold per [Gladiator] you have {in*play}.",
 	 "imagePath": "images/card_images/Fortune.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fortune"
@@ -4449,7 +4449,7 @@
 	 "types": ["Action"],
 	 "set": "Empires",
 	 "textAboveLine": "+1 Card, +1 {Action}",
-	 "textBelowLine": "While this is {in play}, when you {gain} a {Victory} card, +1vp.",
+	 "textBelowLine": "While this is {in*play}, when you {gain} a {Victory} card, +1vp.",
 	 "imagePath": "images/card_images/Groundskeeper.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Groundskeeper"
@@ -4713,7 +4713,7 @@
 	{"name": "Colonnade",
 	 "types": ["Landmark"],
 	 "set": "Empires",
-	 "textAboveLine": "When you {buy} an {Action} card, if you have a copy of it {in play}, take 2vp from here.",
+	 "textAboveLine": "When you {buy} an {Action} card, if you have a copy of it {in*play}, take 2vp from here.",
 	 "textBelowLine": "Setup: Put 6vp here per player.",
 	 "imagePath": "images/card_images/Colonnade.jpg",
 	 "discussion": "",
@@ -4893,7 +4893,7 @@
 	 "types": ["Action"],
 	 "set": "Promos",
 	 "textAboveLine": "+1 Card, +1 {Action}. You may play an [Avanto] from your hand.",
-	 "textBelowLine": "While this is {in play}, when you play a [Silver], you may {trash} a card from your hand.",
+	 "textBelowLine": "While this is {in*play}, when you play a [Silver], you may {trash} a card from your hand.",
 	 "imagePath": "images/card_images/Sauna.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Sauna"
@@ -4919,7 +4919,7 @@
 	 "types": ["Action"],
 	 "set": "Promos",
 	 "textAboveLine": "+1 Card, +2 {Action}s",
-	 "textBelowLine": "At the start of Clean-up, if you have this and no more than one other {Action} card {in play}, you may put this onto your deck.",
+	 "textBelowLine": "At the start of Clean-up, if you have this and no more than one other {Action} card {in*play}, you may put this onto your deck.",
 	 "imagePath": "images/card_images/Walled_Village.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Walled_Village"

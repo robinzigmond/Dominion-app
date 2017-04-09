@@ -77,7 +77,7 @@
 	{"term": "Hinterlands",
 	 "definition": "The sixth expansion, released in 2011. Its central theme is cards which do something when you buy or gain them - or which have effects when other cards are bought or gained."},
 
-	{"term": "Dark Ages",
+	{"term": "Dark*Ages",
 	 "definition": "The seventh expansion, released in 2012. The largest Dominion expansion at the time of release, it has a great variety, but particularly empasises interactions with trashing (cards that do things when trashed, or that allow cards to be gained from the trash pile), as well as having a subtheme of \"upgrading\"."},
 
 	{"term": "Guilds",
@@ -104,7 +104,7 @@
 	{"term": "village",
 	 "definition": "A common term for any card which provides +2 (or more) Actions. So called because the Village card in the base set has this function, and many other such cards have \"village\" in their name."},
 
-	{"term": "terminal draw",
+	{"term": "terminal*draw",
 	 "definition": "Any terminal action which draws 2 or more cards, thus increasing your handsize. They require careful handling because of the possibility of drawing other Action cards without the ability to play them. Typically used either in a money strategy with few or no other action cards, or as part of an engine with plenty of villages."},
 
 	{"term": "terminal",
@@ -113,7 +113,7 @@
 	{"term": "non-terminal",
 	 "definition": "any Action card which provides at least +1 Action - and usually those providing exactly +1 Action. These cards give back the action used to play them, so you can chain them indefinitely - provided of course you have some way to keep drawing them into your hand."},
 
-	{"term": "non-terminal draw",
+	{"term": "non-terminal*draw",
 	 "definition": "a card which gives at least +1 action and +2 cards, thereby increasing your handsize and allowing other actions to be played afterwards. These cards, of which Laboratory is the most basic, are very powerful and a strong addition to more or less every deck."},
 
 	{"term": "cantrip",
@@ -131,22 +131,22 @@
 	{"term": "trash",
 	 "definition": "When a card is trashed, it is removed from its present location and placed in the Trash pile. This usually means that it is out of the game for good - although a few cards allow gaining from the Trash. Trashing your own weak cards - of which you start with 10 - is very desirable, especially if you want to construct an engine, while some Attacks trash valuable cards from the opponents' decks."},
 
-	{"term": "trash for benefit",
+	{"term": "trash*for*benefit",
 	 "definition": "Trash for benefit cards are those which trash a single card and give you some bonus which scales with the card's cost."},
 
 	{"term": "megaturn",
 	 "definition": "A megaturn strategy is one, usually relying on a particular 2 or 3-card combo, which buys no Victory cards at all until it is able fo pull of a final game-ending \"megaturn\" - most spectacularly, the entire Province or Colony pile, but it is sometimes possible to win by emptying 3 piles then buying a single Duchy or Estate. Such combos typically involve a cost-reducer like Bridge or Highway, and are vulnerable to the opponent(s) ending the game before the combo is up and running."},	 
 
-	{"term": "terminal Silver",
+	{"term": "terminal*Silver",
 	 "definition": "Any terminal Action which gives 2 coins as part of its bonus, as a Silver does. It is a useful term because there are a large number ot these cards, which vary widely in their cost and in their additional benefits. Terminal Silvers costing 3 or 4 always have to be weighed against buying Silver itself."},
 
-	{"term": "Tavern mat",
+	{"term": "Tavern*mat",
 	 "definition": "A mat provided with the Adventures expansion, on which Reserve cards are placed after being played. The precise text of the card then details what happens next - most such cards can be \"called\" later at a time the player chooses in order to perform a useful effect."},
 
 	{"term": "call",
 	 "definition": "To call a Reserve card means to remove it from your Tavern mat and put it into play. All Reserve cards which can be called give some kind of benefit after doing so."},
 
-	{"term": "Coin token",
+	{"term": "Coin*token",
 	 "definition": "Coin tokens are a part of the Guilds expansion. In your Buy phase, you can spend any number of Coin tokens, and each you spend gives you an additional coin towards buying cards or Events that turn. Since Coin tokens can be saved between turns, this allows the player much more control over his money distribution than normal. [Note that the non-Guilds cards Pirate Ship and Trade Route both refer to Coin tokens, but these are not the same tokens, do not belong to any individual player, and have only the effects detailed on those particular cards.]"},
 
 	{"term": "token",
@@ -167,7 +167,7 @@
 	{"term": "Buy",
 	 "definition": "To buy a card, or Event, means to pay its cost during your Buy Phase. You only get one buy per turn, unless some card effect gives you one or more additional Buys. Buying a card results in gaining that card (adding it to your deck), while buying an Event means that Event's text takes effect."},
 
-	{"term": "virtual coin",
+	{"term": "virtual*coin",
 	 "definition": "Virtual coin is a term for any money that the player gets due to Action cards rather than Treasures. Good sources of Virtual coin usually improve any action-based engine strategies which may be available, and enable some combos which could not otherwise function."},
 
 	{"term": "slog",
@@ -176,10 +176,10 @@
 	{"term": "rush",
 	 "definition": "A rush strategy is one which aims to end the game (with a lead, of course) as soon as possible. Frequently chosen with certain alt-VP cards on the board, and often effective if there is a way to drain Supply piles quickly."},
 
-	{"term": "Split pile",
+	{"term": "Split*pile",
 	 "definition": "Kingdom piles with more than one different card in them were introduced in Empires. Most of these have 5 copies each of 2 different cards, with the cheaper one on top. Usually there is some sort of special interaction between the 2 cards which justifies having them in this relationship. The Castles pile takes this to an extreme, with 8 different cards, again which interact with each other. Note that the Knights and Ruins piles, from Dark Ages, are not Split piles despite containing different cards, as these appear in a random and unknown order."},
 
-	{"term": "in play",
+	{"term": "in*play",
 	 "definition": "Once card enters a player's play area - usually by being played there from the player's hand - it remains there until it is discarded in the Cleanup phase, or some other effect removes it from play. Some cards have effects that apply while they are in play - these cease to apply as soon as the card leaves play."}
 
 ]
