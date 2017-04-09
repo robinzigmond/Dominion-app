@@ -1,3 +1,5 @@
+/* the first section of this CSS file contains general stylings regarding the page structure, especially for the navbar and footer */
+
 /* using flexbox to create a "sticky footer" (one which is at the bottom of either the window or the content, whichever is lower)
 I found help on this at various sources, most notably https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 and http://stackoverflow.com/questions/36899807/flexbox-sticky-footer-not-working-in-safari-or-chrome-osx */
@@ -16,7 +18,7 @@ body {
 }
 
 .content {
-    flex: 1 0 auto; /* needed to fix "sticky footer" on Safari (in other browsers "flex: 1;" was enough) */
+    flex: 1 0 auto; /* needed to fix "sticky footer" on Safari (in other browsers "flex: 1;" is enough) */
 }
 
 nav.navbar {
@@ -26,7 +28,8 @@ nav.navbar {
 }
 
 nav .navbar-brand {
-    font-size: 24px;
+    font-size: 24px; /* this font-size needs to be kept relatively small or else it forces the navbar to spill onto 2 separate 
+    lines on the narrowest phone screens - this is very bad when it is fixed to the top of what is already a small screed*/
 }
 
 footer {
@@ -37,42 +40,25 @@ footer {
     margin-top: 20px;
 }
 
+/* make various headings throughout the site horizontally-centred, and in a more heading-friendly font */
 h1.centre, h2.centre, h3.centre, h4.centre {
     font-family: 'Arimo', sans-serif;
     text-align: center;
 }
 
-p.centre {
-    text-align: center;
+/* common styles for various form and display elements */
+.form-group.search, .home-text, #contact-form, #card-info {
+    padding: 5px;
+    border: 5px ridge blue;
+    background-color: #e6f2ff;
 }
 
-h1.home {
-    margin-bottom: 40px;
+/* card info box looks better with square corners, due to being just below the square table - but all others have rounded corners: */
+.form-group.search, .home-text, #contact-form {
+     border-radius: 15px;
 }
 
-.text {
-    color: #aaa;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.home-text, .home-image a {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-text {
-    flex-direction: column;
-}
-
-.mobile-hidden {
-    display: none;
-}
-
-/* custom link colours - also applied to popover triggers */
+/* custom link colours - also applied to popover triggers, which should function as much like links as possible */
 a, .glossary-item {
     color: #e68a00;
 }
@@ -90,7 +76,54 @@ a:visited {
     cursor: pointer;
 }
 
-/* get search dropdowns to display inline, not too high or too wide, but wide enough to allow numbers to be seen on all devices */
+/* give grid elements equal heights on links and home pages. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
+.equal-height-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+} 
+
+/* the following is needed to fix the layout on Safari. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
+.equal-height-columns:before, .equal-height-columns:after {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* general rules for all card images on small screensL */
+.card-image.portrait {
+    width: 150px;
+}
+
+.card-image.landscape {
+    width: 249px;
+}
+
+/*******************************************************************************************************************************/
+
+/* the next section concerns the homepage */
+
+/* use Flexbox to get both paragraphs and images (links) on homepage centred in both directions */
+.home-text, .home-image a {
+    margin: 10px auto; /* 10px margin gives a little more "breathing room" to these elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    flex-direction: column; /* necessary to make headings paragraphs appear beneath each other within each box */
+}
+
+.mobile-hidden {
+    display: none; /* used to hide one of the homepage card images for more mobile-friendly layout*/
+}
+
+/*******************************************************************************************************************************/
+
+/* the next section concerns the search page */
+
+/* get cost dropdowns on search form to display inline, not too high or too wide, but wide enough to allow numbers to be seen 
+on all devices */
 select.form-control {
 	display: inline-block;
 	width: 60px;
@@ -115,49 +148,8 @@ label.form-subtitle {
     margin-bottom: 5px;
 }
 
-/* common styles for various form and display elements */
-.form-group.search, .home-text, #contact-form, #card-info {
-    padding: 5px;
-    border: 5px ridge blue;
-    background-color: #e6f2ff;
-}
-
-/* card info box looks better with square corners, due to being just below the square table */
-.form-group.search, .home-text, #contact-form {
-     border-radius: 15px;
-}
-
-#card-info {
-    margin-bottom: 20px;
-}
-
-a.wiki-link {
-    display: block;
-    margin-left: 10px;
-}
-
-/* slightly different styling for the columns on the links page, because it doesn't seem possible to
-put space between the borders, so a narrower border looks best*/
-.link-group {
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 15px;
-    background-color: #e6f2ff;
-}
-
-/* give grid elements equal heights on links and home pages. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
-.equal-height-columns {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-} 
-
-/* the following is needed to fix the layout on Safari. Adapted from http://codepen.io/bootstrapped/details/RrabNe/ */
-.equal-height-columns:before, .equal-height-columns:after {
-    display: flex;
-    flex-wrap: wrap;
-} 
-
+/* use flexbox again for search results page - in particular this centres the landscape cards relative to the portrait ones,
+and centres images on the screen on mobile devices with a single-column display */
 .separate-scroll-results {
     display: flex;
     flex-wrap: wrap;
@@ -165,28 +157,34 @@ put space between the borders, so a narrower border looks best*/
     align-items: center;
 }
 
-/* card search results need to be in grid format */
+/* card search results should to be in grid format */
 .search-results {
     display: inline-block;
     padding: 5px;
 }
 
+/*******************************************************************************************************************************/
 
-/* card image on card pages: centre horizontally, and push down from top of page */
+/* the next section concerns the pages for individual cards */
+
+/* give sufficient space between the "card discussion" box and the link below */
+#card-info {
+    margin-bottom: 20px;
+}
+
+/* indent Dominion Strategy Wiki link to be level with the text above in the table and discussion box */
+a.wiki-link {
+    display: block;
+    margin-left: 10px;
+}
+
+/* card image should be centred horizontally, and pushed down from text above */
 .single-card {
     display: block;
     margin: 20px auto;
 }
 
-/* make images smaller on small screens */
-.card-image.portrait {
-    width: 150px;
-}
-
-.card-image.landscape {
-    width: 249px;
-}
-
+/* styling for the table giving general card information:; */
 .card-table {
     background-color: #e6f2ff;
     border: 3px solid #00254d;
@@ -197,6 +195,30 @@ put space between the borders, so a narrower border looks best*/
     background-color: #b3d7ff;
 }
 
+/*******************************************************************************************************************************/
+
+/* the next section concerns the links page */
+
+/* slightly different styling for the columns, because it doesn't seem possible to put space between the borders, 
+so a narrow border looks best*/
+.link-group {
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    background-color: #e6f2ff;
+}
+
+/* The following rule applies to one element - the short paragraph at the bottom of the links page. I felt it important 
+to centre this text on the screen. */
+p.centre {
+    text-align: center; 
+}
+
+/*******************************************************************************************************************************/
+
+/* the next section concerns the contact form */
+
+/* the contact form (or rather its containing div) should have a reasonable gap from the edge of the page */
 #contact {
     margin: 0 30px;
 }
@@ -205,26 +227,31 @@ put space between the borders, so a narrower border looks best*/
     margin-top: 20px;
 }
 
+/* styling for messages showing an invalid form submission */
 .invalid-form {
     color: red;
     font-weight: bold;
     padding: 5px 0;
 }
 
+/* use Angular-specific CSS classes to make the form inputs red when they are not yet valid for submission */
 #contact-form input.ng-invalid, #contact-form textarea.ng-invalid {
     border: 1px solid red;
     background-color: #ffe6e6;
 }
 
+/* give a green border when the input is valid, as visual cue to the user */
 #contact-form input.ng-valid, #contact-form textarea.ng-valid {
     border: 2px solid green;
 }
 
-@media (min-width: 768px) {
-    body {
-        padding-bottom: 40px;
-    }
+/*******************************************************************************************************************************/
 
+/* media query for styling differences on "large" screens (any larger than a standard phone screen) */
+
+@media (min-width: 768px) {
+    /* make navbar text large enough to have the necessary visual impact, now that there are no restrictions due to lack of
+    horizontal space*/
     nav.navbar {
         font-size: 28px;
     }
@@ -233,17 +260,7 @@ put space between the borders, so a narrower border looks best*/
         font-size: 36px;
     }
 
-    /* for screens large enough to use 2 columns, allow them to scroll separately */
-    .separate-scroll-form {
-        overflow: auto;
-        height: 90vh;
-    }
-    .separate-scroll-results {
-        overflow: auto;
-        height: 85vh;
-    }
-    
-    /* increase image size back to normal on larger screens */
+    /* increase card image size back to "normal" */
     .card-image.portrait {
         width: 200px;
     }
@@ -252,10 +269,7 @@ put space between the borders, so a narrower border looks best*/
         width: 332px;
     }
 
-    .single-card {
-        margin-top: 90px;
-    }
-
+    /* cause correct layout on homepage, by hiding and revealing the relevant images */
     .mobile-hidden {
         display: block;
     }
@@ -264,10 +278,27 @@ put space between the borders, so a narrower border looks best*/
         display: none;
     }
 
+    /* centre homepage images both horizontally and vertically within their containing div */
     .home-image {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    /* these screens are large enough to use 2 columns on the search page, and it is MUCH better UX to  allow them to 
+    scroll separately */
+    .separate-scroll-form {
+        overflow: auto;
+        height: 90vh;
+    }
+
+    .separate-scroll-results {
+        overflow: auto;
+        height: 85vh;
+    }
+    
+    /* correct margin for card image on card page, so that its top lines up with the top of the card info table */
+    .single-card {
+        margin-top: 90px;
+    }
 }

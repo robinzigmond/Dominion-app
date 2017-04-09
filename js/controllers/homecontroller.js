@@ -3,6 +3,10 @@ angular.module("RouteControllerHome", [])
 		GetData.cards().then(function(results) {
 			$scope.cardList = results.data;
 			var numberOfCards = $scope.cardList.length;
+
+			/* pick 5 random cards to display on homepage, as an example of the variety of different cards available. Note that
+			only 4 are displayed on desktop/tablet views, and 3 on phones, but the easiest way to handle the differing layout on
+			each screen size was to define 5 cards. The appropriate ones are hidden using CSS classes. */
 			var randomIndex1 = Math.floor(numberOfCards*Math.random());
 			$scope.randomCard1 = $scope.cardList[randomIndex1];
 			var randomIndex2 = Math.floor(numberOfCards*Math.random());
@@ -14,6 +18,8 @@ angular.module("RouteControllerHome", [])
 			var randomIndex5 = Math.floor(numberOfCards*Math.random());
 			$scope.randomCard5 = $scope.cardList[randomIndex4];
 
+			/* find the orientation of each card image (landscape for Events and Landmarks, otherwise portrait)
+			This is done in order to determine the width required for the image */
 			for (i=1; i<6; i++) {
 				if ($scope["randomCard"+i].types.indexOf("Event")>-1 || $scope["randomCard"+i].types.indexOf("Landmark")>-1) {
 					$scope["randomCard"+i].orientation = "landscape";

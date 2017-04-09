@@ -1,3 +1,6 @@
+/* the following service is used to simplify the code concerning extracting data from the various JSON files. It returns an object
+whose methods are the different $http promises required */
+
 angular.module("Data", [])
 	.factory("GetData", function($http) {
 		var allData = {

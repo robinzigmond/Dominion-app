@@ -73,6 +73,9 @@
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
+			<!--The Angular binding below looks rather fearsome at first glance, so I will explain it. Its purpose is simply to display to the user the number of cards returned by the search, which may be relevant information (and if not is relatively unobtrusive).
+			First note that the ng-repeat statement a few lines down is a filter of the entire card list by every search function, in order to display precisely those cards which match the user's search parameters. This entire expression returns an array of course, and we use the .length method to find the number of cards returned.
+			After displaying this number and the word "card", we use the Javascript ternary operator to pluralise it (that is, add an "s") in all cases except when exactly 1 card is returned. -->
 			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> card{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length == 1 ? "" : "s"}} matching search parameters:</p>
 			<div class="separate-scroll-results">
 				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">

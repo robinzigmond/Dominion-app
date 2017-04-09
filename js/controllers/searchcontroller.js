@@ -4,16 +4,21 @@ angular.module("RouteControllerSearch", [])
 		GetData.cards()
 			.then(function(results) {
 				$scope.cardList = results.data;
-				// create a "cost" property for ordering purposes, which orders by coin cost, followed by potion cost, then Debt cost.
-				// this is by no means a "canonical" order, but seems as good as anything as an arbitrary choice
+				// first run through the entire card database in order to do a few different tasks on each card:
 				for (card in $scope.cardList) {
+					/* create a "cost" property for ordering purposes, which orders by coin cost, followed by potion cost, 
+					then Debt cost. This is by no means a "canonical" order, but seems as good as anything as an arbitrary choice */
 					$scope.cardList[card].cost = 100*$scope.cardList[card].costInCoins + 10*$scope.cardList[card].costInPotions 
 					+ $scope.cardList[card].costInDebt;
 				
-					/* strip out square brackets and curly braces from card texts. (These have been inserted by me in order to signal
-				    replacement by links or popovers on the card page - but we don't want these characters to obstruct search strings)
-				    Similarly for the < character (used to mark certain icons, and the * character used to replace spaces in
-				    popover triggers.) */
+					/* strip out square brackets and curly braces from card texts. (I have used these characters in order to 
+					signal replacement by links or popovers on the card page - but we don't want these characters to obstruct 
+					search strings. For example, a user might easily want to search for cards giving "+2 Actions" - it must not
+					fail to return any cards because the database actually says "+2 {Action}s", for reasons which have nothing to
+					do with the search page!).
+				    Similarly for the < character used to mark certain icons, and the * character used to replace spaces in
+				    popover triggers.) Note that *s are not removed, but replaced by a space, because they are there in place of
+				    a space in the first place. */
 					$scope.cardList[card].textAboveLine = $scope.cardList[card].textAboveLine.split("[").join("")
 															.split("]").join("").split("{").join("").split("}").join("")
 															.split("<").join("").split("*").join(" ");
@@ -21,7 +26,7 @@ angular.module("RouteControllerSearch", [])
 															.split("]").join("").split("{").join("").split("}").join("")
 															.split("<").join("").split("*").join(" ");
 
-				// find the correct orientation for the card (used to give it the right CSS class for image sizing):
+					// find the correct orientation for the card (used to give it the right CSS class for image sizing):
 					if ($scope.cardList[card].types.indexOf("Event")>-1||$scope.cardList[card].types.indexOf("Landmark")>-1) {
 						$scope.cardList[card].orientation = "landscape";
 					}
@@ -32,11 +37,14 @@ angular.module("RouteControllerSearch", [])
 				}
 			});
 
-		// get values from service
+		/* get search values from service - ensuring that they are remembered when the user navigates back to the search page,
+		most likely after checking an individual card page */
 		$scope.searchParams = CardSearchValues;
 
-		// define arrays of various pieces of information. This makes other parts of the code shorter, and allows for easier updating if
-		// new expansions are ever realsed with new types etc.
+		/* define arrays of various pieces of information. This makes other parts of the code shorter, and allows for easier 
+		updating if	new expansions are ever realsed with new types etc. */
+		/* costs go up to the maximum that currently exists (the Dominate event in Empires costs 14 coins, previously the maximum
+		was 11 for Colony) */
 		$scope.possibleCoinCosts = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 		$scope.possiblePotionCosts = [0,1];
 		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
@@ -59,18 +67,20 @@ angular.module("RouteControllerSearch", [])
 						  {dirtyName: "Empires", niceName: "Empires"},
 						  {dirtyName: "Promos", niceName: "Promos"}];
 
-		// reset name search text when button is clicked
+		// reset name search text when the appropriate button is clicked
 		$scope.clearNameSearch = function () {
 			$scope.searchParams.nameSearchText = "";
 		}
 
-		// sets max cost equal to minimum, to allow to easily search for cards of a fixed cost
+		/* This function, also triggered by a button, sets maximum cost equal to minimum, to allow users to easily search 
+		for cards of a specific cost */
 		$scope.fixedCost = function() {
 			$scope.searchParams.maxCoinCost = $scope.searchParams.minCoinCost;
 			$scope.searchParams.maxPotionCost = $scope.searchParams.minPotionCost;
 			$scope.searchParams.maxDebtCost = $scope.searchParams.minDebtCost;
 		}
 
+		// there is a "reset to Default button" for costs as well
 		$scope.resetCosts = function() {
 			$scope.searchParams.minCoinCost = "0";
 			$scope.searchParams.minPotionCost = "0";
@@ -87,7 +97,10 @@ angular.module("RouteControllerSearch", [])
 			}
 		}
 
-		// define behaviour for "select/deselect all sets" button
+		/* define behaviour for "select/deselect all sets" button. This initially says "select all sets", but toggles between
+		"select" and "deselect" on each click. The button itself does whatever it currently says it does!
+		I could have instead used 2 separate buttons, one for select all and one for deselect all - but I feel it is better to
+		save the space, since it will be rare to want to "select all" when many sets are already selected, and vice versa */
 		$scope.toggleSets = function() {
 			for (set in $scope.allSets) {
 				$scope.searchParams["in"+$scope.allSets[set].dirtyName] = $scope.searchParams.selectOrDeselectSets;
@@ -100,19 +113,27 @@ angular.module("RouteControllerSearch", [])
 		$scope.clearTextSearch = function () {
 			$scope.searchParams.aboveLineSearchText = "";
 			$scope.searchParams.belowLineSearchText = "";
+			// we should also make sure the "anywhere on card" checkbox is ticked, as this is the most natural setting:
+			$scope.searchParams.allTextSearch = true;
 		}
 
-		// returns true when card name contains relevant search text:
+		/* now we move onto the functions used for the search function itself. There is one for each section of the search form -
+		they take as input the object representing an individual card, and return true or false according to whether they meet
+		the search criteria set by the user */
+
+		/* returns true when card name contains relevant search text. This search should of course be non-case-sensitive,
+		so everything is converted to upper case: */
 		$scope.nameSearch = function(card) {
 			return (card.name.toUpperCase().indexOf($scope.searchParams.nameSearchText.toUpperCase()) != -1);
 		};
 
-		// searches for cards with cost in the indicated range
-		// note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work in Dominion
-		// (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable)
+		/* Returns only cards with cost in the indicated range.
+		Note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work 
+		in Dominion (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable) */
 		$scope.costSearch = function(card) {
-			// Landmarks fit awkwardly here, as they have no cost. Best solution is to return them if, and only if, the cost search
-			// parameters are at their default settings:
+			/* First we deal with Landmarks. They fit awkwardly here, as they have no cost, being global conditions that effect 
+			all	players in the game. Best solution is to return them if, and only if, the cost search parameters are at their 
+			default settings: */
 			if (card.types.indexOf("Landmark")>-1) {
 				if (($scope.searchParams.minCoinCost==0)&&($scope.searchParams.minPotionCost==0)
 					&&($scope.searchParams.minDebtCost==0)&&($scope.searchParams.maxCoinCost==14)
@@ -129,25 +150,29 @@ angular.module("RouteControllerSearch", [])
 		};
 
 		
-		/* this search only matches cards with ALL selected types (one might want to search for eg. all Action-Attack cards, 
+		/* The "types" search only matches cards with ALL selected types (one might want to search for eg. all Action-Attack cards, 
 		but there is not much use in wanting to see all Action cards AND all Attack cards) */
 		$scope.typesSearch = function(card) {
 			// first make array of the exact types to be included in search
 			var desiredTypes = [];
 			for (type in $scope.allTypes) {
-				if ($scope.searchParams["is"+$scope.allTypes[type]+"Type"]) desiredTypes.push($scope.allTypes[type]);
+				if ($scope.searchParams["is"+$scope.allTypes[type]+"Type"]) {
+					desiredTypes.push($scope.allTypes[type]);
+				}
 			}
-			//remove all cards without all desired types
+			//remove cards without all desired types
 			for (type in desiredTypes) {
-				if (card.types.indexOf(desiredTypes[type])==-1) return false;
+				if (card.types.indexOf(desiredTypes[type])==-1) {
+					return false;
+				}
 			}
 			return true;
 		}
 		
-		/* this search should match all cards in ANY of the selected sets. This is to enable users to search just those cards from the sets
-		that they own, or are interested in */
+		/* this search should match all cards in ANY of the selected sets. This is to enable users to search just those cards 
+		from the sets that they own, or are interested in */
 		$scope.setFilter = function(card) {
-			// set card to be in Base set if it is in either first or second edition
+			// assign card to be in Base set if it is in either first or second edition
 			$scope.searchParams.inBase = ($scope.searchParams.inBaseFirstEd || $scope.searchParams.inBaseSecondEd);
 		
 			//same for Intrigue
@@ -156,46 +181,39 @@ angular.module("RouteControllerSearch", [])
 			return $scope.searchParams["in"+card.set];		
 		} 
 
-		/* the following 2 functions implement the following:
+		/* the following 2 search functions implement the following:
 		1) searches for specifically "above the line" or "below the line" text, if the checkbox is unticked
 		2) 2 separate searches for text anywhere on the card, if the checkbox is ticked. 
 		This allows users to search either one part of the card text, or the card as a whole */
 
 		$scope.textAboveSearch = function(card) {
-
-			/* if checkbox is ticked, search whole card text for content of first or second input box. 
-			Card gets returned if matches are found for both. */
-
+			// if checkbox is ticked, search whole card text for content of this first input box. 
 			if ($scope.searchParams.allTextSearch) {
 				return (((card.textAboveLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1) || 
-					(card.textBelowLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1)) && 
-					((card.textAboveLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1) ||
-					(card.textBelowLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1)));
+					(card.textBelowLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1)));
 			}
-			// otherwise just search for text of first input box, above the line
+			// otherwise just search above the line
 			else {
 				return (card.textAboveLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1);
 			}
 		};
 
 		$scope.textBelowSearch = function(card) {
-
-			/* first part is identical to function above. This gives the ability to search for both of two separate text strings. */
+			// almost identical to above: if checkbox ticked, search both sections of card text, now for the second input box:
 			if ($scope.searchParams.allTextSearch) {
-				return (((card.textAboveLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1) || 
-					(card.textBelowLine.toUpperCase().indexOf($scope.searchParams.aboveLineSearchText.toUpperCase()) != -1)) && 
-					((card.textAboveLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1) ||
+				return (((card.textAboveLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1) ||
 					(card.textBelowLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1)));
 			}
-			// if box unchecked, just search for text of second input box, below the line
+			// if box unchecked, just search for text below the line
 			else {
 				return (card.textBelowLine.toUpperCase().indexOf($scope.searchParams.belowLineSearchText.toUpperCase()) != -1);
 			}
 		};
 
-		// "reset all search data" button:
+		// finally, there is the "reset all search data" button:
 		$scope.clearAll = function() {
 			$scope.clearNameSearch();
+			// the "default search" is for cards in the base set 2nd Edition (in order to have some cards to display initially).
 			for (set in $scope.allSets) {
 				if ($scope.allSets[set].dirtyName == "BaseSecondEd") {
 					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = true;
@@ -204,12 +222,15 @@ angular.module("RouteControllerSearch", [])
 					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = false;					
 				}
 			}
+			
+			// Reset the "(de)select all" button for sets to its defaults: showing "select" and performing exactly that:
 			$scope.searchParams.selectOrDeselectSets = true;
 			$scope.searchParams.setsButtonText = "select";
+
+			// Reset all other values, as their individual buttons do:
 			$scope.resetCosts();
 			$scope.clearTypes();
 			$scope.clearNameSearch();
 			$scope.clearTextSearch();
 		}
-
 	});

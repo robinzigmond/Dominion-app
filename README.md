@@ -11,6 +11,8 @@ In addition to the card search page, there is a homepage giving a quick summary 
 
 The site aims to be fully responsive, with user-friendly layouts on all screen sizes.
 
+I have attempted to make copious comments on my code, so that it is easy to see what I was trying to achieve at each stage.
+
 This app will serve as my submitted project for Stream 1 (Front End Development) of the [Code Institute's](https://www.codeinstitute.net/) Full Stack developer course.
 
 ## 3rd party code used
@@ -33,12 +35,6 @@ All code used in this project is my own, with the following exceptions:
 - [Bootstrap](http://getbootstrap.com/)
     - **Bootstrap** CSS has been used throughout, mainly for its responsive grid system, and also for easier styling of the forms and tables used on the site.
 
-- [npm](https://www.npmjs.com/)
-    - **npm** is used to help manage some of the dependencies in the application
-
-- [bower](https://bower.io/)
-    - **Bower** is used to manage the installation of the required libraries and frameworks
-
 #### Other contributions
 As a brand new coder, I have often relied on Google searches and Stack Overflow responses in order to solve problems which I had. The following were particularly vital pieces of help which I found online and think it is only right that I should acknowledge the source of:
 
@@ -50,21 +46,10 @@ Note that solutions to the "sticky footer" problem which rely on the footer havi
 
 - Another issue which required the use of Flexbox was keeping columns at a constant height in the bootstrap grid system, even if the amount of content differs. My CSS which fixes this is adapted from the code by Bryan Willis [here](http://codepen.io/bootstrapped/details/RrabNe/) - and can be seen in effect most obviously on the links page, and also on the homepage.
 
+## Other tech used
 
-## How to run on your machine
+- [npm](https://www.npmjs.com/)
+    - **npm** is used to help manage some of the dependencies in the application
 
-### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone https://github.com/robinzigmond/Dominion-app``` command
-2. After you've that you'll need to make sure that you have **npm** and **bower** installed
-  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
-  2. Once you've done this you'll need to run the following command:
-     `npm install -g bower # this may require sudo on Mac/Linux`
-3. Once **npm** and **bower** are installed, you'll need to install all of the dependencies in *package.json* and *bower.json*
-  ```
-  npm install
- 
-  bower install
-  ```
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
-5. Once **http-server** is installed run ```http-server```
-6. The project will now run on [localhost](http://127.0.0.1:8080)
+- [bower](https://bower.io/)
+    - **Bower** is used to manage the installation of the required libraries and frameworks

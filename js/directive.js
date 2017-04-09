@@ -1,6 +1,8 @@
-/* Custom directive in order for directives to correctly render inside ng-bind-html.
+/* Custom directive to display html with directives functioning correctly - they do not inside ng-bind-html!
+Needed in this app to display uib-popovers.
 Code taken from the answer by Joel in the following stackoverflow thread:
-http://stackoverflow.com/questions/17417607/angular-ng-bind-html-and-directive-within-it/31880192#31880192 */
+http://stackoverflow.com/questions/17417607/angular-ng-bind-html-and-directive-within-it/31880192#31880192 
+Other than my setting of the name for the angular.module, 100% of the code below, including the comments, are from him. */
 
 angular.module("DirectiveInBindHtml", [])
 	.directive('bindHtmlCompile', function ($compile) {
