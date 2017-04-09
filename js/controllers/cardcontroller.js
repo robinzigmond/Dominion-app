@@ -123,10 +123,10 @@ angular.module("RouteControllerCard", [])
 					var linkName = name.replace("'", "&#39");
 
 					// construct Javascript string which gives the correct HTML for the link:
-					var linkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
+					var linkHTML = "<a href='cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
 					/* also defined a "pluralised" version - this is to avoid "ugly" links with pluralised card names which leave
 					the final "s" out of the link */
-					var pluralisedLinkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
+					var pluralisedLinkHTML = "<a href='cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
 
 					/* We only replace first reference to a card in each text with a link, to avoid visual clutter.	That
 					means we can use .replace instead of .split().join()).
