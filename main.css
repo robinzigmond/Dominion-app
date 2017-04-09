@@ -21,12 +21,12 @@ body {
 
 nav.navbar {
     font-family: 'Tangerine', cursive;
-    font-size: 28px;
+    font-size: 24px;
     background-color: #ddd;
 }
 
 nav .navbar-brand {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 footer {
@@ -212,9 +212,17 @@ put space between the borders, so a narrower border looks best*/
     background-color: #ffe6e6;
 }
 
+#contact-form input.ng-valid, #contact-form textarea.ng-valid {
+    border: 2px solid green;
+}
+
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px;
+    }
+
+    nav .navbar-brand {
+        font-size: 36px;
     }
 
     /* for screens large enough to use 2 columns, allow them to scroll separately */

@@ -180,6 +180,6 @@
 	 "definition": "Kingdom piles with more than one different card in them were introduced in Empires. Most of these have 5 copies each of 2 different cards, with the cheaper one on top. Usually there is some sort of special interaction between the 2 cards which justifies having them in this relationship. The Castles pile takes this to an extreme, with 8 different cards, again which interact with each other. Note that the Knights and Ruins piles, from Dark Ages, are not Split piles despite containing different cards, as these appear in a random and unknown order."},
 
 	{"term": "in*play",
-	 "definition": "Once card enters a player's play area - usually by being played there from the player's hand - it remains there until it is discarded in the Cleanup phase, or some other effect removes it from play. Some cards have effects that apply while they are in play - these cease to apply as soon as the card leaves play."}
+	 "definition": "Once a card enters a player's play area - usually by being played there from the player's hand - it remains there until it is discarded in the Cleanup phase, or some other effect removes it from play. Some cards have effects that apply while they are in play - these cease to apply as soon as the card leaves play."}
 
 ]

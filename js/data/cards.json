@@ -775,7 +775,7 @@
 	 "textAboveLine": "{Trash} a card from your hand. {Gain} a card costing up to 2 coins more than it. If the gained card is an {Action} or {Treasure}, put it onto your deck; if it's a {Victory} card, each other player gains a [Curse].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Replace.jpg",
-	 "discussion": "",
+	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Replace is simply an improved version of [Remodel] for 1 coin more. Putting a gained {Action} or {Treasure} on top of your deck helps your boost your next turn - or get exactly the card you need for this turn if you have Actions to spare and something in hand to draw the new card with. Meanwhile, giving opponents a [Curse] when using Replace to gain a {Victory} card is a great way to hinder them, which may tempt you into gaining Victory cards earlier than you otherwise would. Like many Intrigue cards, Replace is particularly good when used in combination with hybrid Victory cards such as [Nobles], because then you get both bonuses.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Replace"
 	},
 
@@ -4487,7 +4487,7 @@
 	 "costInDebt": 5,
 	 "types": ["Event"],
 	 "set": "Empires",
-	 "textAboveLine": "{Gain} an Estate. If you did, +1vp per card you've gained this turn.",
+	 "textAboveLine": "{Gain} an [Estate]. If you did, +1vp per card you've gained this turn.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Triumph.jpg",
 	 "discussion": "",
