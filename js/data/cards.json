@@ -840,7 +840,7 @@
 	 "textAboveLine": "Choose one: +3 Cards; or +2 {Action}s.",
 	 "textBelowLine": "2vp",
 	 "imagePath": "images/card_images/Nobles.jpg",
-	 "discussion": "The single card which best illustrates both of Intrigue's sub-themes - it is a {Victory} card which does other things, and those \"other things\" give the player a choice. Nobles is actually a tricky card to use well - although offering a choice of being a {terminal} draw card or a {village} sounds great for an {engine}, the fact that Nobles is so expensive means that you can't really use Nobles to construct your engine in the first place. And the village effect is very weak, as it does not draw a card ([Necropolis], although useful to have in an engine, is a starting deck card for a reason). Nobles is undoubtedly better than [Gold] in most engines if you hit 6 coins in the early or mid-game, but always remember that you are {buy}ing it mainly for the VPs, not because its on-play effect will significantly improve your deck.",
+	 "discussion": "The single card which best illustrates both of Intrigue's sub-themes - it is a {Victory} card which does other things, and those \"other things\" give the player a choice. Nobles is actually a tricky card to use well - although offering a choice of being a {terminal*draw} card or a {village} sounds great for an {engine}, the fact that Nobles is so expensive means that you can't really use Nobles to construct your engine in the first place. And the village effect is very weak, as it does not draw a card ([Necropolis], although useful to have in an engine, is a starting deck card for a reason). Nobles is undoubtedly better than [Gold] in most engines if you hit 6 coins in the early or mid-game, but always remember that you are {buy}ing it mainly for the VPs, not because its on-play effect will significantly improve your deck.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Nobles"
 	},
 
@@ -4045,7 +4045,7 @@
 	 "costInDebt": 8,
 	 "types": ["Action"],
 	 "set": "Empires",
-	 "textAboveLine": "Play this as if it were an {Action} ard in the {Supply} costing up to 5 coins. This is that card until it leaves play.",
+	 "textAboveLine": "Play this as if it were an {Action} card in the {Supply} costing up to 5 coins. This is that card until it leaves play.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Overlord.jpg",
 	 "discussion": "",
