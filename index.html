@@ -4,7 +4,7 @@
     <title>Dominion card search</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <base href="/Dominion-app/"> --> <!-- needed for Angular HTML5 mode - removed from gh-pages branch to enable direct linking to all pages --> 
+    <base href="/Dominion-app/"> --> <!-- needed for Angular HTML5 mode --> 
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -29,9 +29,9 @@
    			<div class="collapse navbar-collapse" uib-collapse="isCollapsed">
    				<ul class="nav navbar-nav navbar-right" ng-click="isCollapsed=true">
    					<li><a href="#">Home</a></li> <!--using hash-based routing to enable direct links on github pages-->
-   					<li><a href="#search">Cards</a></li>
-   					<li><a href="#links">Links</a></li>
-   					<li><a href="#contact">Contact</a></li>
+   					<li><a href="#/search">Cards</a></li>
+   					<li><a href="#/links">Links</a></li>
+   					<li><a href="#/contact">Contact</a></li>
    				</ul>
    			</div>
    		</div>
