@@ -79,7 +79,7 @@
 			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> card{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length == 1 ? "" : "s"}} matching search parameters:</p>
 			<div class="separate-scroll-results">
 				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
-					<a href="cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
+					<a href="#cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
 				</div>
 			</div>
 		</div>
