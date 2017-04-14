@@ -225,16 +225,32 @@ angular.module("RouteControllerCard", [])
 										- any trailing full stops, commas or closing brackets get included in the popover trigger, 
 										which does not look right at all. In order to fix this, the following lines strip out any 
 										closing "unwanted" characters from the end of the string: */ 
-										var unwantedCharacters = [".", ",", ")"];
+										var unwantedCharactersEnd = [".", ",", ")"];
 										var length = highlightedWord.length;
 										var lastCharacter = highlightedWord.charAt(length-1);
 										/* loop to remove the last character if it is "unwanted", then repeat the process until the
 										last character is acceptable: */
-										while (unwantedCharacters.indexOf(lastCharacter)>-1) {
+										while (unwantedCharactersEnd.indexOf(lastCharacter)>-1) {
 											highlightedWord = highlightedWord.slice(0,length-1);
 											length = highlightedWord.length;
 											lastCharacter = highlightedWord.charAt(length-1);
 										}
+
+										// same for the start of the string:
+										var unwantedCharactersStart = ["(", "\""];
+										var firstCharacter = highlightedWord.charAt(0);
+										while (unwantedCharactersStart.indexOf(firstCharacter)>-1) {
+											highlightedWord = highlightedWord.slice(1);
+											firstCharacter = highlightedWord.charAt(0);
+										}
+
+										/* in a few places I refer to an "action-based" or "money-based" strategy - it looks bad
+										to have the whole word hyphenated word highlighted! */
+										var length = highlightedWord.length;
+										if (highlightedWord.slice(length-6)=="-based") {
+											highlightedWord = highlightedWord.replace("-based", "");
+										}
+
 										break; /* by design each glossary popover appears at most once in each text, so no need to
 										waste time by continuing the loop */
 									}
