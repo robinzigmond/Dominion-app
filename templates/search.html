@@ -87,7 +87,7 @@
 			<p><strong>{{searchParams.searchResults.length}}</strong> card{{searchParams.searchResults.length == 1 ? "" : "s"}} matching search parameters:</p>
 			<div class="separate-scroll-results">
 				<div ng-repeat="card in searchParams.searchResults | orderBy: searchParams.orderProp" class="search-results">
-					<a href="/cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
+					<a href="cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
 				</div>
 			</div>
 		</div>
