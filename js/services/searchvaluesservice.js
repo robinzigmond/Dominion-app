@@ -6,6 +6,9 @@ angular.module("SearchValues", [])
 			
 			// set initial values, to be later changed by user
 
+			// search results should start empty - even though all sets are selected for convenience of user:
+			searchResults: [],
+
 			// order cards by name initially
 			orderProp: "name",
 			
@@ -44,28 +47,30 @@ angular.module("SearchValues", [])
 			isLandmarkType: false,
 
 			// leave most sets blank - except one (Base 2nd Edition, as the most natural starting point now)
-			inBasic: false,
-			inBase: false,
-			inBaseFirstEd: false,
-			inBaseSecondEd: true, /* note that this is set to true (if all are set to false then there are no cards displayed when
-			first using the search page, which could be a little confusing)*/
-			inIntrigue: false,
-			inIntrigueFirstEd: false,
-			inIntrigueSecondEd: false,
-			inSeaside: false,
-			inAlchemy: false,
-			inProsperity: false,
-			inCornucopia: false,
-			inHinterlands: false,
-			inDarkAges: false,
-			inGuilds: false,
-			inAdventures: false,
-			inEmpires: false,
+			inBasic: true,
+			inBase: true,
+			inBaseFirstEd: true,
+			inBaseSecondEd: true, 
+			inIntrigue: true,
+			inIntrigueFirstEd: true,
+			inIntrigueSecondEd: true,
+			inSeaside: true,
+			inAlchemy: true,
+			inProsperity: true,
+			inCornucopia: true,
+			inHinterlands: true,
+			inDarkAges: true,
+			inGuilds: true,
+			inAdventures: true,
+			inEmpires: true,
+			inPromos: true,
 
 			/* determine correct behaviour for "select/deselect all" button in the"sets" field. It should show the word "select" */
-			selectOrDeselectSets: true, /* this value ensures that the button selects all sets, rather than deselects them, when
+			selectOrDeselectSets: false, /* this value ensures that the button deselects all sets, rather than selects them, when
 			clicked. See the Search Controller for details. */
-			setsButtonText: "select"
+			setsButtonText: "deselect"
+
+
 		};
 	
 		return CardSearchValues;
