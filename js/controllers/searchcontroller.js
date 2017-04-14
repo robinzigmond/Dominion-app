@@ -37,6 +37,8 @@ angular.module("RouteControllerSearch", [])
 				}
 			});
 
+
+
 		/* get search values from service - ensuring that they are remembered when the user navigates back to the search page,
 		most likely after checking an individual card page */
 		$scope.searchParams = CardSearchValues;
@@ -210,27 +212,32 @@ angular.module("RouteControllerSearch", [])
 			}
 		};
 
-		// finally, there is the "reset all search data" button:
+		// behaviour of "reset all search fields" button:
 		$scope.clearAll = function() {
 			$scope.clearNameSearch();
-			// the "default search" is for cards in the base set 2nd Edition (in order to have some cards to display initially).
-			for (set in $scope.allSets) {
-				if ($scope.allSets[set].dirtyName == "BaseSecondEd") {
-					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = true;
-				}
-				else {
-					$scope.searchParams["in"+$scope.allSets[set].dirtyName] = false;					
-				}
+			// make sure all sets checkboxes are reticked
+			$scope.toggleSets();
+			if ($scope.searchParams.setsButtonText=="select") {
+				$scope.toggleSets();
 			}
 			
-			// Reset the "(de)select all" button for sets to its defaults: showing "select" and performing exactly that:
-			$scope.searchParams.selectOrDeselectSets = true;
-			$scope.searchParams.setsButtonText = "select";
-
 			// Reset all other values, as their individual buttons do:
 			$scope.resetCosts();
 			$scope.clearTypes();
 			$scope.clearNameSearch();
 			$scope.clearTextSearch();
 		}
+
+		// function to actually run the search and display results:
+		$scope.runSearch = function() {
+			$scope.searchParams.searchResults = [];
+			for (card in $scope.cardList) {
+				if ($scope.nameSearch($scope.cardList[card]) && $scope.costSearch($scope.cardList[card]) 
+					&& $scope.typesSearch($scope.cardList[card]) && $scope.setFilter($scope.cardList[card])
+				 	&& $scope.textAboveSearch($scope.cardList[card]) && $scope.textBelowSearch($scope.cardList[card])) {
+					$scope.searchParams.searchResults.push($scope.cardList[card]);
+				}
+			}
+		}
+
 	});

@@ -853,7 +853,7 @@
 	 "textAboveLine": "Discard any number of cards. +1 coin per card discarded.",
 	 "textBelowLine": "When another player plays an {Attack} card, you may {reveal} this from your hand. If you do, +2 Cards, then put 2 cards from your hand on top of your deck.",
 	 "imagePath": "images/card_images/Secret_Chamber.jpg",
-	 "discussion": "One of the cards removed from the second edition of Intrigue in 2009, Secret Chamber combines a weak on-play effect (it guarantees 4 coins if you play it from a full 5-card hand, but unless your deck is terrible you can almost always do better than that) with an intriguing {Reaction} ability in response to {Attack}s. The latter is pretty good against attacks which inspect the top of your deck, like [Pirate Ship] or [Jester], since you get to choose which card(s) they see - but against most other Attacks its benefit is marginal at best.",
+	 "discussion": "One of the cards removed from the second edition of Intrigue in 2016, Secret Chamber combines a weak on-play effect (it guarantees 4 coins if you play it from a full 5-card hand, but unless your deck is terrible you can almost always do better than that) with an intriguing {Reaction} ability in response to {Attack}s. The latter is pretty good against attacks which inspect the top of your deck, like [Pirate Ship] or [Jester], since you get to choose which card(s) they see - but against most other Attacks its benefit is marginal at best.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Secret_Chamber"
 	},
 
@@ -1305,7 +1305,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Alchemy",
-	 "textAboveLine": "+1 Card. +1 {Action}. {Reveal} the top 4 cards of your deck. Put the revealed [Copper]s and [Potion]s into your hand. Put the other cards back on top of your deck in any order.",
+	 "textAboveLine": "+1 Card, +1 {Action}. {Reveal} the top 4 cards of your deck. Put the revealed [Copper]s and [Potion]s into your hand. Put the other cards back on top of your deck in any order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Apothecary.jpg",
 	 "discussion": "",
@@ -1539,7 +1539,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Prosperity",
-	 "textAboveLine": "1 card, +2 {Action}s. If there are one or more empty {Supply} piles, +1 Card. If there are two or more, +1 {Buy} and +1 coin.",
+	 "textAboveLine": "+1 card, +2 {Action}s. If there are one or more empty {Supply} piles, +1 Card. If there are two or more, +1 {Buy} and +1 coin.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/City.jpg",
 	 "discussion": "",

@@ -8,19 +8,25 @@
 					<label class="radio-inline"><input type="radio" name="name" ng-model="searchParams.orderProp" value="name"/>Name</label>
 					<label class="radio-inline"><input type="radio" name="cost" ng-model="searchParams.orderProp" value="cost"/>Cost</label>
 				</div>
-				<div class="form-group search">
-					<label class="control-label" for="name-search">Card Name:</label>
-					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
-				</div>
+
 				<div class="form-group search">
 					<label class="control-label form-subtitle" >Card sets:</label>
 					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
 					<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
-					<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
+					<div>
+						<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
+					</div>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{searchParams.setsButtonText}} all</button>
+					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
 				</div>
 				<div class="form-group search">
+					<label class="control-label" for="name-search">Card Name:</label>
+					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
+					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
+					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
+				</div>
+				<div class="form-group search">
+					<p><strong>Note on Landmarks:</strong> Landmarks have no cost. They will be returned by the search if, and only if, the cost fields are at their default values (press "Reset" to ensure this).</p>
 					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
 					<label class="control-label" for="min-coin-cost">Coins</label>
 					<select class="form-control input-sm" id="min-coin-cost" ng-model="searchParams.minCoinCost"> 
@@ -49,13 +55,16 @@
 					</select>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum equal to minimum</button>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="resetCosts()">Reset</button>
-					<p><strong>Note on Landmarks:</strong> Landmarks have no cost. They will be returned by the search if, and only if, the cost fields are at their default values (press "Reset" to ensure this).</p>
+					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
 				</div>
 				<div class="form-group search">
 					<label class="control-label form-subtitle" >Types:</label> 
 					<p>(Only cards which match <strong>all</strong> selected types will be found. Leave blank for the most general search, and make selections to narrow it.)</p>
-					<label class="checkbox-inline" ng-repeat="type in allTypes"><input type="checkbox" ng-model="searchParams['is'+type+'Type']"/>{{type}}</label>
+					<div>
+						<label class="checkbox-inline" ng-repeat="type in allTypes"><input type="checkbox" ng-model="searchParams['is'+type+'Type']"/>{{type}}</label>
+					</div>
 					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
+					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
 				</div>
 				<div class="form-group search">
 					<label class="control-label" for="text-above-search">Text (above line):</label>
@@ -67,19 +76,18 @@
 						<input type="checkbox" id="anywhere" ng-model="searchParams.allTextSearch"/>
 						<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned. Deselect to search specific text areas.)</p>
 						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTextSearch()">Clear</button>
+						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
 					</div>
 				</div>
-				<button type="button" class="btn btn-success btn-lg search-form-button" ng-click="clearAll()">Reset to Default</button>
+				<button type="button" class="btn btn-primary btn-md search-form-button" id="reset-search" ng-click="clearAll()">Clear/reset all search fields</button>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
-			<!--The Angular binding below looks rather fearsome at first glance, so I will explain it. Its purpose is simply to display to the user the number of cards returned by the search, which may be relevant information (and if not is relatively unobtrusive).
-			First note that the ng-repeat statement a few lines down is a filter of the entire card list by every search function, in order to display precisely those cards which match the user's search parameters. This entire expression returns an array of course, and we use the .length method to find the number of cards returned.
-			After displaying this number and the word "card", we use the Javascript ternary operator to pluralise it (that is, add an "s") in all cases except when exactly 1 card is returned. -->
-			<p><strong>{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length}}</strong> card{{(cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch).length == 1 ? "" : "s"}} matching search parameters:</p>
+			<!--Display to user the number of cards found - with correct pluralisation of word "card" -->
+			<p><strong>{{searchParams.searchResults.length}}</strong> card{{searchParams.searchResults.length == 1 ? "" : "s"}} matching search parameters:</p>
 			<div class="separate-scroll-results">
-				<div ng-repeat="card in cardList | filter: nameSearch | filter: costSearch | filter: typesSearch | filter: setFilter | filter: textAboveSearch | filter: textBelowSearch | orderBy: searchParams.orderProp" class="search-results">
-					<a href="cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
+				<div ng-repeat="card in searchParams.searchResults | orderBy: searchParams.orderProp" class="search-results">
+					<a href="/cards/{{card.name}}"><img ng-src="{{card.imagePath}}" alt="{{card.name}}" class="card-image {{card.orientation}}" /></a>
 				</div>
 			</div>
 		</div>
