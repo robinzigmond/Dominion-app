@@ -82,7 +82,7 @@ angular.module("RouteControllerCard", [])
 					}
 					else {
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", 
-							text: $scope.thisCard.costInCoins+" coins"});
+							text: $scope.thisCard.costInCoins+" coins "}); // space to separate from next component if alt is needed
 					}
 				}
 				//potion and debt icons only needed if that component of the cost is >0. No more than 1 potion is ever in the cost.
@@ -237,7 +237,7 @@ angular.module("RouteControllerCard", [])
 										}
 
 										// same for the start of the string:
-										var unwantedCharactersStart = ["(", "\""];
+										var unwantedCharactersStart = ["(", "\"", "+"];
 										var firstCharacter = highlightedWord.charAt(0);
 										while (unwantedCharactersStart.indexOf(firstCharacter)>-1) {
 											highlightedWord = highlightedWord.slice(1);
@@ -249,6 +249,10 @@ angular.module("RouteControllerCard", [])
 										var length = highlightedWord.length;
 										if (highlightedWord.slice(length-6)=="-based") {
 											highlightedWord = highlightedWord.replace("-based", "");
+										}
+										// same with "action-heavy":
+										if (highlightedWord.slice(length-6)=="-heavy") {
+											highlightedWord = highlightedWord.replace("-heavy", "");
 										}
 
 										break; /* by design each glossary popover appears at most once in each text, so no need to
