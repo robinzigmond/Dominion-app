@@ -567,7 +567,7 @@
 	 "textAboveLine": "+2 {Action}s. {Reveal} your hand. If you have no Action cards in hand, +2 Cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Shanty_Town.jpg",
-	 "discussion": "Considered to be one a {village} due to unconditionally giving +2 {Action}s, Shanty Town is one of the more unusual ones in the game. It costs the same as the \"vanilla\" [Village], and instead of always drawing 1 card, draws either 0 or 2 depending on circumstances. It is typically worse than Village if played in a standard deck-drawing engine with a {terminal*draw} card like [Smithy], since it is likely to be drawn in the same hand as the terminal draw card - but is better than it with terminal draw cards such as [Library] which draw up to a fixed number of cards. It also functions as {non-terminal*draw} in a deck full of {non-terminal}s.",
+	 "discussion": "Considered to be one of the {village}s due to unconditionally giving +2 {Action}s, Shanty Town is one of the more unusual ones in the game. It costs the same as the \"vanilla\" [Village], and instead of always drawing 1 card, draws either 0 or 2 depending on circumstances. It is typically worse than Village if played in a standard deck-drawing engine with a {terminal*draw} card like [Smithy], since it is likely to be drawn in the same hand as the terminal draw card - but is better than it with terminal draw cards such as [Library] which draw up to a fixed number of cards. It also functions as {non-terminal*draw} in a deck full of {non-terminal}s.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Shanty_Town"
 	},
 
@@ -671,7 +671,7 @@
 	 "textAboveLine": "{Gain} a card costing up to 4 coins. If the gained card is an... {Action} card, +1 Action. {Treasure} card, +1 coin. {Victory} card, +1 Card.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Ironworks.jpg",
-	 "discussion": "Ironworks is of course an improved variant of [Workshop], and can be used for all the same purposes as that card - like picking up cheap {engine} components or rushing the end of the game. Ironworks is much better suited to the engine-building purpose because it is {non-terminal} when used to pick up {Action} cards. This also makes it great in a [Gardens] rush, even more than Workshop, because if you have multiple Ironworks in the same hand (which will certainly happen if you play it right) you can gain several more Ironworks or other cheap actions before making your {buy}, allowing your deck-size to increase incredibly quickly.",
+	 "discussion": "Ironworks is of course an improved variant of [Workshop], and can be used for all the same purposes as that card - like picking up cheap {engine} components or rushing the end of the game. Ironworks is much better suited to the engine-building purpose because it is {non-terminal} when used to pick up {Action} cards. This also makes it great in a [Gardens] {rush}, even more than Workshop, because if you have multiple Ironworks in the same hand (which will certainly happen if you play it right) you can gain several more Ironworks or other cheap actions before making your {buy}, allowing your deck-size to increase incredibly quickly.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ironworks"
 	},
 
@@ -775,7 +775,7 @@
 	 "textAboveLine": "{Trash} a card from your hand. {Gain} a card costing up to 2 coins more than it. If the gained card is an {Action} or {Treasure}, put it onto your deck; if it's a {Victory} card, each other player gains a [Curse].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Replace.jpg",
-	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Replace is simply an improved version of [Remodel] for 1 coin more. Putting a gained {Action} or {Treasure} on top of your deck helps your boost your next turn - or get exactly the card you need for this turn if you have Actions to spare and something in hand to draw the new card with. Meanwhile, giving opponents a [Curse] when using Replace to gain a {Victory} card is a great way to hinder them, which may tempt you into gaining Victory cards earlier than you otherwise would. Like many Intrigue cards, Replace is particularly good when used in combination with hybrid Victory cards such as [Nobles], because then you get both bonuses.",
+	 "discussion": "One of the cards added for the second edition of Intrigue in 2016, Replace is simply an improved version of [Remodel] for 1 coin more. Putting a gained {Action} or {Treasure} on top of your deck helps to boost your next turn - or get exactly the card you need for this turn if you have Actions to spare and something in hand to draw the new card with. Meanwhile, giving opponents a [Curse] when using Replace to gain a {Victory} card is a great way to hinder them, which may tempt you into gaining Victory cards earlier than you otherwise would. Like many Intrigue cards, Replace is particularly good when used in combination with hybrid Victory cards such as [Nobles], because then you get both bonuses.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Replace"
 	},
 
@@ -918,7 +918,7 @@
 	 "textAboveLine": "The player to your left {reveal}s then discards the top 2 cards of his deck. For each differently named card revealed, if it is an... {Action} Card, +2 Actions. {Treasure} Card, +2 coins. {Victory} Card, +2 Cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Tribute.jpg",
-	 "discussion": "One of the cards removed from the second edition of Intrigue in 2009 - for no particular reason, but just because it was less compelling than some of the other cards. Tribute is actually a pretty rare choice to spend 5 coins on - not only are many other 5 coins cards much stronger, but even though Tribute can give a variety of strong effects, it is completely unreliable as to what effects you can get. It is easy to get hosed by playing one hoping for additional {Action}s, only to find you flip over just {Victory} and/or {Treasure} cards. Needless to say, it works a lot better if your left-hand opponent is pursuing cards with multiple types - but even then there is no reliability that you will get the strong effect that you want from Tribute.",
+	 "discussion": "One of the cards removed from the second edition of Intrigue in 2016 - for no particular reason, but just because it was less compelling than some of the other cards. Tribute is actually a pretty rare choice to spend 5 coins on - not only are many other 5 coins cards much stronger, but even though Tribute can give a variety of strong effects, it is completely unreliable as to what effects you can get. It is easy to get hosed by playing one hoping for additional {Action}s, only to find you flip over just {Victory} and/or {Treasure} cards. Needless to say, it works a lot better if your left-hand opponent is pursuing cards with multiple types - but even then there is no reliability that you will get the strong effect that you want from Tribute.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Tribute"
 	},
 
@@ -1474,7 +1474,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Prosperity",
-	 "textAboveLine": "+1 coin, +1vp. {Trash} a card from your hand, +vp per two coins it costs (round down). Each other player may trash a card from their hand.",
+	 "textAboveLine": "+1 coin, +1vp. {Trash} a card from your hand, +1vp per two coins it costs (round down). Each other player may trash a card from their hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bishop.jpg",
 	 "discussion": "",
@@ -1487,7 +1487,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Prosperity",
-	 "textAboveLine": "+2 coins, +vp.",
+	 "textAboveLine": "+2 coins, +1vp.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Monument.jpg",
 	 "discussion": "",
@@ -1657,7 +1657,7 @@
 	 "types": ["Action", "Attack"],
 	 "set": "Prosperity",
 	 "textAboveLine": "+1 {Buy}, +2 coins. Each other player discards down to 3 cards in hand.",
-	 "textBelowLine": "While this is {in*play}, when you {buy} a card, +vp.",
+	 "textBelowLine": "While this is {in*play}, when you {buy} a card, +1vp.",
 	 "imagePath": "images/card_images/Goons.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Goons"
@@ -1845,7 +1845,7 @@
 	 "starredCost": true,
 	 "types": ["Action", "Prize"],
 	 "set": "Cornucopia",
-	 "textAboveLine": "Choose two: +2 Cards; +1 {Action}; +2 coins; {gain} 4 [Silver]s and put your deck into your discard pile. (The choices must be different.) (This is not in the {Supply}.)",
+	 "textAboveLine": "Choose two: +2 Cards; +2 {Action}s; +2 coins; {gain} 4 [Silver]s and put your deck into your discard pile. (The choices must be different.) (This is not in the {Supply}.)",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Trusty_Steed.jpg",
 	 "discussion": "",
@@ -3044,7 +3044,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Attack"],
 	 "set": "DarkAges",
-	 "textAboveLine": "2 coins. If there are any cards in the {trash} costing from 3 coins to 6 coins, {gain} one of them. Otherwise, each other player {reveal}s the top 2 cards of his deck, trashes one of them costing from 3 coins to 6 coins, and discards the rest.",
+	 "textAboveLine": "+2 coins. If there are any cards in the {trash} costing from 3 coins to 6 coins, {gain} one of them. Otherwise, each other player {reveal}s the top 2 cards of his deck, trashes one of them costing from 3 coins to 6 coins, and discards the rest.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Rogue.jpg",
 	 "discussion": "",
