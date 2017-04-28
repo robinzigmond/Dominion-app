@@ -749,7 +749,7 @@
 	 "textAboveLine": "Choose one: +2 coins; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards their hand and draws 4 cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Minion.jpg",
-	 "discussion": "One of the strongest cards in Intrigue, Minion is most notable for its remarkable synergy with itself. If you are lucky enough to draw a hand with 3 Minions in it, you can play 2 of then for +2 coins each, then (after first playing any other {non-terminal}s in your hand) use the last one to get a completely fresh 4-card hand - oh, and attack the opponents in the process by giving them a new, smaller hand to work with. In order to get a high enough density of Minions for this to happen other than by good fortune, heavy {trash}ing is usually necessary. Other {Action} cards, especially if they give +{Buy} and/or are non-terminal, allow one to do more than simply get 8 coins each turn (which won't be enough compensation for the time you spend trashing down), and can allow a Minion deck to be hugely powerful. If these supporting features are not present in the {Kingdom} then Minions can be ignorred, but if not then there is frequently a race to see which player can get the most Minions.",
+	 "discussion": "One of the strongest cards in {Intrigue}, Minion is most notable for its remarkable synergy with itself. If you are lucky enough to draw a hand with 3 Minions in it, you can play 2 of then for +2 coins each, then (after first playing any other {non-terminal}s in your hand) use the last one to get a completely fresh 4-card hand - oh, and attack the opponents in the process by giving them a new, smaller hand to work with. In order to get a high enough density of Minions for this to happen other than by good fortune, heavy {trash}ing is usually necessary. Other {Action} cards, especially if they give +{Buy} and/or are non-terminal, allow one to do more than simply get 8 coins each turn (which won't be enough compensation for the time you spend trashing down), and can allow a Minion deck to be hugely powerful. If these supporting features are not present in the {Kingdom} then Minions can be ignored, but if not then there is frequently a race to see which player can get the most Minions.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Minion"
 	},
 
@@ -931,7 +931,7 @@
 	 "textAboveLine": "+2 coins. {Trash} this card. Put an Embargo token on top of a {Supply} pile.",
 	 "textBelowLine": "When a player {buy}s a card, he {gain}s a [Curse] card per Embargo token on that pile.",
 	 "imagePath": "images/card_images/Embargo.jpg",
-	 "discussion": "",
+	 "discussion": "Embargo is one of those cards that can have a severe impact on the strategies adopted by the players, even if none of them ever ends up {gain}ing one. The ability to put Embargo tokens on certain {Supply} piles, and thereby severely punish players who {buy} cards from that pile, warns players away from \"predictable\" strategies. For example, if there is only one [Potion]-costing card in the Supply, and an opponent buys a Potion, you can probably shut them down simply by Embargoing that Potion-costing card - forcing them to either take a bunch of [Curse]s or leave the Potion as a dead card in their deck. The fact that Embargo is {trash}ed on use - while also providing a useful +2 coins - allows it to be picked up to interrupt an opponent's strategy without having to worry too much about the detrimental effects of having the card in one's deck for the rest of the game. There are many situations where Embargo comes in handy - including Embargoing the [Province]s if you get an early lead!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Embargo"
 	},
 
@@ -944,7 +944,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. Set aside a card from your hand face down. At the start of your next turn, put it into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Haven.jpg",
-	 "discussion": "",
+	 "discussion": "One of the many 2 coins {Action}s in the game which gives a small benefit in a number of situations, Haven is better than many of these \"utility\" cards (other examples include [Cellar], [Pawn] and [Candlestick Maker]), in that it can be a key part of any strategy which, while not aiming to draw the whole deck, needs to put certain card combinations together in the same hand. For example, [Fool's Gold], [Baron], [Tournament] and [Treasure Map] all rely to some extent on drawing them in the same hand as a particular other card (in some cases another copy of itself) - and there are plenty of less obvious examples as well. Since Haven can help you save these card for when you might be able to make better use of them, and is a {cantrip}, it is often work picking up with 2 coins and a spare {buy}. Nevertheless, Haven is not quite as forgiving as many cantrips, because it does force you to set aside one card from your hand - this can hurt if you need your whole hand to afford something good this turn. The latter situation occurs most often with {money} strategies, and even then only rarely - so Haven is an especially solid choice for helping to smooth out an {engine}.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Haven"
 	},
 
@@ -957,7 +957,7 @@
 	 "textAboveLine": "+1 {Action}. Now and at the start of your next turn: +1 coin.",
 	 "textBelowLine": "While this is {in*play}, when another player plays an {Attack} card, it doesn't affect you.",
 	 "imagePath": "images/card_images/Lighthouse.jpg",
-	 "discussion": "",
+	 "discussion": "Lighthouse is one of the best, and certainly among the most reliably useful, 2 coins {Action} cards in the game. The main reason is the protection it affords against opposing {Attack}s. It might appear to protect in the same way as [Moat] does, but there is a big difference in how that protection gets \"activated\" - with Moat, you need to have it in your 5-card hand when the Attack is played, but Lighthouse only needs to be {in*play}, which is to say that you played it at some point in your most recent turn. So if you can draw your whole deck every turn - and have 2 copies of Lighthouse (remember that, as a {Duration}, Lighthouse stays in play and so cannot be drawn the turn after you play it) - then you can arrange that no opposing Attacks ever affect you! This is only really a downside when you might actually want to be hit by an opposing Attack (say an opponent plays a [Minion] when you have a completely useless hand), but otherwise Lighthouse is almost \"strictly better\" than Moat (unless you really need a weak {terminal*draw} card). And even if there are no Attacks in the game, Lighthouse is even then strongly worth considering, due to being a {non-terminal} source of 2 coins - much like [Silver] but for 1 coin cheaper! Of course, it can be a downside to get 1 coin on each of 2 turns instead of 2 coins at once - but unless you are playing a {money} game with terminal draw, there are few reasons to buy Silver over Lighthouse, and especially with strong Attacks in the game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lighthouse"
 	},
 
@@ -970,7 +970,7 @@
 	 "textAboveLine": "+2 {Action}s. Choose one: Set aside the top card of your deck face down on your Native Village mat; or put all the cards from your mat into your hand. You may look at the cards on your mat at any time; return them to your deck at the end of the game.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Native_Village.jpg",
-	 "discussion": "",
+	 "discussion": "Native Village is a very interesting card. Clearly it is one of the {village}s - even its name proclaims that - yet it costs less than the \"vanilla\" [Village], so you would expect it to be generally weaker. And this indeed is true - sometimes you really need a village for your {engine} and Native Village is the only one available, so use it for nothing other than its +2 {Action}s, but in that case the engine rarely runs smoothly. You are not drawing a card every time you play Native Village - you are instead generally setting aside the top card of your deck, until you reach a point where either you have a key card on your mat that you need back, or at least enough Actions or {Treasure}s to make a significant difference to that one turn. The unpredictability of what you will find on top of your deck and be forced to put on the mat is the real downside. For this reason, it is helpful to have some way of rigging the top of your deck - and unusually, the ideal circumstance here is one in which you can ensure it is your {Victory} cards, or other cards you don't want to draw but would prefer not to {trash}, which are always on top of your deck when you play Native Village. This is most likely either if your opponent(s) are attacking you with [Rabble], or if you are making heavy use of [Apothecary]. And I can hardly fail to mention the famous combo of Native Village with [Bridge] - a very simple yet very effective way of setting up a Bridge {megaturn}.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Native_Village"
 	},
 
@@ -983,7 +983,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. Look at the bottom card of your deck. You may put it on top.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Pearl_Diver.jpg",
-	 "discussion": "",
+	 "discussion": "The classic example of a {cantrip}, with all the advantages (and disadvantages) provided by them, but with minimal additional benefit. Sometimes Pearl Diver will find a good card on the bottom of your deck, save it from missing a reshuffle, and allow you to draw it and make a significant improvement to your current turn. However, if you have a card on the bottom of your deck which you would rather keep there - as seems to happen more than half of the time - Pearl Diver is a card that does essentially nothing, and will remain so until you reshuffle. Since cantrips are generally useful for many decks, especially {engine}s, it is not rare to {buy} one if having 2 coins and a spare buy - but Pearl Divers are never bought for what would appear at first to be their main ability.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pearl_Diver"
 	},
 
@@ -996,7 +996,7 @@
 	 "textAboveLine": "{Reveal} a card from your hand. Return up to 2 copies of it from your hand to the {Supply}. Then each other player {gain}s a copy of it.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Ambassador.jpg",
-	 "discussion": "",
+	 "discussion": "Ambassador is a deceptively strong card - one of the strongest opening {buy}s in the game, along with [Chapel] - which both removes bad cards from your own deck (which has the same effect as {trash}ing, even though the cards don't actually go to the Trash pile) and inflicts them on your opponent(s) as an {Attack}. As a result, it is usually suicidal to ignore Ambassador if it is on the board, because otherwise you are asking to be given all the junk from the other players' starting decks. But don't be fooled - Ambassador play can be subtle, even if the card itself is usually an auto-buy. Should you open with 2 copies of Ambassador, or just one (together with a [Silver] or perhaps some other card)? If you draw Ambassador early on with 2 [Copper]s and one [Estate], which card do you reveal? These, and several others, are not at all easy to answer in general, and finding the right plays in Ambassador games is the sign of a strong player.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ambassador"
 	},
 
@@ -1009,7 +1009,7 @@
 	 "textAboveLine": "+2 {Action}s, +1 coin. At the start of your next turn: +1 Action, +1 coin.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Fishing_Village.jpg",
-	 "discussion": "",
+	 "discussion": "There is no doubt at all that - barring a few special situations - Fishing Village is the single best {village} in the game. It is also one of the best cards in the game overall, relative to its cost. Even if not running an {engine} that requires villages, Fishing Village compares pretty well against [Silver], since it costs the same and provides 2 coins worth of value (spread over 2 turns rather than concentrated into one), and has all the typical advantages of being an {Action} that doesn't draw (strong interactions with cards like [Library] and [Menagerie], as well as with [Throne Room] and its variants). And on top of that, if you do want a Village, it is hard to do better - by providing an additional Action on the following turn as well as the turn played, Fishing Village can support far more {terminal}s per village than all other villages (with the possible exception of [Walled Village], and even that is doubtful given that card's limitations). Fishing Village is certainly not crazily powerful, in the sense that cards such as [Rebuild] or [Minion] are (of at least can be), but it's almost inconceivable that you won't want to buy several Fishing Villages when they are available in the {Kingdom}.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fishing_Village"
 	},
 
@@ -1022,7 +1022,7 @@
 	 "textAboveLine": "+1 {Action}. Look at the top 3 cards of your deck. {Trash} one of them. Discard one of them. Put the other one on top of your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Lookout.jpg",
-	 "discussion": "",
+	 "discussion": "Like most {trash}ers, Lookout is often a strong opening {buy} - and it has the advantage of combining its trashing effect with some filtering of the top of the deck. In compensation for this, Lookout has two particular disadvantages. One, which it admittedly shares with several other trashers, is that it is slow: only trashing one card at a time, and taking up a slot in your hand. To compensate for this defect though, the card it trashes doesn't come from your hand (so you maintain at least a 4-card hand if you play it as your first {Action} in a turn), and it is at least {non-terminal}. The more serious disadvantage though is the fact that you must trash one of three cards, which are not known to you when you play it. This makes playing Lookout later in the game something of a gamble. The trashing is unlikely to be relevant (unless opponents are giving you [Curse]s), but the filtering can be very nice - but is it worth the risk of turning over three [Province]s, or another less drastic combination of cards which you do not want to trash? Often the potential benefit isn't worth the risk, which makes Lookout a liability in the late game. On the other hand, most trashers are redundant in the late game, so on balance I would personally say that Lookout is better than it is often given credit for. But its downsides should always be borne in mind.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Lookout"
 	},
 
@@ -1035,7 +1035,7 @@
 	 "textAboveLine": "{Gain} a copy of a card costing up to 6 coins that the player to your right gained on his last turn.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Smugglers.jpg",
-	 "discussion": "",
+	 "discussion": "Probably the cheapest card in the game which allows the {gain}ing of 6 coins cards - which always includes [Gold] and may include strong {Kingdom} cards such as [Goons] or [Grand Market] (and if these aren't available, then there will almost certainly be some strong {Action} cards costing 5 coins that you would like more of). The problem with Smugglers, of course, is its unpredictability - you have no guarantee of having it in hand when the player to your right gains his Gold. Quite often Smugglers can only offer you a modest 3 coins or 4 coins card, such as [Silver] - and if you are pursuing a different strategy from that opponent then Smugglers is pretty clearly a bad choice. But it can be a very strong card in the right circumstances - you just need a right-hand opponent who wants the same cards as you, as well as usually a little bit of luck.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Smugglers"
 	},
 
@@ -1048,7 +1048,7 @@
 	 "textAboveLine": "+3 Cards, +1 {Action}. Discard 3 cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Warehouse.jpg",
-	 "discussion": "",
+	 "discussion": "Probably the best card in the game for cycling through your deck, attempting to get to your key cards more often, and to put combos together. If you are determined to connect two [Treasure Map]s together, then Warehouse is the best single enabler there is. Warehouse clearly has a lot in common with [Cellar] - it costs 1 coin more, and is limited to a discard and draw of exactly 3 cards, but the fact that it draws 3 cards before you have to discard (as opposed to Cellar where you discard first) is a much bigger advantage than it might first appear. Indeed, Warehouse is almost always better than Cellar except in rare cases where you will have huge hands on a regular basis ([Tactician] is the most likely cause of this). Needless to say, Warehouse has the same major weakness as Cellar does - the fact that each play reduces your handsize by 1, and for no direct benefit, a downside that makes it a liability if you are frequently facing discard {Attack}s.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Warehouse"
 	},
 
@@ -1061,7 +1061,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. At the start of your next turn, +1 Card.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Caravan.jpg",
-	 "discussion": "",
+	 "discussion": "A straight {cantrip} on the the turn you play it, the strength of Caravan comes of course from its effect on your next turn. Drawing an extra card the following turn is effectively {non-terminal*draw} - that is, playing a Caravan this turn is essentially equivalent to playing a [Laboratory] at the start of your following turn. This is very significant because Caravan costs only 4 coins, 1 coin less than Lab and all the other non-terminal draw cards such as [Hunting Party] (the only other sub-5 coins non-terminal draw cards either are conditional on something else like [Menagerie] or have a significant drawback like [Advisor]). And the difference between 4 coins and 5 coins is much larger than it may seem - it is much easier to afford 4 coins than 5 coins in the early game, and most \"{gain}ers\" such as [Workshop] and [Ironworks] are limited to gaining cards costing at most 4 coins. As a result, Caravan is one of the easiest ways to get consistently large handsizes, and for this reason an extremely popular card whenever it is on the table. Being a cantrip of course makes there virtually no downside to having many in your deck. So Caravan is one of the strongest 4 coins cost cards in the game. Its only real downsides are ones it shares with all {Duration}s - and which make it strictly weaker than Laboratory despite the very similar effect - namely that by delaying its benefit to the following turn it has slightly less chance to have an impact on the game, and that by staying in play for a turn it will miss the reshuffle more often than non-Duration cards.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Caravan"
 	},
 
@@ -1074,7 +1074,7 @@
 	 "textAboveLine": "+2 coins. Each other player discards a [Copper] card (or {reveal}s a hand with no Copper).",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Cutpurse.jpg",
-	 "discussion": "",
+	 "discussion": "Cutpurse is among the most powerful early-game {Attack}s, because dropping from 5 coins to 4 coins usually really hurts a player early on, and dropping from 4 coins to 3 coins, or 6 coins to 5 coins, can also set one back considerably. However, by the midgame, the effect of an opposing Cutpurse is usually pretty minor - even if [Copper]s have not been {trash}ed, they are unlikely to make a huge difference to the turn.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Cutpurse"
 	},
 
@@ -1087,7 +1087,7 @@
 	 "textAboveLine": "Set aside this and another card from your hand. Return them to your deck at the end of the game.",
 	 "textBelowLine": "2vp",
 	 "imagePath": "images/card_images/Island.jpg",
-	 "discussion": "",
+	 "discussion": "A very difficult card to use well, Island is a way to tuck other \"useless\" cards - most commonly {Victory} cards - away for the rest of the game. This has a similar effect to {trash}ing them, but means that your \"trashed\" Victory cards still count for your final score at the end of the game. This sounds great, and Island itself provides 2vp - the problem is how slow the process is. Unlike any genuine trasher, Island itself is removed from your deck after removing 1 other card - so you can't clear up your own deck to any great extent. Perhaps the best use of Island is in a deck-drawing {engine} where you buy 1 [Province] (or other victory card) and 1 Island each turn, while using the Island you bought last turn to remove last turn's Province from your deck. This allows you to consistently get vps with no change in your deck composition. Of course, Island is a useful card in the late game even aside from this \"ideal\" use, and even sometimes in the midgame - but choosing the right time to {buy} one as opposed to something else is rarely an obvious decision. Island can even be a good card to open with, if you can use the pseudo-trashing to ramp up your deck quality quickly to compensate for spending 4 coins on a slow card which can only be used once.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Island"
 	},
 
@@ -1100,7 +1100,7 @@
 	 "textAboveLine": "+2 coins. Look at the top 5 cards of your deck. Either discard all of them, or put them back on top of your deck in any order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Navigator.jpg",
-	 "discussion": "",
+	 "discussion": "A pretty simple card - just a {terminal*Silver} which gives you the choice of keeping your next hand or replacing it with a totally new one. It can do a little better than that if you have {Action}s to spare and a way to draw cards from the top of your deck - because then you can re-order your 5 next cards to best serve this and next turn - but in general Navigator is pretty weak. Perhaps its closest relative is [Cartographer] - which is usually far superior due to being a {cantrip} and allowing you to choose exactly which cards to discard and which to keep, as opposed to Navigator's \"all-or-nothing\" choice.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Navigator"
 	},
 
@@ -1113,7 +1113,7 @@
 	 "textAboveLine": "Choose one: Each other player {reveal}s the top 2 cards of his deck, {trash}es a revealed {Treasure} that you choose, discards the rest, and if anyone trashed a Treasure you take a Coin token; or, +1 coin per Coin token you've taken with Pirate Ships this game.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Pirate_Ship.jpg",
-	 "discussion": "",
+	 "discussion": "Pirate Ship is one of those deceptive cards. When players are first introduced to it, particularly if they are relatively new to Dominion itself, they soon reach the conclusion that it is unstoppably powerful. Attack your opponents with Pirate Ships in the early game, when their deck is mostly [Copper], and then when you have 4 or 5 tokens on your mat it's easy to start affording [Province]s with most Pirate Ship plays. It seems at first that the only real defence to this is is to find a way to generate money without needing {Treasure} cards (and ideally {trash} your own Treasures to have fewer Pirate Ship targets). Since Pirate Ship is itself a non-Treasure which can give coins, it ends up feeling like a \"must-buy\". But in reality, there is usually a much better way to deal with opposing Pirate Ships - take advantage of the fact that your Copper is being trashed for you, and build an unstoppable {engine} before your opponent's Pirate Ships reach full value. PS is actually a pretty slow card, and also hugely speeds up opposing engine strategies - so it tends to lose badly if the {Kingdom} offers any significant engine potential, which the vast majority do. In the end, Pirate Ship tends to need a really slow game, with no engine potential, to be worth pursuing. While nowhere near as bad as its close cousin [Thief], in the end it is crippled by much the same defects.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Pirate_Ship"
 	},
 
@@ -1126,7 +1126,7 @@
 	 "textAboveLine": "+1 {Buy}. {Trash} a card from your hand. +<Coin equal to its cost.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Salvager.jpg",
-	 "discussion": "",
+	 "discussion": "Salvager is a fairly straightforward {trash*for*benefit} card which transforms the cost in <Coin of the card {trash}ed into <Coin to spend this turn - together with an additional {Buy} to make use of that money. Like all trash for benefit cards, it is great with a way to consistently {gain} high-cost cards such as [Gold], and can form a powerful combo with [Rats]. It leads to a more {money}-based game than its closest relatives [Apprentice] and [Bishop], if made the main focus of one's deck - but of course that is not the only use. Just trashing your starting [Estate]s for 2 coins each can get you off to a good start in the game, although you'll want to keep finding decent targets for your Salvager as the game goes on.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Salvager"
 	},
 
@@ -1139,7 +1139,7 @@
 	 "textAboveLine": "Each other player discards the top card of his deck, then {gain}s a [Curse] card, putting it on top of his deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Sea_Hag.jpg",
-	 "discussion": "",
+	 "discussion": "Probably the single meanest Cursing {Attack} in the game - and all Attacks which distribute [Curse]s are mean enough. Sea Hag's special thing is that it dumps the curse straight on top of the opponents' decks, ensuring that it will start to hurt them straight away. This plus the fact that, at just 4 coins cost, it is always available to {buy} on one of the first 2 turns, means that it is extremely hard to get away with ignoring Sea Hag - even if there is another, more powerful, Cursing attack available for 5 coins. With that warning in mind, however, the many downsides of Sea Hag should also be taken into account. Most importantly, it does nothing at all to benefit the player who has it - this makes Sea Hag lead to very slow games (since playing Sea Hag cripples the opponents while also hurting yourself), although it isn't in itself sufficient reason to ignore it. But if there is a strong counter to curses available then this slowness can be fatal - it is very inadvisable to open Sea Hag when [Masquerade] is in the {Kingdom}, and [Chapel] also usually {trash}es the curses too fast. It should also be pointed out that there are times when knowing the Curse is on top of your deck is an advantage - [Lookout] is a natural counter for this reason (although it's not quick enough for you to be able to ignore Sea Hag yourself and just go with Lookouts). But don't exaggerate these downsides - Sea Hag is a very strong card which you can rarely afford not to open with.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Sea_Hag"
 	},
 
@@ -1152,7 +1152,7 @@
 	 "textAboveLine": "{Trash} this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, {gain} 4 [Gold] cards, putting them on top of your deck.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Treasure_Map.jpg",
-	 "discussion": "",
+	 "discussion": "A very luck-dependent card, Treasure Map is also something of a trap for beginners. While it is possible to buy one on each of the first 2 deck cycles and then luck into a collision on Turn 5 or 6, this is not very likely with no help. And don't forget that any other card you {gain}, unless it is a {non-terminal} which draws at least 1 card, reduces the chances of your 2 Treasure Maps turning up in the same hand. [Tactician] can definitely help a lot, but the best helpers are non-terminal sifters - that is, cards which both draw and discard, giving you a wide choice of cards to keep in your current hand. [Cellar] is very good here, but [Warehouse] is by far the best - perhaps the only card that can make it worth pursuing Treasure Maps to the exclusion of all else. It must not be forgotten that [Gold], although of course a strong card, is not a game-changer - and even if your opponent gets 4 at once on top of their deck, you are not necessarily losing if you have a strong {engine} to pursue. But it still hurts when your opponent collides his Treasure Maps without help on turn 5...",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Treasure_Map"
 	},
 
@@ -1165,7 +1165,7 @@
 	 "textAboveLine": "+1 Card, +2 {Action}s, +1 coin",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bazaar.jpg",
-	 "discussion": "",
+	 "discussion": "A straightforward {village} which also gives +1 coin. Such <Coin-giving villages all cost at least 5 coins, making it hard to amass a lot of them for rapid {engine} construction. But they are immensely useful once you have a few - assuming you needed or wanted villages anyway - because they reduce the number of {Treasure}s you need to buy, and thus the risk of these Treasures getting in the way of your engine components.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bazaar"
 	},
 
@@ -1178,7 +1178,7 @@
 	 "textAboveLine": "You may {reveal} a [Province] card from your hand. If you do, {gain} a [Gold] card, putting it into your hand. Otherwise, gain a [Silver] card, putting it into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Explorer.jpg",
-	 "discussion": "",
+	 "discussion": "Explorer is generally considered among the weakest 5 coins {Action}s, since simply {gain}ing {Treasure}s is not usually very strong. Nevertheless if the {Kingdom} is such that a {money} strategy is best, Explorer is well worth considering. And it can even be a decent supplement to an {engine}, because you can use the engine to consistently draw Explorer together with a [Province] and get a [Gold] each turn - this can be very strong with a {trash*for*benefit} card such as [Salvager] or [Bishop].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Explorer"
 	},
 
@@ -1191,7 +1191,7 @@
 	 "textAboveLine": "+2 Cards. Each other player with 4 or more cards in hand puts cards from his hand on top of his deck until he has 3 cards in his hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Ghost_Ship.jpg",
-	 "discussion": "",
+	 "discussion": "Ghost Ship's attack is relatively weak when considered just on its own merits - it is a probably a little stronger than a straight discard attack like [Militia], because if you keep your 3 best cards then you are putting the 2 remaining bad cards back onto your deck instead of just discarding them, but probably not by enough to justify costing 5 coins instead of 4 coins. Nor is its weak {terminal*draw} effect what justifies its cost - note that this is strictly weaker than the +3 cards of other 5 coins {Attack}s like [Torturer] and [Rabble]. The strength of Ghost Ship - and, used correctly in an appropriate {Kingdom}, it is one of the most effective Attacks in the game - comes if you can play one every turn, making it almost impossible for the opponent(s) to ever get through their deck and see their new cards. Having a Militia played against you every turn can be crippling, and with Ghost Ship it is much worse. GS is rarely a must-buy card, but it must be planned around very carefully.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ghost_Ship"
 	},
 
@@ -1204,7 +1204,7 @@
 	 "textAboveLine": "Now and at the start of your next turn: +2 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Merchant_Ship.jpg",
-	 "discussion": "",
+	 "discussion": "Merchant Ship tends to get overshadowed by other cards costing 5 coins - it is not as strong as many others, but it should certainly not be ignored either. After all, it costs 1 coin less than [Gold], and generates 1 coin more - albeit split evenly over 2 turns instead of all in a single turn. And it has the downsides of being a {terminal} {Action}, and in addition a {Duration} (which means it misses more reshuffles). But it is still strong as a money-generator in {money} strategies (as long as you are not using {terminal*draw} in the same deck) - and it has a place as a \"payload\" for an {engine}, although it does nothing to help an engine run. In short, Merchant Ship is solid, although it will never be a game-changer.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Merchant_Ship"
 	},
 
@@ -1217,7 +1217,7 @@
 	 "textAboveLine": "You only draw 3 cards (instead of 5) in this turn's Clean-up phase. Take an extra turn after this one. This can't cause you to take more than two consecutive turns.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Outpost.jpg",
-	 "discussion": "",
+	 "discussion": "Getting an extra turn is clearly great - but getting only 3 cards instead of 5 to work with isn't. So far, so obvious - but with Outpost the downside generally doesn't make up for the upside. If you {buy} Outpost without a clear plan to make something good from your extra 3-card turns, then while it's not quite a wasted purchase, it's going to do you much less good that almost anything else you could have bought with 5 coins. You have to remember that, without somehow setting up the top of your deck, you will simply have 3 random cards to work with. No matter how consistent your {engine} is, the chances of having the right components to start it off in a 3-card hand are very small - vastly less than the chances with a 5-card hand. If you have a way to guarantee a [Menagerie], or even better, a [Minion], in your 3-card hand, you'll be laughing - but this is extremely hard to do. But despite all these words of caution, it must be said that, in those rare cases where you can find a way to ensure most of your 3-card turns are worthwhile (other {Duration} cards can help here, [Scheme] is strong, while [Alchemist] is probably the strongest combo if you can set it up in a reasonable time), Outpost can border on the absurdly strong. There is a very fine line between Outpost being dominating and being a waste of time - and unfortunately the latter is more common.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Outpost"
 	},
 
@@ -1230,7 +1230,7 @@
 	 "textAboveLine": "Discard your hand. If you discarded any cards this way, then at the start of your next turn, +5 Cards, +1 {Buy}, and +1 {Action}.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Tactician.jpg",
-	 "discussion": "",
+	 "discussion": "Tactician can be a little hard to get your head around when you first come across it. Essentially the basic idea of the card is to \"sacrifice\" one turn in order for your next turn to be \"twice as good\" as a normal turn (instead of 5 cards, 1 {Action} and 1 {Buy} you get 10 cards, 2 Actions and 2 Buys!). Put this way, it may not sound like the card is worth 5 coins - but it almost always is, because 1 poor turn and 1 great turn are almost always better than 2 mediocre ones. The exceptions to this are where you have an extremely consistent {engine} which can carry out whatever you need it to each turn - but if you don't, then Tactician can be amazing because those 5 extra cards are 1 extra action are the greatest tool in the game to aid engine consistency, and the extra buy makes up for the fact that you will have partially or entirely \"wasted\" your previous turn. So Tactician is an extremely strong, solid and consistent card which should almost always come in for strong consideration when deciding on cards to buy. And Tactician at its best is much better than that, because discarding your entire hand does not always have to mean a dead turn. \"Double Tactician\" is the name given to a variety of strategies which aim to play a Tactician every single turn, for consistent 10-card hands, without having to give up purchasing power. This usually happens due to strong Action cards which generate <Coin (almost any will do, although [Vault] should come in for special mention, and of course [King's Court]) - but [Black Market] is the most absurd combo, allowing {Treasure}s to be played in the Action phase before discarding your hand, and allowing 10-card hands every turn with essentially no downside.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Tactician"
 	},
 
@@ -1243,7 +1243,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 coin",
 	 "textBelowLine": "When you discard this from play, if you didn't {buy} a {Victory} card this turn, you may put this on top of your deck.",
 	 "imagePath": "images/card_images/Treasury.jpg",
-	 "discussion": "",
+	 "discussion": "A {cantrip} which gives +1 coin is nice to have, but not in itself generally worth paying 5 coins for. What makes Treasury special is of course its ability to return itself to to the top of your deck - thus essentially giving you \"free money\" every turn - and to continue to do so for as long as you choose to forgo {buy}ing {Victory} cards. This of course encourages strategies which delay getting Victory cards until late in the game - but Treasury is not really powerful enough to enable a {megaturn}. But it can be useful in building up your {engine} in the early to mid-game, and is definitely worth considering as your first 5 coins purchase if you expect a longish game and need quite a few expensive engine parts. Of course, if you can find a way to {gain} high-value Victory cards without buying them, then Treasury has no downside - but if you are able to combine say [Highway] with [Workshop] in order to do this, then Treasury is not really needed. So Treasury is not generally a very strong card for its cost - but it has a number of uses which a strong player can recognise.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Treasury"
 	},
 
@@ -1253,10 +1253,10 @@
 	 "costInDebt": 0,
 	 "types": ["Action", "Duration"],
 	 "set": "Seaside",
-	 "textAboveLine": "Now and at the start of your next turn: +2 Cards +1 {Buy}.",
+	 "textAboveLine": "Now and at the start of your next turn: +2 Cards, +1 {Buy}.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Wharf.jpg",
-	 "discussion": "",
+	 "discussion": "Wharf, with its deceptively simple abilities, is a strong candidate for being the strongest 5 coins card in the game. Drawing 2 cards, as a {terminal}, when played is not that great - but 2 cards of effectively {non-terminal*draw} the following turn (the equivalent of two copies of [Laboratory]!) is a game-changer. There is no easier way in the game to get consistently large handsizes, and this alone makes Wharf a top-tier card. The additional {buy} that you get on both the turn you play Wharf and the turn after elevates it even further. Wharf is enormously useful for both {engine} and {money} strategies - in short, for more or less any deck.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Wharf"
 	},
 
@@ -2509,7 +2509,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "DarkAges",
-	 "textAboveLine": "+1 coin. Choose one: +1 {Action}s; or +2 {Buy}s; or {gain} a [Silver].",
+	 "textAboveLine": "+1 coin. Choose one: +2 {Action}s; or +2 {Buy}s; or {gain} a [Silver].",
 	 "textBelowLine": "When you {trash} this, {gain} an {Attack} card.",
 	 "imagePath": "images/card_images/Squire.jpg",
 	 "discussion": "",
@@ -3421,7 +3421,7 @@
 	 "costInDebt": 0,
 	 "types": ["Action"],
 	 "set": "Adventures",
-	 "textAboveLine": "+1 {Action}. {Trash} this card or a card from your hand. Look at a number of cards from the top of your deck equal to the cost in <Coin of the trashed card. Put one into your hand and discard the rest.",
+	 "textAboveLine": "+1 {Action}. {Trash} this or a card from your hand. Look at a number of cards from the top of your deck equal to the cost in <Coin of the trashed card. Put one into your hand and discard the rest.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Raze.jpg",
 	 "discussion": "",

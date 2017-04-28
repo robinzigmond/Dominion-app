@@ -73,12 +73,12 @@ angular.module("RouteControllerCard", [])
 					// if statement to catch a "starred" coin cost symbol (eg. Peddler, Prizes):
 					if ($scope.thisCard.starredCost) {
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"starcoins.png", 
-							text: $scope.thisCard.costInCoins+" coins (starred)"});
+							text: $scope.thisCard.costInCoins+" coins (starred) "});
 					}
 					// same with plus symbol on overpay cards:
 					else if ($scope.thisCard.overpay) {
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"+coins.png",
-							text: $scope.thisCard.costInCoins+" (plus) coins"});
+							text: $scope.thisCard.costInCoins+" (plus) coins "});
 					}
 					else {
 						$scope.costIcons.push({path: "images/"+$scope.thisCard.costInCoins+"coins.png", 
@@ -225,7 +225,7 @@ angular.module("RouteControllerCard", [])
 										- any trailing full stops, commas or closing brackets get included in the popover trigger, 
 										which does not look right at all. In order to fix this, the following lines strip out any 
 										closing "unwanted" characters from the end of the string: */ 
-										var unwantedCharactersEnd = [".", ",", ")"];
+										var unwantedCharactersEnd = [".", ",", ")", "\""];
 										var length = highlightedWord.length;
 										var lastCharacter = highlightedWord.charAt(length-1);
 										/* loop to remove the last character if it is "unwanted", then repeat the process until the
