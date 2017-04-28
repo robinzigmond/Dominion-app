@@ -135,7 +135,7 @@
 	 "definition": "Trash for benefit cards are those which trash a single card and give you some bonus which scales with the card's cost."},
 
 	{"term": "megaturn",
-	 "definition": "A megaturn strategy is one, usually relying on a particular 2 or 3-card combo, which buys no Victory cards at all until it is able fo pull of a final game-ending \"megaturn\" - most spectacularly, the entire Province or Colony pile, but it is sometimes possible to win by emptying 3 piles then buying a single Duchy or Estate. Such combos typically involve a cost-reducer like Bridge or Highway, and are vulnerable to the opponent(s) ending the game before the combo is up and running."},	 
+	 "definition": "A megaturn strategy is one, usually relying on a particular 2 or 3-card combo, which buys no Victory cards at all until it is able to pull off a final game-ending \"megaturn\" - most spectacularly, the entire Province or Colony pile, but it is sometimes possible to win by emptying 3 piles then buying a single Duchy or Estate. Such combos typically involve a cost-reducer like Bridge or Highway, and are vulnerable to the opponent(s) ending the game before the combo is up and running."},	 
 
 	{"term": "terminal*Silver",
 	 "definition": "Any terminal Action which gives 2 coins as part of its bonus, as a Silver does. It is a useful term because there are a large number ot these cards, which vary widely in their cost and in their additional benefits. Terminal Silvers costing 3 or 4 always have to be weighed against buying Silver itself."},
