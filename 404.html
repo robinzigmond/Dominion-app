@@ -1,10 +1,12 @@
+<!--404.html to redirect user back to the page they wanted, if they tried to access a non-home page directly. Code taken from http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Make GitHub Pages Redirect to repo root</title>
+	<meta http-equiv="refresh" content="0;URL='/Dominion-app/'"></meta>
+	<title>Just hang on for a second...</title>
 	<script type="text/javascript">
-		window.location = "/Dominion-app/";
+		sessionStorage.redirect = location.href;
 	</script>
 </head>
 </html>
