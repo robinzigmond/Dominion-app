@@ -225,7 +225,7 @@ angular.module("RouteControllerCard", [])
 										- any trailing full stops, commas or closing brackets get included in the popover trigger, 
 										which does not look right at all. In order to fix this, the following lines strip out any 
 										closing "unwanted" characters from the end of the string: */ 
-										var unwantedCharactersEnd = [".", ",", ")", "\""];
+										var unwantedCharactersEnd = [".", ",", ")", "\"", "!"];
 										var length = highlightedWord.length;
 										var lastCharacter = highlightedWord.charAt(length-1);
 										/* loop to remove the last character if it is "unwanted", then repeat the process until the

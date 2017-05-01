@@ -1269,7 +1269,7 @@
 	 "textAboveLine": "{Trash} a card from your hand. If it is an... {Action} card, {gain} a [Duchy]. {Treasure} card, gain a Transmute. {Victory} card, gain a [Gold].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Transmute.jpg",
-	 "discussion": "",
+	 "discussion": "A very unusual {trash*for*benefit} card, which does not care about the cost of the card being {trash}ed, but only about its type. It has an immediately appealing early-game use, of turning [Estate]s into [Gold] - but this is deceptive. Since Transmute requires a [Potion] in order to {buy}, it is impossible to open with it - so by the time you've got a Transmute, your chances of drawing it with an Estate or not that high, and you could have got Gold quicker just by buying [Silver]s - plus then you wouldn't have a Potion in your deck which is useless for buying [Province]s (or many useful {engine} cards) with. Combine this with the fact that the other cases for Transmute are not too appealing, and it becomes apparent why Transmute is considered an extremely weak card. It is by no means completely useless, but it is rarely worth buying, and never without a clear plan as to what you intend to do with it.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Transmute"
 	},
 
@@ -1282,7 +1282,7 @@
 	 "textAboveLine": "Worth 1vp for every 3 {Action} cards in your deck (rounded down).",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Vineyard.jpg",
-	 "discussion": "",
+	 "discussion": "Vineyard is potentially one of the most powerful of all {alt-VP} cards - in ideal circumstances it is even possible for one to be worth more than a [Colony]!. Vineyard of course requires a way to both get lots of {Action}s into your deck, and for your very action-rich deck to be viable - this tends to require lots of cheap actions, ways to gain Actions, and either {village}s or lots of {non-terminal} Actions. Despite the apparent similarity to other alt-VP cards like [Gardens] and [Silk Road], Vineyard plays very differently, because just adding [Copper]s and [Estate]s to your deck does nothing to help your score. And due to its [Potion] cost, it is very hard for a {rush} involving Vineyards to be viable. Winning with just Vineyards often involves a long-term strategy, because the longer the game goes on, the more Actions you can get and the higher your score. (Vineyard is not good in pure {slog}s though, because it is hard to set up strong Action chains if you are getting {Attack}ed all the time.) The best helpers for Vineyard are cheap Actions which either give additional {buy}s or directly {gain} Action cards. [University] and [Ironworks] are probably the best here.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Vineyard"
 	},
 
@@ -1295,7 +1295,7 @@
 	 "textAboveLine": "+1 {Buy}, +1 coin",
 	 "textBelowLine": "When you discard this from play, you may put one of your {Treasure}s from play on top of your deck.",
 	 "imagePath": "images/card_images/Herbalist.jpg",
-	 "discussion": "",
+	 "discussion": "As an even weaker version of the notoriously weak [Woodcutter] - albeit for a lower cost, which can be significant - Herbalist is certainly not a strong card. Its potential power, of course, comes from its additional ability, to return a {Treasure} to the top of your deck. Although the most obvious use of this is if you draw a [Gold] with it, most treasures are better drawn later in your turn rather than being in your initial hand, and this applies to Gold just as much as [Copper]. It is with special Treasures that Herbalist has the best synergy - a prime examples is [Fool's Gold]. But Herbalist is in the {Alchemy} expansion for a reason - by far its best use is to reuse [Potion]s on successive turns, both to keep on buying key potion-costing cards (among them [Vineyard], for which Herbalist's +{Buy} is a big help too), and in a strong combo with [Alchemist]. Alchemist and Herbalist together ensure you can start every turn with all your Alchemists on top of your deck, until the opponents find a way to stop you.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Herbalist"
 	},
 
@@ -1308,7 +1308,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. {Reveal} the top 4 cards of your deck. Put the revealed [Copper]s and [Potion]s into your hand. Put the other cards back on top of your deck in any order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Apothecary.jpg",
-	 "discussion": "",
+	 "discussion": "Apothecary is a tricky card to use well, as it can serve more than one function, but also has a number of significant downsides. The most naive way to use Apothecaries is to get high <Coin values in the early game, when Apothecary will usually put 2 or 3 extra [Copper]s into your hand. It's not particularly difficult to get 8 coins - enough for a [Province] - with just Apothecaries and some other source of money, and to do so repeatedly. But by the time you have a few {Victory} cards in your deck, your Copper will be too spread out to continue the trick, and your lack of other economy will probably lead to a loss. But there are plenty of other cards whih can help to deal with this particular problem (far too many to list, but a few examples are [Native Village], [Wishing Well] and [Cartographer]), as well as other ways to use Apothecary. One of them is just to get some strong 6 coins or 7 coins card early on (such as several copies of [Goons]) and from then on only use the Apothecary in a secondary role.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Apothecary"
 	},
 
@@ -1321,7 +1321,7 @@
 	 "textAboveLine": "+1 {Action}. Each player (including you) {reveal}s the top card of his deck and either discards it or puts it back, your choice. Then reveal cards from the top of your deck until you reveal one that is not an Action. Put all of your revealed cards into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Scrying_Pool.jpg",
-	 "discussion": "",
+	 "discussion": "Scrying Pool is a card with a lot of text, whose core purpose may not be immediately apparent when you first see it. The first part of the card text is the same as that of [Spy] - but Scrying Pool is not just a variant of Spy, in fact the Spying, particularly the {Attack} part, is almost incidental to the card's real function. What Scrying Pool does, if your deck is set up right, is draw a whole load of {Action} cards into your hand. In theory, a single Scrying Pool can guarantee to draw your entire deck - provided that every single card in your deck is an Action. Of course this is completely unrealistic - but with heavy {trash}ing, together with extra {buy}s or ways to {gain} Action cards quickly, it is possible to reach the point where a couple of Scrying Pools do draw most if not all of your key cards. Of course just drawing a load of Actions isn't enough - you need a way of actually playing them (which means {village}s, or failing that you need most of your actions to be {non-terminal}s). So Scrying Pool needs quite a lot of pieces in place to be worth pursuing - especially given that you need a [Potion] to buy one, which slows it down considerably. But when Scrying Pool is effective, it is like nothing else in the game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Scrying_Pool"
 	},
 
@@ -1334,7 +1334,7 @@
 	 "textAboveLine": "+2 {Action}s. You may {gain} an Action card costing up to 5 coins.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/University.jpg",
-	 "discussion": "",
+	 "discussion": "University is a relatively simple card. Its purpose is to {gain} cards directly, much like [Workshop] or [Ironworks] - but unlike them, it is restricted to just {Action}s, although it can gain powerful 5 coins Actions, which Workshop can't (in the absence of [Highway] or [Bridge]). Note that, due to needing a [Potion] first, University cannot give you key Action cards quickly, which you might need if [Witch] or [Mountebank] is in the {Kingdom}. So in many games University is a deadly distraction - but what it can do is get a large quantity of strong expensive Action cards in your deck by the late game. These can potentially be used to crushing effect - but it is not something that happens automatically, nor can it happen in every Kingdom. As with many other {Alchemy} cards, considerable skill is required to judge whether to use University, and if so how to use it.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/University"
 	},
 
@@ -1347,7 +1347,7 @@
 	 "textAboveLine": "+2 Cards, +1 {Action}",
 	 "textBelowLine": "When you discard this from play, you may put this on top of your deck if you have a [Potion] {in*play}.",
 	 "imagePath": "images/card_images/Alchemist.jpg",
-	 "discussion": "",
+	 "discussion": "Alchemist is a simple card to understand - a {non-terminal*draw} card identical to [Laboratory], except that it requires a [Potion] to {buy}, and can return itself to the top of your deck if you have a Potion in hand. This latter feature can make it immensely strong - a single Potion in hand allows all Alchemists you have to return to the top of your deck. And even though the Potion itself is not returned (although [Herbalist] can do that, in probably the most powerful combo from within {Alchemy}), if you have enough Alchemists you are very likely to draw it anyway. Note that you don't need to have actually used the Potion in your Buy Phase - you just need to have played it, which is always legal if you have it in hand. The only difficulty with Alchemist is the general one with Potion-cost cards - how long it takes to acquire enough of them, and how the Potion itself, unlike say [Silver], is no use for anything other than buying those few {Kingdom} cards you want (and of course for returning Alchemists to the top of your deck). This makes Alchemist somewhat similar to [University] - potentially very strong if you get it going (and Alchemist is much easier to use than University when it does get going, as you might expect from its higher cost), but in many games far too slow to be worth bothering with.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Alchemist"
 	},
 
@@ -1360,7 +1360,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}. Each other player {gain}s a [Curse].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Familiar.jpg",
-	 "discussion": "",
+	 "discussion": "A strong contender for being the strongest {Attack} in the game - because giving out [Curse]s is already the strongest form of Attack, and being able to give them out on a {cantrip} is amazing. The only downside is the cost, because you have to {buy} a [Potion] first. Even if you open Potion/[Silver], you are not guaranteed to draw 3 coins potion together on your next reshuffle - which can make Familiar games notoriously luck-dependent. But even if you do get to buy one on Turn 3, the awkwardness of having to get a Potion makes Familiar no match for really fast trashers like [Chapel], let alone [Masquerade] (which is fast anyway and can give the curses back to the Familiar player!). But if there is no strong counter like these, and no other way to give Curses in the {Kingdom}, then you almost certainly cannot ignore Familiar if you want to have any chance to win.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Familiar"
 	},
 
@@ -1373,7 +1373,7 @@
 	 "textAboveLine": "When you play this, count your deck and discard pile. Worth 1 coin per 5 cards total between them (rounded down).",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Philosopher's_Stone.jpg",
-	 "discussion": "",
+	 "discussion": "Philosopher's Stone is a strange card, mainly because it feels out of place in the {Alchemy} said. Not only is it a {Treasure} in the set which most emphasises the use of {Action} cards, but it is at its most valuable when you play it with many cards in your deck and discard pile - so it is a very poor choice for {engine}s because engine play tends to result in your whole deck, or at least nearly your whole deck, being in your hand, with few to no cards left in your deck and discard pile. And Philosopher's stone isn't great for most other games either - to get the most value from it, you need a big deck and to draw very little of it. This tends to mean a {slog} game - but [Potion]s do not fit in well there, especially ones with a high <Coin cost like Philosopher's Stone, since you are likely to have several frustrating turns where you draw your Potion but don't have enough <Coin for the card you want. The best combo with Philosopher's Stone does come from Alchemy though - [Herbalist]'s ability to return Treasures to the top of your deck helps you get lots of Stones early on (by returning Potions), then reuse high-value Stones late in the game. In addition, the +{Buy} from Herbalist helps inflate your deck size to build up the Stones' value. But even this combo is usually no match for fast engine or even fast {money} strategies - and Philosopher's Stone is very rarely worth buying without Herbalist also being available.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Philosopher's_Stone"
 	},
 
@@ -1386,7 +1386,7 @@
 	 "textAboveLine": "potion",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Potion.jpg",
-	 "discussion": "",
+	 "discussion": "Potion is a part of the {Alchemy} expansion. It is not a {Kingdom} card, and is included in the {Supply} if (and only if) one of the Kingdom cards (or one of the cards in the [Black Market] deck) has a potion in its cost. Despite its very simple effect, Potion is actually really interesting because of the decision of whether or not to {buy} (or otherwise {gain}) one in order to pursue the potion-costing card(s). The majority of Potion-cost cards are really powerful, at least in the right circumstances (the main exceptions are [Transmute] and [Philosopher's Stone]), and most are {non-terminal} {Action}s which you are always happy to buy more of. If there are several Potion-cost cards in the Kingdom, then it's almost certain that you want to buy a Potion - but this is very rare if you are choosing your Kingdom completely at random. The hard decisions come when there are just 1 or 2 Potion-cost cards on the table. The disadvantages of pursuing Potions are considerable, because Potions are so inflexible - they are literally useless for anything other than buying those cards (or for their interaction with [Alchemist], and occasionally to feed to a {trash*for*benefit} card). In particular, they are useless for buying {Victory} cards (other than [Vineyard], which is usually a special strategy all to itself), and cannot help to buy strong cards without Potion in the cost. Is it worth these downsides in order to grab several copies of [Scrying Pool], [Familiar] or Alchemist? That is usually a decision with no easy answer.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Potion"
 	},
 
@@ -1399,7 +1399,7 @@
 	 "textAboveLine": "{Reveal} cards from your deck until your reveal 2 {Action} cards other than Golem cards. Discard the other cards, then play the Action cards in either order.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Golem.jpg",
-	 "discussion": "",
+	 "discussion": "Golem is a powerful card, giving effectively +2 Cards as well as +2 {Action}s - and it even gets those Actions out of your deck for you without you having to draw them in hand. But for all that it is only rarely worth {buy}ing. The [Potion] cost makes it slow to get many of them, especially as it is not sensible to buy Potion on Turn 1 or Turn 2 just to try to get a Golem (not only will you not have many good Actions to fetch with it, but you will be highly unlikely to draw 4 coins in the same hand as your Potion on Turn 3 or 4), and you can't count on precisely which Actions it will give you (Golem is a very bad idea if you are taking on many {Ruins}). So Golem works best when you are already pursuing Potions, to obtain other strong {Alchemy} cards. Golem can in theory pull off some \"trickshot\" plays, for example with [Counting House] and [Scheme], and even in theory allow multiple [Tactician]s to be played in one turn (see the Dominion Strategy wiki for details on these) - but these are almost impossible to make work in a real game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Golem"
 	},
 
@@ -1412,7 +1412,7 @@
 	 "textAboveLine": "+1 {Action}. {Trash} a card from your hand. +1 Card per <Coin it costs. +2 Cards if it has potion in its cost.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Apprentice.jpg",
-	 "discussion": "",
+	 "discussion": "One of the most important {trash*for*benefit} cards, along with [Salvager] and [Bishop]. Since Apprentice converts the cost of the {trash}ed card into a number of cards to draw, it is particularly well-suited for {engine} strategies. If you have Apprentice and a way to consistently {gain} high-cost cards (other than {Victory} cards and others which you need in your deck for the long term), you can consistently draw your deck and keep on doing whatever else it is that your engine does. Ways to gain [Gold] deserve special mention here, such as [Tunnel] and [Explorer]. And while any trash for benefit card does very well with [Rats], Apprentice is perhaps the best of them all, because you should have absolutely no difficulty drawing your whole deck every turn once the Rats start multiplying - each one draws 5 cards when trashed by Apprentice!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Apprentice"
 	},
 
@@ -1425,7 +1425,7 @@
 	 "textAboveLine": "The player to your left takes an extra turn after this one, in which you can see all cards he can and make all decisions for him. Any cards he would {gain} on that turn, you gain instead; any cards of his that are {trash}ed are set aside and returned to his discard pile at end of turn.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Possession.jpg",
-	 "discussion": "",
+	 "discussion": "Probably the most hated card in the game - and it isn't even an {Attack}. In essence, \"all\" Possession does is give its player an additional turn - much like [Outpost], except that you get a full hand to work with, and there is no limit on the number of extra turns you can get with Possession (so with [King's Court] you can get a ridiculous number of turns in a row. But then 6 coins potion is much more expensive than 5 coins, especially considering that a [Potion] is useless for {buy}ing all but a few cards. The really eye-catching difference, of course, is that this extra turn is taken with another player's deck! It can be completely infuriating to have taken the time to build an amazing combo or {engine} deck and then have an opponent use it to help himself to a couple of [Province]s! But note that the Possessor cannot usually do you any real harm - any cards of yours that they {trash} are returned to you at the end of the turn. But [Masquerade] and [Ambassador] - and to a lesser extent [Island] - are very risky to have around if an opponent has the ability to Possess you, because they can effectively remove cards from your deck without actually trashing them. And cards like [Cartographer] and many others can be used to mess up your future turns - because the Possessor gets to make all decisions provided by the Possessed's cards. Possession is a unique card - very powerful as befits its large cost, but diffiult to make good use of precisely because of how hard it is to get. It always needs planning around, but it certainly isn't a must-buy. If both players in a 2p game are going for Possession then a very strange situation can result where both players deliberately make their deck \"bad\" (usually by buying many {Victory} cards earlier than they otherwise would) in order to stop their opponent from taking advantage of it on their Possession turns. This can lead to a peculiar \"stalemate\" situation.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Possession"
 	},
 
