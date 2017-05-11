@@ -996,7 +996,7 @@
 	 "textAboveLine": "{Reveal} a card from your hand. Return up to 2 copies of it from your hand to the {Supply}. Then each other player {gain}s a copy of it.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Ambassador.jpg",
-	 "discussion": "Ambassador is a deceptively strong card - one of the strongest opening {buy}s in the game, along with [Chapel] - which both removes bad cards from your own deck (which has the same effect as {trash}ing, even though the cards don't actually go to the Trash pile) and inflicts them on your opponent(s) as an {Attack}. As a result, it is usually suicidal to ignore Ambassador if it is on the board, because otherwise you are asking to be given all the junk from the other players' starting decks. But don't be fooled - Ambassador play can be subtle, even if the card itself is usually an auto-buy. Should you open with 2 copies of Ambassador, or just one (together with a [Silver] or perhaps some other card)? If you draw Ambassador early on with 2 [Copper]s and one [Estate], which card do you reveal? These, and several others, are not at all easy to answer in general, and finding the right plays in Ambassador games is the sign of a strong player.",
+	 "discussion": "Ambassador is a deceptively strong card - one of the strongest opening {buy}s in the game, along with [Chapel] - which both removes bad cards from your own deck (which has the same effect as {trash}ing, even though the cards don't actually go to the Trash pile) and inflicts them on your opponent(s) as an {Attack}. As a result, it is usually suicidal to ignore Ambassador if it is on the board, because otherwise you are asking to be given all the junk from the other players' starting decks. But don't be fooled - Ambassador play can be subtle, even if the card itself is usually an auto-buy. Should you open with 2 copies of Ambassador, or just one (together with a [Silver] or perhaps some other card)? If you draw Ambassador early on with 2 [Copper]s and one [Estate], which card do you reveal? These, and several others, are not at all easy to answer in general, and finding the right plays in Ambassador games is a sign of a strong player.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Ambassador"
 	},
 
@@ -1438,7 +1438,7 @@
 	 "textAboveLine": "1 coin. When you play this, {reveal} cards from your deck until you reveal a {Treasure}. Discard it or {trash} it. Discard the other cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Loan.jpg",
-	 "discussion": "",
+	 "discussion": "The main, if not only, use of Loan is to {trash} some or all of the 7 [Copper]s that you start with. It is slow, only trashing one at a time, and can be something of a liability later in the game - since it becomes much less likely to hit a Copper once you have trashed a few and have better {Treasure}s in the deck, and discarding all your strong {Action}s on the way to discarding a [Platinum] is never a good result! For this reason, Loan works best with decks that want few or no Treasures - for example, [Minion] decks. But, as a trasher that is effectively {non-terminal} (since it is a Treasure instead of an Action), Loan can often come in useful if you want to build an {engine}, even though it is far from the quickest trasher out there.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Loan"
 	},
 
@@ -1451,7 +1451,7 @@
 	 "textAboveLine": "+1 {Buy}. {Trash} a card from your hand. +1 coin per Coin token on the Trade Route mat.",
 	 "textBelowLine": "Setup: Add a Coin token to each {Victory} {Supply} pile; move that token to the Trade Route mat when a card is {gain}ed from the pile.",
 	 "imagePath": "images/card_images/Trade_Route.jpg",
-	 "discussion": "",
+	 "discussion": "An unspectacular but relatively versatile card, Trade Route has 2 main uses. One is as a {trash}er, which of course is only really useful in the early game - it is also pretty slow at doing this, being a {terminal} {Action} which only trashes 1 card when played. The other is as a source of <Coin later in the game, once several different {Victory} cards have been {gain}ed - if your Trade Route is worth 3 coins or 4 coins, then the +{Buy} is very useful as well. However bear in mind that the trashing is not optional, so you want to have some low-value card in your hand before playing it! Trade Route is obviously best in games with a good chance of several different Victory piles being gained from relatively early on - which usually needs some cheap {Kingdom} Victory cards, either hybrid cards like [Great Hall] and [Island], or powerful {alt-VP} cards like [Gardens] and [Silk Road].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Trade_Route"
 	},
 
@@ -1464,7 +1464,7 @@
 	 "textAboveLine": "Draw until you have 6 cards in hand.",
 	 "textBelowLine": "When you {gain} a card, you may {reveal} this from your hand, to either {trash} that card or put it onto your deck.",
 	 "imagePath": "images/card_images/Watchtower.jpg",
-	 "discussion": "",
+	 "discussion": "Arguably the best {Reaction} card in the game, Watchtower gives you an awful lot of versatility for just 3 coins. Its most appealing use is as a strong counter to {Attack}s which give out [Curse]s - not only do you not take on a Curse that time, as would happen with [Moat], that Curse actually moves from the {Supply} to the {Trash} pile, so you can never be forced to take it later. This ability to trash cards you would otherwise {gain} can also help to bypass penalties involving having to gain other weak cards, typically [Copper]s - such as with [Cache]. Its ability to top-deck cards you gain is always nice to have, especially as it works when Watchtower is simply in your hand, unplayed. And its on-play ability is not bad for 3 coins either - a weaker version of [Library], it goes well with most of the same things that Library does, including being a fine partner for [Fishing Village]. And it is a pretty good counter to discard attacks (again like Library, but not quite as good). So while Watchtower is by no means game-changing - except perhaps when there are strong cursing Attacks available - it is a card which has a place in a huge variety of decks.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Watchtower"
 	},
 
@@ -1477,7 +1477,7 @@
 	 "textAboveLine": "+1 coin, +1vp. {Trash} a card from your hand, +1vp per two coins it costs (round down). Each other player may trash a card from their hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bishop.jpg",
-	 "discussion": "",
+	 "discussion": "One of the {trash*for*benefit} cards, as well as one of the three cards in {Prosperity} to use vp tokens, Bishop is in general a bit harder to use than [Salvager] or [Apprentice]. By converting cards directly to vps, it helps your score without doing much else for your current or future turns. You can {trash} weak cards with it, but it is expensive for a single-card trasher and the VP gain, although not insignificant, is minimal. (Although it is handy to trash [Estate]s and earn their vp value back, a trick which also works with [Duchy].) And trashing expensive cards might not be worth it when Bishop gives you no guaranteed way to keep on gaining those expensive cards - you can combo it with massive [Gold] gain from say [Warehouse] and [Tunnel], but it is much harder to keep on gaining the Gold than it would be if the Bishop was Apprentice instead. And it must never be forgotten that Bishop allows the opponents the option of trashing a card from their hand whenever you play it - this is much more important than it may sound, frequently letting opponents set up a strong {engine} much quicker than they otherwise could. But despite all I have said, Bishop can be a strong VP-generator which also clears your deck of junk. I can also hardly fail to mention the celebrated \"Golden Deck\" - there are a few variations, but the idea is to trash down to a 5-card deck of Bishop, [Province], Gold, [Silver] and one other Gold or Silver - then every turn, trash your Province with Bishop and buy a new one. This gaines 5 VPs per turn while running out the Province pile very quickly. To achieve it in time to be competitive you need a fast trasher on the board (usually [Chapel], but [Remake] also works pretty well, and [Steward] might do too) - but if there is, it is very easy to do and not so easy to compete with.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bishop"
 	},
 
@@ -1490,7 +1490,7 @@
 	 "textAboveLine": "+2 coins, +1vp.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Monument.jpg",
-	 "discussion": "",
+	 "discussion": "Simple and straightforward - but not usually all that strong, because paying 4 coins for a {terminal*Silver} whose only other benefit is giving 1vp per play is not worth it unless you can play it many many times. And while this might make it sound like a good payload for an {engine}, most {Kingdom}s have much better payloads available. But it's still nice to have if you can spare the {terminal} {Action} to play it - and it's decent in a {money} game (as long as you are not also playing {terminal*draw} cards, which can draw it \"dead\") because you can usually afford 3-4 in your deck by the endgame without too much risk of collision, and those extra points can really add up in a close game.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Monument"
 	},
 
@@ -1503,7 +1503,7 @@
 	 "textAboveLine": "1 coin",
 	 "textBelowLine": "While this is {in*play}, {Action} cards cost 2 coins less, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Quarry.jpg",
-	 "discussion": "",
+	 "discussion": "When can it be right to spend 4 coins on a [Copper]? When it acts as a [Gold] for {buy}ing {Action}s, of course! Since you're almost guaranteed to want some Actions, Quarry might seem pretty handy - but simply wanting to buy a few Actions over the course of the game is not in itself a reason for wanting to bother with Quarry. There is a lot of opportunity cost involved in doing so - both in spending 4 coins and a buy on one, instead of a [Silver] or a directly useful Action card, and in the fact that it turns back into a Copper if you draw it on a turn where you don't want to buy an Action. Indeed, Quarry is best avoided unless you \"know\" you want it, which tends to be in one of 2 situations where cost-reducers always shine - when you expect to have multiple buys (and want to spend them all on Actions), or when you have a way to directly {gain} (Action) cards costing up to a certain amount. Note that the latter use is not so relevant to Quarry, because it cannot be played before the buy phase (unless you also happen to have a [Black Market] or [Storyteller]) so cannot affect cards like [Workshop]. [It can improve the card you gain with [Horn of Plenty], but that is a rare combo which is probably not worth the effort of getting Quarry.] So Quarry is at its best when you expect to have multiple buys and want to spend them on Actions - most likely with a deck based on [Market] or [Worker's Village].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Quarry"
 	},
 
@@ -1516,7 +1516,7 @@
 	 "textAboveLine": "1 coin",
 	 "textBelowLine": "While this is {in*play}, when you {buy} a non-{Victory} card costing 4 coins or less, {gain} a copy of it.",
 	 "imagePath": "images/card_images/Talisman.jpg",
-	 "discussion": "",
+	 "discussion": "Talisman can be very valuable - provided you will be buying plenty of {Action} or {Treasure} cards costing 4 coins or less, which you would actively like many copies of. Even if you are building an {engine} with a consequent needs for plenty of {village}s, the opportunity cost of spending 4 coins on what is effectively just a [Copper] may not be worthwhile just to get a few more villages more quickly. ([Fishing Village] may be an exception though, as it's just that good.) Talisman is indeed usually a bad card - but it can still be very useful with some cheap cards that you really want multiple copies of. [Caravan] is a strong reason to invest in Talismans, as is [Fool's Gold] - but unless you're sure you want it, Talisman is likely to slow you down too much.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Talisman"
 	},
 
@@ -1529,7 +1529,7 @@
 	 "textAboveLine": "+1 card, +2 {Action}s, +1 {Buy}",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Worker's_Village.jpg",
-	 "discussion": "",
+	 "discussion": "One of the better {village}s in the game, because whenever you want villages you are usually building an {engine}, and extra {buy}s are usually vital for an engine. This is for two main reasons: firstly it makes you able to build your engine faster by enabling you to get more than one component at once (providing they are relatively cheap), and secondly you can buy several {Victory} cards per turn once the engine is running (ideally of course 2 [Province]s, but Province plus [Duchy], or even 2 Duchies a few times, can really help), which tends to be necessary to catch up with a {money} strategy which is usually able to start buying Victory cards sooner. As a result, getting extra buys together with your extra {Action}s is really valuable - this is one of the main reasons why [Hamlet] is regarded as a very good card, and Worker's Village is almost strictly better (although twice the cost).",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Worker's_Village"
 	},
 
@@ -1542,7 +1542,7 @@
 	 "textAboveLine": "+1 card, +2 {Action}s. If there are one or more empty {Supply} piles, +1 Card. If there are two or more, +1 {Buy} and +1 coin.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/City.jpg",
-	 "discussion": "",
+	 "discussion": "City is perhaps the most extreme example in the game of a card which is devastatingly powerful in some games, and completely useless in others - and in fact, in the case of City this difference in power level is not always solely due to the other cards in the {Kingdom}. If no {Supply} piles empty before the game is over, then {buy}ing City is just spending 5 coins on a [Village], which is a pretty terrible idea. If a pile does empty, City becomes a combination of Village and [Laboratory] - which is pretty great, although even then you are likely to need a few turns after that pile runs out, ideally with extra Buys and some good payload for your {engine}, in order to build a game-winning lead. If two piles run out with meaningful time left before the game ends (remember that the game ends as soon as there are 3 empty Supply piles, unless playing with 5+ players), then each City is equivalent to a Village, Laboratory and [Market] all in one card, so you are almost guaranteed to win if you have the majority of them and get the first turn with them fully \"powered up\". So needless to say, Cities are much better when piles are likely to run out - this usually means either one or more piles of cheap {non-terminal} cards in the Kingdom (common examples are [Fishing Village] and [Caravan]), or {Attack}s which give out [Curse]s or {Ruins}. Cities are also usually not worth bothering with unless you actually need the additional {Action}s, because otherwise they do essentially nothing to start with and are no better than Laboratories even when one pile is empty. But even if no positive factors for City are present, if you are playing a 3+ player game and the other players pursue them, you often feel forced to join them because that one City pile is sure to empty anyway...",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/City"
 	},
 
@@ -1555,7 +1555,7 @@
 	 "textAboveLine": "3 coins, +1 {Buy}. When you play this, the player to your left names a card. You can't buy that card this turn.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Contraband.jpg",
-	 "discussion": "",
+	 "discussion": "Getting a [Gold], with an extra {Buy}, for 1 coin less than a plain Gold, seems awesome - but of course it comes with a catch. This catch, that your left-hand-opponent can forbid you from buying any particular card, is serious enough that in most cases Contraband is not a very strong card. Obviously in the late game, your opponent will usually ban you from buying [Province]s - although other bans can be even more effective, especially earlier in the game. So Contraband is best for building up an {engine}, where you will usually find a variety of different cards that are useful so being banned from one isn't such an issue. Overall Contraband requires a lot of skill to use well, including of course deciding whether to bother getting it in the first place. Note that getting more than one Contraband is usually a very bad idea, because if you play 2 Contrabands in a turn the opponent gets to ban you from buying 2 different cards!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Contraband"
 	},
 
@@ -1568,7 +1568,7 @@
 	 "textAboveLine": "Look through your discard pile, {reveal} any number of [Copper]s from it, and put them into your hand.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Counting_House.jpg",
-	 "discussion": "",
+	 "discussion": "One of the most unusual 5 coins {Action}s in the game - and also, unfortunately, one of the weakest. There are quite a few clever combos involving it, which are quite unlikely to work in practice - but the \"obvious\" uses that you might think of when first seeing the card generally fail (just getting an occasional +6 coins or +7 coins is too unreliable and infrequent, and comboing it with [Coppersmith] requires both cards in the same hand, together with a {village}, which is almost impossible with a deck full of [Copper]). There are some rare ways to make it work though, and it defends well against some strong {Attack}s, notably [Mountebank].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Counting_House"
 	},
 
@@ -1581,7 +1581,7 @@
 	 "textAboveLine": "You may {reveal} a {Treasure} card from your hand. {Gain} a copy of it.",
 	 "textBelowLine": "When you {buy} this, {trash} all {Treasure}s you have {in*play}.",
 	 "imagePath": "images/card_images/Mint.jpg",
-	 "discussion": "",
+	 "discussion": "It's hard to judge which of Mint's two abilities - replicating a {Treasure} when played, or {trash}ing Treasures when bought - is more important. The truth is that not only can both be very useful, but they synergise very well with each other. If you trash 5 [Copper]s when you {buy} it, then you are much more likely to draw it together with your [Gold]s or even [Platinum]. It works well with {Kingdom} Treasures that you want multiple of, most especially [Fool's Gold] - indeed, if you get 5 coins and 2 coins in your first 2 hands, then opening with Mint and Fool's Gold is an extremely strong opening, allowing you to rapidly attain a very high density of Fool's Golds. Apart from this, it is usually not to good idea to open with Mint, because the only {money} left in your deck will then be 2 Coppers, plus whatever you spent those 2 coins on, and unless that 2 coins card provides <Coin itself then you'll be slowed down too much by the need to rebuy a Copper, folowed by a [Silver]. Mint is generally best as a midgame purchase, once you've got a Gold/Platinum or two, in order to remove some Coppers/Silvers and quickly flood your deck with high-value Treasures. It obviously has little place in an {engine} deck where you mainly want {Action}s rather than Treasures.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mint"
 	},
 
@@ -1594,7 +1594,7 @@
 	 "textAboveLine": "+2 coins. Each other player may discard a [Curse]. If they don't, they {gain} a Curse and a [Copper].",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Mountebank.jpg",
-	 "discussion": "",
+	 "discussion": "One of the most poweful {Attack}s in the game, because if an opponent is trying to build an {engine} - which under most circumstances is the best thing to do - then a [Copper] is nearly as bad as a [Curse] to them, and Mountebank gives out both. Note that it goes on hurting the opponents even after the Curses have run out, because the Copper pile essentially never runs out. Of course the Attack is less effective against {money} strategies, which don't mind Copper so much, and especially against strategies which actively welcome the Coppers - usually {alt-VP} strategies ([Counting House] also enjoys receiving Copper, but is rarely a winning strategy even in the presence of Mountebank). And it is slower to get the Curses into play than say [Witch], after the first few, due to only giving out the junk to opponents who have no Curse in hand to discard. So Witch is actually better than Mountebank unless the opponents are building engines - but Mountebank is far more effective if they are.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Mountebank"
 	},
 
@@ -1607,7 +1607,7 @@
 	 "textAboveLine": "+3 Cards. Each other player {reveal}s the top 3 cards of their deck, discards the {Action}s and {Treasure}s, and puts the rest back in any order they choose.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Rabble.jpg",
-	 "discussion": "",
+	 "discussion": "Rabble is a close cousin to [Torturer], in that it is an {Attack} which is relatively weak when played a single time on a turn, but can be devastatingly strong when multiple copies are chained together in a single turn. And also like Torturer, it is a {terminal*draw} card, making chaining them together relatively easy if there are cheap {village}s in the {Kingdom}. Where the two attacks differ considerably is in what phase of the game they are most effective. With Torturer, the game often becomes a rush to get turns where you play 3 or 4 Torturers - the first player to do this usually is very likely to win. Torturer chains are less effective later because the [Curse]s are likely to have run out. Rabble chains, on the other hand, churn through the opponents' decks, discarding any playable cards in the top 3 - so multiple Rabbles are likely to leave 3 useless {Victory} or Curse cards on top of the deck. This naturally is only effective if the opponent actually has Victory cards in the deck - the 3 starting [Estate]s have usually been {trash}ed by the time a Rabble chain can be set up, and even if not they are likely to be too far spread out. But if an opponent is {buy}ing [Province]s or other Victory cards at a steady pace - as in most {money} strategies, including {alt-VP}-based ones - then Rabble chains in the mid or late-game can slow their deck to a virtual standstill. For this reason, the presence of Rabble, more than any other terminal draw card, strongly discourages money strategies and encourages {engine}s - providing the villages are there to support one.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Rabble"
 	},
 
@@ -1620,7 +1620,7 @@
 	 "textAboveLine": "2 coins",
 	 "textBelowLine": "While this is {in*play}, when you {gain} a card, you may put that card onto your deck.",
 	 "imagePath": "images/card_images/Royal_Seal.jpg",
-	 "discussion": "",
+	 "discussion": "Royal Seal, like all cards which top-deck others, is useful for setting up guaranteed combos on top of your deck (and for this reason it is improved by cards giving extra {Buy}s), as well as in general for getting the cards you buy into your hand earlier. However, it is rarely used for the simple reason that most other 5 coins cards are stronger, having a bigger impact on the game. And it should be pointed out that [Watchtower] can also put gained cards on top of your deck, but has several advantages over Royal Seal (and some disadvantages, which are rarely serious), and is also cheaper!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Royal_Seal"
 	},
 
@@ -1633,7 +1633,7 @@
 	 "textAboveLine": "+2 cards. Discard any number of cards for +1 coin each. Each other player may discard 2 cards, to draw a card.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Vault.jpg",
-	 "discussion": "",
+	 "discussion": "Vault, like most 5 coins {Action}s, is a very powerful card. If you compare it to [Secret Chamber], this will seem surprising - because Secret Chamber costs only 2 coins and is weak for its cost, has a {Reaction} ability, and doesn't give the opponents an optional benefit as Vault does. All Vault has that Secret Chamber doesn't is +2 Cards. But it turns out that those 2 cards make an enormous difference - not just for draw and cycling (although they are a big help at times), but because the card converts cards into your hand into <Coin. So while Secret Chamber only guarantees 4 coins from a 5-card hand, Vault guarantees 6 coins. That's enough for a [Gold] - or usually even better, a [Grand Market] (you can discard all [Copper]s in your hand for +1 coin each and avoid the usually difficulty of getting Grand Markets). And, if you have even 1 Gold, or 2 [Silver]s, in hand, playing Vault guarantees 8 coins for a [Province]! As a result, Vault can lead to extremely quick games. It's by no means one of the very strongest 5 coins cards in the game, but it does offer a near-guaranteed route to high-cost cards, and it doesn't care what other junk may be in your hand, just that you have enough cards.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Vault"
 	},
 
@@ -1646,7 +1646,7 @@
 	 "textAboveLine": "1 coin. When you play this, {reveal} cards from your deck until you reveal a {Treasure}. Discard the other cards. Play that Treasure.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Venture.jpg",
-	 "discussion": "",
+	 "discussion": "Venture is guaranteed to be get you at least 2 coins (barring edge cases like [Potion] and [Horn of Plenty], which don't mix well with Venture, or playing Venture with no {Treasure}s left in your deck), and of course can get considerably more once it starts finding [Silver] and higher-value Treasures. But usually the best thing for Venture to find is another Venture, setting off a chain reaction - if your deck contains 8 Ventures and no other Treasure, then every time you draw one you are guaranteed to have 8 coins for a [Province]. While this particular scenario is of course not particularly realistic, it shows that Venture improves with strong {trash}ing - particularly the trashing of all your [Copper]. In fact it probably isn't viable at all without a way to trash Copper. It doesn't mix particularly well with {engine} decks, but with trashing it is a great source of <Coin in a {money} deck. It is similar to [Adventurer], but is almost always far superior, being a Treasure instead of a {terminal} {Action} and costing 1 coin less. The only disadvantage is only finding 1 Treasure instead of 2, but this matters little if the Treasure it finds is another Venture - Adventurer is of course completely incapable of chaining in this way.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Venture"
 	},
 
@@ -1659,7 +1659,7 @@
 	 "textAboveLine": "+1 {Buy}, +2 coins. Each other player discards down to 3 cards in hand.",
 	 "textBelowLine": "While this is {in*play}, when you {buy} a card, +1vp.",
 	 "imagePath": "images/card_images/Goons.jpg",
-	 "discussion": "",
+	 "discussion": "A very strong contender for the title of best card in the game, Goons is a combination of the handsize attack of [Militia] with the VP-generation of [Monument]. That in itself makes it well worth 6 coins in a {money} deck. But it is when you can build an {engine} to play several Goons each turn that the card becomes truly insane - because each Goons give you both an additional {buy} to use, and an additional vp for each card bought. So 3 copies of Goons gives you 6 coins to spend (plus any more you've generated through {Action}s or {Treasure}s), 4 buys, and 3vp for each buy that you actually use. This means two things: that when building a Goons engine you receive VPs even as you buy more engine pieces and copies of Goons (no dead {Victory} cards required at all), and that at the end of the game you can buy up as many Victory cards as you can afford then use any spare buys on [Copper] to get as many VP per Copper as you have Goons in play. (It is a common temptation to buy lots of Copper earlier, for the VPs, but that is an easy way to break your engine.) Scores of well over 100vp are the norm if your opponents are foolishly ignoring Goons. And if both players in a 2-player game are playing Goons engines, then you have to watch the piles very closely, because it is dead easy for one player to pull off a surprise game ending with enough VPs to win.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Goons"
 	},
 
@@ -1673,7 +1673,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 {Buy}, +2 coins",
 	 "textBelowLine": "You can't {buy} this if you have any [Copper]s {in*play}.",
 	 "imagePath": "images/card_images/Grand_Market.jpg",
-	 "discussion": "",
+	 "discussion": "Grand Market is one of those cards which the whole game can revolve around. Despite its being the same as [Market], just giving an additional +1 coin compared with that relatively weak card, Grand Market is in practice hugely better - since both of these cards function best in a thin deck, you will typically chain several of them together in a turn, and then getting +2 coins instead of +1 coin for each card can make a huge difference, especially as you have ample +{Buy} to use large amounts of <Coin. Indeed, Grand Market is really too strong for a cost of 6 coins - but it is much harder to get than even most 7 coins cards, due to the requirement of having no [Copper]s in play. There are a number of ways round this - including cards like [Counterfeit] which can play Coppers and then remove them from play, and the ultimate \"cheat\" of using [Vault] to get 1 coin from each Copper without having to play them - but usually you need to {trash} your Coppers pretty heavily, and still won't be able to afford Grand Market before the midgame. Once you have a couple of them though, you should find it easy to get more, and eventually to get [Province]s together with whatever else you need for your {engine} to fire.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Grand_Market"
 	},
 
@@ -1686,7 +1686,7 @@
 	 "textAboveLine": "2 coins",
 	 "textBelowLine": "While this is {in*play}, when you {buy} a {Victory} card, {gain} a [Gold].",
 	 "imagePath": "images/card_images/Hoard.jpg",
-	 "discussion": "",
+	 "discussion": "One of the best and most straightforward cards to use with a {money} strategy - in that case [Gold] is one of the best cards you can get, and will be {buy}ing {Victory} cards regularly, so getting a free Gold with every Victory card is amazing. But even then it is easy to go wrong - for example, do you really want an extra [Estate] in the early game (say you draw Hoard and no other {Treasure}) just to get a Gold with it? And it mustn't be forgotten that each time you buy Hoard, you could have bought Gold directly - while an early-game Hoard should get you plenty more Golds over the course of the game, you will not be happy in the late game if you draw say Gold-Silver-Hoard and 2 Victory cards. You will probably buy a [Duchy] and get another free Gold - but if that Hoard had been Gold instead you could have bought a [Province]!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Hoard"
 	},
 
@@ -1699,7 +1699,7 @@
 	 "textAboveLine": "When you play this, it's worth 1 coin per {Treasure} you have {in*play} (counting this).",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Bank.jpg",
-	 "discussion": "",
+	 "discussion": "Bank is a highly situational card. In some games, it can allow you to get huge amounts of <Coin. More often though, it is not worth remotely near its cost of 7 coins. That's 1 coin more than Gold - yet to be worth 4 coins (that is, more than Gold) you need to have 3 other {Treasure}s in hand along with it. This is simply not very likely in a 5-card hand - so to make Bank work well, you need a good source of draw. A full {engine} can provide this - but usually you will not want many Treasures in such an engine. [Alchemist] can work very well with Bank, because you can keep returning your Alchemists to the top of your deck, and drawing most or all of it every turn, as long as you keep on drawing a [Potion]. And Potion contributes to Bank's value even if you don't otherwise use it. But other {non-terminal*draw} cards, to say nothing of engines constructed using {terminal*draw} with {village}s, cannot run consistently with large amounts of Treasure in the deck. ([Coppersmith] suffers ultimately from a very similar problem - indeed Bank is similar to it in many ways, and although it is easier to make work, it is much more expensive.) And it must also be mentioned that Bank is worthless without a source of extra {Buy}s, otherwise the huge amounts of {money} generated will be wasted. Still, on the rare occasions when Bank does work well, it can be crushing.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Bank"
 	},
 
@@ -1712,7 +1712,7 @@
 	 "textAboveLine": "{Trash} a card from your hand. {Gain} a card costing up to 3 coins more than it.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Expand.jpg",
-	 "discussion": "",
+	 "discussion": "Expand is of course an improved version of [Remodel] - with many of the same strengths. But no-one sane would ever spend 7 coins on a Remodel, and allowing it to {gain} cards costing 1 coin more only rarely justifies the vastly increased cost. Nonetheless Expand can find good use in many games - it just has a very high opportunity cost, and shouldn't be chosen without a clear plan to get strong value from it.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Expand"
 	},
 
@@ -1725,7 +1725,7 @@
 	 "textAboveLine": "{Trash} any number of cards from your hand. {Gain} a card with cost exactly equal to the total cost in <Coin of the trashed cards.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Forge.jpg",
-	 "discussion": "",
+	 "discussion": "Forge is, judged purely by its effect, the best {trash}er in the game (or at least it was before {Empires} was released, introducing [Donate]). Forge can trash any number of cards, which not even [Chapel] can manage - although the difference is only relevant if you have more than 5 cards in hand. The card {gain} from Forge can be a great advantage too - but it can also be a liability, because you have to work out which cards in hand to trash in order to get the right total cost (although if nothing in the {Supply} matches the total <Coin cost of the cards being trashed, you get nothing). It does give you the option of cannibalizing your deck for {Victory} cards in the endgame, which Chapel certainly cannot do - although again, you have to be wary of the total costs, it's not too easy to get a [Province] this way unless you've either planned for it, or get lucky. But the biggest downside of Forge, and the main reason that it sees much less play than Chapel or other early-game trashers, is of course its cost. It's just very hard to get to 7 coins early on, and like all trashers Forge is much better if you can get it early. The usual role of Forge, when it is bought, is to make the {engine} which you've already got mainly working into an incredibly consistent one, by trashing lots of junk cards at once. [Tactician] goes very well with Forge (although Tactician engines tend to be extremely consistent anyway), because the big hand-sizes from Tactician both make it easier to afford 7 coins early, and give you a lot of cards to trash, taking full advantage of Forge's ability to trash a limitless number of cards.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Forge"
 	},
 
@@ -1738,7 +1738,7 @@
 	 "textAboveLine": "You may play an {Action} card from your hand three times.",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/King's_Court.jpg",
-	 "discussion": "",
+	 "discussion": "Clearly an \"improved\" version of [Throne Room] - but it's quite amazing what a difference it makes to be able to play an {Action} card 3 times instead of 2. While Throne Room can be very powerful in the right decks, King's Court is quite simply unstoppable. If you're playing any kind of {engine} at all, it only takes a couple of King's Courts in there (ideally of course they would appear together, so you can King's Court the King's Court to get any 3 actions you want played 3 times each - and if the first one draws then the other 2 don't need to be in your hand initially) to let you have some simply insane turns - provided of course that you have some source of extra {buy}s. It's really a must-buy for any Action-focused deck - although of course its only as good as (or at least, only 3 times as good as...) the Actions you intend to use it on.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/King's_Court"
 	},
 
@@ -1752,7 +1752,7 @@
 	 "textAboveLine": "+1 Card, +1 {Action}, +1 coin",
 	 "textBelowLine": "During your {Buy} phase, this costs 2 coins less per {Action} card you have {in*play}, but not less than 0 coins.",
 	 "imagePath": "images/card_images/Peddler.jpg",
-	 "discussion": "",
+	 "discussion": "Peddler is a curious card in many ways - being quite ordinary in effect but allowing some pretty nice combos and interactions. As far as its on-play effect is concerned, the card is accepted as being \"worth\" 4 coins - since many cards which are Peddler with a small bonus, such as [Market], [Bazaar], and [Highway], cost 5 coins. No player in their right mind would actually spend 8 coins on one, and almost certainly not 6 coins either. The ideal case for Peddlers is in an {Action}-heavy deck with some source of extra {buy}s - because then Peddlers are likely to cost 0 coins, and the extra buys enable one to pick up large quantities of them quickly. And while Peddlers are certainly not amazing, providing 1 coin while replacing themselves in the hand is very valuable for many of these kinds of decks. Almost any {engine} can typically do this - but [Worker's Village] is the best single card for picking up lots of Peddlers, since it provides both the Action and the Buys which are needed. If both players are building engines with extra buys, expect the Peddlers to run out fast! The other interesting feature of Peddler is that its \"official\" cost is 8 coins, even though you would never buy it for that. So it is great fuel for all {trash*for*benefit} cards - feed it to [Salvager] for a \"free\" [Province], or [Apprentice] to draw 8 cards! And any game involving both Peddler and [Swindler] can become very strange - any Swindler play could turn an opponent's Province into a mere Peddler, but if there are no more Peddlers (which as just discussed is very likely as the game goes on), you risk turning one of their Peddlers into a Province!",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Peddler"
 	},
 
@@ -1765,7 +1765,7 @@
 	 "textAboveLine": "5 coins",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Platinum.jpg",
-	 "discussion": "",
+	 "discussion": "Platinum, and its partner [Colony], are basic cards (that is, {Supply} cards which are not {Kingdom} cards) that are, according to the printed rules for {Prosperity}, only supposed to be used in games involving Kingdom cards from Prosperity. The approved procedure is to pick one of the 10 Kingdom cards at random - if the chosen card is from Prosperity, then include Platinum and Colony in the supply, otherwise don't. Many players like to include them more often though, including in games with no Prosperity cards. They have a very large impact on the game, including improving {engine} strategies relative to {money}-based ones - because many more vps become available, and a well-constructed engine usually only takes a couple of turns longer to be able to start affording Colonies than it does to reach [Province]s. Money strategies do not necessarily become completely worthless in Colony games though - in part because Platinum is such good value for money. Its presence greatly improves many cards which interact with {Treasure}s - including [Mine], [Mint] and [Hero].",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Platinum"
 	},
 
@@ -1778,7 +1778,7 @@
 	 "textAboveLine": "10vp",
 	 "textBelowLine": "",
 	 "imagePath": "images/card_images/Colony.jpg",
-	 "discussion": "",
+	 "discussion": "Colony, and its partner [Platinum], are basic cards (that is, {Supply} cards which are not {Kingdom} cards) that are, according to the printed rules for {Prosperity}, only supposed to be used in games involving Kingdom cards from Prosperity. The approved procedure is to pick one of the 10 Kingdom cards at random - if the chosen card is from Prosperity, then include Platinum and Colony in the supply, otherwise don't. Many players like to include them more often though, including in games with no Prosperity cards. They have a very large impact on the game, including improving {engine} strategies relative to {money}-based ones - because many more vps become available, and a well-constructed engine usually only takes a couple of turns longer to be able to start affording Colonies than it does to reach [Province]s. Colonies of course somewhat replace Provinces in Colony games - but it can still be a viable strategy to ignore Colonies and just run out the Province pile, particularly in slow games with many {Attack}s and not much engine potential.",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Colony"
 	},
 
@@ -2054,7 +2054,7 @@
 	 "types": ["Treasure", "Reaction"],
 	 "set": "Hinterlands",
 	 "textAboveLine": "Worth 1 coin if it's the first time you played a Fool's Gold this turn, otherwise worth 4 coins.",
-	 "textBelowLine": "When another player {gain}s a [Province], you may {trash} this from your hand, to gain a Gold onto your deck.",
+	 "textBelowLine": "When another player {gain}s a [Province], you may {trash} this from your hand, to gain a [Gold] onto your deck.",
 	 "imagePath": "images/card_images/Fool's_Gold.jpg",
 	 "discussion": "",
 	 "linkURL": "http://wiki.dominionstrategy.com/index.php/Fool's_Gold"
