@@ -1,5 +1,13 @@
 angular.module("RouteControllerSearch", [])
 	.controller("SearchController", function($scope, CardSearchValues, GetData) {
+		
+		// individual sections of search form should start hidden, for ease of initial viewing
+		$scope.setsShown = false;
+		$scope.nameShown = false;
+		$scope.costShown = false;
+		$scope.typesShown = false;
+		$scope.textShown = false;
+
 		// get card database and give the scope access to it
 		GetData.cards()
 			.then(function(results) {
