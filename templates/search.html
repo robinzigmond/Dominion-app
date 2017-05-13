@@ -4,82 +4,102 @@
 		<div class="col-xs-12 col-sm-6 col-md-4 separate-scroll-form"> 
 			<form>
 				<div class="form-group search">
-					<label class="control-label">Order search results by:</label>
+					<label class="control-label">Order search results by</label>
 					<label class="radio-inline"><input type="radio" name="name" ng-model="searchParams.orderProp" value="name"/>Name</label>
 					<label class="radio-inline"><input type="radio" name="cost" ng-model="searchParams.orderProp" value="cost"/>Cost</label>
 				</div>
 
-				<div class="form-group search">
-					<label class="control-label form-subtitle" >Card sets:</label>
-					<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
-					<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
-					<div>
-						<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
-					</div>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{searchParams.setsButtonText}} all</button>
-					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
-				</div>
-				<div class="form-group search">
-					<label class="control-label" for="name-search">Card Name:</label>
-					<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
-					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
-				</div>
-				<div class="form-group search">
-					<p><strong>Note on Landmarks:</strong> Landmarks have no cost. They will be returned by the search if, and only if, the cost fields are at their default values (press "Reset" to ensure this).</p>
-					<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost:</label> 
-					<label class="control-label" for="min-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="min-coin-cost" ng-model="searchParams.minCoinCost"> 
-						<option ng-repeat="cost in possibleCoinCosts">{{cost}}</option>
-					</select>
-					<label class="control-label" for="min-potion-cost">Potions</label>
-					<select class="form-control input-sm" id="min-potion-cost" ng-model="searchParams.minPotionCost">
-						<option ng-repeat="cost in possiblePotionCosts">{{cost}}</option>
-					</select>
-					<label class="control-label" for="min-debt-cost">Debt</label>
-					<select class="form-control input-sm" id="min-debt-cost" ng-model="searchParams.minDebtCost">
-						<option ng-repeat="cost in possibleDebtCosts">{{cost}}</option>
-					</select>
-					<label class="control-label form-subtitle" for="max-coin-cost">Maximum Cost:</label> 
-					<label class="control-label" for="max-coin-cost">Coins</label>
-					<select class="form-control input-sm" id="max-coin-cost" ng-model="searchParams.maxCoinCost">
-						<option ng-repeat="cost in possibleCoinCosts">{{cost}}</option>
-					</select>
-					<label class="control-label" for="max-potion-cost">Potions</label>
-					<select class="form-control input-sm" id="max-potion-cost" ng-model="searchParams.maxPotionCost">
-						<option ng-repeat="cost in possiblePotionCosts">{{cost}}</option>
-					</select>
-					<label class="control-label" for="max-debt-cost">Debt</label>
-					<select class="form-control input-sm" id="max-debt-cost" ng-model="searchParams.maxDebtCost">
-						<option ng-repeat="cost in possibleDebtCosts">{{cost}}</option>
-					</select>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum equal to minimum</button>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="resetCosts()">Reset</button>
-					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
-				</div>
-				<div class="form-group search">
-					<label class="control-label form-subtitle" >Types:</label> 
-					<p>(Only cards which match <strong>all</strong> selected types will be found. Leave blank for the most general search, and make selections to narrow it.)</p>
-					<div>
-						<label class="checkbox-inline" ng-repeat="type in allTypes"><input type="checkbox" ng-model="searchParams['is'+type+'Type']"/>{{type}}</label>
-					</div>
-					<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
-					<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
-				</div>
-				<div class="form-group search">
-					<label class="control-label" for="text-above-search">Text (above line):</label>
-					<input type="text" class="form-control input-sm" id="text-above-search" ng-model="searchParams.aboveLineSearchText"/>
-					<label class="control-label" for="text-below-search">Text (below line):</label>
-					<input type="text" class="form-control input-sm" id="text-below-search" ng-model="searchParams.belowLineSearchText"/>
-					<div class="input-group">
-						<label class="control-label" for="anywhere">Select to search for text anywhere on card:</label>
-						<input type="checkbox" id="anywhere" ng-model="searchParams.allTextSearch"/>
-						<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned. Deselect to search specific text areas.)</p>
-						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTextSearch()">Clear</button>
-						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Show Results</button>
+				<div class="form-group search"> 
+					<label class="control-label" >Card sets</label>
+					<button type="button" class="btn btn-info btn-sm show-or-hide" ng-click="setsShown=!setsShown">{{setsShown ? "Hide" : "Show"}}</button>
+					<div ng-show="setsShown">
+						<p>(Finds cards which match <strong>any</strong> of the selected sets.)</p>
+						<p><strong>You must select at least one set in order to return any cards at all!</strong></p> 
+						<div>
+							<label class="checkbox-inline" ng-repeat="set in allSets"><input type="checkbox" ng-model="searchParams['in'+set.dirtyName]"/>{{set.niceName}}</label>
+						</div>
+						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="toggleSets()">Click to {{searchParams.setsButtonText}} all</button>
+						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Update Search</button>
 					</div>
 				</div>
-				<button type="button" class="btn btn-primary btn-md search-form-button" id="reset-search" ng-click="clearAll()">Clear/reset all search fields</button>
+				<div class="form-group search">
+					<label class="control-label" for="name-search">Card name</label>
+					<button type="button" class="btn btn-info btn-sm show-or-hide" ng-click="nameShown=!nameShown">{{nameShown ? "Hide" : "Show"}}</button>
+					<div ng-show="nameShown">
+						<input type="text" class="form-control input-sm" id="name-search" ng-model="searchParams.nameSearchText"/>
+						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearNameSearch()">Clear</button>
+						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Update Search</button>
+					</div>
+				</div>
+				<div class="form-group search">
+					<label class="control-label">Card cost</label>
+					<button type="button" class="btn btn-info btn-sm show-or-hide" ng-click="costShown=!costShown">{{costShown ? "Hide" : "Show"}}</button>
+					<div ng-show="costShown"?
+						<p><strong>Note on Landmarks:</strong> Landmarks have no cost. They will be returned by the search if, and only if, the cost fields are at their default values (press "Reset" to ensure this).</p>
+						<label class="control-label form-subtitle" for="min-coin-cost">Minimum Cost</label> 
+						<label class="control-label" for="min-coin-cost">Coins</label>
+						<select class="form-control input-sm" id="min-coin-cost" ng-model="searchParams.minCoinCost"> 
+							<option ng-repeat="cost in possibleCoinCosts">{{cost}}</option>
+						</select>
+						<label class="control-label" for="min-potion-cost">Potions</label>
+						<select class="form-control input-sm" id="min-potion-cost" ng-model="searchParams.minPotionCost">
+							<option ng-repeat="cost in possiblePotionCosts">{{cost}}</option>
+						</select>
+						<label class="control-label" for="min-debt-cost">Debt</label>
+						<select class="form-control input-sm" id="min-debt-cost" ng-model="searchParams.minDebtCost">
+							<option ng-repeat="cost in possibleDebtCosts">{{cost}}</option>
+						</select>
+						<label class="control-label form-subtitle" for="max-coin-cost">Maximum Cost</label> 
+						<label class="control-label" for="max-coin-cost">Coins</label>
+						<select class="form-control input-sm" id="max-coin-cost" ng-model="searchParams.maxCoinCost">
+							<option ng-repeat="cost in possibleCoinCosts">{{cost}}</option>
+						</select>
+						<label class="control-label" for="max-potion-cost">Potions</label>
+						<select class="form-control input-sm" id="max-potion-cost" ng-model="searchParams.maxPotionCost">
+							<option ng-repeat="cost in possiblePotionCosts">{{cost}}</option>
+						</select>
+						<label class="control-label" for="max-debt-cost">Debt</label>
+						<select class="form-control input-sm" id="max-debt-cost" ng-model="searchParams.maxDebtCost">
+							<option ng-repeat="cost in possibleDebtCosts">{{cost}}</option>
+						</select>
+						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="fixedCost()">Click to set maximum equal to minimum</button>
+						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="resetCosts()">Reset</button>
+						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Update Search</button>
+					</div>
+				</div>
+				<div class="form-group search">
+					<label class="control-label" >Types</label> 
+					<button type="button" class="btn btn-info btn-sm show-or-hide" ng-click="typesShown=!typesShown">{{typesShown ? "Hide" : "Show"}}</button>
+					<div ng-show="typesShown">
+						<p>(Only cards which match <strong>all</strong> selected types will be found. Leave blank for the most general search, and make selections to narrow it.)</p>
+						<div>
+							<label class="checkbox-inline" ng-repeat="type in allTypes"><input type="checkbox" ng-model="searchParams['is'+type+'Type']"/>{{type}}</label>
+						</div>
+						<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTypes()">Clear all</button>
+						<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Update Search</button>
+					</div>
+				</div>
+				<div class="form-group search">
+					<label class="control-label" for="text-above-search">Card text</label>
+					<button type="button" class="btn btn-info btn-sm show-or-hide" ng-click="textShown=!textShown">{{textShown ? "Hide" : "Show"}}</button>
+					<div ng-show="textShown">
+						<label class="control-label" for="text-above-search">Text (above line)</label>
+						<input type="text" class="form-control input-sm" id="text-above-search" ng-model="searchParams.aboveLineSearchText"/>
+						<label class="control-label" for="text-below-search">Text (below line)</label>
+						<input type="text" class="form-control input-sm" id="text-below-search" ng-model="searchParams.belowLineSearchText"/>
+						<div class="input-group">
+							<label class="control-label" for="anywhere">Select to search for text anywhere on card</label>
+							<input type="checkbox" id="anywhere" ng-model="searchParams.allTextSearch"/>
+							<p>(This allows you to search for two separate strings - in this case, only cards matching <strong>both</strong> strings are returned. Deselect to search specific text areas.)</p>
+							<button type="button" class="btn btn-primary btn-sm search-form-button" ng-click="clearTextSearch()">Clear</button>
+							<button type="button" class="btn btn-success btn-sm search-form-button" ng-click="runSearch()">Update Search</button>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-buttons">
+					<button type="button" class="btn btn-primary btn-md search-form-button bottom-button" ng-click="clearAll()">Clear/reset all search fields</button>
+					<button type="button" class="btn btn-success btn-md search-form-button bottom-button" id="final-button" ng-click="runSearch()">Update Search</button>
+				</div>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">

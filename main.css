@@ -148,6 +148,13 @@ label.form-subtitle {
     margin-bottom: 5px;
 }
 
+/* right-justify "show/hide" buttons for each search form section - and allow space above and below */
+.show-or-hide {
+    float: right;
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+
 /* use flexbox again for search results page - in particular this centres the landscape cards relative to the portrait ones,
 and centres images on the screen on mobile devices with a single-column display */
 .separate-scroll-results {
@@ -163,9 +170,20 @@ and centres images on the screen on mobile devices with a single-column display 
     padding: 5px;
 }
 
-/* Left margin on "reset" button at bottom, to line up with other buttons */
-#reset-search {
+/* Left margin on buttons at bottom of search form - to line up with other buttons, and with each other on small screens 
+Also allow room below, which is irrelevant in a 2-column display, but looks better on mobile devices */
+.bottom-buttons {
     margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.bottom-button {
+    margin-right: 10px;
+}
+
+/* set minimum height for each search field */
+.form-group.search {
+    min-height: 50px;
 }
 
 /*******************************************************************************************************************************/
