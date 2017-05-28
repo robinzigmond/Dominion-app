@@ -255,6 +255,10 @@ angular.module("RouteControllerCard", [])
 										if (highlightedWord.slice(length-6)=="-heavy") {
 											highlightedWord = highlightedWord.replace("-heavy", "");
 										}
+										// also remove "'s" endings:
+										if (highlightedWord.slice(length-2)=="'s") {
+											highlightedWord = highlightedWord.replace("'s", "");
+										}
 
 										break; /* by design each glossary popover appears at most once in each text, so no need to
 										waste time by continuing the loop */
