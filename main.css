@@ -141,11 +141,10 @@ label.form-subtitle {
     margin-right: 12px;		
 }
 
-/* give search form buttons their own line and sufficient space above */
+/* give search form buttons their own line and sufficient space above and between */
 .search-form-button {
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 2px;
 }
 
 /* right-justify "show/hide" buttons for each search form section - and allow space above and below */
