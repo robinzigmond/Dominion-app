@@ -15,13 +15,13 @@ angular.module("RouteControllerHome", [])
 			$scope.randomCard3 = $scope.cardList[randomIndex3];
 			var randomIndex4 = Math.floor(numberOfCards*Math.random());
 			$scope.randomCard4 = $scope.cardList[randomIndex4];
-			var randomIndex5 = Math.floor(numberOfCards*Math.random());
-			$scope.randomCard5 = $scope.cardList[randomIndex4];
 
-			/* find the orientation of each card image (landscape for Events and Landmarks, otherwise portrait)
+			/* find the orientation of each card image (landscape for Events and Landmarks, otherwise portrait).
+			(Now altered by the release of Nocturne, which has Boon, Hex and State cards, all landscape.)
 			This is done in order to determine the width required for the image */
-			for (i=1; i<6; i++) {
-				if ($scope["randomCard"+i].types.indexOf("Event")>-1 || $scope["randomCard"+i].types.indexOf("Landmark")>-1) {
+			var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+			for (i=1; i<5; i++) {
+				if (landscapeTypes.indexOf($scope["randomCard"+i].types[0])>-1) {
 					$scope["randomCard"+i].orientation = "landscape";
 				}
 				else {

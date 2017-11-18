@@ -3,10 +3,9 @@
 angular.module("SearchValues", [])
 	.factory("CardSearchValues", function() {
 		CardSearchValues = {
-			
 			// set initial values, to be later changed by user
 
-			// search results should start empty - even though all sets are selected for convenience of user:
+			// search results should start displaying all cards:
 			searchResults: [],
 
 			// order cards by name initially
@@ -45,6 +44,15 @@ angular.module("SearchValues", [])
 			isCastleType: false,
 			isEventType: false,
 			isLandmarkType: false,
+			isNightType: false,
+			isHeirloomType: false,
+			isFateType: false,
+			isDoomType: false,
+			isSpiritType: false,
+			isZombieType: false,
+			isBoonType: false,
+			isHexType: false,
+			isStateType: false,
 
 			// leave most sets blank - except one (Base 2nd Edition, as the most natural starting point now)
 			inBasic: true,
@@ -63,15 +71,13 @@ angular.module("SearchValues", [])
 			inGuilds: true,
 			inAdventures: true,
 			inEmpires: true,
+			inNocturne: true,
 			inPromos: true,
 
 			/* determine correct behaviour for "select/deselect all" button in the"sets" field. It should show the word "select" */
 			selectOrDeselectSets: false, /* this value ensures that the button deselects all sets, rather than selects them, when
 			clicked. See the Search Controller for details. */
 			setsButtonText: "deselect"
-
-
 		};
-	
 		return CardSearchValues;
 	});

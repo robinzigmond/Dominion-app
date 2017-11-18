@@ -26,8 +26,9 @@ angular.module("RouteControllerCard", [])
 				}
 
 				// find correct orientation for card image (for giving the correct width in mobile devices)
-				// Events and Landmarks are in landscape orientation, while all other cards are portrait:
-				if ($scope.thisCard.types.indexOf("Event")>-1 || $scope.thisCard.types.indexOf("Landmark")>-1) {
+				// some types are in landscape orientation, while all other cards are portrait:
+				var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+				if (landscapeTypes.indexOf($scope.thisCard.types[0])>-1) {
 					$scope.thisCard.orientation = "landscape";
 				}
 				else {
@@ -94,8 +95,9 @@ angular.module("RouteControllerCard", [])
 						text: $scope.thisCard.costInDebt+" debt"});
 				}
 
-				//landmarks have no cost at all. Will just write "none" in that case:
-				if ($scope.thisCard.types.indexOf("Landmark")>-1) {
+				//some types have no cost at all. Will just write "none" in that case:
+				var noCostTypes = ["Landmark", "Boon", "Hex", "State"]
+				if (noCostTypes.indexOf($scope.thisCard.types[0])>-1) {				
 					$scope.costIcons.push({text: "none"});
 				}
 
@@ -127,7 +129,8 @@ angular.module("RouteControllerCard", [])
 					/* also defined a "pluralised" version - this is to avoid "ugly" links with pluralised card names which leave
 					the final "s" out of the link */
 					var pluralisedLinkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
-
+					// and an alternative version with "-es" plural (needed for "wishes")
+					var pluralisedLinkHTML_es = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "es" + "</a>";
 					/* We only replace first reference to a card in each text with a link, to avoid visual clutter.	That
 					means we can use .replace instead of .split().join()).
 
@@ -137,12 +140,15 @@ angular.module("RouteControllerCard", [])
 					Note that the "pluralised" version comes first in each case, otherwise the "ugly" version of the link
 					is created first and not altered. */
 					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]"+"es", pluralisedLinkHTML_es);
 					$scope.thisCard.textAboveLine = $scope.thisCard.textAboveLine.replace("["+name+"]", linkHTML);
 					
 					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]"+"es", pluralisedLinkHTML_es);
 					$scope.thisCard.textBelowLine = $scope.thisCard.textBelowLine.replace("["+name+"]", linkHTML);
 
 					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]"+"s", pluralisedLinkHTML);
+					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]"+"es", pluralisedLinkHTML_es);
 					$scope.thisCard.discussion = $scope.thisCard.discussion.replace("["+name+"]", linkHTML);
 
 				}
