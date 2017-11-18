@@ -11,7 +11,7 @@
 
 	"Reaction": "A Reaction card is one which can be revealed from a player's hand in response to a particular event, in order to trigger a beneficial effect for the player who has it. A common beginner's misconception is that Reaction cards are those which offer protection from Attacks - but while several do (or at least mitigate the harmful effects), others have nothing to do with Attacks at all.",
 
-	"Duration": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and Empires.",
+	"Duration": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures, Empires and Nocturne.",
 
 	"Prize": "The Prizes are 5 particular cards in Cornucopia which are not in the Supply, and can only be gained through playing the Tournament card with a Province in hand. As their name suggests, they are very powerful - games with Tournament often involve a rush to get the first Prize.",
 
@@ -33,5 +33,23 @@
 
 	"Event": "Introduced in Adventures, and continued in Empires, Events offer players the possibility of using their Buy Phase for getting powerful one-time effects, instead of obtaining new cards for their deck. Events do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 in each game.",
 
-	"Landmark": "Introduced in Empires, Landmarks are global conditions, applying to all players, which either offer an additional way to get VP tokens during the game, or give the players additional VPs at the end of the game for certain achievements. Landmarks do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 per game. By affecting the victory conditions, the presence of Landmarks can have a huge effect on the best way to play a given Kingdom."
+	"Landmark": "Introduced in Empires, Landmarks are global conditions, applying to all players, which either offer an additional way to get VP tokens during the game, or give the players additional VPs at the end of the game for certain achievements. Landmarks do not count towards the total of 10 Kingdom piles, and it is recommended to not use more than 2 per game. By affecting the victory conditions, the presence of Landmarks can have a huge effect on the best way to play a given Kingdom.",
+
+	"Night": "Introduced in Nocturne, Night cards can be played in the Night phase of the turn - and only then. Any number can be played. The Night Phase comes after the usual Action and Buy phases (but before Cleanup), and Night cards typically have effects which depend on what the player did in the whole of the preceding turn.",
+
+	"Heirloom": "The Heirlooms are 7 unique cards found in the Nocturne expansion, which can each replace one of the Coppers in the players' starting decks. They are all Treasures, and typically still weak - but offer more interesting effects than Copper. Each is tied to a particular Kingdom card from Nocturne, and is only used - replacing 1 starting Copper - if that card is in the Kingdom.",
+
+	"Fate": "Fate cards are found in the Nocturne expansion - the purpose of this type is to easily show which cards can give out Boons, and therefore that the deck of Boon cards is needed that game.",
+
+	"Doom": "Doom cards serve the same purpose as Fate cards (both types being only found in Nocturne) - whereas Fate cards give out Boons (beneficial effects), Doom cards give out Hexes (negative effects). For this reason, most - but not all - Doom cards are also Attacks.",
+	
+	"Spirit": "The Spirit type applies to only 3 cards, in the Nocturne expansion. They are all cards which are not in the Supply, and can be gained only be the effects of certain other particular cards. In particular, Exorcist can gain any of the three - and it is only for ease of wording on Exorcist that the Spirit type exists.",
+
+	"Zombie": "There are 3 different Zombie cards in the Nocturne expansion - with only 1 copy of each. They are not Kingdom Cards, and are only used when the Necromancer card is in the Kingdom - in which case each of the 3 Zombies starts the game in the Trash. (Necromancer can use them even when they are in the Trash.)",
+
+	"Boon": "Nocturne includes a deck of 12 Boon cards, signifying various beneficial effects which can be obtained by the players using cards of the Fate type.",
+
+	"Hex": "Like the Boon cards, also from Nocturne, the Hexes are a deck of 12 different cards giving \"small\" effects. Whereas Boons are positive effects, and are given out by Fate cards, Hexes are negative effects, given out by Doom cards.",
+
+	"State": "States are 3 different cards in Nocturne, which give persistent effects (positive or negative) to the players who hold them - until the State is lost. There are 5 different states - 2 of the 3 cards being double-sided."
 }

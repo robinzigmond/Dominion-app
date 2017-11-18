@@ -35,7 +35,8 @@ angular.module("RouteControllerSearch", [])
 															.split("<").join("").split("*").join(" ");
 
 					// find the correct orientation for the card (used to give it the right CSS class for image sizing):
-					if ($scope.cardList[card].types.indexOf("Event")>-1||$scope.cardList[card].types.indexOf("Landmark")>-1) {
+					var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+					if (landscapeTypes.indexOf($scope.cardList[card].types[0])>-1) {
 						$scope.cardList[card].orientation = "landscape";
 					}
 					else {
@@ -59,7 +60,8 @@ angular.module("RouteControllerSearch", [])
 		$scope.possiblePotionCosts = [0,1];
 		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
 		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Reaction", "Duration", "Prize", "Shelter", "Ruins", "Looter",
-		"Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark"];
+		"Knight", "Reserve", "Traveller", "Gathering", "Castle", "Event", "Landmark", "Night", "Heirloom", "Fate", "Doom", "Spirit", "Zombie",
+		"Boon", "Hex", "State"];
 		// for sets, include "dirty name" for easier Javascript computations, and "nice name" for more user-friendly display text
 		$scope.allSets = [{dirtyName: "Basic", niceName: "Basic cards"},
 						  {dirtyName: "BaseFirstEd", niceName: "Base (1st edition)"},
@@ -75,6 +77,7 @@ angular.module("RouteControllerSearch", [])
 						  {dirtyName: "Guilds", niceName: "Guilds"},
 						  {dirtyName: "Adventures", niceName: "Adventures"},
 						  {dirtyName: "Empires", niceName: "Empires"},
+						  {dirtyName: "Nocturne", niceName: "Nocturne"},
 						  {dirtyName: "Promos", niceName: "Promos"}];
 
 		// reset name search text when the appropriate button is clicked
@@ -141,10 +144,11 @@ angular.module("RouteControllerSearch", [])
 		Note that all 3 components of cost have to be between the maximum and minimum, because this is how cost comparisons work 
 		in Dominion (costs of eg. 3 coins and of 2 coins and 1 potion are incomparable) */
 		$scope.costSearch = function(card) {
-			/* First we deal with Landmarks. They fit awkwardly here, as they have no cost, being global conditions that effect 
-			all	players in the game. Best solution is to return them if, and only if, the cost search parameters are at their 
-			default settings: */
-			if (card.types.indexOf("Landmark")>-1) {
+			/* First we deal with Landmarks/Boons/Hexes/States. They fit awkwardly here, as they have no cost, being conditions 
+			that potentially can effect all	players in the game. Best solution is to return them if, and only if, the cost search
+			parameters are at their default settings: */
+			var noCostTypes = ["Landmark", "Boon", "Hex", "State"]
+			if (noCostTypes.indexOf(card.types[0])>-1) {
 				if (($scope.searchParams.minCoinCost==0)&&($scope.searchParams.minPotionCost==0)
 					&&($scope.searchParams.minDebtCost==0)&&($scope.searchParams.maxCoinCost==14)
 					&&($scope.searchParams.maxPotionCost==1)&&($scope.searchParams.maxDebtCost==8)) {
