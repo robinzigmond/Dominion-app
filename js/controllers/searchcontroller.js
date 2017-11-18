@@ -18,6 +18,12 @@ angular.module("RouteControllerSearch", [])
 					then Debt cost. This is by no means a "canonical" order, but seems as good as anything as an arbitrary choice */
 					$scope.cardList[card].cost = 100*$scope.cardList[card].costInCoins + 10*$scope.cardList[card].costInPotions 
 					+ $scope.cardList[card].costInDebt;
+					/* for cards without a cost (Landmarks, Boons etc.), the above results in NaN, with unpredictable effects on
+					the order. So we will set the "cost" to be 100000 in these cases, to ensure they come after the cards with
+					actual costs */
+					if ($scope.cardList[card].cost !== $scope.cardList[card].cost) { // safest way to test for NaN
+						$scope.cardList[card].cost = 100000;
+					}
 				
 					/* strip out square brackets and curly braces from card texts. (I have used these characters in order to 
 					signal replacement by links or popovers on the card page - but we don't want these characters to obstruct 
