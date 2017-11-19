@@ -128,9 +128,9 @@ angular.module("RouteControllerCard", [])
 					var linkHTML = "<a href='cards/" + linkName + "' alt='" + name + "'>" + name + "</a>";
 					/* also defined a "pluralised" version - this is to avoid "ugly" links with pluralised card names which leave
 					the final "s" out of the link */
-					var pluralisedLinkHTML = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
+					var pluralisedLinkHTML = "<a href='cards/" + linkName + "' alt='" + name + "'>" + name + "s" + "</a>";
 					// and an alternative version with "-es" plural (needed for "wishes")
-					var pluralisedLinkHTML_es = "<a href='/cards/" + linkName + "' alt='" + name + "'>" + name + "es" + "</a>";
+					var pluralisedLinkHTML_es = "<a href='cards/" + linkName + "' alt='" + name + "'>" + name + "es" + "</a>";
 					/* We only replace first reference to a card in each text with a link, to avoid visual clutter.	That
 					means we can use .replace instead of .split().join()).
 
