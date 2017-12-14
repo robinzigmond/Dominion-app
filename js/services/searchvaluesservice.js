@@ -5,7 +5,8 @@ angular.module("SearchValues", [])
 		CardSearchValues = {
 			// set initial values, to be later changed by user
 
-			// search results should start displaying all cards:
+			/* search results should start displaying no cards (I have actually moved to preferring all cards to
+			be displayed initially - but this is trickier to arrange within a service) */:
 			searchResults: [],
 
 			// order cards by name initially
