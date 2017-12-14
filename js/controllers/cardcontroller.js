@@ -1,5 +1,5 @@
 /* This controller requires an awful lot of code, even though there is little or no user interaction on the card pages.
-This is because this single template codes for 386 different cards (and potentially more if new cards are ever released and I
+This is because this single template codes for 463 different cards (and potentially more if new cards are ever released and I
 add them to the database), and each card needs to have its information formatted correctly with the proper icons, links and
 popovers. In addition, various additional string manipulations have been done to "prettify" the output on screen - doing simple
 replacements of text strings by html resulted in "ugly"-looking output. These manipulations are explained when we reach the code to
