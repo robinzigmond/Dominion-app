@@ -22,6 +22,7 @@ angular.module("RouteControllerContact", [])
 				$scope.name = "";
 				$scope.email="";
 				$scope.feedback="";
+				$scope.contactForm.$setPristine(); // needed to avoid the form fields turning red immediately after submission
 			}		
 		}
 	});

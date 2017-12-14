@@ -257,7 +257,7 @@ p.centre {
 }
 
 /* use Angular-specific CSS classes to make the form inputs red when they are not yet valid for submission */
-#contact-form input.ng-invalid, #contact-form textarea.ng-invalid {
+#contact-form input.ng-invalid.ng-dirty, #contact-form textarea.ng-invalid.ng-dirty {
     border: 1px solid red;
     background-color: #ffe6e6;
 }
