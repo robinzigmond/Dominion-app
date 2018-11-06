@@ -41,7 +41,7 @@ angular.module("RouteControllerSearch", [])
 															.split("<").join("").split("*").join(" ");
 
 					// find the correct orientation for the card (used to give it the right CSS class for image sizing):
-					var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+					var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State", "Artifact", "Project"];
 					if (landscapeTypes.indexOf($scope.cardList[card].types[0])>-1) {
 						$scope.cardList[card].orientation = "landscape";
 					}
@@ -67,7 +67,7 @@ angular.module("RouteControllerSearch", [])
 		$scope.possibleDebtCosts = [0,1,2,3,4,5,6,7,8];
 		$scope.allTypes = ["Action", "Treasure", "Victory", "Curse", "Attack", "Reaction", "Duration", "Prize", "Shelter", "Ruins", "Looter",
 		"Knight", "Reserve", "Traveller", "Gathering", "Castle", "Night", "Heirloom", "Fate", "Doom", "Spirit", "Zombie", "Event", "Landmark",
-		"Boon", "Hex", "State"];
+		"Boon", "Hex", "State", "Artifact", "Project"];
 		// for sets, include "dirty name" for easier Javascript computations, and "nice name" for more user-friendly display text
 		$scope.allSets = [{dirtyName: "Basic", niceName: "Basic cards"},
 						  {dirtyName: "BaseFirstEd", niceName: "Base (1st edition)"},
@@ -84,6 +84,7 @@ angular.module("RouteControllerSearch", [])
 						  {dirtyName: "Adventures", niceName: "Adventures"},
 						  {dirtyName: "Empires", niceName: "Empires"},
 						  {dirtyName: "Nocturne", niceName: "Nocturne"},
+						  {dirtyName: "Renaissance", niceName: "Renaissance"},
 						  {dirtyName: "Promos", niceName: "Promos"}];
 
 		// reset name search text when the appropriate button is clicked
@@ -153,7 +154,7 @@ angular.module("RouteControllerSearch", [])
 			/* First we deal with Landmarks/Boons/Hexes/States. They fit awkwardly here, as they have no cost, being conditions 
 			that potentially can effect all	players in the game. Best solution is to return them if, and only if, the cost search
 			parameters are at their default settings: */
-			var noCostTypes = ["Landmark", "Boon", "Hex", "State"]
+			var noCostTypes = ["Landmark", "Boon", "Hex", "State", "Artifact"]
 			if (noCostTypes.indexOf(card.types[0])>-1) {
 				if (($scope.searchParams.minCoinCost==0)&&($scope.searchParams.minPotionCost==0)
 					&&($scope.searchParams.minDebtCost==0)&&($scope.searchParams.maxCoinCost==14)

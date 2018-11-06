@@ -11,7 +11,7 @@
 
 	"Reaction": "A Reaction card is one which can be revealed from a player's hand in response to a particular event, in order to trigger a beneficial effect for the player who has it. A common beginner's misconception is that Reaction cards are those which offer protection from Attacks - but while several do (or at least mitigate the harmful effects), others have nothing to do with Attacks at all.",
 
-	"Duration": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures, Empires and Nocturne.",
+	"Duration": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and all subsequent expansions.",
 
 	"Prize": "The Prizes are 5 particular cards in Cornucopia which are not in the Supply, and can only be gained through playing the Tournament card with a Province in hand. As their name suggests, they are very powerful - games with Tournament often involve a rush to get the first Prize.",
 
@@ -51,5 +51,9 @@
 
 	"Hex": "Like the Boon cards, also from Nocturne, the Hexes are a deck of 12 different cards giving \"small\" effects. Whereas Boons are positive effects, and are given out by Fate cards, Hexes are negative effects, given out by Doom cards.",
 
-	"State": "States are 3 different cards in Nocturne, which give persistent effects (positive or negative) to the players who hold them - until the State is lost. There are 5 different states - 2 of the 3 cards being double-sided."
+	"State": "States are 3 different cards in Nocturne, which give persistent effects (positive or negative) to the players who hold them - until the State is lost. There are 5 different states - 2 of the 3 cards being double-sided.",
+
+	"Artifact": "The Artifacts are 5 cards, found in the Renaissance expansion and each linked to a particular Kingdom card, which do not go in players' decks, but go in front of the player who has them, and provide that player with a \"permanent\" effect as long as they have them. But there is only one copy of each, and whenever you are entitled to take one you take it from the player with it!",
+
+	"Project": "Found in Renaissance, Projects are similar to Events in that they are special effects which players can buy, which are not represented by cards which go in the player's deck. But while events are only used once when bought (although they can be bought again by the same player later), Projects are permanent and last for the rest of the game (and can't be bought again by the same player). As with Events and Landmarks, it is only suggested to use at most 2 per game - but if more are used, players cannot buy more than 2 in any case."
 }

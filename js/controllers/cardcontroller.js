@@ -27,7 +27,7 @@ angular.module("RouteControllerCard", [])
 
 				// find correct orientation for card image (for giving the correct width in mobile devices)
 				// some types are in landscape orientation, while all other cards are portrait:
-				var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+				var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State", "Artifact", "Project"];
 				if (landscapeTypes.indexOf($scope.thisCard.types[0])>-1) {
 					$scope.thisCard.orientation = "landscape";
 				}
