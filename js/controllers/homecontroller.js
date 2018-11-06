@@ -19,7 +19,7 @@ angular.module("RouteControllerHome", [])
 			/* find the orientation of each card image (landscape for Events and Landmarks, otherwise portrait).
 			(Now altered by the release of Nocturne, which has Boon, Hex and State cards, all landscape.)
 			This is done in order to determine the width required for the image */
-			var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State"];
+			var landscapeTypes = ["Event", "Landmark", "Boon", "Hex", "State", "Artifact", "Project"];
 			for (i=1; i<5; i++) {
 				if (landscapeTypes.indexOf($scope["randomCard"+i].types[0])>-1) {
 					$scope["randomCard"+i].orientation = "landscape";

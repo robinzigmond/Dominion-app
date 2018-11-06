@@ -54,6 +54,8 @@ angular.module("SearchValues", [])
 			isBoonType: false,
 			isHexType: false,
 			isStateType: false,
+			isArtifactType: false,
+			isProjectType: false,
 
 			// leave most sets blank - except one (Base 2nd Edition, as the most natural starting point now)
 			inBasic: true,
@@ -73,6 +75,7 @@ angular.module("SearchValues", [])
 			inAdventures: true,
 			inEmpires: true,
 			inNocturne: true,
+			inRenaissance: true,
 			inPromos: true,
 
 			/* determine correct behaviour for "select/deselect all" button in the"sets" field. It should show the word "select" */

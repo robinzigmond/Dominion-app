@@ -21,7 +21,7 @@
 	 "definition": "A Reaction card is one which can be revealed from a player's hand in response to a particular event, in order to trigger a beneficial effect for the player who has it. A common beginner's misconception is that Reaction cards are those which offer protection from Attacks - but while several do (or at least mitigate the harmful effects), others have nothing to do with Attacks at all."},
 
 	{"term": "Duration",
-	 "definition": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and Empires."},
+	 "definition": "Duration cards, unlike other playable cards, are not discarded at the end of the turn on which they are played - they usually stay in play for one or more subsequent turns, and continue to affect the game until discarded. Introduced in the Seaside expansion, Durations were re-used in Adventures and all subsequent expansions."},
 
 	{"term": "Prize",
 	 "definition": "The Prizes are 5 particular cards in Cornucopia which are not in the Supply, and can only be gained through playing the Tournament card with a Province in hand. As their name suggests, they are very powerful - games with Tournament often involve a rush to get the first Prize."},
@@ -83,6 +83,9 @@
 	{"term": "State",
 	 "definition": "States are 3 different cards in Nocturne, which give persistent effects (positive or negative) to the players who hold them - until the State is lost. There are 5 different states - 2 of the 3 cards being double-sided."},
 
+	{"term": "Artifact",
+	 "definition": "The Artifacts are 5 cards, found in the Renaissance expansion and each linked to a particular Kingdom card, which do not go in players' decks, but go in front of the player who has them, and provide that player with a \"permanent\" effect as long as they have them. But there is only one copy of each, and whenever you are entitled to take one you take it from the player with it!"},
+		
 	{"term": "Base",
 	 "definition": "The original Dominion release from 2008, reprinted in 2016 with 6 cards removed and 7 added. As befits the initial set, all cards have relatively simple effects - but they introduce many of the most important card effects which recur, in more complex form, in later sets."},
 
@@ -114,11 +117,14 @@
 	 "definition": "The ninth expansion, released in 2015. It has a large number of new concepts, including Events, Travellers, Reserve cards, the return of Duration cards, and tokens which can be placed on supply piles (and elsewhere) for a variety of effects."},
 
 	{"term": "Empires",
-	 "definition": "The tenth (and so far last) expansion, released in 2016. It introduces Landmarks, the debt mechanic, and split piles - while continuing in the line of Adventures by having Events and Duration cards. In some ways a revamped version of Prosperity, it emphasises alternative ways to get VPs, including via tokens."},
+	 "definition": "The tenth expansion, released in 2016. It introduces Landmarks, the debt mechanic, and split piles - while continuing in the line of Adventures by having Events and Duration cards. In some ways a revamped version of Prosperity, it emphasises alternative ways to get VPs, including via tokens."},
 
 	{"term": "Nocturne",
-	 "definition": "The eleventh (and so far last) expansion, released in 2017. Themed around the supernatural, it introduces new gameplay elements including an additional Night Phase in each player's turn, 7 unique new starting cards (Heirlooms) which can replace Coppers in the players' starting decks, and Boon, Hex and State cards to give players a variety of different short-term effects, whether good or bad."},
+	 "definition": "The eleventh expansion, released in 2017. Themed around the supernatural, it introduces new gameplay elements including an additional Night Phase in each player's turn, 7 unique new starting cards (Heirlooms) which can replace Coppers in the players' starting decks, and Boon, Hex and State cards to give players a variety of different short-term effects, whether good or bad."},
 
+	{"term": "Renaissance",
+	"definition": "The twelfth and most recent expansion, released in 2018. It introduces a variety of different tokens which can be cashed in on later turns, and cards which stay in front of players (never entering their decks) which give temporary or permanent effects."},
+   
 	{"term": "Promo",
 	 "definition": "Promotional cards have been released occasionally, for a variety of different reasons or occasions. They are usually available to buy via the store at boardgamegeek.com. Promos have no common theme - many are \"exotic\" or unusual, while others are relatively straightforward although not felt to be worth including in one of the regular sets."},
 
@@ -177,7 +183,7 @@
 	 "definition": "To call a Reserve card means to remove it from your Tavern mat and put it into play. All Reserve cards which can be called give some kind of benefit after doing so."},
 
 	{"term": "Coin*token",
-	 "definition": "Coin tokens are a part of the Guilds expansion. In your Buy phase, you can spend any number of Coin tokens, and each you spend gives you an additional coin towards buying cards or Events that turn. Since Coin tokens can be saved between turns, this allows the player much more control over his money distribution than normal. [Note that the non-Guilds cards Pirate Ship and Trade Route both refer to Coin tokens, but these are not the same tokens, do not belong to any individual player, and have only the effects detailed on those particular cards.]"},
+	 "definition": "Coin tokens, also known as Coffers since the release of Renaissance, are a part of the Guilds and Renaissance expansions. In your Buy phase, you can spend any number of them, and each you spend gives you an additional coin towards buying cards or Events that turn. Since these tokens can be saved between turns, this allows the player much more control over his money distribution than normal. [Note that the cards Pirate Ship and Trade Route both refer to Coin tokens, but these are not the same tokens, do not belong to any individual player, and have only the effects detailed on those particular cards.]"},
 
 	{"term": "token",
 	 "definition": "Adventures includes several types of tokens which belong to each individual player. Some can be placed on Supply piles and give that player a bonus when he plays or buys a card from that pile, while others are penalty tokens (given to other players via Attacks, or taken voluntarily in compensation for other benefits) which reduce the coins a player has to spend or the cards he draws. Some others have more unusual effects. Most cards which refer to tokens include a brief summary of what that token does."},
@@ -210,6 +216,14 @@
 	 "definition": "Kingdom piles with more than one different card in them were introduced in Empires. Most of these have 5 copies each of 2 different cards, with the cheaper one on top. Usually there is some sort of special interaction between the 2 cards which justifies having them in this relationship. The Castles pile takes this to an extreme, with 8 different cards, again which interact with each other. Note that the Knights and Ruins piles, from Dark Ages, are not Split piles despite containing different cards, as these appear in a random and unknown order."},
 
 	{"term": "in*play",
-	 "definition": "Once a card enters a player's play area - usually by being played there from the player's hand - it remains there until it is discarded in the Cleanup phase, or some other effect removes it from play. Some cards have effects that apply while they are in play - these cease to apply as soon as the card leaves play."}
+	 "definition": "Once a card enters a player's play area - usually by being played there from the player's hand - it remains there until it is discarded in the Cleanup phase, or some other effect removes it from play. Some cards have effects that apply while they are in play - these cease to apply as soon as the card leaves play."},
 
+	{"term": "Coffers",
+	 "definition": "Coffers, also known as coin tokens, are a part of the Guilds and Renaissance expansions. In your Buy phase, you can spend any number of them, and each you spend gives you an additional coin towards buying cards or Events that turn. Since these tokens can be saved between turns, this allows the player much more control over his money distribution than normal. [Note that the cards Pirate Ship and Trade Route both refer to Coin tokens, but these are not the same tokens, do not belong to any individual player, and have only the effects detailed on those particular cards.]"},
+   
+	{"term": "Villager",
+	"definition": "Villagers are tokens introduced in the Renaissance expansion, which can be saved up between turns as desired, and spent at any time to provide an additional Action each"},
+
+	{"term": "Project",
+	"definition": "Found in Renaissance, Projects are similar to Events in that they are special effects which players can buy, which are not represented by cards which go in the player's deck. But while events are only used once when bought (although they can be bought again by the same player later), Projects are permanent and last for the rest of the game (and can't be bought again by the same player). As with Events and Landmarks, it is only suggested to use at most 2 per game - but if more are used, players cannot buy more than 2 in any case."}
 ]
